@@ -757,5 +757,3 @@ C:\Users\jhpar\Desktop\엔에스텍\엔에스텍 시험기팀\프로그램\2024\
 C:\Users\jhpar\Desktop\엔에스텍\엔에스텍 시험기팀\프로그램\2024\Toyodenky\Pantograph_Tester_2024(Toyodenki)\rev2\Pantograph_Tester\2022NEW\obj\Debug\2022NEW.csproj.Up2Date
 C:\Users\jhpar\Desktop\엔에스텍\엔에스텍 시험기팀\프로그램\2024\Toyodenky\Pantograph_Tester_2024(Toyodenki)\rev2\Pantograph_Tester\2022NEW\obj\Debug\_2022_Test.exe
 C:\Users\jhpar\Desktop\엔에스텍\엔에스텍 시험기팀\프로그램\2024\Toyodenky\Pantograph_Tester_2024(Toyodenki)\rev2\Pantograph_Tester\2022NEW\obj\Debug\_2022_Test.pdb
-C:\Users\jhpar\Desktop\엔에스텍\엔에스텍 시험기팀\프로그램\2024\Toyodenky\Pantograph_Tester_2024(Toyodenki)\rev2\Pantograph_Tester\2022NEW\obj\Debug\2022NEW.csproj.Fody.CopyLocal.cache
-C:\Users\jhpar\Desktop\엔에스텍\엔에스텍 시험기팀\프로그램\2024\Toyodenky\Pantograph_Tester_2024(Toyodenki)\rev2\Pantograph_Tester\2022NEW\obj\Debug\2022NEW.csproj.Fody.RuntimeCopyLocal.cache

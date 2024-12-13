@@ -233,18 +233,18 @@ namespace _2022_Test
 
         private void Edit_btn_Click(object sender, EventArgs e)
         {
-
             if (datagridview1.SelectedCells != null)
             {
-                rt_form.test_check = true;
-                rt_form.new_test_check = false;
+              
+                    rt_form.test_check = true;
+                    rt_form.new_test_check = false;
 
-                rt_form.ShowDialog();
+                    rt_form.ShowDialog();
             }
             else
-            { 
-                
-            
+            {
+
+
             }
         }
 

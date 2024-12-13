@@ -100,10 +100,10 @@
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.uiGroupBox2 = new Sunny.UI.UIGroupBox();
-            this.sevenSegmentArray2 = new DmitryBrant.CustomControls.SevenSegmentArray();
             this.label8 = new System.Windows.Forms.Label();
-            this.sevenSegmentArray1 = new DmitryBrant.CustomControls.SevenSegmentArray();
             this.label9 = new System.Windows.Forms.Label();
+            this.sevenSegmentArray2 = new DmitryBrant.CustomControls.SevenSegmentArray();
+            this.sevenSegmentArray1 = new DmitryBrant.CustomControls.SevenSegmentArray();
             this.BackColor.SuspendLayout();
             this.panel1.SuspendLayout();
             this.richbox1.SuspendLayout();
@@ -263,7 +263,9 @@
             // checkBox4
             // 
             this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(7, 618);
+            this.checkBox4.Checked = true;
+            this.checkBox4.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkBox4.Location = new System.Drawing.Point(7, 606);
             this.checkBox4.Name = "checkBox4";
             this.checkBox4.Size = new System.Drawing.Size(15, 14);
             this.checkBox4.TabIndex = 39;
@@ -292,7 +294,7 @@
             series1.Legend = "Legend1";
             series1.Name = "Force";
             this.chart1.Series.Add(series1);
-            this.chart1.Size = new System.Drawing.Size(1240, 569);
+            this.chart1.Size = new System.Drawing.Size(1240, 552);
             this.chart1.TabIndex = 36;
             this.chart1.Text = "chart1";
             // 
@@ -329,10 +331,10 @@
             this.listView1.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
             this.listView1.HideSelection = false;
             this.listView1.LabelWrap = false;
-            this.listView1.Location = new System.Drawing.Point(3, 612);
+            this.listView1.Location = new System.Drawing.Point(3, 602);
             this.listView1.MultiSelect = false;
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(1245, 136);
+            this.listView1.Size = new System.Drawing.Size(1245, 139);
             this.listView1.SmallImageList = this.imageList2;
             this.listView1.TabIndex = 41;
             this.listView1.TabStop = false;
@@ -348,7 +350,7 @@
             // 
             this.columnHeader7.Text = "List";
             this.columnHeader7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.columnHeader7.Width = 100;
+            this.columnHeader7.Width = 110;
             // 
             // columnHeader13
             // 
@@ -889,6 +891,28 @@
             this.uiGroupBox2.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             this.uiGroupBox2.TitleTop = 1;
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("돋움", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(89)))), ((int)(((byte)(162)))));
+            this.label8.Location = new System.Drawing.Point(13, 88);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(92, 29);
+            this.label8.TabIndex = 123;
+            this.label8.Text = "Press";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("돋움", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(89)))), ((int)(((byte)(162)))));
+            this.label9.Location = new System.Drawing.Point(13, 28);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(105, 29);
+            this.label9.TabIndex = 125;
+            this.label9.Text = "Height";
+            // 
             // sevenSegmentArray2
             // 
             this.sevenSegmentArray2.ArrayCount = 4;
@@ -906,17 +930,6 @@
             this.sevenSegmentArray2.TabStop = false;
             this.sevenSegmentArray2.Value = "0000";
             // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("돋움", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(89)))), ((int)(((byte)(162)))));
-            this.label8.Location = new System.Drawing.Point(13, 88);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(92, 29);
-            this.label8.TabIndex = 123;
-            this.label8.Text = "Press";
-            // 
             // sevenSegmentArray1
             // 
             this.sevenSegmentArray1.ArrayCount = 4;
@@ -933,17 +946,6 @@
             this.sevenSegmentArray1.TabIndex = 124;
             this.sevenSegmentArray1.TabStop = false;
             this.sevenSegmentArray1.Value = "0000";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("돋움", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(89)))), ((int)(((byte)(162)))));
-            this.label9.Location = new System.Drawing.Point(13, 28);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(105, 29);
-            this.label9.TabIndex = 125;
-            this.label9.Text = "Height";
             // 
             // MainForm
             // 

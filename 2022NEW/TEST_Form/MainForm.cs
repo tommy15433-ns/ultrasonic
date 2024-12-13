@@ -42,20 +42,10 @@ namespace _2022_Test
         Thread thRun;
         Thread thRun_p2p;
 
-      
         DSP_LAN dc_power;
         PLCEnet plc;
-
-        private Thread thRun_PT_Volt; //전원검출기
-        private Thread thRun_Protection;//보호동작
-        private Thread thRun_main_circuit;//주회로통전
-        private Thread thRun_Gate_Out;//게이트출력
-        private Thread thRun_Gate_in;// 게이트 전원출력
-        Thread thRun_Sequence_oper;// 기동시퀀스
-        Thread thRun_Sequence_notch;// 기동시퀀스
-        private Thread thRun_overvolt;//과전압억제       
-
-
+        AND_AD310D loadcell;
+        MT4YMOD timercount;
 
         CheckBox[] test_check_arr;
 
@@ -119,22 +109,6 @@ namespace _2022_Test
         public MainForm()
         {
             InitializeComponent();
-
-            //try
-            //{
-            //    // Connect to the APx500 software.
-            //    APx = new APx500();
-            //    // Show the APx500 software's window.
-            //    APx.Visible = true;
-            //    APx.Minimize();
-            //}
-            //catch (Exception ex)
-            //{
-            //    MessageBox.Show(ex.Message, "Error loading APx", MessageBoxButtons.OK);
-            //    Close();
-            //}
-            //// Put this program's window on top of the others.
-            //Focus();
         }
 
         public MainForm(init_Tester_info_Form _form)
@@ -206,26 +180,6 @@ namespace _2022_Test
                 }
                 else // 수동
                 {
-                    if (TabControl1.SelectedIndex == 0)
-                    {
-                     
-                     
-                    }
-
-                    else if (TabControl1.SelectedIndex == 1)
-                    {
-
-
-
-                    }
-
-                    else if (TabControl1.SelectedIndex == 4) // 경부하 시험
-                    {
-
-                        thRun_main_circuit = new Thread(Test_MainCircuit);
-                        thRun_main_circuit.Start();
-
-                    }
 
                 }
             }
@@ -501,104 +455,115 @@ namespace _2022_Test
 
             try
             {
-                _save_date = DateTime.Parse(init_info.tb_Date.Value.ToString()).ToString("yyyy-MM-dd");
-                _date_time = DateTime.Parse(init_info.tb_Date.Value.ToString()).ToString("yyyyMMddHHmm");
-                _pyunsung_name = init_info.tb_pyunsung.Text.ToString(); ;
-                _car_name = init_info.tb_carnum.Text.ToString();
-                _serial_name = init_info.tb_serial.Text.ToString();
-                _type_of_test = init_info.tb_testlist.Text.ToString();
-                _tester_name = init_info.tb_tester.Text.ToString();
-
-                _type = "Pantagraph";
-
-               
-
-                //if (init_info.radioButton4.Checked)
-                //{
-                //    _CTV = init_info.radioButton4.Text;
-                //}
-                //else
-                //{
-                //    _CTV = init_info.radioButton3.Text;
-                //}
-
-                //f_name = _date_time + "_" + _pyunsung_name + "_" + _car_name + "_" + _serial_name + "_" + _type_of_test + "_" + _tester_name + "_" + _type + "_" + _CTV + "_.dat";
-                f_name = _date_time + "_" + _pyunsung_name + "_" + _car_name + "_" + _serial_name + "_" + _type_of_test + "_" + _tester_name + "_" + _type + "_.dat";
-            }
-            catch
-            {
-
-            }
-
-            try
-            {
-                string Filename = "";
-                Filename = path + "\\" + "SIV보호동작기준" + ".csv";
-
-                if (File.Exists(Filename))
+                if (test_check == true)
                 {
-                    int line = 0;
-                    try
-                    {
-                        StreamReader sd = new StreamReader(Filename, Encoding.Default);
-                        while (!sd.EndOfStream)
-                        {
-                            string data = sd.ReadLine();
-                            string[] data2 = data.Split(',');
-                            pro_test_name[line] = data2[0];
-                            pro_test_nickname[line] = data2[1];
-                            pro_standard[line] = data2[2];
-                            line++;
-                        }
-                        sd.Dispose();
-                        sd.Close();
-                    }
-                    catch
-                    {
+                    //StreamReader sr = new StreamReader(Application.StartupPath + "\\" + "data" + "\\" + "data.ini");
+                    //string[] fd = sr.ReadToEnd().Split('!');
+                    //sr.Close();
 
-                    }
+                    _save_date = DateTime.Parse(st_form.datagridview1.SelectedRows[0].Cells[0].Value.ToString()).ToString("yyyy-MM-dd");
+                    _date_time = DateTime.Parse(st_form.datagridview1.SelectedRows[0].Cells[0].Value.ToString()).ToString("yyyyMMddHHmm");
+                    _pyunsung_name = st_form.datagridview1.SelectedRows[0].Cells[1].Value.ToString();
+                    _car_name = st_form.datagridview1.SelectedRows[0].Cells[2].Value.ToString();
+                    _serial_name = st_form.datagridview1.SelectedRows[0].Cells[3].Value.ToString();
+                    _type_of_test = st_form.datagridview1.SelectedRows[0].Cells[4].Value.ToString();
+                    _tester_name = st_form.datagridview1.SelectedRows[0].Cells[5].Value.ToString();
+
+                    f_name = _date_time + "_" + _pyunsung_name + "_" + _car_name + "_" + _serial_name + "_" + _type_of_test + "_" + _tester_name + "_.dat";
+
+
                 }
-            }
-            catch
-            {
-
-
-            }
-
-            try
-            {
-                string Filename = "";
-                Filename = path + "\\" + "SIVGATE출력기준" + ".csv";
-
-                if (File.Exists(Filename))
+                else
                 {
-                    int line = 0;
-                    try
-                    {
-                        StreamReader sd = new StreamReader(Filename, Encoding.Default);
-                        while (!sd.EndOfStream)
-                        {
-                            string data = sd.ReadLine();
-                            string[] data2 = data.Split(',');
-                            GATE_test_name[line] = data2[0];
-                            //GATE_test_nickname[line] = data2[1];
-                            GATE_standard[line] = data2[1];
-                            line++;
-                        }
-                        sd.Dispose();
-                        sd.Close();
-                    }
-                    catch
-                    {
 
-                    }
+                    _save_date = DateTime.Parse(init_info.tb_Date.Value.ToString()).ToString("yyyy-MM-dd");
+                    _date_time = DateTime.Parse(init_info.tb_Date.Value.ToString()).ToString("yyyyMMddHHmm");
+                    _pyunsung_name = init_info.tb_pyunsung.Text.ToString(); ;
+                    _car_name = init_info.tb_carnum.Text.ToString();
+                    _serial_name = init_info.tb_serial.Text.ToString();
+                    _type_of_test = init_info.tb_testlist.Text.ToString();
+                    _tester_name = init_info.tb_tester.Text.ToString();
+
+                    // _type = "Pantagraph";
+
+                    f_name = _date_time + "_" + _pyunsung_name + "_" + _car_name + "_" + _serial_name + "_" + _type_of_test + "_" + _tester_name + "_.dat";
                 }
+
             }
             catch
             {
 
-
             }
+
+            //try
+            //{
+            //    string Filename = "";
+            //    Filename = path + "\\" + "SIV보호동작기준" + ".csv";
+
+            //    if (File.Exists(Filename))
+            //    {
+            //        int line = 0;
+            //        try
+            //        {
+            //            StreamReader sd = new StreamReader(Filename, Encoding.Default);
+            //            while (!sd.EndOfStream)
+            //            {
+            //                string data = sd.ReadLine();
+            //                string[] data2 = data.Split(',');
+            //                pro_test_name[line] = data2[0];
+            //                pro_test_nickname[line] = data2[1];
+            //                pro_standard[line] = data2[2];
+            //                line++;
+            //            }
+            //            sd.Dispose();
+            //            sd.Close();
+            //        }
+            //        catch
+            //        {
+
+            //        }
+            //    }
+            //}
+            //catch
+            //{
+
+
+            //}
+
+            //try
+            //{
+            //    string Filename = "";
+            //    Filename = path + "\\" + "SIVGATE출력기준" + ".csv";
+
+            //    if (File.Exists(Filename))
+            //    {
+            //        int line = 0;
+            //        try
+            //        {
+            //            StreamReader sd = new StreamReader(Filename, Encoding.Default);
+            //            while (!sd.EndOfStream)
+            //            {
+            //                string data = sd.ReadLine();
+            //                string[] data2 = data.Split(',');
+            //                GATE_test_name[line] = data2[0];
+            //                //GATE_test_nickname[line] = data2[1];
+            //                GATE_standard[line] = data2[1];
+            //                line++;
+            //            }
+            //            sd.Dispose();
+            //            sd.Close();
+            //        }
+            //        catch
+            //        {
+
+            //        }
+            //    }
+            //}
+            //catch
+            //{
+
+
+            //}
             #region 리스트뷰 정렬
             for (int i = 0; i < Setting.ListName.Length; i++)
             {
@@ -741,23 +706,110 @@ namespace _2022_Test
 
 
            chart1.Series["Force"].Points.AddXY(0, 0);
-       
+
+
+            try
+            {
+                if (test_check == true)
+                {
+                    StreamReader sr = new StreamReader(Application.StartupPath + "\\" + "reportpath.ini");
+                    string[] fd = sr.ReadToEnd().Split('!');
+                    sr.Close();
+
+                    LoadTestedData(fd[0] + @"\" + f_name);
+                }
+
+            }
+            catch
+            {
+
+
+
+            }
+
+
+
 
             richbox1.AppendText("Load Test View.\n");
         }
 
-        private void TestExecute_P2P()
+        public void LoadTestedData(string path)
         {
+            string fname = path;
+            if (File.Exists(fname))
+            {
+                CultureInfo provider = CultureInfo.InvariantCulture;
 
-         
+                string[] temp = fname.Split('_');
+                string[] date_num = temp[0].Split('\\');
+                string date = date_num[2];
+                odt = new Odt(fname);
+
+                //tb_tester.Text = odt.Inputs["Tester"];
+                //tb_pyunsung.Text = odt.Inputs["Organization"];
+                //tb_carnum.Text = odt.Inputs["Car"];
+                //tb_serial.Text = odt.Inputs["Serial"];
+                //textBox1.Text = odt.Inputs["etc2"];
 
 
+                int length = odt.Inputs.Count;
+
+                try
+                {
+                    for (int i = 0; i < 20; i++)
+                    {
+                        listView1.Items[0].SubItems[2 + i].Text = odt.Inputs["udata_" + i.ToString()];
+                        listView1.Items[1].SubItems[2 + i].Text = odt.Inputs["ldata_" + i.ToString()];
+                        listView1.Items[2].SubItems[2 + i].Text = odt.Inputs["fdata_" + i.ToString()];
+
+                    }
+                    for (int i = 0; i < 3; i++) //보호동작
+                    {
+                        listView1.Items[i].SubItems[22].Text = odt.Inputs["result_" + i.ToString()];
+                        listView1.Items[i].SubItems[22].Text = odt.Inputs["result_" + i.ToString() + "_1"];
+
+                    }
+
+                    for (int i = 0; i < 5; i++)
+                    {
+                        listView3.Items[i].SubItems[3].Text = odt.Inputs["op_data_" + i.ToString()];
+                        listView3.Items[i].SubItems[4].Text = odt.Inputs["op_result_" + i.ToString()];
+                    }
+
+
+                }
+                catch
+                {
+
+                }
+
+            }
+
+            else // 절연 관련
+            {
+
+            }
+
+            //test_info.dateTimePicker1.Value = DateTime.ParseExact(date, "yyyyMMddHHmm", provider);
+            //test_info.dateTimePicker2.Value = DateTime.ParseExact(date, "yyyyMMddHHmm", provider);
+
+            if (File.Exists(@"D:\Chart\" + _date_time + "_panto_chart.jpg")) //기동시퀀스
+            {
+                // panel9.Visible = false;
+                // panel_pwseq.Visible = false;
+                // chart_Powering.Visible = false;
+                // panel_seq_oper.BackgroundImage = Image.FromFile(@"D:\Chart\" + date + "_pw_seq_chart.jpg");
+            }
+            else
+            {
+                //panel9.Visible = true;
+                //panel_pwseq.Visible = true;
+                //chart_Powering.Visible = true;
+            }
         }
 
-        private void Board_AllOUT()
-        {
+    
 
-        }
         public void set_voltage(int setting_volt)  // SHV300R voltage 설정
         {
             float set_voltage, result;
@@ -782,1529 +834,6 @@ namespace _2022_Test
 
         }
 
-        public void operating_init()
-        {
-
-        }
-
-
-        public void Operating_VVVF()
-        {
-        
-        
-        }
-
-        private void Test_Gate_OUT()
-        {
-            CheckForIllegalCrossThreadCalls = false;
-            Control.CheckForIllegalCrossThreadCalls = false;
-
-            #region  GATE 출력파형시험
-            ////Gate 출력파형시험
-
-          
-              
-            //    richbox1.AppendText(" Gate  출력파형 시험을 시작합니다.\r\n");
-
-            //    MessageBox.Show("GATE 출력파형을 위한 케이블을 연결하여 주세요");
-
-            //    for (int i = 0; i < Setting.ListName3.Length; i++)
-            //    {
-            //        listView4.Items[i].SubItems[1].BackColor = Color.FromArgb(56, 131, 188);
-            //        listView4.Items[i].SubItems[2].BackColor = Color.FromArgb(56, 131, 188);
-            //        listView4.Items[i].SubItems[3].BackColor = Color.FromArgb(56, 131, 188);
-            //        listView4.Items[i].SubItems[4].BackColor = Color.FromArgb(56, 131, 188);
-            //        listView4.Items[i].SubItems[5].BackColor = Color.FromArgb(56, 131, 188);
-
-
-            //        if (listView4.Items[i].Checked == true && i == 0)
-            //        {
-            //            scope.Write("CHANnel2:COUPling DC");
-            //            string gate_U1;
-            //            float value_U1;
-            //            Operating_VVVF();
-
-                      
-            //            relay_di.OUT(7, 1, true);
-            //            Thread.Sleep(300);
-            //            relay_di.OUT(5, 9, true);
-            //            Thread.Sleep(200);
-            //            scope.Write("CHANnel2:SCALe 10");
-            //            Thread.Sleep(200);
-            //            scope.Write(":TIM:SCAL " + (0.01).ToString());
-            //            Thread.Sleep(200);
-            //            scope.Write(":RUN");
-            //            Thread.Sleep(200);
-            //            scope.Write("CHANnel1:DISPlay OFF");
-            //            scope.Write("CHANnel2:DISPlay ON");
-            //            scope.Write("CHANnel3:DISPlay OFF");
-            //            scope.Write("CHANnel4:DISPlay OFF");
-            //            Thread.Sleep(200);
-
-            //            scope.Write(":STOP");
-
-            //            Thread.Sleep(200);
-            //            gate_U1 = scope.Query(":MEASure:VTOP? CHAN2");
-            //            value_U1 = float.Parse(gate_U1);
-
-            //            listView4.Items[i].SubItems[3].Text = value_U1.ToString("F2") + "V";
-            //            Thread.Sleep(200);
-
-            //            if (value_U1 >= 13.5f && value_U1 <= 16.5f)
-            //            {
-            //                listView4.Items[i].SubItems[4].Text = Constant.GOOD;
-
-            //            }
-            //            else
-            //                listView4.Items[i].SubItems[4].Text = Constant.NG;
-
-            //            Thread.Sleep(200);
-            //            if (listView4.Items[1].Checked == false)
-            //            {
-            //            dc_power1.SET_VOLT(100);
-            //            dc_power1.ONOFF("OFF");
-
-            //            Board_AllOUT();
-                          
-            //            }
-
-            //            relay_di.OUT(5, 9, false);
-            //            Thread.Sleep(300);
-            //            relay_di.OUT(7, 1, false);
-            //        }
-
-
-            //        if (listView4.Items[i].Checked == true && i == 1)
-            //        {
-            //            scope.Write("CHANnel3:COUPling DC");
-            //            string gate_U2;
-            //            float value_U2;
-            //            if (listView4.Items[0].Checked == false)
-            //            {
-            //                Operating_VVVF();
-                           
-            //            }
-            //            relay_di.OUT(7, 2, true);
-            //            Thread.Sleep(300);
-            //            relay_di.OUT(6, 2, true);
-
-            //            Thread.Sleep(200);
-
-            //            scope.Write(":RUN");
-            //            Thread.Sleep(200);
-            //            scope.Write("CHANnel3:SCALe 10");
-            //            Thread.Sleep(200);
-            //            scope.Write(":TIM:SCAL " + (0.01).ToString());
-            //            Thread.Sleep(200);
-            //            scope.Write("CHANnel1:DISPlay OFF");
-            //            scope.Write("CHANnel2:DISPlay OFF");
-            //            scope.Write("CHANnel3:DISPlay ON");
-            //            scope.Write("CHANnel4:DISPlay OFF");
-            //            Thread.Sleep(200);
-            //            scope.Write(":STOP");
-            //            Thread.Sleep(200);
-
-            //            gate_U2 = scope.Query(":MEASure:VTOP? CHAN3");
-
-            //            value_U2 = float.Parse(gate_U2);
-
-            //            listView4.Items[i].SubItems[3].Text = value_U2.ToString("F2") + "V";
-            //            Thread.Sleep(200);
-
-            //            if (value_U2 >= 13.5f && value_U2 <= 16.5f)
-            //            {
-            //                listView4.Items[i].SubItems[4].Text = Constant.GOOD;
-
-            //            }
-            //            else
-            //                listView4.Items[i].SubItems[4].Text = Constant.NG;
-            //            Thread.Sleep(200);
-            //            if (listView4.Items[2].Checked == false)
-            //            {
-            //            dc_power1.SET_VOLT(100);
-            //            dc_power1.ONOFF("OFF");
-            //            Board_AllOUT();
-                          
-            //            }
-            //            relay_di.OUT(6, 2, false);
-            //            Thread.Sleep(300);
-            //            relay_di.OUT(7, 2, false);
-            //        }
-
-
-            //        if (listView4.Items[i].Checked == true && i == 2)
-            //        {
-
-            //            scope.Write("CHANnel4:COUPling DC");
-            //            string gate_V1;
-            //            float value_V1;
-            //            if (listView4.Items[1].Checked == false)
-            //            {
-            //                Operating_VVVF();
-            //                plc.WriteBit("24", "1");
-            //            }
-            //            relay_di.OUT(7, 3, true);
-            //            Thread.Sleep(300);
-            //            relay_di.OUT(6, 11, true);
-
-
-            //            Thread.Sleep(200);
-            //            scope.Write("CHANnel4:SCALe 10");
-            //            Thread.Sleep(200);
-            //            scope.Write(":TIM:SCAL " + (0.01).ToString());
-            //            Thread.Sleep(200);
-            //            scope.Write(":RUN");
-            //            Thread.Sleep(200);
-            //            scope.Write("CHANnel1:DISPlay OFF");
-            //            scope.Write("CHANnel2:DISPlay OFF");
-            //            scope.Write("CHANnel3:DISPlay OFF");
-            //            scope.Write("CHANnel4:DISPlay ON");
-            //            Thread.Sleep(200);
-            //            scope.Write(":STOP");
-
-            //            Thread.Sleep(200);
-            //            gate_V1 = scope.Query(":MEASure:VTOP? CHAN4");
-            //            value_V1 = float.Parse(gate_V1);
-
-
-            //            listView4.Items[i].SubItems[3].Text = value_V1.ToString("F2") + "V";
-            //            Thread.Sleep(200);
-
-            //            if (value_V1 >= 13.5f && value_V1 <= 16.5f)
-            //            {
-            //                listView4.Items[i].SubItems[4].Text = Constant.GOOD;
-
-            //            }
-            //            else
-            //                listView4.Items[i].SubItems[4].Text = Constant.NG;
-
-            //            Thread.Sleep(200);
-            //            if (listView4.Items[3].Checked == false)
-            //            {
-            //            dc_power1.SET_VOLT(100);
-            //            dc_power1.ONOFF("OFF");
-            //            Board_AllOUT();
-                          
-            //            }
-            //            relay_di.OUT(7, 3, false);
-            //            Thread.Sleep(300);
-            //            relay_di.OUT(6, 11, false);
-
-            //        }
-
-
-            //        if (listView4.Items[i].Checked == true && i == 3)
-            //        {
-            //            scope.Write("CHANnel2:COUPling DC");
-            //            string gate_V2;
-            //            float value_V2;
-
-            //            if (listView4.Items[2].Checked == false)
-            //            {
-            //                Operating_VVVF();
-            //                plc.WriteBit("24", "1");
-            //            }
-            //            relay_di.OUT(7, 4, true);
-            //            Thread.Sleep(300);
-            //            relay_di.OUT(5, 12, true);
-
-            //            Thread.Sleep(200);
-            //            scope.Write(":RUN");
-            //            Thread.Sleep(200);
-            //            scope.Write("CHANnel2:SCALe 10");
-            //            Thread.Sleep(200);
-            //            scope.Write(":TIM:SCAL " + (0.01).ToString());
-            //            Thread.Sleep(200);
-
-            //            scope.Write("CHANnel1:DISPlay OFF");
-            //            scope.Write("CHANnel2:DISPlay ON");
-            //            scope.Write("CHANnel3:DISPlay OFF");
-            //            scope.Write("CHANnel4:DISPlay OFF");
-            //            Thread.Sleep(200);
-            //            scope.Write(":STOP");
-            //            Thread.Sleep(200);
-
-            //            gate_V2 = scope.Query(":MEASure:VTOP? CHAN2");
-
-            //            value_V2 = float.Parse(gate_V2);
-
-
-            //            listView4.Items[i].SubItems[3].Text = value_V2.ToString("F2") + "V";
-            //            Thread.Sleep(200);
-            //            if (value_V2 >= 13.5f && value_V2 <= 16.5f)
-            //            {
-            //                listView4.Items[i].SubItems[4].Text = Constant.GOOD;
-
-            //            }
-            //            else
-            //                listView4.Items[i].SubItems[4].Text = Constant.NG;
-
-            //            Thread.Sleep(200);
-            //            if (listView4.Items[4].Checked == false)
-            //            {
-            //            dc_power1.SET_VOLT(100);
-            //            dc_power1.ONOFF("OFF");
-            //            Board_AllOUT();
-                          
-            //            }
-
-            //            relay_di.OUT(7, 4, false);
-            //            Thread.Sleep(300);
-            //            relay_di.OUT(5, 12, false);
-
-            //        }
-            //        if (listView4.Items[i].Checked == true && i == 4)
-            //        {
-            //            scope.Write("CHANnel3:COUPling DC");
-            //            string gate_W1;
-            //            float value_W1;
-            //            if (listView4.Items[3].Checked == false)
-            //            {
-            //                Operating_VVVF();
-            //                plc.WriteBit("24", "1");
-            //            }
-            //            relay_di.OUT(7, 5, true);
-            //            Thread.Sleep(300);
-            //            relay_di.OUT(6, 5, true);
-            //            Thread.Sleep(200);
-            //            scope.Write(":RUN");
-            //            Thread.Sleep(200);
-
-            //            scope.Write("CHANnel3:SCALe 10");
-            //            Thread.Sleep(200);
-            //            scope.Write(":TIM:SCAL " + (0.01).ToString());
-            //            Thread.Sleep(200);
-
-            //            scope.Write("CHANnel1:DISPlay OFF");
-            //            scope.Write("CHANnel2:DISPlay OFF");
-            //            scope.Write("CHANnel3:DISPlay ON");
-            //            scope.Write("CHANnel4:DISPlay OFF");
-            //            Thread.Sleep(200);
-            //            scope.Write(":STOP");
-
-            //            Thread.Sleep(200);
-            //            gate_W1 = scope.Query(":MEASure:VTOP? CHAN3");
-            //            value_W1 = float.Parse(gate_W1);
-
-            //            listView4.Items[i].SubItems[3].Text = value_W1.ToString("F2") + "V";
-            //            Thread.Sleep(200);
-
-            //            if (value_W1 >= 13.5f && value_W1 <= 16.5f)
-            //            {
-            //                listView4.Items[i].SubItems[4].Text = Constant.GOOD;
-
-            //            }
-            //            else
-            //                listView4.Items[i].SubItems[4].Text = Constant.NG;
-
-            //            Thread.Sleep(200);
-            //            if (listView4.Items[5].Checked == false)
-            //            {
-            //            dc_power1.SET_VOLT(100);
-            //            dc_power1.ONOFF("OFF");
-            //            Board_AllOUT();
-                         
-            //            }
-            //            relay_di.OUT(7, 5, false);
-            //            Thread.Sleep(300);
-            //            relay_di.OUT(6, 5, false);
-            //        }
-            //        if (listView4.Items[i].Checked == true && i == 5)
-            //        {
-            //            scope.Write("CHANnel4:COUPling DC");
-            //            string gate_W2;
-            //            float value_W2;
-            //            if (listView4.Items[4].Checked == false)
-            //            {
-            //                Operating_VVVF();
-            //                plc.WriteBit("24", "1");
-            //            }
-            //            relay_di.OUT(7, 6, true);
-            //            Thread.Sleep(300);
-            //            relay_di.OUT(6, 14, true);
-            //            Thread.Sleep(200);
-            //            scope.Write(":RUN");
-            //            Thread.Sleep(200);
-            //            scope.Write("CHANnel4:SCALe 10");
-            //            Thread.Sleep(200);
-            //            scope.Write(":TIM:SCAL " + (0.01).ToString());
-            //            Thread.Sleep(200);
-
-            //            scope.Write("CHANnel1:DISPlay OFF");
-            //            scope.Write("CHANnel2:DISPlay OFF");
-            //            scope.Write("CHANnel3:DISPlay OFF");
-            //            scope.Write("CHANnel4:DISPlay ON");
-            //            Thread.Sleep(200);
-
-            //            scope.Write(":STOP");
-            //            Thread.Sleep(200);
-
-            //            gate_W2 = scope.Query(":MEASure:VTOP? CHAN4");
-            //            value_W2 = float.Parse(gate_W2);
-
-            //            listView4.Items[i].SubItems[3].Text = value_W2.ToString("F2") + "V";
-            //            Thread.Sleep(200);
-            //            if (value_W2 >= 13.5f && value_W2 <= 16.5f)
-            //            {
-            //                listView4.Items[i].SubItems[4].Text = Constant.GOOD;
-
-            //            }
-            //            else
-            //                listView4.Items[i].SubItems[4].Text = Constant.NG;
-            //            Thread.Sleep(200);
-
-            //            relay_di.OUT(7, 6, false);
-            //            Thread.Sleep(300);
-            //            relay_di.OUT(6, 14, false);
-
-            //            if (listView4.Items[6].Checked == false)
-            //            {
-            //            dc_power1.SET_VOLT(100);
-            //            dc_power1.ONOFF("OFF");
-            //            Board_AllOUT();
-                           
-            //            }
-
-            //        }
-            //        if (listView4.Items[i].Checked == true && i == 6) // BCH
-            //        {
-            //            scope.Write("CHANnel4:COUPling DC");
-            //            string gate_BCH;
-            //            float value_BCH;
-            //            if (listView4.Items[5].Checked == false)
-            //            {
-            //                Operating_VVVF();
-            //                plc.WriteBit("24", "1");
-            //            }
-
-            //            Thread.Sleep(200);
-            //            scope.Write(":RUN");
-            //            Thread.Sleep(200);
-            //            scope.Write("CHANnel4:SCALe 10");
-            //            Thread.Sleep(200);
-            //            scope.Write(":TIM:SCAL " + (0.002).ToString());
-            //            Thread.Sleep(200);
-
-            //            scope.Write("CHANnel1:DISPlay OFF");
-            //            scope.Write("CHANnel2:DISPlay OFF");
-            //            scope.Write("CHANnel3:DISPlay OFF");
-            //            scope.Write("CHANnel4:DISPlay ON");
-            //            Thread.Sleep(200);
-
-
-            //            relay_di.OUT(7, 7, true);
-            //            Thread.Sleep(300);
-            //            relay_di.OUT(6, 15, true);
-            //            Thread.Sleep(300);
-            //            ens_mascon.Write_Duty(10); //마스콘 듀티
-            //            Thread.Sleep(300);
-            //            ens_break.Write_Duty(20); //회생제동 듀티
-            //            Thread.Sleep(300);
-            //            dps5005_6.setVolt(6, 475); //fc전압 1850이상 - 1900으로 맞춤
-            //            Thread.Sleep(300);
-            //            relay_di.OUT(4, 9, true); //BEA 스코프확인 릴레이
-            //            Thread.Sleep(300);
-            //            relay_di.OUT(4, 10, true); // BEA 스코프확인 릴레이
-            //            Thread.Sleep(300);
-            //            relay_di.OUT(4, 15, true); //회생제동 ON
-            //            Thread.Sleep(300);
-            //            relay_di.OUT(4, 16, true);
-            //            Thread.Sleep(300);
-
-            //            relay_di.OUT(3, 3, false); // 파워링 풀고
-            //            Thread.Sleep(300);
-            //            relay_di.OUT(3, 4, true); //  제동 
-            //            Thread.Sleep(300);
-
-
-            //            Thread.Sleep(3500);
-            //            scope.Write(":STOP");
-            //            Thread.Sleep(200);
-
-            //            gate_BCH = scope.Query(":MEASure:VTOP? CHAN4");
-            //            value_BCH = float.Parse(gate_BCH);
-
-            //            listView4.Items[i].SubItems[3].Text = value_BCH.ToString("F2") + "V";
-            //            Thread.Sleep(200);
-            //            if (value_BCH >= 13.5f && value_BCH <= 16.5f)
-            //            {
-            //                listView4.Items[i].SubItems[4].Text = Constant.GOOD;
-
-            //            }
-            //            else
-            //                listView4.Items[i].SubItems[4].Text = Constant.NG;
-
-            //            Thread.Sleep(200);
-            //            relay_di.OUT(7, 7, false);
-            //            Thread.Sleep(300);
-            //            relay_di.OUT(6, 15, false);
-
-
-            //            Board_AllOUT();
-            //           dc_power1.SET_VOLT(100);
-            //            dc_power1.ONOFF("OFF");
-            //            ens_break.Write_Duty(0);
-                       
-            //        }
-
-            //    }
-             
-            
-            #endregion
-
-
-        }
-
-
-        private void Test_Protection() // 보호동작 스레드
-        {
-            CheckForIllegalCrossThreadCalls = false;
-            Control.CheckForIllegalCrossThreadCalls = false;
-
-            #region 보호동작 주석처리
-            //#region 보호동작시험
-
-
-            //    richbox1.AppendText("보호동작 시험을 시작합니다.\r\n");
-
-            //    for (int i = 0; i < Setting.ListName2.Length; i++)
-            //    {
-            //       listView3.Items[i].SubItems[1].BackColor = Color.FromArgb(56, 131, 188);
-            //       listView3.Items[i].SubItems[2].BackColor = Color.FromArgb(56, 131, 188);
-            //       listView3.Items[i].SubItems[3].BackColor = Color.FromArgb(56, 131, 188);
-            //       listView3.Items[i].SubItems[4].BackColor = Color.FromArgb(56, 131, 188);
-            //       listView3.Items[i].SubItems[5].BackColor = Color.FromArgb(56, 131, 188);
-            //       listView3.Items[i].SubItems[6].BackColor = Color.FromArgb(56, 131, 188);
-
-            //        if (listView3.Items[i].Checked == true && i == 0) //제어전원 저전압
-            //        {
-            //            string value;
-            //            float volt = 100;
-
-            //            Operating_VVVF();
-
-            //            Thread.Sleep(500);
-            //            /////////////////////////////////////////////초기 기동 확인////////////////////////////////////////////////////////
-            //            for (int j = 0; j < 50; j++)
-            //            {
-            //                dsp150010hdlan.SetVoltage(volt);
-            //                if (plc.ReadBit("3") == "00")
-            //                {
-            //                    break;
-            //                }
-            //                if (volt > 75)
-            //                {
-            //                    volt = volt - 10;
-            //                    Thread.Sleep(500);
-            //                }
-            //                else if (volt <= 75 && volt > 70)
-            //                {
-            //                    volt = volt - 1;
-            //                    Thread.Sleep(500);
-            //                }
-            //                else
-            //                {
-            //                    volt = volt - 0.1f;
-            //                    Thread.Sleep(500);
-            //                }
-            //            }
-            //            Thread.Sleep(200);
-            //            float result = volt;
-
-            //           listView3.Items[i].SubItems[4].Text = volt.ToString("F1") + "V";
-
-            //            Thread.Sleep(200);
-            //            if (result > 56.7 && result < 69.3)
-            //            {
-            //               listView3.Items[i].SubItems[5].Text = Constant.GOOD;
-
-            //            }
-            //            else
-            //            {
-            //               listView3.Items[i].SubItems[5].Text = Constant.NG;
-
-            //            }
-
-            //            Thread.Sleep(500);
-            //            dsp150010hdlan.SetVoltage(0);
-            //            dsp150010hdlan.OutPut("OFF");
-            //            Board_AllOUT();
-            //            plc.WriteBit("18", "0");
-
-            //        }
-            //        if (ksS_ListView_Protect.Items[i].Checked == true && i == 1) //Gate Drive Fault
-            //        {
-
-            //            Operating_VVVF();
-
-            //            Thread.Sleep(1000);
-            //            /////////////////////////////////////////////초기 기동 확인////////////////////////////////////////////////////////
-
-            //            MessageBox.Show("UOK, VOK, WOK 케이블 중 하나를 분리해 주세요");
-            //            Thread.Sleep(300);
-
-            //            if (MessageBox.Show("고장 신호가 들어왔습니까?", "고장확인", MessageBoxButtons.YesNo) == DialogResult.Yes)
-            //            {
-            //               listView3.Items[i].SubItems[4].Text = "이상없음";
-            //               listView3.Items[i].SubItems[5].Text = Constant.GOOD;
-            //            }
-            //            else
-            //            {
-            //               listView3.Items[i].SubItems[4].Text = "보호동작이상";
-            //               listView3.Items[i].SubItems[5].Text = Constant.NG;
-            //            }
-
-
-            //            Thread.Sleep(500);
-            //            dsp150010hdlan.SetVoltage(0);
-            //            dsp150010hdlan.OutPut("OFF");
-            //            Board_AllOUT();
-            //            plc.WriteBit("18", "0");
-            //            MessageBox.Show("UOK, VOK, WOK 분리한 케이블을 다시 연결하여 주십시오.");
-
-            //        }
-            //        if (ksS_ListView_Protect.Items[i].Checked == true && i == 2) //입력 과전류
-            //        {
-            //            int volt = 375;
-
-            //            Operating_VVVF();
-
-            //            dps5005_4.setVolt(4, volt);
-            //            Thread.Sleep(500);
-            //            relay_di.OUT((byte)1, 7, true);
-            //            Thread.Sleep(200);
-            //            relay_di.OUT((byte)1, 8, true);
-            //            Thread.Sleep(200);
-            //            /////////////////////////////////////////////초기 기동 확인////////////////////////////////////////////////////////
-            //            for (int j = 0; j < 50; j++)
-            //            {
-            //                dps5005_4.setVolt(4, volt);
-            //                Thread.Sleep(500);
-            //                dps5005_4.setOnOff(4, true);
-            //                Thread.Sleep(500);
-            //                if (plc.ReadBit("3") == "00")
-            //                {
-            //                    break;
-            //                }
-            //                if (volt < 780)
-            //                {
-            //                    volt = volt + 50;
-
-            //                }
-            //                else
-            //                {
-            //                    volt = volt + 1;
-
-            //                }
-
-            //            }
-            //            float result = ((volt) * 2000) / 1000;
-
-            //           listView3.Items[i].SubItems[4].Text = result.ToString() + "A";
-
-            //            if (result >= 1200 && result <= 1800)
-            //            {
-            //               listView3.Items[i].SubItems[5].Text = Constant.GOOD;
-
-            //            }
-            //            else
-            //            {
-
-            //               listView3.Items[i].SubItems[5].Text = Constant.NG;
-
-            //            }
-
-            //            Thread.Sleep(500);
-
-            //            dsp150010hdlan.SetVoltage(0);
-            //            dsp150010hdlan.OutPut("OFF");
-            //            Board_AllOUT();
-            //            plc.WriteBit("18", "0");
-
-            //        }
-            //        if (ksS_ListView_Protect.Items[i].Checked == true && i == 3) //모터과전류
-            //        {
-            //            int volt = 150;
-
-            //            Operating_VVVF();
-
-            //            Thread.Sleep(500);
-
-            //            relay_di.OUT((byte)1, 1, true);
-            //            Thread.Sleep(300);
-            //            relay_di.OUT((byte)1, 3, true);
-            //            Thread.Sleep(300);
-            //            relay_di.OUT((byte)1, 5, true);
-
-            //            dps5005.setOnOff(1, true);
-            //            Thread.Sleep(300);
-            //            dps5005.setOnOff(2, true);
-            //            Thread.Sleep(300);
-            //            dps5005.setOnOff(3, true);
-            //            Thread.Sleep(300);
-
-            //            /////////////////////////////////////////////초기 기동 확인////////////////////////////////////////////////////////
-            //            for (int j = 0; j < 50; j++)
-            //            {
-
-            //                Thread.Sleep(500);
-            //                dps5005.setVolt(1, volt);
-            //                Thread.Sleep(500);
-            //                dps5005_2.setVolt(2, volt);
-            //                Thread.Sleep(500);
-            //                dps5005_3.setVolt(3, volt);
-
-            //                if (plc.ReadBit("3") == "00")
-            //                {
-            //                    break;
-            //                }
-            //                if (volt < 350)
-            //                {
-            //                    volt = volt + 50;
-
-            //                }
-            //                else
-            //                {
-            //                    volt = volt + 1;
-
-            //                }
-            //            }
-
-            //            //float result = ((volt) * 1500) / 375;
-
-            //            float result = 1795.0f;
-
-            //           listView3.Items[i].SubItems[4].Text = result.ToString("F0") + "Apeak";
-
-            //            if (result >= 1620 && result <= 1980)
-            //            {
-            //               listView3.Items[i].SubItems[5].Text = Constant.GOOD;
-
-            //            }
-            //            else
-            //            {
-
-            //               listView3.Items[i].SubItems[5].Text = Constant.NG;
-
-            //            }
-
-            //            Thread.Sleep(500);
-            //            dsp150010hdlan.SetVoltage(0);
-            //            dsp150010hdlan.OutPut("OFF");
-            //            Board_AllOUT();
-            //            plc.WriteBit("18", "0");
-
-            //        }
-
-            //        if (ksS_ListView_Protect.Items[i].Checked == true && i == 4) //BCH 과전류
-            //        {
-            //            string value;
-            //            int volt = 1;
-
-            //            Operating_VVVF();
-
-            //            dps5005_5.setVolt(5, volt);
-
-            //            relay_di.OUT(1, 10, true);
-
-            //            Thread.Sleep(300);
-
-            //            relay_di.OUT(1, 9, true);
-
-            //            Thread.Sleep(500);
-            //            /////////////////////////////////////////////초기 기동 확인///////////////////////////////
-
-            //            for (int j = 0; j < 50; j++)
-            //            {
-            //                dps5005_5.setVolt(5, volt);
-            //                Thread.Sleep(500);
-            //                dps5005_5.setOnOff(5, true);
-            //                Thread.Sleep(500);
-            //                if (plc.ReadBit("3") == "00")
-            //                {
-            //                    break;
-            //                }
-            //                if (volt < 25)
-            //                {
-            //                    volt = volt + 5;
-
-            //                }
-            //                else
-            //                {
-            //                    volt = volt + 1;
-
-            //                }
-            //                Thread.Sleep(1000);
-            //            }
-            //            float result = ((volt) * 2.0f);
-
-            //           listView3.Items[i].SubItems[4].Text = 1100 + "Apeak";
-
-            //            if (result >= 63 && result <= 77)
-            //            {
-            //               listView3.Items[i].SubItems[5].Text = Constant.GOOD;
-
-            //            }
-            //            else
-            //            {
-
-            //               listView3.Items[i].SubItems[5].Text = Constant.NG;
-
-            //            }
-
-            //            //string value;
-            //            //int volt = 500;
-
-            //            //Operating_VVVF();
-            //            //plc.WriteBit("24", "1");
-
-            //            //relay_di.OUT(7, 7, true);
-            //            //Thread.Sleep(300);
-            //            //relay_di.OUT(6, 15, true);
-
-            //            //Thread.Sleep(200);
-            //            //scope.Write(":RUN");
-            //            //Thread.Sleep(200);
-            //            //scope.Write("CHANnel4:SCALe 10");
-            //            //Thread.Sleep(200);
-            //            //scope.Write(":TIM:SCAL " + (0.002).ToString());
-            //            //Thread.Sleep(200);
-
-            //            //scope.Write("CHANnel1:DISPlay OFF");
-            //            //scope.Write("CHANnel2:DISPlay OFF");
-            //            //scope.Write("CHANnel3:DISPlay OFF");
-            //            //scope.Write("CHANnel4:DISPlay ON");
-            //            //Thread.Sleep(200);
-
-
-            //            //relay_di.OUT(7, 7, true);
-            //            //Thread.Sleep(300);
-            //            //relay_di.OUT(6, 15, true);
-            //            //Thread.Sleep(300);
-            //            //ens_mascon.Write_Duty(10); //마스콘 듀티
-            //            //Thread.Sleep(300);
-            //            //ens_break.Write_Duty(20); //회생제동 듀티
-            //            //Thread.Sleep(300);
-            //            //dps5005_6.setVolt(6, 475); //fc전압 1850이상 - 1900으로 맞춤
-            //            //Thread.Sleep(300);
-            //            //relay_di.OUT(4, 9, true); //BEA 스코프확인 릴레이
-            //            //Thread.Sleep(300);
-            //            //relay_di.OUT(4, 10, true); // BEA 스코프확인 릴레이
-            //            //Thread.Sleep(300);
-            //            //relay_di.OUT(4, 15, true); //회생제동 ON
-            //            //Thread.Sleep(300);
-            //            //relay_di.OUT(4, 16, true);
-            //            //Thread.Sleep(300);
-
-            //            //relay_di.OUT(3, 3, false); // 파워링 풀고
-            //            //Thread.Sleep(300);
-            //            //relay_di.OUT(3, 4, true); //  제동 
-            //            //Thread.Sleep(300);
-
-            //            //Thread.Sleep(1500);
-            //            //relay_di.OUT(1, 10, true);
-            //            //relay_di.OUT(1, 9, true);
-
-            //            //dps5005_5.setVolt(5, 500);
-            //            //Thread.Sleep(300);
-
-
-
-            //            //Thread.Sleep(500);
-            //            /////////////////////////////////////////////초기 기동 확인///////////////////////////////
-
-
-            //            //for (int j = 0; j < 50; j++)
-            //            //{
-
-            //            //    dps5005_5.setVolt(5, volt);
-            //            //    Thread.Sleep(500);
-
-            //            //    Thread.Sleep(500);
-            //            //    if (plc.ReadBit("3") == "00")
-            //            //    {
-            //            //        break;
-            //            //    }
-            //            //    if (volt < 700)
-            //            //    {
-            //            //        volt = volt + 50;
-
-            //            //    }
-            //            //    else
-            //            //    {
-            //            //        volt = volt + 1;
-
-            //            //    }
-
-            //            //}
-
-            //            //float result = ((volt) * 2.0f) - 100; //제어기랑 시험기 결과 delay때문에 100정도 뺌
-
-            //            //ksS_ListView_Protect.Items[i].SubItems[4].Text = 1100 + "Apeak";
-            //            ////ksS_ListView_Protect.Items[i].SubItems[4].Text = result.ToString() + "Apeak";
-
-
-            //            //if (result >= 990 && result <= 1210)
-            //            //{
-            //            //   listView3.Items[i].SubItems[5].Text = Constant.GOOD;
-
-            //            //}
-            //            //else
-            //            //{
-
-            //            //   listView3.Items[i].SubItems[5].Text = Constant.NG; // 다원 프로그램 수정후 변경
-
-            //            //}
-
-
-            //            Thread.Sleep(500);
-            //            Board_AllOUT();
-            //            plc.WriteBit("18", "0");
-
-            //        }
-
-            //        if (ksS_ListView_Protect.Items[i].Checked == true && i == 5) //모터 상 불평형
-            //        {
-            //            int volt = 100;
-
-            //            Operating_VVVF();
-
-            //            Thread.Sleep(500);
-
-            //            relay_di.OUT((byte)1, 1, true);
-            //            Thread.Sleep(300);
-
-
-            //            dps5005.setOnOff(1, true);
-            //            Thread.Sleep(300);
-
-
-            //            /////////////////////////////////////////////초기 기동 확인////////////////////////////////////////////////////////
-            //            for (int j = 0; j < 50; j++)
-            //            {
-
-            //                Thread.Sleep(500);
-            //                dps5005.setVolt(1, volt);
-            //                Thread.Sleep(500);
-
-            //                if (plc.ReadBit("3") == "00")
-            //                {
-            //                    break;
-            //                }
-            //                if (volt < 130)
-            //                {
-            //                    volt = volt + 10;
-
-            //                }
-            //                else
-            //                {
-            //                    volt = volt + 1;
-
-            //                }
-            //            }
-
-            //            float result = ((volt) * 2);
-
-            //           listView3.Items[i].SubItems[4].Text = result.ToString() + "Apeak";
-
-            //            if (result > 270 && result <= 330)
-            //            {
-            //               listView3.Items[i].SubItems[5].Text = Constant.GOOD;
-
-            //            }
-            //            else
-            //            {
-
-            //               listView3.Items[i].SubItems[5].Text = Constant.NG;
-
-            //            }
-
-            //            Thread.Sleep(500);
-            //            dsp150010hdlan.SetVoltage(0);
-            //            dsp150010hdlan.OutPut("OFF");
-            //            Board_AllOUT();
-            //            plc.WriteBit("18", "0");
-
-
-            //        }
-
-            //        if (ksS_ListView_Protect.Items[i].Checked == true && i == 6) //가선 저전압
-            //        {
-            //            string value;
-            //            int volt = 375;
-
-            //            Operating_VVVF();
-
-            //            Thread.Sleep(500);
-            //            /////////////////////////////////////////////초기 기동 확인////////////////////////////////////////////////////////
-            //            for (int j = 0; j < 50; j++)
-            //            {
-            //                dps5005_7.setVolt(7, volt);
-            //                Thread.Sleep(500);
-
-            //                Thread.Sleep(500);
-            //                if (plc.ReadBit("3") == "00")
-            //                {
-            //                    break;
-            //                }
-            //                if (volt > 250)
-            //                {
-            //                    volt = volt - 20;
-            //                }
-            //                else
-            //                {
-            //                    volt = volt - 1;
-            //                }
-            //            }
-            //            float result = ((volt) * 1500) / 375;
-
-            //           listView3.Items[i].SubItems[4].Text = result.ToString() + "V";
-
-            //            if (result > 765 && result <= 935)
-            //            {
-            //               listView3.Items[i].SubItems[5].Text = Constant.GOOD;
-            //            }
-            //            else
-            //            {
-            //               listView3.Items[i].SubItems[5].Text = Constant.NG;
-            //            }
-            //            Thread.Sleep(500);
-            //            dsp150010hdlan.SetVoltage(0);
-            //            dsp150010hdlan.OutPut("OFF");
-            //            Board_AllOUT();
-            //            plc.WriteBit("18", "0");
-
-            //        }
-            //        if (ksS_ListView_Protect.Items[i].Checked == true && i == 7) //FC과전압
-            //        {
-            //            int volt = 375;
-
-            //            Operating_VVVF();
-
-            //            Thread.Sleep(500);
-            //            /////////////////////////////////////////////초기 기동 확인////////////////////////////////////////////////////////
-            //            for (int j = 0; j < 50; j++)
-            //            {
-
-            //                Thread.Sleep(500);
-            //                dps5005_6.setVolt(6, volt);
-            //                Thread.Sleep(500);
-            //                if (plc.ReadBit("3") == "00")
-            //                {
-            //                    break;
-            //                }
-            //                if (volt < 500)
-            //                {
-            //                    volt = volt + 50;
-
-            //                }
-            //                else
-            //                {
-            //                    volt = volt + 1;
-
-            //                }
-            //            }
-
-            //            float result = ((volt) * 1500) / 375;
-
-            //           listView3.Items[i].SubItems[4].Text = result.ToString() + "V";
-
-            //            if (result >= 2090 && result <= 2310)
-            //            {
-            //               listView3.Items[i].SubItems[5].Text = Constant.GOOD;
-
-            //            }
-            //            else
-            //            {
-
-            //               listView3.Items[i].SubItems[5].Text = Constant.NG;
-
-            //            }
-
-            //            Thread.Sleep(500);
-            //            dsp150010hdlan.SetVoltage(0);
-            //            dsp150010hdlan.OutPut("OFF");
-            //            Board_AllOUT();
-            //            plc.WriteBit("18", "0");
-
-            //        }
-            //        if (ksS_ListView_Protect.Items[i].Checked == true && i == 8) //FC 저전압
-            //        {
-            //            string value;
-            //            int volt = 375;
-
-            //            Operating_VVVF();
-
-            //            Thread.Sleep(500);
-            //            /////////////////////////////////////////////초기 기동 확인////////////////////////////////////////////////////////
-            //            for (int j = 0; j < 50; j++)
-            //            {
-            //                dps5005_6.setVolt(6, volt);
-            //                Thread.Sleep(500);
-
-            //                Thread.Sleep(500);
-            //                if (plc.ReadBit("3") == "00")
-            //                {
-            //                    break;
-            //                }
-            //                if (volt > 250)
-            //                {
-            //                    volt = volt - 20;
-            //                }
-            //                else
-            //                {
-            //                    volt = volt - 1;
-            //                }
-            //            }
-            //            float result = ((volt) * 1500) / 375;
-
-            //           listView3.Items[i].SubItems[4].Text = result.ToString() + "V";
-
-            //            if (result > 765 && result <= 935)
-            //            {
-            //               listView3.Items[i].SubItems[5].Text = Constant.GOOD;
-            //            }
-            //            else
-            //            {
-            //               listView3.Items[i].SubItems[5].Text = Constant.NG;
-            //            }
-            //            Thread.Sleep(500);
-            //            dsp150010hdlan.SetVoltage(0);
-            //            dsp150010hdlan.OutPut("OFF");
-            //            Board_AllOUT();
-            //            plc.WriteBit("18", "0");
-            //        }
-            //        if (ksS_ListView_Protect.Items[i].Checked == true && i == 9) //Thermal Falut
-            //        {
-            //            string pan = Constant.NG;
-            //            Operating_VVVF();
-
-            //            Thread.Sleep(500);
-            //            /////////////////////////////////////////////초기 기동 확인////////////////////////////////////////////////////////
-            //            //for (int j = 0; j < 50; j++)
-            //            //{
-            //            //    //relay_di.OUT((byte)8, 1, true);
-            //            //    //relay_di.OUT((byte)8, 2, false);
-
-            //            //    //relay_di.OUT((byte)8, 2, true);
-            //            //    //relay_di.OUT((byte)8, 1, false);
-
-            //            //    Thread.Sleep(1000);
-            //            //    if (plc.ReadBit("3") == "01")
-            //            //    {
-            //            //        relay_di.OUT((byte)8, 1, true); // 처음 경고장 신호
-
-            //            //        Thread.Sleep(5000);
-            //            //        //if (plc.ReadBit("3") == "01")
-            //            //        //{
-            //            //        //    relay_di.OUT(3, 1, true);
-            //            //        //}
-            //            //    }
-            //            //    if (plc.ReadBit("3") == "00")
-            //            //    {
-            //            //        pan = Constant.GOOD;
-            //            //        break;
-
-            //            //    }
-            //            //}
-            //            if (pan == Constant.GOOD)
-            //            {
-
-            //               listView3.Items[i].SubItems[4].Text = "110℃";
-            //               listView3.Items[i].SubItems[5].Text = Constant.GOOD;
-
-            //            }
-            //            else
-            //            {
-            //               listView3.Items[i].SubItems[4].Text = "110℃";
-            //               listView3.Items[i].SubItems[5].Text = Constant.GOOD;
-
-            //                //ksS_ListView_Protect.Items[i].SubItems[4].Text = "온도 보호동작 이상"; // 다원 수정후 보호동작이상으로 변경
-            //                //ksS_ListView_Protect.Items[i].SubItems[5].Text = Constant.NG;
-
-            //            }
-
-            //            Thread.Sleep(500);
-            //            dsp150010hdlan.SetVoltage(0);
-            //            dsp150010hdlan.OutPut("OFF");
-            //            Board_AllOUT();
-            //            plc.WriteBit("18", "0");
-
-            //        }
-            //        if (ksS_ListView_Protect.Items[i].Checked == true && i == 10) //Contactor 이상
-            //        {
-
-            //            int volt = 500;
-
-            //            Operating_VVVF();
-
-            //            Thread.Sleep(500);
-            //            /////////////////////////////////////////////초기 기동 확인////////////////////////////////////////////////////////
-            //            for (int j = 0; j < 50; j++)
-            //            {
-            //                plc.WriteBit("22", "1");
-
-            //                Thread.Sleep(500);
-            //                if (plc.ReadBit("2") == "00")
-            //                {
-            //                    break;
-            //                }
-
-            //            }
-            //            if (plc.ReadBit("2") == "00")
-            //            {
-            //               listView3.Items[i].SubItems[4].Text = "이상없음";
-            //               listView3.Items[i].SubItems[5].Text = Constant.GOOD;
-            //            }
-            //            else
-            //            {
-            //               listView3.Items[i].SubItems[4].Text = "이상발생";
-            //               listView3.Items[i].SubItems[5].Text = Constant.NG;
-            //            }
-
-
-
-            //            Thread.Sleep(500);
-            //            Board_AllOUT();
-            //            plc.WriteBit("22", "0");
-            //            plc.WriteBit("18", "0");
-            //        }
-
-            //        /*
-            //        if (ksS_ListView_Protect.Items[i].Checked == true && i == 11) //게이트 전원 저전압 (시험불가)
-            //        {
-            //            string value;
-            //            int volt = 500;
-
-            //            Operating_VVVF();
-
-            //            dps5005.setVolt(1, volt);
-
-            //            dps5005_2.setVolt(2, volt);
-            //            dps5005_6.setVolt(6, volt);
-            //            dps5005.setOnOff(1, true);
-            //            dps5005_2.setOnOff(2, true);
-            //            dps5005_6.setOnOff(6, true);
-            //            relay_di.OUT(1, 1, true);
-            //            relay_di.OUT(1, 3, true);
-            //            relay_di.OUT(1, 7, true);
-            //            Thread.Sleep(500);
-            //            /////////////////////////////////////////////초기 기동 확인////////////////////////////////////////////////////////
-            //            for (int j = 0; j < 50; j++)
-            //            {
-            //                dps5005.setVolt(1, volt);
-            //                dps5005_2.setVolt(2, volt);
-            //                dps5005_6.setVolt(6, volt);
-            //                if (plc.ReadBit("3") == "00")
-            //                {
-            //                    break;
-            //                }
-            //                if (volt < 850)
-            //                {
-            //                    volt = volt + 50;
-            //                    Thread.Sleep(500);
-
-            //                }
-            //                else
-            //                {
-            //                    volt = volt + 1;
-            //                    Thread.Sleep(500);
-            //                }
-            //            }
-
-            //            float result = volt;
-
-            //           listView3.Items[i].SubItems[4].Text = result.ToString("F0") + "APK";
-
-            //            if (result > 816.05 && result <= 901.95)
-            //            {
-
-            //               listView3.Items[i].SubItems[5].Text = Constant.GOOD;
-            //                ;
-
-            //            }
-            //            else
-            //            {
-
-            //               listView3.Items[i].SubItems[5].Text = Constant.NG;
-            //            }
-
-            //            Thread.Sleep(500);
-            //            Board_AllOUT();
-
-            //        }
-            //        */
-            //        if (ksS_ListView_Protect.Items[i].Checked == true && i == 11) //충전회로 고장
-            //        {
-            //            operating_init();
-
-            //            dsp150010hdlan.SetVoltage(100);
-            //            dsp150010hdlan.OutPut("ON");
-            //            plc.WriteBit("18", "1");  //DC 100V 릴레이 전원
-
-            //            Thread.Sleep(6000);
-
-            //            Thread.Sleep(300);
-
-            //            //relay_di.OUT(1, 14, true); //가선 
-            //            relay_di.OUT((byte)1, 13, true);
-            //            Thread.Sleep(100);
-            //            relay_di.OUT((byte)3, 6, true);//EB신호 제거 
-            //            Thread.Sleep(100);
-            //            relay_di.OUT((byte)3, 5, true);//출입문 신호
-
-            //            Thread.Sleep(300);
-            //            relay_di.OUT((byte)3, 1, true);//역전기 투입 Forward
-            //            Thread.Sleep(300);
-            //            //relay_di.OUT(1, 12, true);  //FC 전압 투입
-            //            dps5005_6.setVolt(6, 250);
-            //            relay_di.OUT((byte)1, 11, true);
-
-            //            Thread.Sleep(300);
-            //            relay_di.OUT((byte)3, 3, true);//파워링 투입
-
-
-            //            Thread.Sleep(2000);
-
-            //            if (plc.ReadBit("3") == "00")
-            //            {
-            //               listView3.Items[i].SubItems[4].Text = "이상없음";
-            //               listView3.Items[i].SubItems[5].Text = Constant.GOOD;
-            //            }
-            //            else
-            //            {
-            //               listView3.Items[i].SubItems[4].Text = "보호동작이상";
-            //               listView3.Items[i].SubItems[5].Text = Constant.NG;
-
-            //            }
-
-            //            Thread.Sleep(500);
-            //            Board_AllOUT();
-            //            plc.WriteBit("18", "0");
-
-            //        }
-            //        if (ksS_ListView_Protect.Items[i].Checked == true && i == 12) // BCH 고장
-            //        {
-            //            string value;
-            //            int volt = 1;
-
-            //            Operating_VVVF();
-
-            //            dps5005_5.setVolt(5, volt);
-
-            //            relay_di.OUT(1, 10, true);
-
-            //            Thread.Sleep(300);
-
-            //            relay_di.OUT(1, 9, true);
-
-            //            Thread.Sleep(500);
-            //            /////////////////////////////////////////////초기 기동 확인///////////////////////////////
-
-            //            for (int j = 0; j < 50; j++)
-            //            {
-            //                dps5005_5.setVolt(5, volt);
-            //                Thread.Sleep(500);
-            //                dps5005_5.setOnOff(5, true);
-            //                Thread.Sleep(500);
-            //                if (plc.ReadBit("3") == "00")
-            //                {
-            //                    break;
-            //                }
-            //                if (volt < 25)
-            //                {
-            //                    volt = volt + 5;
-
-            //                }
-            //                else
-            //                {
-            //                    volt = volt + 1;
-
-            //                }
-            //                Thread.Sleep(1000);
-            //            }
-            //            float result = ((volt) * 2.0f);
-
-            //           listView3.Items[i].SubItems[4].Text = result.ToString("F0") + "A";
-
-            //            if (result >= 63 && result <= 77)
-            //            {
-            //               listView3.Items[i].SubItems[5].Text = Constant.GOOD;
-
-            //            }
-            //            else
-            //            {
-
-            //               listView3.Items[i].SubItems[5].Text = Constant.NG;
-
-            //            }
-
-
-            //            Thread.Sleep(500);
-            //            Board_AllOUT();
-            //            plc.WriteBit("18", "0");
-            //        }
-            //        /*
-            //        if (ksS_ListView_Protect.Items[i].Checked == true && i == 13) //주회로 접지
-            //        {/*
-            //            float value;
-            //            int volt = 500;
-
-            //            Operating_VVVF();
-
-            //            Thread.Sleep(500);
-            //            /////////////////////////////////////////////초기 기동 확인////////////////////////////////////////////////////////
-            //            for (int j = 0; j < 50; j++)
-            //            {
-
-            //                relay_di.OUT(1, 11, false);
-
-            //                if (plc.ReadBit("3") == "00")
-            //                {
-            //                    break;
-            //                }
-
-            //            }
-
-
-            //            if (plc.ReadBit("3") == "00")
-            //            {
-            //               listView3.Items[i].SubItems[4].Text = "이상없음";
-            //               listView3.Items[i].SubItems[5].Text = Constant.GOOD;
-            //            }
-            //            else
-            //            {
-            //               listView3.Items[i].SubItems[5].Text = "보호동작이상";
-            //               listView3.Items[i].SubItems[5].Text = Constant.NG;
-            //            }
-
-
-            //            Thread.Sleep(500);
-            //            Board_AllOUT();
-            //            plc.WriteBit("18", "0");
-
-            //        }
-
-
-            //        if (ksS_ListView_Protect.Items[i].Checked == true && i == 14) //제어전원 저전압
-            //        {
-            //            string value;
-            //            float volt = 100;
-
-            //            Operating_VVVF();
-
-            //            Thread.Sleep(500);
-            //            /////////////////////////////////////////////초기 기동 확인////////////////////////////////////////////////////////
-            //            for (int j = 0; j < 50; j++)
-            //            {
-            //                dsp150010hdlan.SetVoltage(volt);
-            //                if (plc.ReadBit("3") == "00")
-            //                {
-            //                    break;
-            //                }
-            //                if (volt > 75)
-            //                {
-            //                    volt = volt - 10;
-            //                    Thread.Sleep(500);
-            //                }
-            //                else if (volt <= 75 && volt > 72)
-            //                {
-            //                    volt = volt - 1;
-            //                    Thread.Sleep(500);
-            //                }
-            //                else
-            //                {
-            //                    volt = volt - 0.1f;
-            //                    Thread.Sleep(500);
-            //                }
-            //            }
-            //            Thread.Sleep(200);
-            //            float result = volt;
-
-            //           listView3.Items[i].SubItems[4].Text = volt.ToString("F1") + "V";
-
-            //            Thread.Sleep(200);
-            //            if (result > 64.6 && result < 71.4)
-            //            {
-            //               listView3.Items[i].SubItems[5].Text = Constant.GOOD;
-
-            //            }
-            //            else
-            //            {
-            //               listView3.Items[i].SubItems[5].Text = Constant.NG;
-
-            //            }
-
-            //            Thread.Sleep(500);
-            //            dsp150010hdlan.SetVoltage(0);
-            //            dsp150010hdlan.OutPut("OFF");
-            //            Board_AllOUT();
-            //            plc.WriteBit("18", "0");
-
-            //        }
-
-            //        if (ksS_ListView_Protect.Items[i].Checked == true && i == 15) //지락고장
-            //        {
-            //            string value;
-            //            int volt = 500;
-
-            //            Operating_VVVF();
-
-            //            Thread.Sleep(1000);
-            //            /////////////////////////////////////////////초기 기동 확인////////////////////////////////////////////////////////
-            //            dps5005_3.setVolt(3, 950);
-            //            Thread.Sleep(500);
-            //            dps5005_3.setOnOff(3, true); ;
-
-            //            Thread.Sleep(500);
-
-            //            relay_di.OUT(1, 4, true);
-
-            //            if (plc.ReadBit("4") == "01")
-            //            {
-            //               listView3.Items[i].SubItems[4].Text = "이상없음";
-            //            }
-            //            else
-            //            {
-            //               listView3.Items[i].SubItems[4].Text = "보호동작이상";
-
-            //            }
-
-            //            Thread.Sleep(500);
-            //            Board_AllOUT();
-            //            plc.WriteBit("18", "0");
-            //            dps5005_3.setVolt(3, 0);
-            //            Thread.Sleep(500);
-            //            dps5005_3.setOnOff(3, false); ;
-            //            Thread.Sleep(500);
-            //        }
-
-            //        */
-            //    }
-
-            //*/
-            //#endregion
-            #endregion
-
-
-        }
-
-        private void Test_MainCircuit() // 주회로 통전시험 스레드
-        {
-            CheckForIllegalCrossThreadCalls = false;
-            Control.CheckForIllegalCrossThreadCalls = false;
-
-
-        }
-
-        private void Test_Sequence()
-        {
-            CheckForIllegalCrossThreadCalls = false;
-            Control.CheckForIllegalCrossThreadCalls = false;
-
-          
-
-        }
         delegate void ChartDelegate(System.Windows.Forms.DataVisualization.Charting.Chart ctrl, string series, double x, double y);
 
         public void SetChart(System.Windows.Forms.DataVisualization.Charting.Chart ctrl, string series, double x, double y)
@@ -2329,109 +858,6 @@ namespace _2022_Test
             }
         }
 
-
-
-      
-   
-
-        private void SAVE_BTN_MouseUp(object sender, MouseEventArgs e)
-        {
-            #region excel_version
-            if (MessageBox.Show("'NameCard'를 확인 후 '확인' 버튼을 눌러 주십시오.", "", MessageBoxButtons.OKCancel) == DialogResult.OK)
-            {
-                richbox1.AppendText("저장 중\n");
-                string FormFileName = "";
-                string SaveFileName = "";
-                string FileName = "";
-                string date_day = _save_date;
-                string date_time = _date_time;
-                string all_pan = "";
-                int[] data_location = new int[] { 9, 13, 21, 28, 31, 39, 45 };
-                int all_pan_cnt = 0;
-
-                try
-                {
-                    FormFileName = Path.GetFullPath(Setting.Report_File);
-
-                    ExcelApp = new Excel.Application();
-                    WorkBook = ExcelApp.Workbooks.Open(FormFileName);
-                    WorkSheet = WorkBook.Worksheets.get_Item(1) as Excel.Worksheet;
-
-                    ExcelApp.DisplayAlerts = false;
-                    ExcelApp.Visible = false;
-                    ExcelApp.ScreenUpdating = false;
-                    ExcelApp.DisplayStatusBar = false;
-                    ExcelApp.Calculation = Excel.XlCalculation.xlCalculationManual;
-                    ExcelApp.EnableEvents = false;
-
-                    WorkSheet.Cells[1, 3] = Setting.Name;
-
-                    WorkSheet.Cells[3, 2] = date_day;
-                    WorkSheet.Cells[3, 3] = _tester_name;
-                    WorkSheet.Cells[3, 5] = _car_name;
-                 
-
-                    WorkSheet.Cells[5, 2] = _pyunsung_name;
-                    WorkSheet.Cells[5, 3] = _serial_name;
-
-                    for (int i = 0; i < LV.Length; i++)
-                    {
-                        for (int j = 0; j < LV[i].Items.Count; j++)
-                        {
-                            if (LV[i].Items[j].SubItems[4].Text == Constant.NG || LV[i].Items[j].SubItems[4].Text == "")
-                                all_pan_cnt++;
-                        }
-
-                        for (int j = 0; j < LV[i].Items.Count; j++)
-                        {
-                            WorkSheet.Cells[data_location[i] + j, 1] = LV[i].Items[j].SubItems[1].Text;
-                            WorkSheet.Cells[data_location[i] + j, 3] = LV[i].Items[j].SubItems[2].Text;
-                            WorkSheet.Cells[data_location[i] + j, 7] = LV[i].Items[j].SubItems[3].Text;
-                            WorkSheet.Cells[data_location[i] + j, 8] = LV[i].Items[j].SubItems[4].Text;
-                        }
-                    }
-
-                    if (all_pan_cnt == 0)
-                        all_pan = Constant.GOOD;
-                    else
-                        all_pan = Constant.NG;
-
-                    FileName = f_name;
-
-                    SaveFileName = Report_Route + "\\" + FileName;
-
-                    WorkBook.SaveAs(SaveFileName, Type.Missing); // 성적서 위치 및 비밀번호
-
-                    if (WorkBook != null)
-                    {
-                        WorkBook.Close();
-                        WorkBook = null;
-                    }
-                    if (ExcelApp != null)
-                    {
-                        ExcelApp.Quit();
-                        ExcelApp = null;
-                    }
-                    richbox1.AppendText("저장 완료\n");
-                    MessageBox.Show("저장 완료");
-                }
-                catch
-                {
-                    MessageBox.Show("저장 실패");
-                }
-                finally
-                {
-                    ReleaseExcelObject(WorkSheet);
-                    ReleaseExcelObject(WorkBook);
-                    ReleaseExcelObject(ExcelApp);
-                    KillProcessByName("Excel");
-                }
-            }
-
-            #endregion
-
- 
-        }
         private static void ReleaseExcelObject(Object obj)
         {
             try
@@ -2533,33 +959,6 @@ namespace _2022_Test
             }
         }
 
-
-       
-
-      
-        private void button13_Click(object sender, EventArgs e)
-        {
-          
-        }
-        private void button16_Click(object sender, EventArgs e)
-        {
-           
-        }
-
-        private void button11_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void button14_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button15_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void button10_Click(object sender, EventArgs e)
         {
             try
@@ -2654,7 +1053,14 @@ namespace _2022_Test
                     }
 
 
-                   
+
+                    for (int i = 0; i < 5; i++)
+                    {
+                        odt.Inputs["op_data_" + i.ToString()] = listView3.Items[i].SubItems[3].Text;
+                        odt.Inputs["op_result_" + i.ToString()] = listView3.Items[i].SubItems[4].Text;
+                    }
+
+
                 }
 
                 catch
@@ -2717,28 +1123,7 @@ namespace _2022_Test
 
         private void TabControl1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            //스레드가 동작시 
-            if (radioButton1.Checked)
-            {
-                if (thRun != null)
-                {
-                    int current_index = 0;
-                    current_index = TabControl1.SelectedIndex;
-                    TabControl1.SelectedIndex = current_index;
-                }
-            }
-            else
-            {
-                if (thRun_PT_Volt != null && thRun_PT_Volt.IsAlive)
-                {
-                    TabControl1.SelectedIndex = 0;
-                }
-                else if (thRun_main_circuit != null && thRun_main_circuit.IsAlive)
-                {
-                    TabControl1.SelectedIndex = 4;
-
-                }
-            }
+  
 
         }
 

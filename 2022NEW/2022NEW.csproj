@@ -238,27 +238,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="NSTEK\device\AND_AD310D.cs" />
-    <Compile Include="NSTEK\device\Lucid_Control_AO_serial.cs" />
-    <Compile Include="NSTEK\device\Lucid_Control_DI8.cs" />
-    <Compile Include="NSTEK\device\Lucid_Control_DI_serial.cs" />
-    <Compile Include="NSTEK\device\Lucid_Control_DO.cs" />
     <Compile Include="NSTEK\device\DSP_LAN.cs" />
-    <Compile Include="NSTEK\device\TH9201.cs" />
     <Compile Include="Setting_Form\EditForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Setting_Form\EditForm.Designer.cs">
       <DependentUpon>EditForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="NSTEK\device\ds2824.cs" />
-    <Compile Include="NSTEK\device\ETH_8020_2.cs" />
-    <Compile Include="NSTEK\device\ETH_8020.cs" />
-    <Compile Include="NSTEK\device\Lucid_Control_DO_serial.cs" />
-    <Compile Include="NSTEK\device\Lucid_Control_DI4.cs" />
     <Compile Include="NSTEK\device\MT4YMOD_dcpower.cs" />
-    <Compile Include="NSTEK\device\PWM_Board.cs" />
-    <Compile Include="NSTEK\device\SHV300R.cs" />
-    <Compile Include="NSTEK\device\Lucid_Control_AO.cs" />
     <Compile Include="NSTEK\device\MT4YMOD.cs" />
     <Compile Include="Select_TEST_Form.cs">
       <SubType>Form</SubType>

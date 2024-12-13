@@ -17,7 +17,7 @@ namespace _2022_Test
     {
         Thread search_thrun;
         Stopwatch sw;
-
+        Odt odt;
         string [] tb;
         string Report_Route;
         string NowName = "";
@@ -110,89 +110,134 @@ namespace _2022_Test
 
             try
             {
+                StreamReader sr = new StreamReader(Application.StartupPath + "\\" + "reportpath.ini");
+                string[] fd = sr.ReadToEnd().Split('!');
+                sr.Close();
+                Report_Route = fd[0];
                 CultureInfo provider = CultureInfo.InvariantCulture;
-                DirectoryInfo DI = new DirectoryInfo(Report_Route);
+                DirectoryInfo DI = new DirectoryInfo(fd[0]);
                 FileInfo[] kdd = DI.GetFiles();
 
                 tb = new string[] { Tester_TextBox.Text, Serial_Number_TextBox.Text, Car_Number_TextBox.Text, PyeonSung_Number_TextBox.Text };
 
                 datagridview1.Rows.Clear();
 
-                    datagridview1.ColumnCount = cnt;
+                datagridview1.ColumnCount = 6;
 
-                for (int i = 0; i < cnt; i++)
+                for (int i = 0; i < datagridview1.ColumnCount; i++)
                 {
                     datagridview1.Columns[i].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
                 }
 
-                datagridview1.Columns[0].Name = "날짜";
-                datagridview1.Columns[1].Name = "시험자";
-                datagridview1.Columns[2].Name = "일련번호";
-                datagridview1.Columns[3].Name = "판정";
+                datagridview1.Columns[0].Name = "DATE";
+                datagridview1.Columns[1].Name = "Train Number";
+                datagridview1.Columns[2].Name = "Car Number";
+                datagridview1.Columns[3].Name = "Serial Number";
+                datagridview1.Columns[4].Name = "Type of Test";
+                datagridview1.Columns[5].Name = "Tester";
+                // datagridview1.Columns[6].Name = "종류";
+                // datagridview1.Columns[7].Name = "CTV 유무";
 
-                for (int i = kdd.Length - 1; i >= 0; i--)
+                for (int i = 0; i < kdd.Length; i++)
                 {
-                    string[] nameTemp = kdd[i].ToString().Split(new char[] { '_' });
-                    if (nameTemp.Length >= 2)
+                    try
                     {
-                        string TimeStart = DateTime.Parse(Start_Picker.Text).ToString("yyyyMMdd000000");
-                        string TimeEnd = DateTime.Parse(Stop_Picker.Text).ToString("yyyyMMdd") + "250000";
-                        int pan_cnt = 0;
-                        if (!(nameTemp[0].IndexOf("~$") >= 0))
+                        string[] nameTemp = kdd[i].ToString().Split(new char[] { '_' });
+
+                        if (nameTemp.Length >= 2)
                         {
-                            if (long.Parse(nameTemp[0]) <= long.Parse(TimeEnd) && long.Parse(nameTemp[0]) >= long.Parse(TimeStart))
+                            string timeStart = DateTime.Parse(Start_Picker.Text).ToString("yyyyMMdd0000");
+                            string timeEnd = DateTime.Parse(Stop_Picker.Text).ToString("yyyyMMdd") + "2500";
+
+
+                            if (long.Parse(nameTemp[0]) <= long.Parse(timeEnd) && long.Parse(nameTemp[0]) >= long.Parse(timeStart))
                             {
                                 if (Car_Number_TextBox.Text == "" && PyeonSung_Number_TextBox.Text == "" && Tester_TextBox.Text == "" && Serial_Number_TextBox.Text == "")
                                 {
-                                    nameTemp[0] = DateTime.ParseExact(nameTemp[0], "yyyyMMddHHmmss", provider).ToString(); datagridview1.Rows.Add(nameTemp);
+                                    nameTemp[0] = DateTime.ParseExact(nameTemp[0], "yyyyMMddHHmm", provider).ToString();
+                                    datagridview1.Rows.Add(nameTemp);
                                 }
                                 else
                                 {
-                                    for(int j = 0; j < tb.Length; j++)
+
+                                    if (Tester_TextBox.Text == nameTemp[1])
                                     {
-                                        if (tb[j] != "")
+                                        if (Tester_TextBox.Text != "")
                                         {
-                                            if (nameTemp[j + 1] != tb[j])
-                                            {
-                                                pan_cnt++;
-                                            }
+                                            nameTemp[0] = DateTime.ParseExact(nameTemp[0], "yyyyMMddHHmm", provider).ToString();
+                                            datagridview1.Rows.Add(nameTemp);
+                                        }
+
+                                    }
+                                    else if (PyeonSung_Number_TextBox.Text == nameTemp[2])
+                                    {
+                                        if (PyeonSung_Number_TextBox.Text != "")
+                                        {
+                                            nameTemp[0] = DateTime.ParseExact(nameTemp[0], "yyyyMMddHHmm", provider).ToString();
+                                            datagridview1.Rows.Add(nameTemp);
+                                        }
+
+                                    }
+                                    else if (Car_Number_TextBox.Text == nameTemp[3])
+                                    {
+                                        if (Car_Number_TextBox.Text != "")
+                                        {
+                                            nameTemp[0] = DateTime.ParseExact(nameTemp[0], "yyyyMMddHHmm", provider).ToString();
+                                            datagridview1.Rows.Add(nameTemp);
                                         }
                                     }
-                                    if (pan_cnt == 0)
+                                    else if (Serial_Number_TextBox.Text == nameTemp[4])
                                     {
-                                        nameTemp[0] = DateTime.ParseExact(nameTemp[0], "yyyyMMddHHmmss", provider).ToString(); datagridview1.Rows.Add(nameTemp);
+                                        if (Serial_Number_TextBox.Text != "")
+                                        {
+                                            nameTemp[0] = DateTime.ParseExact(nameTemp[0], "yyyyMMddHHmm", provider).ToString();
+                                            datagridview1.Rows.Add(nameTemp);
+                                        }
+
                                     }
+
+
                                 }
                             }
                         }
+
+
+                    }
+                    catch
+                    {
+
                     }
                 }
-               // datagridview1.Columns[0].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
-               // datagridview1.Columns[datagridview1.ColumnCount - 1].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
-
-                Progress_PIC.Invoke((MethodInvoker)delegate ()
-                {
-                    Progress_PIC.Visible = false;
-                    run = false;
-                });
 
             }
             catch (Exception ex)
             {
-                Progress_PIC.Invoke((MethodInvoker)delegate ()
-                {
-                    Progress_PIC.Visible = false;
-                    run = false;
-                });
+                datagridview1.ColumnCount = 8;
 
-                //MessageBox.Show(ex.Message);
-                MessageBox.Show("검색에 실패하였습니다. 다시 시도해 주세요.");
+                for (int i = 0; i < datagridview1.ColumnCount; i++)
+                {
+                    datagridview1.Columns[i].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+                }
+
+                datagridview1.Columns[0].Name = "검사일시";
+                datagridview1.Columns[1].Name = "편성번호";
+                datagridview1.Columns[2].Name = "차량번호";
+                datagridview1.Columns[3].Name = "일련번호";
+                datagridview1.Columns[4].Name = "검사종류";
+                datagridview1.Columns[5].Name = "검사자";
+                datagridview1.Columns[6].Name = "종류";
+                datagridview1.Columns[7].Name = "시험대상";
+
+                ////MessageBox.Show(ex.Message);
+                //MessageBox.Show("검색에 실패하였습니다. 다시 시도해 주세요.");
             }
+
+
         }
         private void Search_BTN_MouseUp(object sender, MouseEventArgs e)
         {
-            Progress_PIC.Visible = true;
-            run = true;
+            //Progress_PIC.Visible = true;
+            //run = true;
 
             search_thrun = new Thread(search_thread);
             search_thrun.Start();
@@ -202,29 +247,79 @@ namespace _2022_Test
         {
             try
             {
-                if (datagridview1.SelectedRows.Count == 1)
-                {
-                    if (File.Exists(NowName))
-                    {
-                        excelApp = new Excel.Application(); excelApp.Workbooks.Open(NowName, 0, true, 5, Setting.PW, Setting.PW, true, Excel.XlPlatform.xlWindows, "\t", false, false, 0, true, 1, 0);
-                        excelApp.Sheets.PrintOutEx(true); excelApp.Quit();
 
-                        MessageBox.Show("인쇄되었습니다.");
-                    }
-                    else
-                    {
-                        MessageBox.Show("파일이 존재하지 않습니다.");
-                    }
-                }
-                else
+
+                StreamReader sr = new StreamReader(Application.StartupPath + "\\" + "reportpath.ini");
+                string[] fd = sr.ReadToEnd().Split('!');
+                sr.Close();
+
+                Process[] m2 = Process.GetProcessesByName("soffice");
+                if (m2.Length > 0)
+                    m2[0].Kill();
+                //pansize = 0;
+                //panel1.Size = new Size(pansize++, 1);
+                Application.DoEvents();
+                for (int i = 0; i < datagridview1.SelectedRows.Count; i++)
                 {
-                    MessageBox.Show("출력할 파일을 선택 후 출력을 시도하여 주십시오.");
+
+
+                    datagridview1.Columns[0].Name = "검사일시";
+                    datagridview1.Columns[1].Name = "편성번호";
+                    datagridview1.Columns[2].Name = "차량번호";
+                    datagridview1.Columns[3].Name = "일련번호";
+                    datagridview1.Columns[4].Name = "검사종류";
+                    datagridview1.Columns[5].Name = "검사자";
+                    datagridview1.Columns[6].Name = "종류";
+                    datagridview1.Columns[7].Name = "시험대상";
+
+
+                    try
+                    {
+                        string FileName = DateTime.Parse(datagridview1.SelectedRows[i].Cells[0].Value.ToString()).ToString("yyyyMMddHHmm") + "_" + //날짜
+                               datagridview1.SelectedRows[i].Cells[1].Value.ToString() + "_" + //편성번호
+                               datagridview1.SelectedRows[i].Cells[2].Value.ToString() + "_" +//차량번호
+                               datagridview1.SelectedRows[i].Cells[3].Value.ToString() + "_" +//일련번호
+                               datagridview1.SelectedRows[i].Cells[4].Value.ToString() + "_" +//검사종류
+                               datagridview1.SelectedRows[i].Cells[5].Value.ToString() + "_" +//검사자1
+                               datagridview1.SelectedRows[i].Cells[6].Value.ToString() + "_" +// 종류
+                               datagridview1.SelectedRows[i].Cells[7].Value.ToString() + "_.dat";//시험대상
+                                                                                                 //datagridview1.SelectedRows[i].Cells[7].Value.ToString() + "_.dat";//판정
+
+                        //string FileName = @"C:\odt\201911201615_박준호_21 - 5_1555_2213_KTX산천.dat";
+
+                        // odt.Print(FileName);
+
+                        string name = fd[0] + @"\" + FileName;
+
+
+                        odt.Print2(name);
+                        while (true)
+                        {
+                            Process[] m = Process.GetProcessesByName("soffice");
+
+                            if (m.Length == 0)
+                                break;
+                            Thread.Sleep(100);
+                        }
+
+                    }
+                    catch
+                    {
+
+                    }
                 }
+
+
+
+
+
             }
             catch
             {
-                MessageBox.Show("출력에 실패하였습니다. 다시 시도하여 주십시오.");
+
+
             }
+
         }
         private void DataGridView_SelectionChanged(object sender, EventArgs e)
         {

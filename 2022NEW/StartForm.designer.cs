@@ -151,7 +151,7 @@ namespace _2022_Test
             this.Setting_BTN.Text = "Setting";
             this.Setting_BTN.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.Setting_BTN.UseVisualStyleBackColor = true;
-            this.Setting_BTN.MouseUp += new System.Windows.Forms.MouseEventHandler(this.FTP_BTN_MouseUp);
+            this.Setting_BTN.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Setting_BTN_MouseUp);
             // 
             // panel1
             // 

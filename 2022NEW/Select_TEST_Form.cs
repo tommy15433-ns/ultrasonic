@@ -91,33 +91,38 @@ namespace _2022_Test
 
             try
             {
-                StreamReader sr = new StreamReader(Application.StartupPath + "\\" + "data" + "\\" + "data.ini");
-                string[] fd = sr.ReadToEnd().Split('!');
+                //StreamReader sr = new StreamReader(Application.StartupPath + "\\" + "data" + "\\" + "data.ini");
+                //string[] fd = sr.ReadToEnd().Split('!');
+                //sr.Close();
+
+                StreamReader sr = new StreamReader(@"reportpath.ini");
+                string temp = sr.ReadToEnd();
                 sr.Close();
 
+
                 CultureInfo provider = CultureInfo.InvariantCulture;
-                DirectoryInfo DI = new DirectoryInfo(fd[0]);
+                DirectoryInfo DI = new DirectoryInfo(temp);
                 FileInfo[] kdd = DI.GetFiles();
 
                 tb = new string[] { Tester_TextBox.Text, Serial_Number_TextBox.Text, Car_Number_TextBox.Text, PyeonSung_Number_TextBox.Text };
 
                 datagridview1.Rows.Clear();
 
-                datagridview1.ColumnCount = 8;
+                datagridview1.ColumnCount = 6;
 
                 for (int i = 0; i < datagridview1.ColumnCount; i++)
                 {
                     datagridview1.Columns[i].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
                 }
 
-                datagridview1.Columns[0].Name = "검사일시";
-                datagridview1.Columns[1].Name = "편성번호";
-                datagridview1.Columns[2].Name = "차량번호";
-                datagridview1.Columns[3].Name = "일련번호";
-                datagridview1.Columns[4].Name = "검사종류";
-                datagridview1.Columns[5].Name = "검사자";
-                datagridview1.Columns[6].Name = "종류";
-                datagridview1.Columns[7].Name = "CTV 유무";
+                datagridview1.Columns[0].Name = "DATE";
+                datagridview1.Columns[1].Name = "Train Number";
+                datagridview1.Columns[2].Name = "Car Number";
+                datagridview1.Columns[3].Name = "Serial Number";
+                datagridview1.Columns[4].Name = "Type of Test";
+                datagridview1.Columns[5].Name = "Tester";
+               // datagridview1.Columns[6].Name = "종류";
+               // datagridview1.Columns[7].Name = "CTV 유무";
 
                 for (int i = 0; i < kdd.Length; i++)
                 {

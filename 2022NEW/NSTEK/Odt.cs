@@ -327,7 +327,7 @@ public class Odt
 
     }
 
-    public void Save3(string fileName, string image,string image2,string date)
+    public void Save3(string fileName, string image, string image4, string date)
     {
         int count;
         byte[] buf = new byte[4096];
@@ -359,57 +359,126 @@ public class Odt
                         if (File.Exists(@"c:\odt\" + sample_name))
                             File.Delete(@"c:\odt\" + sample_name);
 
-                        if (sample_name == "10000000000002D000000376C3F5F89F.png") //기동시퀀스
+                        if (sample_name == "20000007000069BC00001D760C9E1B4B.svm") //기동시퀀스
                         {
 
-                            if (File.Exists(@"D:\report_chart\"+date +"_pw_seq_chart.jpg"))
+                            if (File.Exists(@"D:\Chart\" + date + "_panto_chart.jpg"))
                             {
                                 File.Copy(image, @"c:\odt\" + sample_name);
                             }
                             else
                             {
-                                File.Copy(image2, @"c:\odt\" + sample_name);
-                            }
-
-
-                        }
-                        /*
-                        else if (sample_name == "10000201000002D00000020D4ECEB6FE.png") //경고장
-                        {
-                            if (File.Exists("C:\\data\\light_fault_chart.jpg"))
-                            {
-                                File.Move(image2, @"c:\odt\" + sample_name);
-                            }
-                            else
-                            {
                                 File.Copy(image4, @"c:\odt\" + sample_name);
                             }
-                        }
-                        else if (sample_name == "10000000000002D0000003A3D0EC1288.png") //중고장
-                        {
-                            if (File.Exists("C:\\data\\heavy_fault_chart.jpg"))
-                            {
-                                File.Move(image3, @"c:\odt\" + sample_name);
-                            }
-                            else
-                            {
-                                File.Copy(image4, @"c:\odt\" + sample_name);
-                            }
+
+
                         }
 
-    */
+                        //else if (sample_name == "10000201000002D00000020D4ECEB6FE.png") //경고장
+                        //{
+                        //    if (File.Exists(@"D:\Chart\" + date + "_light_fault_chart.jpg"))
+                        //    {
+                        //        File.Copy(image2, @"c:\odt\" + sample_name);
+                        //    }
+                        //    else
+                        //    {
+                        //        File.Copy(image4, @"c:\odt\" + sample_name);
+                        //    }
+                        //}
+                        //else if (sample_name == "10000000000002D0000003A3D0EC1288.png") //중고장
+                        //{
+                        //    if (File.Exists(@"D:\Chart\" + date + "_heavy_fault_chart.jpg"))
+                        //    {
+                        //        File.Copy(image3, @"c:\odt\" + sample_name);
+                        //    }
+                        //    else
+                        //    {
+                        //        File.Copy(image4, @"c:\odt\" + sample_name);
+                        //    }
+                        //}
                         else
                         {
-                            File.Copy(image2, @"c:\odt\" + sample_name);
+                            File.Copy(image4, @"c:\odt\" + sample_name);
 
                         }
+
 
 
 
                         MemoryStream ms = new MemoryStream();
 
                         System.Drawing.Image.FromFile(@"c:\odt\" + sample_name).Save(ms, System.Drawing.Imaging.ImageFormat.Png);
-                      
+
+
+                        zos.Write(ms.ToArray(), 0, ms.ToArray().Length);
+
+                    }
+                    else
+                    {
+                        while ((count = zis.Read(buf, 0, buf.Length)) > 0)
+                        {
+                            zos.Write(buf, 0, count);
+                        }
+                    }
+                }
+
+                zos.Finish();
+
+            }
+        }
+
+    }
+    public void Save100(string fileName, string Image,string image2)
+    {
+        int count;
+        byte[] buf = new byte[4096];
+        DateTime now = DateTime.Now;
+        string sample_name = "";
+        using (ZipInputStream zis = new ZipInputStream(File.OpenRead(templateFile)))
+        {
+            using (ZipOutputStream zos = new ZipOutputStream(File.OpenWrite(fileName)))
+            {
+                ZipEntry ze;
+
+                while ((ze = zis.GetNextEntry()) != null)
+                {
+                    ZipEntry entry = new ZipEntry(ze.Name);
+                    entry.DateTime = now;
+                    zos.PutNextEntry(entry);
+
+
+                    if (ze.Name == "content.xml")
+                    {
+
+                        string text = doc.OuterXml;
+                        byte[] textBytes = Encoding.UTF8.GetBytes(text);
+                        zos.Write(textBytes, 0, textBytes.Length);
+                    }
+                    else if (ze.Name.IndexOf("Pic") >= 0)
+                    {
+                        sample_name = ze.Name.ToString().Split('/')[1];
+
+                        string Q = Path.GetFullPath(ze.Name);
+
+
+                        if (sample_name == "10000000000002D000000376C3F5F89F.png")
+                        {
+                            if (File.Exists(Q))
+                            {
+                                File.Delete(Q);
+                            }
+
+                            File.Copy(Image, Q);
+
+                        }
+                        else
+                        {
+                            File.Copy(image2, @"c:\odt\" + sample_name);
+                        }
+                        MemoryStream ms = new MemoryStream();
+
+                        System.Drawing.Image.FromFile(Q).Save(ms, System.Drawing.Imaging.ImageFormat.Png);
+
 
                         zos.Write(ms.ToArray(), 0, ms.ToArray().Length);
 

@@ -11,7 +11,7 @@
         public static readonly string FTP_File = Application.StartupPath + "\\" + "Standard";
         public static readonly string PW = "0000";
         public static readonly string Standard_folder = Application.StartupPath + "\\" + "Standard";
-
+        public static readonly string JPG = @"JPG.jpg";
         public static readonly string dsp_ip = "192.168.80.90";
         public static readonly string plc_ip = "192.168.1.2";
         public static readonly string ds2824_ip = "192.168.0.123";
@@ -82,9 +82,9 @@
         };
         public static string[] ListName3 = new string[] //비상
         {
-         "Upper Limit",
-         "Low Limit",
-         "Difference"
+         "Up 98N less",
+         "Low 44N more",
+         "With in 20N"
         };
         public static string[] ListName4 = new string[]//전원측정확인
         {

@@ -231,7 +231,6 @@ namespace _2022_Test
             }
             catch
             { 
-            
             }
           
         }
@@ -243,16 +242,75 @@ namespace _2022_Test
             {
                 BTN_Enable(1); // 0이 아닌 숫자는 시험 중
 
-                for (int i = 0; i < LV.Length; i++)
-                {
-                    for (int j = 0; j < LV[i].Items.Count; j++)
-                    {
+                // 서보모터 시험 위치 
 
+
+                for (int i = 0; i < 6; i++)
+                {
+                    if (i == 0 && checkBox4.Checked) //압상력
+                    {
+                        TabControl1.SelectedIndex = 0;
+
+                        for (int j = 0; j < 19; j++)
+                        {
+                            listView1.Items[0].SubItems[2 + j].Text = (8.5).ToString();
+                            listView1.Items[1].SubItems[2 + j].Text = (4.0).ToString();
+                            listView1.Items[2].SubItems[2 + j].Text = 25.ToString();
+                        }
+                    
+                    }
+                    if (i == 1 && listView3.Items[i-1].Checked) //상승시간
+                    {
+                        TabControl1.SelectedIndex = 1;
+
+                        listView3.Items[i - 1].SubItems[3].Text = "x" + "ms";
+                        listView3.Items[i - 1].SubItems[4].Text = Constant.GOOD;
+
+                    }
+                    if (i == 2 && listView3.Items[i - 1].Checked) //하강시간
+                    {
+                        TabControl1.SelectedIndex = 1;
+                        listView3.Items[i - 1].SubItems[3].Text = "x" + "ms";
+                        listView3.Items[i - 1].SubItems[4].Text = Constant.GOOD;
+
+
+                    }
+                    if (i == 3 && listView3.Items[i - 1].Checked) //최저동작 전압
+                    {
+                        TabControl1.SelectedIndex = 1;
+                        listView3.Items[i - 1].SubItems[3].Text = "x" + "V";
+                        listView3.Items[i - 1].SubItems[4].Text = Constant.GOOD;
+
+
+                    }
+                    if (i == 4 && listView3.Items[i - 1].Checked) //최저하강 공압
+                    {
+                        TabControl1.SelectedIndex = 1;
+                        listView3.Items[i - 1].SubItems[3].Text = "x" + "bar";
+                        listView3.Items[i - 1].SubItems[4].Text = Constant.GOOD;
+
+                    }
+                    if (i == 5 && listView3.Items[i - 1].Checked) //공기누설시험
+                    {
+                        TabControl1.SelectedIndex = 1;
+
+                        listView3.Items[i - 1].SubItems[3].Text = "x" + "bar";
+                        listView3.Items[i - 1].SubItems[4].Text = Constant.GOOD;
 
                     }
                 }
 
-                MessageBox.Show("시험완료");
+
+                //for (int i = 0; i < LV.Length; i++)
+                //{
+                //    for (int j = 0; j < LV[i].Items.Count; j++)
+                //    {
+                       
+
+                //    }
+                //}
+
+                MessageBox.Show("TEST Complete");
             }
             catch
             {
@@ -440,53 +498,6 @@ namespace _2022_Test
             {
 
             }
-          
-            //try
-            //{
-            //    for (int i = 0; i < standard_path.Length; i++)
-            //    {
-            //        if (File.Exists(standard_path[i])) // 기준값 파일 확인
-            //        {
-            //            int line = 0;
-            //            try
-            //            {
-            //                StreamReader sd = new StreamReader(standard_path[i], Encoding.Default);
-            //                while (!sd.EndOfStream)
-            //                {
-            //                    string data = sd.ReadLine();
-            //                    string[] data2 = data.Split(',');
-            //                    min_value[line] = data2[1];
-            //                    max_value[line] = data2[2];
-            //                    line++;
-            //                }
-            //                sd.Dispose();
-            //                sd.Close();
-            //            }
-            //            catch
-            //            {
-
-            //            }
-            //        }
-            //        else
-            //        {
-            //            MessageBox.Show(standard_path[i] + " 파일이 존재하지 않습니다. 파일을 생성해 주세요.");
-            //        }
-            //    }
-            //    #region 시험기준 설정
-            //    standard[0] = "standard1";
-            //    standard[1] = "standard2";
-            //    standard[2] = "standard3";
-            //    standard[3] = "standard4";
-            //    standard[4] = "standard5";
-            //    standard[5] = "standard6";
-            //    standard[6] = "standard7";
-            //    standard[7] = "standard8";
-            //    #endregion
-            //}
-            //catch
-            //{
-
-            //}
 
             try
             {
@@ -632,18 +643,30 @@ namespace _2022_Test
 
             for (int i = 0; i < Setting.ListName3.Length; i++)
             {
-                listView5.Items.Add("");
-                listView5.Items[i].SubItems.Add(Setting.ListName3[i]);
-                listView5.Items[i].SubItems.Add(Setting.ListMethod3[i]);
-                listView5.Items[i].SubItems.Add("");
-                listView5.Items[i].SubItems.Add("");
-                listView5.Items[i].SubItems.Add("");
-                listView5.Items[i].SubItems.Add("");
-                listView5.Items[i].SubItems.Add("");
-                listView5.Items[i].SubItems.Add("");
-                listView5.Items[i].SubItems.Add("");
-                listView5.Items[i].SubItems.Add("");
-                listView5.Items[i].UseItemStyleForSubItems = false;
+                listView1.Items.Add(""); //0
+                listView1.Items[i].SubItems.Add(Setting.ListName3[i]);//1
+                listView1.Items[i].SubItems.Add("");//2
+                listView1.Items[i].SubItems.Add("");//3
+                listView1.Items[i].SubItems.Add("");//4
+                listView1.Items[i].SubItems.Add("");//5
+                listView1.Items[i].SubItems.Add("");//6
+                listView1.Items[i].SubItems.Add("");//7
+                listView1.Items[i].SubItems.Add("");//8
+                listView1.Items[i].SubItems.Add("");//9
+                listView1.Items[i].SubItems.Add("");//10
+                listView1.Items[i].SubItems.Add("");//11
+                listView1.Items[i].SubItems.Add("");//12
+                listView1.Items[i].SubItems.Add("");//13
+                listView1.Items[i].SubItems.Add("");//14
+                listView1.Items[i].SubItems.Add("");//15
+                listView1.Items[i].SubItems.Add("");//16
+                listView1.Items[i].SubItems.Add("");//17
+                listView1.Items[i].SubItems.Add("");//18
+                listView1.Items[i].SubItems.Add("");//19
+                listView1.Items[i].SubItems.Add("");//20
+                listView1.Items[i].SubItems.Add("");//21
+                listView1.Items[i].SubItems.Add("");//22
+                listView1.Items[i].UseItemStyleForSubItems = false;
 
 
                 //if (i % 2 == 0)
@@ -652,35 +675,61 @@ namespace _2022_Test
                 //    ksS_ListView1.Items[i].BackColor = back;
                 if (i % 2 == 0)
                 {
-                    listView5.Items[i].SubItems[1].BackColor = Color.AliceBlue;
-                    listView5.Items[i].SubItems[2].BackColor = Color.Linen;
-                    listView5.Items[i].SubItems[3].BackColor = Color.AliceBlue;
-                    listView5.Items[i].SubItems[4].BackColor = Color.Linen;
-                    listView5.Items[i].SubItems[5].BackColor = Color.AliceBlue;
-                    listView5.Items[i].SubItems[6].BackColor = Color.Linen;
-                    listView5.Items[i].SubItems[7].BackColor = Color.AliceBlue;
-                    listView5.Items[i].SubItems[8].BackColor = Color.Linen;
-                    listView5.Items[i].SubItems[9].BackColor = Color.AliceBlue;
-                    listView5.Items[i].SubItems[10].BackColor = Color.Linen;
+                   // listView1.Items[i].SubItems[1].BackColor = Color.AliceBlue;
+                    listView1.Items[i].SubItems[2].BackColor = Color.Linen;
+                    listView1.Items[i].SubItems[3].BackColor = Color.AliceBlue;
+                    listView1.Items[i].SubItems[4].BackColor = Color.Linen;
+                    listView1.Items[i].SubItems[5].BackColor = Color.AliceBlue;
+                    listView1.Items[i].SubItems[6].BackColor = Color.Linen;
+                    listView1.Items[i].SubItems[7].BackColor = Color.AliceBlue;
+                    listView1.Items[i].SubItems[8].BackColor = Color.Linen;
+                    listView1.Items[i].SubItems[9].BackColor = Color.AliceBlue;
+                    listView1.Items[i].SubItems[10].BackColor = Color.Linen;
+                    listView1.Items[i].SubItems[11].BackColor = Color.AliceBlue;
+                    listView1.Items[i].SubItems[12].BackColor = Color.Linen;
+                    listView1.Items[i].SubItems[13].BackColor = Color.AliceBlue;
+                    listView1.Items[i].SubItems[14].BackColor = Color.Linen;
+                    listView1.Items[i].SubItems[15].BackColor = Color.AliceBlue;
+                    listView1.Items[i].SubItems[16].BackColor = Color.Linen;
+                    listView1.Items[i].SubItems[17].BackColor = Color.Linen;
+                    listView1.Items[i].SubItems[18].BackColor = Color.AliceBlue;
+                    listView1.Items[i].SubItems[19].BackColor = Color.Linen;
+                    listView1.Items[i].SubItems[20].BackColor = Color.AliceBlue;
+                    listView1.Items[i].SubItems[21].BackColor = Color.Linen;
+                    listView1.Items[i].SubItems[22].BackColor = Color.AliceBlue;
+                
                 }
                 else
                 {
-                    listView5.Items[i].SubItems[1].BackColor = Color.LightCyan;
-                    listView5.Items[i].SubItems[3].BackColor = Color.LightCyan;
-                    listView5.Items[i].SubItems[2].BackColor = Color.White;
-                    listView5.Items[i].SubItems[4].BackColor = Color.White;
-                    listView5.Items[i].SubItems[5].BackColor = Color.LightCyan;
-                    listView5.Items[i].SubItems[6].BackColor = Color.White;
-                    listView5.Items[i].SubItems[7].BackColor = Color.LightCyan;
-                    listView5.Items[i].SubItems[8].BackColor = Color.White;
-                    listView5.Items[i].SubItems[9].BackColor = Color.LightCyan;
-                    listView5.Items[i].SubItems[10].BackColor = Color.White;
-                   
+                   // listView1.Items[i].SubItems[1].BackColor = Color.LightCyan;
+                    listView1.Items[i].SubItems[3].BackColor = Color.LightCyan;
+                    listView1.Items[i].SubItems[2].BackColor = Color.White;
+                    listView1.Items[i].SubItems[4].BackColor = Color.White;
+                    listView1.Items[i].SubItems[5].BackColor = Color.LightCyan;
+                    listView1.Items[i].SubItems[6].BackColor = Color.White;
+                    listView1.Items[i].SubItems[7].BackColor = Color.LightCyan;
+                    listView1.Items[i].SubItems[8].BackColor = Color.White;
+                    listView1.Items[i].SubItems[9].BackColor = Color.LightCyan;
+                    listView1.Items[i].SubItems[10].BackColor = Color.White;
+                    listView1.Items[i].SubItems[11].BackColor = Color.LightCyan;
+                    listView1.Items[i].SubItems[12].BackColor = Color.White;
+                    listView1.Items[i].SubItems[13].BackColor = Color.LightCyan;
+                    listView1.Items[i].SubItems[14].BackColor = Color.White;
+                    listView1.Items[i].SubItems[15].BackColor = Color.LightCyan;
+                    listView1.Items[i].SubItems[16].BackColor = Color.White;
+                    listView1.Items[i].SubItems[17].BackColor = Color.LightCyan;
+                    listView1.Items[i].SubItems[18].BackColor = Color.White;
+                    listView1.Items[i].SubItems[19].BackColor = Color.LightCyan;
+                    listView1.Items[i].SubItems[20].BackColor = Color.White;
+                    listView1.Items[i].SubItems[21].BackColor = Color.LightCyan;
+                    listView1.Items[i].SubItems[22].BackColor = Color.White;
                 }
-                listView5.Items[i].Checked = true;
+               // listView5.Items[i].Checked = true;
 
             }
 
+
+          
             #endregion
 
             for (int i = TabControl1.TabCount - 1; i >= 0; i--)
@@ -689,15 +738,10 @@ namespace _2022_Test
             }
 
 
-      
 
-           
 
-           chart1.Series["Force"].Points.AddXY(0, 11);
+           chart1.Series["Force"].Points.AddXY(0, 0);
        
-
-
-
 
             richbox1.AppendText("Load Test View.\n");
         }
@@ -2538,9 +2582,14 @@ namespace _2022_Test
         {
             CultureInfo provider = CultureInfo.InvariantCulture;
 
-            StreamReader sr = new StreamReader(Application.StartupPath + "\\" + "data" + "\\" + "data.ini");
+        
+            StreamReader sr = new StreamReader(Application.StartupPath + "\\" + "reportpath.ini");
             string[] fd = sr.ReadToEnd().Split('!');
             sr.Close();
+
+            StreamReader cr = new StreamReader(Application.StartupPath + "\\" + "datapath.ini");
+            string[] cd = cr.ReadToEnd().Split('!');
+            cr.Close();
 
             string date;
             for (int j = 0; j < 1; j++)
@@ -2557,33 +2606,26 @@ namespace _2022_Test
                 string ddd = "";
                 //odt = new Odt(Application.StartupPath + "\\" + "CI_Korail_CTV-O.dat");
 
-                if (_CTV.IndexOf("O") >= 0)
-                {
-                    odt = new Odt(Application.StartupPath + "\\" + "CI_Korail_CTV-O.dat");
-                }
-                else
-                {
-                    odt = new Odt(Application.StartupPath + "\\" + "CI_Korail_CTV-X.dat");
-                }
+                odt = new Odt(Application.StartupPath + "\\" + "panto5.odt");
 
-                //odt.Inputs["Result"] = panjung;
 
-                //if (test_info.cb_ManualTime.Checked == true)
-                //{
-                //    date =test_info.dateTimePicker1.Value.ToString("yyyyMMdd") + test_info.dateTimePicker2.Value.ToString("HHmm");
-                //}
-                //else
-                //{
-                //    date = DateTime.Now.ToString("yyyyMMddHHmm");
-                //}
+                Bitmap bmp = new Bitmap(this.chart1.Width, this.chart1.Height);
+                this.chart1.DrawToBitmap(bmp, new Rectangle(0, 0, this.chart1.Width, this.chart1.Height));
+                bmp.Save(@"D:\Chart\" + _date_time + "_panto_chart.jpg", System.Drawing.Imaging.ImageFormat.Jpeg);
+
                 date = _date_time;
 
                 //string FileName = date + "_" + test_info.tb_tester.Text + "_" + test_info.tb_pyunsung.Text + "_" + test_info.tb_carnum.Text + "_" + test_info.tb_serial.Text + "_" + ".dat";
+
+                string Filename = "";
+
                 Thread.Sleep(500);
+
+                
 
 
                 Thread.Sleep(500);
-                for (int i = 0; i < 7; i++)
+                for (int i = 0; i < 2; i++)
                 {
                     odt.Inputs["Date" + i.ToString()] = _save_date;
                     odt.Inputs["Organization" + i.ToString()] = _pyunsung_name;
@@ -2591,45 +2633,28 @@ namespace _2022_Test
                     odt.Inputs["Serial" + i.ToString()] = _serial_name;
                     odt.Inputs["etc2" + i.ToString()] = _type_of_test;
                     odt.Inputs["Tester" + i.ToString()] = _tester_name;
-                    odt.Inputs["Menu" + i.ToString()] = _type;
+                   // odt.Inputs["Menu" + i.ToString()] = _type;
+
                 }
 
                 try
                 {
 
-                    //for (int i = 0; i < Setting.ListName.Length; i++)
-                    //{
-                    //    odt.Inputs["data" + i.ToString()] = ksS_ListView_Power.Items[i].SubItems[4].Text;
-                    //    odt.Inputs["data" + (i + 60).ToString()] = ksS_ListView_Power.Items[i].SubItems[3].Text;
-                    //    odt.Inputs["data" + (i + 70).ToString()] = ksS_ListView_Power.Items[i].SubItems[5].Text;
-                    //    odt.Inputs["p" + i.ToString()] = ksS_ListView_Power.Items[i].SubItems[6].Text;
-                    //}
+                    for (int i = 0; i <20; i++)
+                    {
+                        odt.Inputs["udata_" + i.ToString()] =listView1.Items[0].SubItems[2+i].Text;
+                        odt.Inputs["ldata_" + i .ToString()] = listView1.Items[1].SubItems[2 + i].Text;
+                        odt.Inputs["fdata_" + i .ToString()] = listView1.Items[2].SubItems[2 + i].Text;
+                    }
 
-                 
-
-
-                  
-                    //if (withstand_test.Checked == true)
-                    //{
-                    //    for (int i = 0; i < 4; i++)
-                    //    {
-
-                    //        odt.Inputs["data" + (i + 51).ToString()] = ksS_ListView7.Items[i].SubItems[3].Text;
-                    //        odt.Inputs["p" + (i + 51).ToString()] = ksS_ListView7.Items[i].SubItems[4].Text;
-
-                    //    }
-                    //}
-
-                    //StreamWriter odt_ftp = new StreamWriter(fd[0] + "_FTP" + @"\" + atemp_1[18] + "_" + atemp_1[19] + "_" + OrderNo.Text + "_" + txtPounsung.Text + "_" + txtCarNo.Text + "_" + cbAry[j].Text + "_" + Date_Time + ".txt");
-                    //for (int k = 0; k < ListName_Count; k++)
-                    //{
-                    //    odt_ftp.WriteLine(k.ToString() + "^" + atemp_2[18] + "^" + atemp_2[19] + "^" + OrderNo.Text + "^" + txtPounsung.Text + "^" + txtCarNo.Text + "^" + Date_Time + "^" + cbAry[j].Text + "^" + tx[j].Text + "^" + cboTester.Text + "^" + "Test" + "^" +
-                    //    LV[j].Items[k].SubItems[1].Text + "^" + LV[j].Items[k].SubItems[2].Text + "^" + LV[j].Items[k].SubItems[3].Text + "^" + LV[j].Items[k].SubItems[4].Text);
-                    //}
-                    //odt_ftp.Close();
+                    for (int i = 0; i <3; i++)
+                    {
+                        odt.Inputs["result_" + i.ToString()] = listView1.Items[ i].SubItems[22].Text;
+                        odt.Inputs["result_" + i.ToString() + "_1"] = listView1.Items[ i].SubItems[22].Text;
+                    }
 
 
-
+                   
                 }
 
                 catch
@@ -2646,14 +2671,12 @@ namespace _2022_Test
                     if (File.Exists(fd[0] + @"\" + f_name))
                     {
                         File.Delete(fd[0] + @"\" + f_name);
-                        //odt.Save4(fd[0] + @"\" + f_name, fd[2] + @"\" + date + "_seq_AC_M_chart.jpg", fd[2] + @"\" + date + "_seq_AC_Mc_chart.jpg", fd[2] + @"\" + date + "_seq_DC_chart.jpg", fd[2] + @"\" + date + "_gong_AC_M_chart.jpg", fd[2] + @"\" + date + "_gong_AC_Mc_chart.jpg", fd[2] + @"\" + date + "_gong_DC_chart.jpg", fd[2] + @"\" + date + "_gong_SIV_chart.jpg", fd[2] + @"\" + date + "_gong_Bo_chart.jpg", fd[1] + @"\" + date + "_Scope_U.jpg", fd[1] + @"\" + date + "_Scope_V.jpg", fd[1] + @"\" + date + "_Scope_W.jpg", fd[1] + @"\null_file.png", date);
-                        //odt.Save6(fd[0] + @"\" + f_name, fd[2] + @"\" + date + "_seq_AC_M_chart.jpg", fd[2] + @"\" + date + "_seq_AC_Mc_chart.jpg", fd[2] + @"\" + date + "_gong_AC_M_chart.jpg", fd[2] + @"\" + date + "_gong_AC_Mc_chart.jpg", fd[2] + @"\" + date + "_gong_SIV_chart.jpg", fd[2] + @"\" + date + "_gong_Bo_chart.jpg", fd[1] + @"\" + date + "_Scope_U.jpg", fd[1] + @"\" + date + "_Scope_V.jpg", fd[1] + @"\" + date + "_Scope_W.jpg", fd[1] + @"\null_file.png", date);
+
+                        odt.Save3(fd[0] + @"\" + f_name, cd[0] + @"\" + date + "_panto_chart.jpg", cd[0] + @"\null_file.png", date);
                     }
                     else
                     {
-                        //  //odt.Save(fd[0] + @"\" + FileName, fd[1] + @"\amplitude15A1.png", fd[1] + @"\amplitude15A2.png", fd[1] + @"\amplitude15A3.png", fd[1] + @"\amplitude16B1.png", fd[1] + @"\amplitude16B2.png", fd[1] + @"\amplitude16B3.png", fd[1] + @"\VMAX12A1.png", fd[1] + @"\VMAX12A2.png", fd[1] + @"\VMAX12A2.png", fd[1] + @"\VMAX13B1.png", fd[1] + @"\VMAX13B2.png", fd[1] + @"\VMAX13B3.png", fd[1] + @"\Phase18A1-B1.png", fd[1] + @"\Phase18A2-B2.png", fd[1] + @"\Phase18A3-B3.png");
-                        //odt.Save6(fd[0] + @"\" + f_name, fd[2] + @"\" + date + "_seq_AC_M_chart.jpg", fd[2] + @"\" + date + "_seq_AC_Mc_chart.jpg", fd[2] + @"\" + date + "_gong_AC_M_chart.jpg", fd[2] + @"\" + date + "_gong_AC_Mc_chart.jpg", fd[2] + @"\" + date + "_gong_SIV_chart.jpg", fd[2] + @"\" + date + "_gong_Bo_chart.jpg", fd[1] + @"\" + date + "_Scope_U.jpg", fd[1] + @"\" + date + "_Scope_V.jpg", fd[1] + @"\" + date + "_Scope_W.jpg", fd[1] + @"\null_file.png", date);
-
+                        odt.Save3(fd[0] + @"\" + f_name, cd[0] + @"\" + date + "_panto_chart.jpg", cd[0] + @"\null_file.png", date);
                     }
                     //}
                     MessageBox.Show("저장이 완료되었습니다.");

@@ -1,0 +1,716 @@
+C:\Users\l0109\Desktop\군자 제동실린더\2018NEW\bin\Debug\2022_GunJa.exe.config
+C:\Users\l0109\Desktop\군자 제동실린더\2018NEW\bin\Debug\2022_GunJa.exe
+C:\Users\l0109\Desktop\군자 제동실린더\2018NEW\bin\Debug\2022_GunJa.pdb
+C:\Users\l0109\Desktop\군자 제동실린더\2018NEW\bin\Debug\Cilador.Fody.dll
+C:\Users\l0109\Desktop\군자 제동실린더\2018NEW\bin\Debug\SunnyUI.Common.dll
+C:\Users\l0109\Desktop\군자 제동실린더\2018NEW\bin\Debug\SunnyUI.dll
+C:\Users\l0109\Desktop\군자 제동실린더\2018NEW\bin\Debug\Cilador.Fody.pdb
+C:\Users\l0109\Desktop\군자 제동실린더\2018NEW\bin\Debug\SunnyUI.xml
+C:\Users\l0109\Desktop\군자 제동실린더\2018NEW\obj\Debug\2022NEW.csproj.AssemblyReference.cache
+C:\Users\l0109\Desktop\군자 제동실린더\2018NEW\obj\Debug\2022NEW.csproj.SuggestedBindingRedirects.cache
+C:\Users\l0109\Desktop\군자 제동실린더\2018NEW\obj\Debug\_2022_GunJa.FTP_Form.resources
+C:\Users\l0109\Desktop\군자 제동실린더\2018NEW\obj\Debug\_2022_GunJa.MainForm.resources
+C:\Users\l0109\Desktop\군자 제동실린더\2018NEW\obj\Debug\_2022_GunJa.MessageForm.resources
+C:\Users\l0109\Desktop\군자 제동실린더\2018NEW\obj\Debug\_2022_GunJa.ReportForm.resources
+C:\Users\l0109\Desktop\군자 제동실린더\2018NEW\obj\Debug\_2022_GunJa.SettingForm.resources
+C:\Users\l0109\Desktop\군자 제동실린더\2018NEW\obj\Debug\_2022_GunJa.SelfTestForm.resources
+C:\Users\l0109\Desktop\군자 제동실린더\2018NEW\obj\Debug\_2022_GunJa.NSTEK.KSS_BTN.resources
+C:\Users\l0109\Desktop\군자 제동실린더\2018NEW\obj\Debug\_2022_GunJa.NSTEK.KSS_ListView.resources
+C:\Users\l0109\Desktop\군자 제동실린더\2018NEW\obj\Debug\_2022_GunJa.Properties.Resources.resources
+C:\Users\l0109\Desktop\군자 제동실린더\2018NEW\obj\Debug\_2022_GunJa.StartForm.resources
+C:\Users\l0109\Desktop\군자 제동실린더\2018NEW\obj\Debug\2022NEW.csproj.GenerateResource.cache
+C:\Users\l0109\Desktop\군자 제동실린더\2018NEW\obj\Debug\2022NEW.csproj.CoreCompileInputs.cache
+C:\Users\l0109\Desktop\군자 제동실린더\2018NEW\obj\Debug\2022NEW.csproj.CopyComplete
+C:\Users\l0109\Desktop\군자 제동실린더\2018NEW\obj\Debug\2022_GunJa.exe
+C:\Users\l0109\Desktop\군자 제동실린더\2018NEW\obj\Debug\2022_GunJa.pdb
+C:\Users\l0109\Desktop\군자 제동실린더\2022NEW\bin\Debug\2022_GunJa.exe.config
+C:\Users\l0109\Desktop\군자 제동실린더\2022NEW\bin\Debug\2022_GunJa.exe
+C:\Users\l0109\Desktop\군자 제동실린더\2022NEW\bin\Debug\2022_GunJa.pdb
+C:\Users\l0109\Desktop\군자 제동실린더\2022NEW\bin\Debug\Cilador.Fody.dll
+C:\Users\l0109\Desktop\군자 제동실린더\2022NEW\bin\Debug\SunnyUI.Common.dll
+C:\Users\l0109\Desktop\군자 제동실린더\2022NEW\bin\Debug\SunnyUI.dll
+C:\Users\l0109\Desktop\군자 제동실린더\2022NEW\bin\Debug\Cilador.Fody.pdb
+C:\Users\l0109\Desktop\군자 제동실린더\2022NEW\bin\Debug\SunnyUI.xml
+C:\Users\l0109\Desktop\군자 제동실린더\2022NEW\obj\Debug\2022NEW.csproj.AssemblyReference.cache
+C:\Users\l0109\Desktop\군자 제동실린더\2022NEW\obj\Debug\2022NEW.csproj.SuggestedBindingRedirects.cache
+C:\Users\l0109\Desktop\군자 제동실린더\2022NEW\obj\Debug\_2022_GunJa.FTP_Form.resources
+C:\Users\l0109\Desktop\군자 제동실린더\2022NEW\obj\Debug\_2022_GunJa.MainForm.resources
+C:\Users\l0109\Desktop\군자 제동실린더\2022NEW\obj\Debug\_2022_GunJa.ReportForm.resources
+C:\Users\l0109\Desktop\군자 제동실린더\2022NEW\obj\Debug\_2022_GunJa.SettingForm.resources
+C:\Users\l0109\Desktop\군자 제동실린더\2022NEW\obj\Debug\_2022_GunJa.SelfTestForm.resources
+C:\Users\l0109\Desktop\군자 제동실린더\2022NEW\obj\Debug\_2022_GunJa.NSTEK.KSS_BTN.resources
+C:\Users\l0109\Desktop\군자 제동실린더\2022NEW\obj\Debug\_2022_GunJa.NSTEK.KSS_ListView.resources
+C:\Users\l0109\Desktop\군자 제동실린더\2022NEW\obj\Debug\_2022_GunJa.Properties.Resources.resources
+C:\Users\l0109\Desktop\군자 제동실린더\2022NEW\obj\Debug\_2022_GunJa.StartForm.resources
+C:\Users\l0109\Desktop\군자 제동실린더\2022NEW\obj\Debug\2022NEW.csproj.GenerateResource.cache
+C:\Users\l0109\Desktop\군자 제동실린더\2022NEW\obj\Debug\2022NEW.csproj.CoreCompileInputs.cache
+C:\Users\l0109\Desktop\군자 제동실린더\2022NEW\obj\Debug\2022NEW.csproj.CopyComplete
+C:\Users\l0109\Desktop\군자 제동실린더\2022NEW\obj\Debug\2022_GunJa.exe
+C:\Users\l0109\Desktop\군자 제동실린더\2022NEW\obj\Debug\2022_GunJa.pdb
+C:\Users\l0109\Desktop\소사원시\2022NEW\bin\Debug\Cilador.Fody.dll
+C:\Users\l0109\Desktop\소사원시\2022NEW\bin\Debug\SunnyUI.Common.dll
+C:\Users\l0109\Desktop\소사원시\2022NEW\bin\Debug\SunnyUI.dll
+C:\Users\l0109\Desktop\소사원시\2022NEW\bin\Debug\Cilador.Fody.pdb
+C:\Users\l0109\Desktop\소사원시\2022NEW\obj\Debug\2022NEW.csproj.AssemblyReference.cache
+C:\Users\l0109\Desktop\소사원시\2022NEW\obj\Debug\2022NEW.csproj.SuggestedBindingRedirects.cache
+C:\Users\l0109\Desktop\소사원시\2022NEW\obj\Debug\2022NEW.csproj.GenerateResource.cache
+C:\Users\l0109\Desktop\소사원시\2022NEW\obj\Debug\2022NEW.csproj.CoreCompileInputs.cache
+C:\Users\l0109\Desktop\소사원시\2022NEW\obj\Debug\2022NEW.csproj.CopyComplete
+C:\Users\l0109\Desktop\소사원시\2022NEW\bin\Debug\_2022_Test.exe.config
+C:\Users\l0109\Desktop\소사원시\2022NEW\bin\Debug\_2022_Test.exe
+C:\Users\l0109\Desktop\소사원시\2022NEW\bin\Debug\_2022_Test.pdb
+C:\Users\l0109\Desktop\소사원시\2022NEW\obj\Debug\_2022_Test.FTP_Form.resources
+C:\Users\l0109\Desktop\소사원시\2022NEW\obj\Debug\_2022_Test.MainForm.resources
+C:\Users\l0109\Desktop\소사원시\2022NEW\obj\Debug\_2022_Test.ReportForm.resources
+C:\Users\l0109\Desktop\소사원시\2022NEW\obj\Debug\_2022_Test.SettingForm.resources
+C:\Users\l0109\Desktop\소사원시\2022NEW\obj\Debug\_2022_Test.SelfTestForm.resources
+C:\Users\l0109\Desktop\소사원시\2022NEW\obj\Debug\_2022_Test.NSTEK.KSS_BTN.resources
+C:\Users\l0109\Desktop\소사원시\2022NEW\obj\Debug\_2022_Test.NSTEK.KSS_ListView.resources
+C:\Users\l0109\Desktop\소사원시\2022NEW\obj\Debug\_2022_Test.Properties.Resources.resources
+C:\Users\l0109\Desktop\소사원시\2022NEW\obj\Debug\_2022_Test.StartForm.resources
+C:\Users\l0109\Desktop\소사원시\2022NEW\obj\Debug\_2022_Test.exe
+C:\Users\l0109\Desktop\소사원시\2022NEW\obj\Debug\_2022_Test.pdb
+C:\Users\l0109\Desktop\소사원시\2022NEW\obj\Debug\_2022_Test.EditForm.resources
+C:\Users\l0109\Desktop\소사원시\2022NEW\bin\Debug\Costura.dll
+C:\Users\l0109\Desktop\소사원시\2022NEW\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\l0109\Desktop\소사원시\2022NEW\bin\Debug\Costura.pdb
+C:\Users\l0109\Desktop\소사원시\2022NEW\bin\Debug\Costura.xml
+C:\Users\l0109\Desktop\소사원시\2022NEW\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\l0109\Desktop\소사원시\2022NEW\obj\Debug\2022NEW.csproj.Fody.CopyLocal.cache
+C:\Users\l0109\Desktop\소사원시\2022NEW\obj\Debug\2022NEW.csproj.Fody.RuntimeCopyLocal.cache
+C:\Users\l0109\Desktop\소사원시\2022NEW\obj\Debug\2022NEW.csproj.ResolveComReference.cache
+C:\Users\user\Desktop\방송장치 시험기(중정비)\2022NEW\bin\Debug\_2022_Test.exe.config
+C:\Users\user\Desktop\방송장치 시험기(중정비)\2022NEW\bin\Debug\_2022_Test.exe
+C:\Users\user\Desktop\방송장치 시험기(중정비)\2022NEW\bin\Debug\_2022_Test.pdb
+C:\Users\user\Desktop\방송장치 시험기(중정비)\2022NEW\bin\Debug\Cilador.Fody.dll
+C:\Users\user\Desktop\방송장치 시험기(중정비)\2022NEW\bin\Debug\Costura.dll
+C:\Users\user\Desktop\방송장치 시험기(중정비)\2022NEW\bin\Debug\SunnyUI.Common.dll
+C:\Users\user\Desktop\방송장치 시험기(중정비)\2022NEW\bin\Debug\SunnyUI.dll
+C:\Users\user\Desktop\방송장치 시험기(중정비)\2022NEW\bin\Debug\Cilador.Fody.pdb
+C:\Users\user\Desktop\방송장치 시험기(중정비)\2022NEW\bin\Debug\Costura.pdb
+C:\Users\user\Desktop\방송장치 시험기(중정비)\2022NEW\bin\Debug\Costura.xml
+C:\Users\user\Desktop\방송장치 시험기(중정비)\2022NEW\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\user\Desktop\방송장치 시험기(중정비)\2022NEW\obj\Debug\2022NEW.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\방송장치 시험기(중정비)\2022NEW\obj\Debug\2022NEW.csproj.SuggestedBindingRedirects.cache
+C:\Users\user\Desktop\방송장치 시험기(중정비)\2022NEW\obj\Debug\2022NEW.csproj.ResolveComReference.cache
+C:\Users\user\Desktop\방송장치 시험기(중정비)\2022NEW\obj\Debug\_2022_Test.EditForm.resources
+C:\Users\user\Desktop\방송장치 시험기(중정비)\2022NEW\obj\Debug\_2022_Test.FTP_Form.resources
+C:\Users\user\Desktop\방송장치 시험기(중정비)\2022NEW\obj\Debug\_2022_Test.MainForm.resources
+C:\Users\user\Desktop\방송장치 시험기(중정비)\2022NEW\obj\Debug\_2022_Test.ReportForm.resources
+C:\Users\user\Desktop\방송장치 시험기(중정비)\2022NEW\obj\Debug\_2022_Test.SettingForm.resources
+C:\Users\user\Desktop\방송장치 시험기(중정비)\2022NEW\obj\Debug\_2022_Test.SelfTestForm.resources
+C:\Users\user\Desktop\방송장치 시험기(중정비)\2022NEW\obj\Debug\_2022_Test.NSTEK.KSS_BTN.resources
+C:\Users\user\Desktop\방송장치 시험기(중정비)\2022NEW\obj\Debug\_2022_Test.NSTEK.KSS_ListView.resources
+C:\Users\user\Desktop\방송장치 시험기(중정비)\2022NEW\obj\Debug\_2022_Test.Properties.Resources.resources
+C:\Users\user\Desktop\방송장치 시험기(중정비)\2022NEW\obj\Debug\_2022_Test.StartForm.resources
+C:\Users\user\Desktop\방송장치 시험기(중정비)\2022NEW\obj\Debug\2022NEW.csproj.GenerateResource.cache
+C:\Users\user\Desktop\방송장치 시험기(중정비)\2022NEW\obj\Debug\2022NEW.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\방송장치 시험기(중정비)\2022NEW\obj\Debug\2022NEW.csproj.Fody.CopyLocal.cache
+C:\Users\user\Desktop\방송장치 시험기(중정비)\2022NEW\obj\Debug\2022NEW.csproj.Fody.RuntimeCopyLocal.cache
+C:\Users\user\Desktop\방송장치 시험기(중정비)\2022NEW\obj\Debug\2022NEW.csproj.CopyComplete
+C:\Users\user\Desktop\방송장치 시험기(중정비)\2022NEW\obj\Debug\_2022_Test.exe
+C:\Users\user\Desktop\방송장치 시험기(중정비)\2022NEW\obj\Debug\_2022_Test.pdb
+C:\Users\user\Documents\Visual Studio 2022\project\방송장치 시험기(중정비)\2022NEW\bin\Debug\_2022_Test.exe.config
+C:\Users\user\Documents\Visual Studio 2022\project\방송장치 시험기(중정비)\2022NEW\bin\Debug\_2022_Test.exe
+C:\Users\user\Documents\Visual Studio 2022\project\방송장치 시험기(중정비)\2022NEW\bin\Debug\_2022_Test.pdb
+C:\Users\user\Documents\Visual Studio 2022\project\방송장치 시험기(중정비)\2022NEW\bin\Debug\Cilador.Fody.dll
+C:\Users\user\Documents\Visual Studio 2022\project\방송장치 시험기(중정비)\2022NEW\bin\Debug\Costura.dll
+C:\Users\user\Documents\Visual Studio 2022\project\방송장치 시험기(중정비)\2022NEW\bin\Debug\SunnyUI.Common.dll
+C:\Users\user\Documents\Visual Studio 2022\project\방송장치 시험기(중정비)\2022NEW\bin\Debug\SunnyUI.dll
+C:\Users\user\Documents\Visual Studio 2022\project\방송장치 시험기(중정비)\2022NEW\bin\Debug\Cilador.Fody.pdb
+C:\Users\user\Documents\Visual Studio 2022\project\방송장치 시험기(중정비)\2022NEW\bin\Debug\Costura.pdb
+C:\Users\user\Documents\Visual Studio 2022\project\방송장치 시험기(중정비)\2022NEW\bin\Debug\Costura.xml
+C:\Users\user\Documents\Visual Studio 2022\project\방송장치 시험기(중정비)\2022NEW\obj\Debug\2022NEW.csproj.AssemblyReference.cache
+C:\Users\user\Documents\Visual Studio 2022\project\방송장치 시험기(중정비)\2022NEW\obj\Debug\2022NEW.csproj.SuggestedBindingRedirects.cache
+C:\Users\user\Documents\Visual Studio 2022\project\방송장치 시험기(중정비)\2022NEW\obj\Debug\2022NEW.csproj.ResolveComReference.cache
+C:\Users\user\Documents\Visual Studio 2022\project\방송장치 시험기(중정비)\2022NEW\obj\Debug\_2022_Test.EditForm.resources
+C:\Users\user\Documents\Visual Studio 2022\project\방송장치 시험기(중정비)\2022NEW\obj\Debug\_2022_Test.FTP_Form.resources
+C:\Users\user\Documents\Visual Studio 2022\project\방송장치 시험기(중정비)\2022NEW\obj\Debug\_2022_Test.MainForm.resources
+C:\Users\user\Documents\Visual Studio 2022\project\방송장치 시험기(중정비)\2022NEW\obj\Debug\_2022_Test.ReportForm.resources
+C:\Users\user\Documents\Visual Studio 2022\project\방송장치 시험기(중정비)\2022NEW\obj\Debug\_2022_Test.SettingForm.resources
+C:\Users\user\Documents\Visual Studio 2022\project\방송장치 시험기(중정비)\2022NEW\obj\Debug\_2022_Test.SelfTestForm.resources
+C:\Users\user\Documents\Visual Studio 2022\project\방송장치 시험기(중정비)\2022NEW\obj\Debug\_2022_Test.NSTEK.KSS_BTN.resources
+C:\Users\user\Documents\Visual Studio 2022\project\방송장치 시험기(중정비)\2022NEW\obj\Debug\_2022_Test.NSTEK.KSS_ListView.resources
+C:\Users\user\Documents\Visual Studio 2022\project\방송장치 시험기(중정비)\2022NEW\obj\Debug\_2022_Test.Properties.Resources.resources
+C:\Users\user\Documents\Visual Studio 2022\project\방송장치 시험기(중정비)\2022NEW\obj\Debug\_2022_Test.StartForm.resources
+C:\Users\user\Documents\Visual Studio 2022\project\방송장치 시험기(중정비)\2022NEW\obj\Debug\2022NEW.csproj.GenerateResource.cache
+C:\Users\user\Documents\Visual Studio 2022\project\방송장치 시험기(중정비)\2022NEW\obj\Debug\2022NEW.csproj.CoreCompileInputs.cache
+C:\Users\user\Documents\Visual Studio 2022\project\방송장치 시험기(중정비)\2022NEW\obj\Debug\2022NEW.csproj.Fody.CopyLocal.cache
+C:\Users\user\Documents\Visual Studio 2022\project\방송장치 시험기(중정비)\2022NEW\obj\Debug\2022NEW.csproj.Fody.RuntimeCopyLocal.cache
+C:\Users\user\Documents\Visual Studio 2022\project\방송장치 시험기(중정비)\2022NEW\obj\Debug\2022NEW.csproj.CopyComplete
+C:\Users\user\Documents\Visual Studio 2022\project\방송장치 시험기(중정비)\2022NEW\obj\Debug\_2022_Test.exe
+C:\Users\user\Documents\Visual Studio 2022\project\방송장치 시험기(중정비)\2022NEW\obj\Debug\_2022_Test.pdb
+C:\Users\user\Documents\Visual Studio 2022\project\방송장치 시험기(중정비)\2022NEW\bin\Debug\AudioPrecision.API.dll
+C:\Users\user\Documents\Visual Studio 2022\project\방송장치 시험기(중정비)\2022NEW\bin\Debug\AudioPrecision.API.xml
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\방송장치 시험기(중정비)\2022NEW\obj\Debug\2022NEW.csproj.AssemblyReference.cache
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\방송장치 시험기(중정비)\2022NEW\obj\Debug\2022NEW.csproj.SuggestedBindingRedirects.cache
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\방송장치 시험기(중정비)\2022NEW\obj\Debug\2022NEW.csproj.ResolveComReference.cache
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\방송장치 시험기(중정비)\2022NEW\obj\Debug\_2022_Test.EditForm.resources
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\방송장치 시험기(중정비)\2022NEW\obj\Debug\_2022_Test.FTP_Form.resources
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\방송장치 시험기(중정비)\2022NEW\obj\Debug\_2022_Test.MainForm.resources
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\방송장치 시험기(중정비)\2022NEW\obj\Debug\_2022_Test.ReportForm.resources
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\방송장치 시험기(중정비)\2022NEW\obj\Debug\_2022_Test.SettingForm.resources
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\방송장치 시험기(중정비)\2022NEW\obj\Debug\_2022_Test.SelfTestForm.resources
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\방송장치 시험기(중정비)\2022NEW\obj\Debug\_2022_Test.NSTEK.KSS_BTN.resources
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\방송장치 시험기(중정비)\2022NEW\obj\Debug\_2022_Test.NSTEK.KSS_ListView.resources
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\방송장치 시험기(중정비)\2022NEW\obj\Debug\_2022_Test.Properties.Resources.resources
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\방송장치 시험기(중정비)\2022NEW\obj\Debug\_2022_Test.StartForm.resources
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\방송장치 시험기(중정비)\2022NEW\obj\Debug\2022NEW.csproj.GenerateResource.cache
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\방송장치 시험기(중정비)\2022NEW\obj\Debug\2022NEW.csproj.CoreCompileInputs.cache
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\방송장치 시험기(중정비)\2022NEW\obj\Debug\_2022_Test.exe
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\방송장치 시험기(중정비)\2022NEW\obj\Debug\_2022_Test.pdb
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\방송장치 시험기(중정비)\2022NEW\bin\Debug\_2022_Test.exe.config
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\방송장치 시험기(중정비)\2022NEW\bin\Debug\_2022_Test.exe
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\방송장치 시험기(중정비)\2022NEW\bin\Debug\_2022_Test.pdb
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\방송장치 시험기(중정비)\2022NEW\bin\Debug\Cilador.Fody.dll
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\방송장치 시험기(중정비)\2022NEW\bin\Debug\Costura.dll
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\방송장치 시험기(중정비)\2022NEW\bin\Debug\SunnyUI.Common.dll
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\방송장치 시험기(중정비)\2022NEW\bin\Debug\SunnyUI.dll
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\방송장치 시험기(중정비)\2022NEW\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\방송장치 시험기(중정비)\2022NEW\bin\Debug\AudioPrecision.API.xml
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\방송장치 시험기(중정비)\2022NEW\bin\Debug\Cilador.Fody.pdb
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\방송장치 시험기(중정비)\2022NEW\bin\Debug\Costura.pdb
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\방송장치 시험기(중정비)\2022NEW\bin\Debug\Costura.xml
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\방송장치 시험기(중정비)\2022NEW\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\방송장치 시험기(중정비)\2022NEW\obj\Debug\2022NEW.csproj.Fody.CopyLocal.cache
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\방송장치 시험기(중정비)\2022NEW\obj\Debug\2022NEW.csproj.Fody.RuntimeCopyLocal.cache
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\방송장치 시험기(중정비)\2022NEW\obj\Debug\2022NEW.csproj.CopyComplete
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\방송장치 시험기(중정비) _SIV로 수정\2022NEW\obj\Debug\2022NEW.csproj.AssemblyReference.cache
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\방송장치 시험기(중정비) _SIV로 수정\2022NEW\obj\Debug\2022NEW.csproj.SuggestedBindingRedirects.cache
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\방송장치 시험기(중정비) _SIV로 수정\2022NEW\obj\Debug\2022NEW.csproj.ResolveComReference.cache
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\방송장치 시험기(중정비) _SIV로 수정\2022NEW\obj\Debug\_2022_Test.EditForm.resources
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\방송장치 시험기(중정비) _SIV로 수정\2022NEW\obj\Debug\_2022_Test.FTP_Form.resources
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\방송장치 시험기(중정비) _SIV로 수정\2022NEW\obj\Debug\_2022_Test.MainForm.resources
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\방송장치 시험기(중정비) _SIV로 수정\2022NEW\obj\Debug\_2022_Test.ReportForm.resources
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\방송장치 시험기(중정비) _SIV로 수정\2022NEW\obj\Debug\_2022_Test.SettingForm.resources
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\방송장치 시험기(중정비) _SIV로 수정\2022NEW\obj\Debug\_2022_Test.SelfTestForm.resources
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\방송장치 시험기(중정비) _SIV로 수정\2022NEW\obj\Debug\_2022_Test.NSTEK.KSS_BTN.resources
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\방송장치 시험기(중정비) _SIV로 수정\2022NEW\obj\Debug\_2022_Test.NSTEK.KSS_ListView.resources
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\방송장치 시험기(중정비) _SIV로 수정\2022NEW\obj\Debug\_2022_Test.Properties.Resources.resources
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\방송장치 시험기(중정비) _SIV로 수정\2022NEW\obj\Debug\_2022_Test.StartForm.resources
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\방송장치 시험기(중정비) _SIV로 수정\2022NEW\obj\Debug\2022NEW.csproj.GenerateResource.cache
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\방송장치 시험기(중정비) _SIV로 수정\2022NEW\obj\Debug\2022NEW.csproj.CoreCompileInputs.cache
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\방송장치 시험기(중정비) _SIV로 수정\2022NEW\obj\Debug\_2022_Test.exe
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\방송장치 시험기(중정비) _SIV로 수정\2022NEW\obj\Debug\_2022_Test.pdb
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\방송장치 시험기(중정비) _SIV로 수정\2022NEW\bin\Debug\_2022_Test.exe.config
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\방송장치 시험기(중정비) _SIV로 수정\2022NEW\bin\Debug\_2022_Test.exe
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\방송장치 시험기(중정비) _SIV로 수정\2022NEW\bin\Debug\_2022_Test.pdb
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\방송장치 시험기(중정비) _SIV로 수정\2022NEW\bin\Debug\Cilador.Fody.dll
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\방송장치 시험기(중정비) _SIV로 수정\2022NEW\bin\Debug\Costura.dll
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\방송장치 시험기(중정비) _SIV로 수정\2022NEW\bin\Debug\SunnyUI.Common.dll
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\방송장치 시험기(중정비) _SIV로 수정\2022NEW\bin\Debug\SunnyUI.dll
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\방송장치 시험기(중정비) _SIV로 수정\2022NEW\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\방송장치 시험기(중정비) _SIV로 수정\2022NEW\bin\Debug\AudioPrecision.API.xml
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\방송장치 시험기(중정비) _SIV로 수정\2022NEW\bin\Debug\Cilador.Fody.pdb
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\방송장치 시험기(중정비) _SIV로 수정\2022NEW\bin\Debug\Costura.pdb
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\방송장치 시험기(중정비) _SIV로 수정\2022NEW\bin\Debug\Costura.xml
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\방송장치 시험기(중정비) _SIV로 수정\2022NEW\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\방송장치 시험기(중정비) _SIV로 수정\2022NEW\obj\Debug\2022NEW.csproj.Fody.CopyLocal.cache
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\방송장치 시험기(중정비) _SIV로 수정\2022NEW\obj\Debug\2022NEW.csproj.Fody.RuntimeCopyLocal.cache
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\방송장치 시험기(중정비) _SIV로 수정\2022NEW\obj\Debug\2022NEW.csproj.CopyComplete
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\방송장치 시험기(중정비) _SIV로 수정\2022NEW\obj\Debug\_2022_Test.PLC_Test_Form.resources
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\방송장치 시험기(중정비) _SIV로 수정\2022NEW\obj\Debug\_2022_Test.init_Tester_info_Form.resources
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\대곡소사 SIV 시험기(중정비)\2022NEW\bin\Debug\_2022_Test.exe.config
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\대곡소사 SIV 시험기(중정비)\2022NEW\bin\Debug\_2022_Test.exe
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\대곡소사 SIV 시험기(중정비)\2022NEW\bin\Debug\_2022_Test.pdb
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\대곡소사 SIV 시험기(중정비)\2022NEW\bin\Debug\Cilador.Fody.dll
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\대곡소사 SIV 시험기(중정비)\2022NEW\bin\Debug\Costura.dll
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\대곡소사 SIV 시험기(중정비)\2022NEW\bin\Debug\SunnyUI.Common.dll
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\대곡소사 SIV 시험기(중정비)\2022NEW\bin\Debug\SunnyUI.dll
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\대곡소사 SIV 시험기(중정비)\2022NEW\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\대곡소사 SIV 시험기(중정비)\2022NEW\bin\Debug\AudioPrecision.API.xml
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\대곡소사 SIV 시험기(중정비)\2022NEW\bin\Debug\Cilador.Fody.pdb
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\대곡소사 SIV 시험기(중정비)\2022NEW\bin\Debug\Costura.pdb
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\대곡소사 SIV 시험기(중정비)\2022NEW\bin\Debug\Costura.xml
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\대곡소사 SIV 시험기(중정비)\2022NEW\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\대곡소사 SIV 시험기(중정비)\2022NEW\obj\Debug\2022NEW.csproj.AssemblyReference.cache
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\대곡소사 SIV 시험기(중정비)\2022NEW\obj\Debug\2022NEW.csproj.SuggestedBindingRedirects.cache
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\대곡소사 SIV 시험기(중정비)\2022NEW\obj\Debug\2022NEW.csproj.ResolveComReference.cache
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\대곡소사 SIV 시험기(중정비)\2022NEW\obj\Debug\_2022_Test.EditForm.resources
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\대곡소사 SIV 시험기(중정비)\2022NEW\obj\Debug\_2022_Test.FTP_Form.resources
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\대곡소사 SIV 시험기(중정비)\2022NEW\obj\Debug\_2022_Test.MainForm.resources
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\대곡소사 SIV 시험기(중정비)\2022NEW\obj\Debug\_2022_Test.ReportForm.resources
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\대곡소사 SIV 시험기(중정비)\2022NEW\obj\Debug\_2022_Test.SettingForm.resources
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\대곡소사 SIV 시험기(중정비)\2022NEW\obj\Debug\_2022_Test.SelfTestForm.resources
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\대곡소사 SIV 시험기(중정비)\2022NEW\obj\Debug\_2022_Test.NSTEK.KSS_BTN.resources
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\대곡소사 SIV 시험기(중정비)\2022NEW\obj\Debug\_2022_Test.NSTEK.KSS_ListView.resources
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\대곡소사 SIV 시험기(중정비)\2022NEW\obj\Debug\_2022_Test.Properties.Resources.resources
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\대곡소사 SIV 시험기(중정비)\2022NEW\obj\Debug\_2022_Test.StartForm.resources
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\대곡소사 SIV 시험기(중정비)\2022NEW\obj\Debug\_2022_Test.init_Tester_info_Form.resources
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\대곡소사 SIV 시험기(중정비)\2022NEW\obj\Debug\_2022_Test.PLC_Test_Form.resources
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\대곡소사 SIV 시험기(중정비)\2022NEW\obj\Debug\2022NEW.csproj.GenerateResource.cache
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\대곡소사 SIV 시험기(중정비)\2022NEW\obj\Debug\2022NEW.csproj.CoreCompileInputs.cache
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\대곡소사 SIV 시험기(중정비)\2022NEW\obj\Debug\2022NEW.csproj.Fody.CopyLocal.cache
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\대곡소사 SIV 시험기(중정비)\2022NEW\obj\Debug\2022NEW.csproj.Fody.RuntimeCopyLocal.cache
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\대곡소사 SIV 시험기(중정비)\2022NEW\obj\Debug\2022NEW.csproj.CopyComplete
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\대곡소사 SIV 시험기(중정비)\2022NEW\obj\Debug\_2022_Test.exe
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\대곡소사 SIV 시험기(중정비)\2022NEW\obj\Debug\_2022_Test.pdb
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\2023_신정차량기지\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\2022NEW.csproj.AssemblyReference.cache
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\2023_신정차량기지\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\2022NEW.csproj.SuggestedBindingRedirects.cache
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\2023_신정차량기지\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\2022NEW.csproj.ResolveComReference.cache
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\2023_신정차량기지\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\_2022_Test.EditForm.resources
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\2023_신정차량기지\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\_2022_Test.FTP_Form.resources
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\2023_신정차량기지\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\_2022_Test.Select_TEST_Form.resources
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\2023_신정차량기지\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\_2022_Test.MainForm.resources
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\2023_신정차량기지\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\_2022_Test.ReportForm.resources
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\2023_신정차량기지\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\_2022_Test.SettingForm.resources
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\2023_신정차량기지\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\_2022_Test.SelfTestForm.resources
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\2023_신정차량기지\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\_2022_Test.NSTEK.KSS_BTN.resources
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\2023_신정차량기지\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\_2022_Test.NSTEK.KSS_ListView.resources
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\2023_신정차량기지\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\_2022_Test.Properties.Resources.resources
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\2023_신정차량기지\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\_2022_Test.StartForm.resources
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\2023_신정차량기지\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\_2022_Test.init_Tester_info_Form.resources
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\2023_신정차량기지\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\_2022_Test.PLC_Test_Form.resources
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\2023_신정차량기지\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\2022NEW.csproj.GenerateResource.cache
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\2023_신정차량기지\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\2022NEW.csproj.CoreCompileInputs.cache
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\2023_신정차량기지\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\_2022_Test.exe
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\2023_신정차량기지\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\_2022_Test.pdb
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\2023_신정차량기지\VVVF 인버터 시험기(2023)\2022NEW\bin\Debug\_2022_Test.exe.config
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\2023_신정차량기지\VVVF 인버터 시험기(2023)\2022NEW\bin\Debug\_2022_Test.exe
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\2023_신정차량기지\VVVF 인버터 시험기(2023)\2022NEW\bin\Debug\_2022_Test.pdb
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\2023_신정차량기지\VVVF 인버터 시험기(2023)\2022NEW\bin\Debug\Cilador.Fody.dll
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\2023_신정차량기지\VVVF 인버터 시험기(2023)\2022NEW\bin\Debug\Costura.dll
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\2023_신정차량기지\VVVF 인버터 시험기(2023)\2022NEW\bin\Debug\SunnyUI.Common.dll
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\2023_신정차량기지\VVVF 인버터 시험기(2023)\2022NEW\bin\Debug\SunnyUI.dll
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\2023_신정차량기지\VVVF 인버터 시험기(2023)\2022NEW\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\2023_신정차량기지\VVVF 인버터 시험기(2023)\2022NEW\bin\Debug\Cilador.Fody.pdb
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\2023_신정차량기지\VVVF 인버터 시험기(2023)\2022NEW\bin\Debug\Costura.pdb
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\2023_신정차량기지\VVVF 인버터 시험기(2023)\2022NEW\bin\Debug\Costura.xml
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\2023_신정차량기지\VVVF 인버터 시험기(2023)\2022NEW\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\2023_신정차량기지\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\2022NEW.csproj.Fody.CopyLocal.cache
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\2023_신정차량기지\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\2022NEW.csproj.Fody.RuntimeCopyLocal.cache
+C:\Users\jhpar\OneDrive\바탕 화면\시험기\2023_신정차량기지\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\2022NEW.csproj.CopyComplete
+F:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\bin\Debug\_2022_Test.exe.config
+F:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\bin\Debug\_2022_Test.exe
+F:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\bin\Debug\_2022_Test.pdb
+F:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\bin\Debug\Cilador.Fody.dll
+F:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\bin\Debug\Costura.dll
+F:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\bin\Debug\SunnyUI.Common.dll
+F:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\bin\Debug\SunnyUI.dll
+F:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+F:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\bin\Debug\Cilador.Fody.pdb
+F:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\bin\Debug\Costura.pdb
+F:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\bin\Debug\Costura.xml
+F:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+F:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\2022NEW.csproj.AssemblyReference.cache
+F:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\2022NEW.csproj.ResolveComReference.cache
+F:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\_2022_Test.EditForm.resources
+F:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\_2022_Test.FTP_Form.resources
+F:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\_2022_Test.Select_TEST_Form.resources
+F:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\_2022_Test.MainForm.resources
+F:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\_2022_Test.ReportForm.resources
+F:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\_2022_Test.SettingForm.resources
+F:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\_2022_Test.SelfTestForm.resources
+F:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\_2022_Test.Properties.Resources.resources
+F:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\_2022_Test.StartForm.resources
+F:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\_2022_Test.init_Tester_info_Form.resources
+F:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\_2022_Test.PLC_Test_Form.resources
+F:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\2022NEW.csproj.GenerateResource.cache
+F:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\2022NEW.csproj.CoreCompileInputs.cache
+F:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\2022NEW.csproj.Fody.CopyLocal.cache
+F:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\2022NEW.csproj.Fody.RuntimeCopyLocal.cache
+F:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\2022NEW.csproj.CopyComplete
+F:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\_2022_Test.exe
+F:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\_2022_Test.pdb
+F:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\_2022_Test.PortSetting_Form.resources
+F:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\_2022_Test.NSTEK.Kss_lib.KSS_BTN.resources
+F:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\_2022_Test.NSTEK.Kss_lib.KSS_ListView.resources
+F:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\bin\Debug\dotNetLucidIo.dll
+F:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\bin\Debug\dotNetLucidIo.xml
+G:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\bin\Debug\_2022_Test.exe.config
+G:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\bin\Debug\_2022_Test.exe
+G:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\bin\Debug\_2022_Test.pdb
+G:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\bin\Debug\Cilador.Fody.dll
+G:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\bin\Debug\Costura.dll
+G:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\bin\Debug\dotNetLucidIo.dll
+G:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\bin\Debug\SunnyUI.Common.dll
+G:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\bin\Debug\SunnyUI.dll
+G:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+G:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\bin\Debug\Cilador.Fody.pdb
+G:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\bin\Debug\Costura.pdb
+G:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\bin\Debug\Costura.xml
+G:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\bin\Debug\dotNetLucidIo.xml
+G:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+G:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\2022NEW.csproj.AssemblyReference.cache
+G:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\2022NEW.csproj.ResolveComReference.cache
+G:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\_2022_Test.EditForm.resources
+G:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\_2022_Test.FTP_Form.resources
+G:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\_2022_Test.Select_TEST_Form.resources
+G:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\_2022_Test.PortSetting_Form.resources
+G:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\_2022_Test.MainForm.resources
+G:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\_2022_Test.ReportForm.resources
+G:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\_2022_Test.SettingForm.resources
+G:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\_2022_Test.SelfTestForm.resources
+G:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\_2022_Test.NSTEK.Kss_lib.KSS_BTN.resources
+G:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\_2022_Test.NSTEK.Kss_lib.KSS_ListView.resources
+G:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\_2022_Test.Properties.Resources.resources
+G:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\_2022_Test.StartForm.resources
+G:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\_2022_Test.init_Tester_info_Form.resources
+G:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\_2022_Test.PLC_Test_Form.resources
+G:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\2022NEW.csproj.GenerateResource.cache
+G:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\2022NEW.csproj.CoreCompileInputs.cache
+G:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\2022NEW.csproj.Fody.CopyLocal.cache
+G:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\2022NEW.csproj.Fody.RuntimeCopyLocal.cache
+G:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\2022NEW.csproj.CopyComplete
+G:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\_2022_Test.exe
+G:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\_2022_Test.pdb
+E:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\bin\Debug\_2022_Test.exe.config
+E:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\bin\Debug\_2022_Test.exe
+E:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\bin\Debug\_2022_Test.pdb
+E:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\bin\Debug\Cilador.Fody.dll
+E:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\bin\Debug\Costura.dll
+E:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\bin\Debug\dotNetLucidIo.dll
+E:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\bin\Debug\SunnyUI.Common.dll
+E:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\bin\Debug\SunnyUI.dll
+E:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+E:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\bin\Debug\Cilador.Fody.pdb
+E:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\bin\Debug\Costura.pdb
+E:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\bin\Debug\Costura.xml
+E:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\bin\Debug\dotNetLucidIo.xml
+E:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+E:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\2022NEW.csproj.AssemblyReference.cache
+E:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\2022NEW.csproj.SuggestedBindingRedirects.cache
+E:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\2022NEW.csproj.ResolveComReference.cache
+E:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\_2022_Test.EditForm.resources
+E:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\_2022_Test.FTP_Form.resources
+E:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\_2022_Test.Select_TEST_Form.resources
+E:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\_2022_Test.PortSetting_Form.resources
+E:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\_2022_Test.MainForm.resources
+E:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\_2022_Test.ReportForm.resources
+E:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\_2022_Test.SettingForm.resources
+E:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\_2022_Test.SelfTestForm.resources
+E:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\_2022_Test.NSTEK.Kss_lib.KSS_BTN.resources
+E:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\_2022_Test.NSTEK.Kss_lib.KSS_ListView.resources
+E:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\_2022_Test.Properties.Resources.resources
+E:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\_2022_Test.StartForm.resources
+E:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\_2022_Test.init_Tester_info_Form.resources
+E:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\_2022_Test.PLC_Test_Form.resources
+E:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\2022NEW.csproj.GenerateResource.cache
+E:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\2022NEW.csproj.CoreCompileInputs.cache
+E:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\2022NEW.csproj.Fody.CopyLocal.cache
+E:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\2022NEW.csproj.Fody.RuntimeCopyLocal.cache
+E:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\2022NEW.csproj.CopyComplete
+E:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\_2022_Test.exe
+E:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\_2022_Test.pdb
+H:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\2022NEW.csproj.AssemblyReference.cache
+H:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\2022NEW.csproj.ResolveComReference.cache
+H:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\_2022_Test.EditForm.resources
+H:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\_2022_Test.FTP_Form.resources
+H:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\_2022_Test.Select_TEST_Form.resources
+H:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\_2022_Test.PortSetting_Form.resources
+H:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\_2022_Test.MainForm_Rotem.resources
+H:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\_2022_Test.MainForm.resources
+H:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\_2022_Test.ReportForm.resources
+H:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\_2022_Test.SettingForm.resources
+H:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\_2022_Test.SelfTestForm.resources
+H:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\_2022_Test.NSTEK.Kss_lib.KSS_BTN.resources
+H:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\_2022_Test.NSTEK.Kss_lib.KSS_ListView.resources
+H:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\_2022_Test.Properties.Resources.resources
+H:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\_2022_Test.StartForm.resources
+H:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\_2022_Test.init_Tester_info_Form.resources
+H:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\_2022_Test.PLC_Test_Form.resources
+H:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\2022NEW.csproj.GenerateResource.cache
+H:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\2022NEW.csproj.CoreCompileInputs.cache
+H:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\_2022_Test.exe
+H:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\_2022_Test.pdb
+H:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\bin\Debug\_2022_Test.exe.config
+H:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\bin\Debug\_2022_Test.exe
+H:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\bin\Debug\_2022_Test.pdb
+H:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\bin\Debug\Cilador.Fody.dll
+H:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\bin\Debug\Costura.dll
+H:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\bin\Debug\dotNetLucidIo.dll
+H:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\bin\Debug\SunnyUI.Common.dll
+H:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\bin\Debug\SunnyUI.dll
+H:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+H:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\bin\Debug\Cilador.Fody.pdb
+H:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\bin\Debug\Costura.pdb
+H:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\bin\Debug\Costura.xml
+H:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\bin\Debug\dotNetLucidIo.xml
+H:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+H:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\2022NEW.csproj.Fody.CopyLocal.cache
+H:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\2022NEW.csproj.Fody.RuntimeCopyLocal.cache
+H:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\2022NEW.csproj.CopyComplete
+F:\신정차량기지 (2023) 시험기\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\_2022_Test.MainForm_Rotem.resources
+C:\Users\jhpar\Desktop\시험기\제안서용\화재감지기시험기\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\2022NEW.csproj.AssemblyReference.cache
+C:\Users\jhpar\Desktop\시험기\제안서용\화재감지기시험기\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\2022NEW.csproj.ResolveComReference.cache
+C:\Users\jhpar\Desktop\시험기\제안서용\화재감지기시험기\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\_2022_Test.EditForm.resources
+C:\Users\jhpar\Desktop\시험기\제안서용\화재감지기시험기\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\_2022_Test.FTP_Form.resources
+C:\Users\jhpar\Desktop\시험기\제안서용\화재감지기시험기\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\_2022_Test.Select_TEST_Form.resources
+C:\Users\jhpar\Desktop\시험기\제안서용\화재감지기시험기\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\_2022_Test.PortSetting_Form.resources
+C:\Users\jhpar\Desktop\시험기\제안서용\화재감지기시험기\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\_2022_Test.MainForm_Rotem.resources
+C:\Users\jhpar\Desktop\시험기\제안서용\화재감지기시험기\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\_2022_Test.MainForm.resources
+C:\Users\jhpar\Desktop\시험기\제안서용\화재감지기시험기\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\_2022_Test.ReportForm.resources
+C:\Users\jhpar\Desktop\시험기\제안서용\화재감지기시험기\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\_2022_Test.SettingForm.resources
+C:\Users\jhpar\Desktop\시험기\제안서용\화재감지기시험기\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\_2022_Test.SelfTestForm.resources
+C:\Users\jhpar\Desktop\시험기\제안서용\화재감지기시험기\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\_2022_Test.NSTEK.Kss_lib.KSS_BTN.resources
+C:\Users\jhpar\Desktop\시험기\제안서용\화재감지기시험기\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\_2022_Test.NSTEK.Kss_lib.KSS_ListView.resources
+C:\Users\jhpar\Desktop\시험기\제안서용\화재감지기시험기\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\_2022_Test.Properties.Resources.resources
+C:\Users\jhpar\Desktop\시험기\제안서용\화재감지기시험기\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\_2022_Test.StartForm.resources
+C:\Users\jhpar\Desktop\시험기\제안서용\화재감지기시험기\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\_2022_Test.init_Tester_info_Form.resources
+C:\Users\jhpar\Desktop\시험기\제안서용\화재감지기시험기\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\_2022_Test.PLC_Test_Form.resources
+C:\Users\jhpar\Desktop\시험기\제안서용\화재감지기시험기\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\2022NEW.csproj.GenerateResource.cache
+C:\Users\jhpar\Desktop\시험기\제안서용\화재감지기시험기\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\2022NEW.csproj.CoreCompileInputs.cache
+C:\Users\jhpar\Desktop\시험기\제안서용\화재감지기시험기\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\_2022_Test.exe
+C:\Users\jhpar\Desktop\시험기\제안서용\화재감지기시험기\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\_2022_Test.pdb
+C:\Users\jhpar\Desktop\시험기\제안서용\화재감지기시험기\VVVF 인버터 시험기(2023)\2022NEW\bin\Debug\_2022_Test.exe.config
+C:\Users\jhpar\Desktop\시험기\제안서용\화재감지기시험기\VVVF 인버터 시험기(2023)\2022NEW\bin\Debug\_2022_Test.exe
+C:\Users\jhpar\Desktop\시험기\제안서용\화재감지기시험기\VVVF 인버터 시험기(2023)\2022NEW\bin\Debug\_2022_Test.pdb
+C:\Users\jhpar\Desktop\시험기\제안서용\화재감지기시험기\VVVF 인버터 시험기(2023)\2022NEW\bin\Debug\Cilador.Fody.dll
+C:\Users\jhpar\Desktop\시험기\제안서용\화재감지기시험기\VVVF 인버터 시험기(2023)\2022NEW\bin\Debug\Costura.dll
+C:\Users\jhpar\Desktop\시험기\제안서용\화재감지기시험기\VVVF 인버터 시험기(2023)\2022NEW\bin\Debug\dotNetLucidIo.dll
+C:\Users\jhpar\Desktop\시험기\제안서용\화재감지기시험기\VVVF 인버터 시험기(2023)\2022NEW\bin\Debug\SunnyUI.Common.dll
+C:\Users\jhpar\Desktop\시험기\제안서용\화재감지기시험기\VVVF 인버터 시험기(2023)\2022NEW\bin\Debug\SunnyUI.dll
+C:\Users\jhpar\Desktop\시험기\제안서용\화재감지기시험기\VVVF 인버터 시험기(2023)\2022NEW\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\jhpar\Desktop\시험기\제안서용\화재감지기시험기\VVVF 인버터 시험기(2023)\2022NEW\bin\Debug\Cilador.Fody.pdb
+C:\Users\jhpar\Desktop\시험기\제안서용\화재감지기시험기\VVVF 인버터 시험기(2023)\2022NEW\bin\Debug\Costura.pdb
+C:\Users\jhpar\Desktop\시험기\제안서용\화재감지기시험기\VVVF 인버터 시험기(2023)\2022NEW\bin\Debug\Costura.xml
+C:\Users\jhpar\Desktop\시험기\제안서용\화재감지기시험기\VVVF 인버터 시험기(2023)\2022NEW\bin\Debug\dotNetLucidIo.xml
+C:\Users\jhpar\Desktop\시험기\제안서용\화재감지기시험기\VVVF 인버터 시험기(2023)\2022NEW\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\jhpar\Desktop\시험기\제안서용\화재감지기시험기\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\2022NEW.csproj.Fody.CopyLocal.cache
+C:\Users\jhpar\Desktop\시험기\제안서용\화재감지기시험기\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\2022NEW.csproj.Fody.RuntimeCopyLocal.cache
+C:\Users\jhpar\Desktop\시험기\제안서용\화재감지기시험기\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\2022NEW.csproj.CopyComplete
+C:\Users\jhpar\Desktop\시험기\제안서용\화재감지기시험기\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\_2022_Test.AXLE_Form.resources
+C:\Users\jhpar\Desktop\시험기\제안서용\판타그래프 시험기 2024(인도네시아)\화재감지기시험기 - 복사본\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\2022NEW.csproj.AssemblyReference.cache
+C:\Users\jhpar\Desktop\시험기\제안서용\판타그래프 시험기 2024(인도네시아)\화재감지기시험기 - 복사본\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\2022NEW.csproj.ResolveComReference.cache
+C:\Users\jhpar\Desktop\시험기\제안서용\판타그래프 시험기 2024(인도네시아)\화재감지기시험기 - 복사본\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\_2022_Test.EditForm.resources
+C:\Users\jhpar\Desktop\시험기\제안서용\판타그래프 시험기 2024(인도네시아)\화재감지기시험기 - 복사본\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\_2022_Test.FTP_Form.resources
+C:\Users\jhpar\Desktop\시험기\제안서용\판타그래프 시험기 2024(인도네시아)\화재감지기시험기 - 복사본\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\_2022_Test.Select_TEST_Form.resources
+C:\Users\jhpar\Desktop\시험기\제안서용\판타그래프 시험기 2024(인도네시아)\화재감지기시험기 - 복사본\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\_2022_Test.PortSetting_Form.resources
+C:\Users\jhpar\Desktop\시험기\제안서용\판타그래프 시험기 2024(인도네시아)\화재감지기시험기 - 복사본\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\_2022_Test.AXLE_Form.resources
+C:\Users\jhpar\Desktop\시험기\제안서용\판타그래프 시험기 2024(인도네시아)\화재감지기시험기 - 복사본\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\_2022_Test.MainForm_Rotem.resources
+C:\Users\jhpar\Desktop\시험기\제안서용\판타그래프 시험기 2024(인도네시아)\화재감지기시험기 - 복사본\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\_2022_Test.MainForm.resources
+C:\Users\jhpar\Desktop\시험기\제안서용\판타그래프 시험기 2024(인도네시아)\화재감지기시험기 - 복사본\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\_2022_Test.ReportForm.resources
+C:\Users\jhpar\Desktop\시험기\제안서용\판타그래프 시험기 2024(인도네시아)\화재감지기시험기 - 복사본\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\_2022_Test.SettingForm.resources
+C:\Users\jhpar\Desktop\시험기\제안서용\판타그래프 시험기 2024(인도네시아)\화재감지기시험기 - 복사본\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\_2022_Test.SelfTestForm.resources
+C:\Users\jhpar\Desktop\시험기\제안서용\판타그래프 시험기 2024(인도네시아)\화재감지기시험기 - 복사본\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\_2022_Test.NSTEK.Kss_lib.KSS_BTN.resources
+C:\Users\jhpar\Desktop\시험기\제안서용\판타그래프 시험기 2024(인도네시아)\화재감지기시험기 - 복사본\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\_2022_Test.NSTEK.Kss_lib.KSS_ListView.resources
+C:\Users\jhpar\Desktop\시험기\제안서용\판타그래프 시험기 2024(인도네시아)\화재감지기시험기 - 복사본\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\_2022_Test.Properties.Resources.resources
+C:\Users\jhpar\Desktop\시험기\제안서용\판타그래프 시험기 2024(인도네시아)\화재감지기시험기 - 복사본\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\_2022_Test.StartForm.resources
+C:\Users\jhpar\Desktop\시험기\제안서용\판타그래프 시험기 2024(인도네시아)\화재감지기시험기 - 복사본\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\_2022_Test.init_Tester_info_Form.resources
+C:\Users\jhpar\Desktop\시험기\제안서용\판타그래프 시험기 2024(인도네시아)\화재감지기시험기 - 복사본\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\_2022_Test.PLC_Test_Form.resources
+C:\Users\jhpar\Desktop\시험기\제안서용\판타그래프 시험기 2024(인도네시아)\화재감지기시험기 - 복사본\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\2022NEW.csproj.GenerateResource.cache
+C:\Users\jhpar\Desktop\시험기\제안서용\판타그래프 시험기 2024(인도네시아)\화재감지기시험기 - 복사본\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\2022NEW.csproj.CoreCompileInputs.cache
+C:\Users\jhpar\Desktop\시험기\제안서용\판타그래프 시험기 2024(인도네시아)\화재감지기시험기 - 복사본\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\_2022_Test.exe
+C:\Users\jhpar\Desktop\시험기\제안서용\판타그래프 시험기 2024(인도네시아)\화재감지기시험기 - 복사본\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\_2022_Test.pdb
+C:\Users\jhpar\Desktop\시험기\제안서용\판타그래프 시험기 2024(인도네시아)\화재감지기시험기 - 복사본\VVVF 인버터 시험기(2023)\2022NEW\bin\Debug\_2022_Test.exe.config
+C:\Users\jhpar\Desktop\시험기\제안서용\판타그래프 시험기 2024(인도네시아)\화재감지기시험기 - 복사본\VVVF 인버터 시험기(2023)\2022NEW\bin\Debug\_2022_Test.exe
+C:\Users\jhpar\Desktop\시험기\제안서용\판타그래프 시험기 2024(인도네시아)\화재감지기시험기 - 복사본\VVVF 인버터 시험기(2023)\2022NEW\bin\Debug\_2022_Test.pdb
+C:\Users\jhpar\Desktop\시험기\제안서용\판타그래프 시험기 2024(인도네시아)\화재감지기시험기 - 복사본\VVVF 인버터 시험기(2023)\2022NEW\bin\Debug\Cilador.Fody.dll
+C:\Users\jhpar\Desktop\시험기\제안서용\판타그래프 시험기 2024(인도네시아)\화재감지기시험기 - 복사본\VVVF 인버터 시험기(2023)\2022NEW\bin\Debug\Costura.dll
+C:\Users\jhpar\Desktop\시험기\제안서용\판타그래프 시험기 2024(인도네시아)\화재감지기시험기 - 복사본\VVVF 인버터 시험기(2023)\2022NEW\bin\Debug\dotNetLucidIo.dll
+C:\Users\jhpar\Desktop\시험기\제안서용\판타그래프 시험기 2024(인도네시아)\화재감지기시험기 - 복사본\VVVF 인버터 시험기(2023)\2022NEW\bin\Debug\SunnyUI.Common.dll
+C:\Users\jhpar\Desktop\시험기\제안서용\판타그래프 시험기 2024(인도네시아)\화재감지기시험기 - 복사본\VVVF 인버터 시험기(2023)\2022NEW\bin\Debug\SunnyUI.dll
+C:\Users\jhpar\Desktop\시험기\제안서용\판타그래프 시험기 2024(인도네시아)\화재감지기시험기 - 복사본\VVVF 인버터 시험기(2023)\2022NEW\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\jhpar\Desktop\시험기\제안서용\판타그래프 시험기 2024(인도네시아)\화재감지기시험기 - 복사본\VVVF 인버터 시험기(2023)\2022NEW\bin\Debug\Cilador.Fody.pdb
+C:\Users\jhpar\Desktop\시험기\제안서용\판타그래프 시험기 2024(인도네시아)\화재감지기시험기 - 복사본\VVVF 인버터 시험기(2023)\2022NEW\bin\Debug\Costura.pdb
+C:\Users\jhpar\Desktop\시험기\제안서용\판타그래프 시험기 2024(인도네시아)\화재감지기시험기 - 복사본\VVVF 인버터 시험기(2023)\2022NEW\bin\Debug\Costura.xml
+C:\Users\jhpar\Desktop\시험기\제안서용\판타그래프 시험기 2024(인도네시아)\화재감지기시험기 - 복사본\VVVF 인버터 시험기(2023)\2022NEW\bin\Debug\dotNetLucidIo.xml
+C:\Users\jhpar\Desktop\시험기\제안서용\판타그래프 시험기 2024(인도네시아)\화재감지기시험기 - 복사본\VVVF 인버터 시험기(2023)\2022NEW\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\jhpar\Desktop\시험기\제안서용\판타그래프 시험기 2024(인도네시아)\화재감지기시험기 - 복사본\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\2022NEW.csproj.Fody.CopyLocal.cache
+C:\Users\jhpar\Desktop\시험기\제안서용\판타그래프 시험기 2024(인도네시아)\화재감지기시험기 - 복사본\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\2022NEW.csproj.Fody.RuntimeCopyLocal.cache
+C:\Users\jhpar\Desktop\시험기\제안서용\판타그래프 시험기 2024(인도네시아)\화재감지기시험기 - 복사본\VVVF 인버터 시험기(2023)\2022NEW\obj\Debug\2022NEW.csproj.CopyComplete
+C:\Users\jhpar\Desktop\엔에스텍\엔에스텍 시험기팀\프로그램\판타그래프 시험기 2024(인도네시아)\판토그래프 시험기 도요덴키\판타그래프 시험기\2022NEW\bin\Debug\_2022_Test.exe.config
+C:\Users\jhpar\Desktop\엔에스텍\엔에스텍 시험기팀\프로그램\판타그래프 시험기 2024(인도네시아)\판토그래프 시험기 도요덴키\판타그래프 시험기\2022NEW\bin\Debug\_2022_Test.exe
+C:\Users\jhpar\Desktop\엔에스텍\엔에스텍 시험기팀\프로그램\판타그래프 시험기 2024(인도네시아)\판토그래프 시험기 도요덴키\판타그래프 시험기\2022NEW\bin\Debug\_2022_Test.pdb
+C:\Users\jhpar\Desktop\엔에스텍\엔에스텍 시험기팀\프로그램\판타그래프 시험기 2024(인도네시아)\판토그래프 시험기 도요덴키\판타그래프 시험기\2022NEW\bin\Debug\Cilador.Fody.dll
+C:\Users\jhpar\Desktop\엔에스텍\엔에스텍 시험기팀\프로그램\판타그래프 시험기 2024(인도네시아)\판토그래프 시험기 도요덴키\판타그래프 시험기\2022NEW\bin\Debug\Costura.dll
+C:\Users\jhpar\Desktop\엔에스텍\엔에스텍 시험기팀\프로그램\판타그래프 시험기 2024(인도네시아)\판토그래프 시험기 도요덴키\판타그래프 시험기\2022NEW\bin\Debug\dotNetLucidIo.dll
+C:\Users\jhpar\Desktop\엔에스텍\엔에스텍 시험기팀\프로그램\판타그래프 시험기 2024(인도네시아)\판토그래프 시험기 도요덴키\판타그래프 시험기\2022NEW\bin\Debug\SunnyUI.Common.dll
+C:\Users\jhpar\Desktop\엔에스텍\엔에스텍 시험기팀\프로그램\판타그래프 시험기 2024(인도네시아)\판토그래프 시험기 도요덴키\판타그래프 시험기\2022NEW\bin\Debug\SunnyUI.dll
+C:\Users\jhpar\Desktop\엔에스텍\엔에스텍 시험기팀\프로그램\판타그래프 시험기 2024(인도네시아)\판토그래프 시험기 도요덴키\판타그래프 시험기\2022NEW\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\jhpar\Desktop\엔에스텍\엔에스텍 시험기팀\프로그램\판타그래프 시험기 2024(인도네시아)\판토그래프 시험기 도요덴키\판타그래프 시험기\2022NEW\bin\Debug\Cilador.Fody.pdb
+C:\Users\jhpar\Desktop\엔에스텍\엔에스텍 시험기팀\프로그램\판타그래프 시험기 2024(인도네시아)\판토그래프 시험기 도요덴키\판타그래프 시험기\2022NEW\bin\Debug\Costura.pdb
+C:\Users\jhpar\Desktop\엔에스텍\엔에스텍 시험기팀\프로그램\판타그래프 시험기 2024(인도네시아)\판토그래프 시험기 도요덴키\판타그래프 시험기\2022NEW\bin\Debug\Costura.xml
+C:\Users\jhpar\Desktop\엔에스텍\엔에스텍 시험기팀\프로그램\판타그래프 시험기 2024(인도네시아)\판토그래프 시험기 도요덴키\판타그래프 시험기\2022NEW\bin\Debug\dotNetLucidIo.xml
+C:\Users\jhpar\Desktop\엔에스텍\엔에스텍 시험기팀\프로그램\판타그래프 시험기 2024(인도네시아)\판토그래프 시험기 도요덴키\판타그래프 시험기\2022NEW\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\jhpar\Desktop\엔에스텍\엔에스텍 시험기팀\프로그램\판타그래프 시험기 2024(인도네시아)\판토그래프 시험기 도요덴키\판타그래프 시험기\2022NEW\obj\Debug\2022NEW.csproj.AssemblyReference.cache
+C:\Users\jhpar\Desktop\엔에스텍\엔에스텍 시험기팀\프로그램\판타그래프 시험기 2024(인도네시아)\판토그래프 시험기 도요덴키\판타그래프 시험기\2022NEW\obj\Debug\2022NEW.csproj.ResolveComReference.cache
+C:\Users\jhpar\Desktop\엔에스텍\엔에스텍 시험기팀\프로그램\판타그래프 시험기 2024(인도네시아)\판토그래프 시험기 도요덴키\판타그래프 시험기\2022NEW\obj\Debug\_2022_Test.EditForm.resources
+C:\Users\jhpar\Desktop\엔에스텍\엔에스텍 시험기팀\프로그램\판타그래프 시험기 2024(인도네시아)\판토그래프 시험기 도요덴키\판타그래프 시험기\2022NEW\obj\Debug\_2022_Test.FTP_Form.resources
+C:\Users\jhpar\Desktop\엔에스텍\엔에스텍 시험기팀\프로그램\판타그래프 시험기 2024(인도네시아)\판토그래프 시험기 도요덴키\판타그래프 시험기\2022NEW\obj\Debug\_2022_Test.Select_TEST_Form.resources
+C:\Users\jhpar\Desktop\엔에스텍\엔에스텍 시험기팀\프로그램\판타그래프 시험기 2024(인도네시아)\판토그래프 시험기 도요덴키\판타그래프 시험기\2022NEW\obj\Debug\_2022_Test.PortSetting_Form.resources
+C:\Users\jhpar\Desktop\엔에스텍\엔에스텍 시험기팀\프로그램\판타그래프 시험기 2024(인도네시아)\판토그래프 시험기 도요덴키\판타그래프 시험기\2022NEW\obj\Debug\_2022_Test.AXLE_Form.resources
+C:\Users\jhpar\Desktop\엔에스텍\엔에스텍 시험기팀\프로그램\판타그래프 시험기 2024(인도네시아)\판토그래프 시험기 도요덴키\판타그래프 시험기\2022NEW\obj\Debug\_2022_Test.MainForm_Rotem.resources
+C:\Users\jhpar\Desktop\엔에스텍\엔에스텍 시험기팀\프로그램\판타그래프 시험기 2024(인도네시아)\판토그래프 시험기 도요덴키\판타그래프 시험기\2022NEW\obj\Debug\_2022_Test.MainForm.resources
+C:\Users\jhpar\Desktop\엔에스텍\엔에스텍 시험기팀\프로그램\판타그래프 시험기 2024(인도네시아)\판토그래프 시험기 도요덴키\판타그래프 시험기\2022NEW\obj\Debug\_2022_Test.ReportForm.resources
+C:\Users\jhpar\Desktop\엔에스텍\엔에스텍 시험기팀\프로그램\판타그래프 시험기 2024(인도네시아)\판토그래프 시험기 도요덴키\판타그래프 시험기\2022NEW\obj\Debug\_2022_Test.SettingForm.resources
+C:\Users\jhpar\Desktop\엔에스텍\엔에스텍 시험기팀\프로그램\판타그래프 시험기 2024(인도네시아)\판토그래프 시험기 도요덴키\판타그래프 시험기\2022NEW\obj\Debug\_2022_Test.SelfTestForm.resources
+C:\Users\jhpar\Desktop\엔에스텍\엔에스텍 시험기팀\프로그램\판타그래프 시험기 2024(인도네시아)\판토그래프 시험기 도요덴키\판타그래프 시험기\2022NEW\obj\Debug\_2022_Test.NSTEK.Kss_lib.KSS_BTN.resources
+C:\Users\jhpar\Desktop\엔에스텍\엔에스텍 시험기팀\프로그램\판타그래프 시험기 2024(인도네시아)\판토그래프 시험기 도요덴키\판타그래프 시험기\2022NEW\obj\Debug\_2022_Test.NSTEK.Kss_lib.KSS_ListView.resources
+C:\Users\jhpar\Desktop\엔에스텍\엔에스텍 시험기팀\프로그램\판타그래프 시험기 2024(인도네시아)\판토그래프 시험기 도요덴키\판타그래프 시험기\2022NEW\obj\Debug\_2022_Test.Properties.Resources.resources
+C:\Users\jhpar\Desktop\엔에스텍\엔에스텍 시험기팀\프로그램\판타그래프 시험기 2024(인도네시아)\판토그래프 시험기 도요덴키\판타그래프 시험기\2022NEW\obj\Debug\_2022_Test.StartForm.resources
+C:\Users\jhpar\Desktop\엔에스텍\엔에스텍 시험기팀\프로그램\판타그래프 시험기 2024(인도네시아)\판토그래프 시험기 도요덴키\판타그래프 시험기\2022NEW\obj\Debug\_2022_Test.init_Tester_info_Form.resources
+C:\Users\jhpar\Desktop\엔에스텍\엔에스텍 시험기팀\프로그램\판타그래프 시험기 2024(인도네시아)\판토그래프 시험기 도요덴키\판타그래프 시험기\2022NEW\obj\Debug\_2022_Test.PLC_Test_Form.resources
+C:\Users\jhpar\Desktop\엔에스텍\엔에스텍 시험기팀\프로그램\판타그래프 시험기 2024(인도네시아)\판토그래프 시험기 도요덴키\판타그래프 시험기\2022NEW\obj\Debug\2022NEW.csproj.GenerateResource.cache
+C:\Users\jhpar\Desktop\엔에스텍\엔에스텍 시험기팀\프로그램\판타그래프 시험기 2024(인도네시아)\판토그래프 시험기 도요덴키\판타그래프 시험기\2022NEW\obj\Debug\2022NEW.csproj.CoreCompileInputs.cache
+C:\Users\jhpar\Desktop\엔에스텍\엔에스텍 시험기팀\프로그램\판타그래프 시험기 2024(인도네시아)\판토그래프 시험기 도요덴키\판타그래프 시험기\2022NEW\obj\Debug\2022NEW.csproj.Fody.CopyLocal.cache
+C:\Users\jhpar\Desktop\엔에스텍\엔에스텍 시험기팀\프로그램\판타그래프 시험기 2024(인도네시아)\판토그래프 시험기 도요덴키\판타그래프 시험기\2022NEW\obj\Debug\2022NEW.csproj.Fody.RuntimeCopyLocal.cache
+C:\Users\jhpar\Desktop\엔에스텍\엔에스텍 시험기팀\프로그램\판타그래프 시험기 2024(인도네시아)\판토그래프 시험기 도요덴키\판타그래프 시험기\2022NEW\obj\Debug\2022NEW.csproj.Up2Date
+C:\Users\jhpar\Desktop\엔에스텍\엔에스텍 시험기팀\프로그램\판타그래프 시험기 2024(인도네시아)\판토그래프 시험기 도요덴키\판타그래프 시험기\2022NEW\obj\Debug\_2022_Test.exe
+C:\Users\jhpar\Desktop\엔에스텍\엔에스텍 시험기팀\프로그램\판타그래프 시험기 2024(인도네시아)\판토그래프 시험기 도요덴키\판타그래프 시험기\2022NEW\obj\Debug\_2022_Test.pdb
+C:\Users\user\Documents\Visual Studio 2022\project\판타그래프 시험기 2024(인도네시아)\판토그래프 시험기 도요덴키\판타그래프 시험기\2022NEW\bin\Debug\_2022_Test.exe.config
+C:\Users\user\Documents\Visual Studio 2022\project\판타그래프 시험기 2024(인도네시아)\판토그래프 시험기 도요덴키\판타그래프 시험기\2022NEW\bin\Debug\_2022_Test.exe
+C:\Users\user\Documents\Visual Studio 2022\project\판타그래프 시험기 2024(인도네시아)\판토그래프 시험기 도요덴키\판타그래프 시험기\2022NEW\bin\Debug\_2022_Test.pdb
+C:\Users\user\Documents\Visual Studio 2022\project\판타그래프 시험기 2024(인도네시아)\판토그래프 시험기 도요덴키\판타그래프 시험기\2022NEW\bin\Debug\Cilador.Fody.dll
+C:\Users\user\Documents\Visual Studio 2022\project\판타그래프 시험기 2024(인도네시아)\판토그래프 시험기 도요덴키\판타그래프 시험기\2022NEW\bin\Debug\Costura.dll
+C:\Users\user\Documents\Visual Studio 2022\project\판타그래프 시험기 2024(인도네시아)\판토그래프 시험기 도요덴키\판타그래프 시험기\2022NEW\bin\Debug\dotNetLucidIo.dll
+C:\Users\user\Documents\Visual Studio 2022\project\판타그래프 시험기 2024(인도네시아)\판토그래프 시험기 도요덴키\판타그래프 시험기\2022NEW\bin\Debug\SunnyUI.Common.dll
+C:\Users\user\Documents\Visual Studio 2022\project\판타그래프 시험기 2024(인도네시아)\판토그래프 시험기 도요덴키\판타그래프 시험기\2022NEW\bin\Debug\SunnyUI.dll
+C:\Users\user\Documents\Visual Studio 2022\project\판타그래프 시험기 2024(인도네시아)\판토그래프 시험기 도요덴키\판타그래프 시험기\2022NEW\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\user\Documents\Visual Studio 2022\project\판타그래프 시험기 2024(인도네시아)\판토그래프 시험기 도요덴키\판타그래프 시험기\2022NEW\bin\Debug\Cilador.Fody.pdb
+C:\Users\user\Documents\Visual Studio 2022\project\판타그래프 시험기 2024(인도네시아)\판토그래프 시험기 도요덴키\판타그래프 시험기\2022NEW\bin\Debug\Costura.pdb
+C:\Users\user\Documents\Visual Studio 2022\project\판타그래프 시험기 2024(인도네시아)\판토그래프 시험기 도요덴키\판타그래프 시험기\2022NEW\bin\Debug\Costura.xml
+C:\Users\user\Documents\Visual Studio 2022\project\판타그래프 시험기 2024(인도네시아)\판토그래프 시험기 도요덴키\판타그래프 시험기\2022NEW\bin\Debug\dotNetLucidIo.xml
+C:\Users\user\Documents\Visual Studio 2022\project\판타그래프 시험기 2024(인도네시아)\판토그래프 시험기 도요덴키\판타그래프 시험기\2022NEW\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\user\Documents\Visual Studio 2022\project\판타그래프 시험기 2024(인도네시아)\판토그래프 시험기 도요덴키\판타그래프 시험기\2022NEW\obj\Debug\2022NEW.csproj.AssemblyReference.cache
+C:\Users\user\Documents\Visual Studio 2022\project\판타그래프 시험기 2024(인도네시아)\판토그래프 시험기 도요덴키\판타그래프 시험기\2022NEW\obj\Debug\2022NEW.csproj.SuggestedBindingRedirects.cache
+C:\Users\user\Documents\Visual Studio 2022\project\판타그래프 시험기 2024(인도네시아)\판토그래프 시험기 도요덴키\판타그래프 시험기\2022NEW\obj\Debug\2022NEW.csproj.ResolveComReference.cache
+C:\Users\user\Documents\Visual Studio 2022\project\판타그래프 시험기 2024(인도네시아)\판토그래프 시험기 도요덴키\판타그래프 시험기\2022NEW\obj\Debug\_2022_Test.EditForm.resources
+C:\Users\user\Documents\Visual Studio 2022\project\판타그래프 시험기 2024(인도네시아)\판토그래프 시험기 도요덴키\판타그래프 시험기\2022NEW\obj\Debug\_2022_Test.FTP_Form.resources
+C:\Users\user\Documents\Visual Studio 2022\project\판타그래프 시험기 2024(인도네시아)\판토그래프 시험기 도요덴키\판타그래프 시험기\2022NEW\obj\Debug\_2022_Test.Select_TEST_Form.resources
+C:\Users\user\Documents\Visual Studio 2022\project\판타그래프 시험기 2024(인도네시아)\판토그래프 시험기 도요덴키\판타그래프 시험기\2022NEW\obj\Debug\_2022_Test.PortSetting_Form.resources
+C:\Users\user\Documents\Visual Studio 2022\project\판타그래프 시험기 2024(인도네시아)\판토그래프 시험기 도요덴키\판타그래프 시험기\2022NEW\obj\Debug\_2022_Test.MainForm.resources
+C:\Users\user\Documents\Visual Studio 2022\project\판타그래프 시험기 2024(인도네시아)\판토그래프 시험기 도요덴키\판타그래프 시험기\2022NEW\obj\Debug\_2022_Test.ReportForm.resources
+C:\Users\user\Documents\Visual Studio 2022\project\판타그래프 시험기 2024(인도네시아)\판토그래프 시험기 도요덴키\판타그래프 시험기\2022NEW\obj\Debug\_2022_Test.SettingForm.resources
+C:\Users\user\Documents\Visual Studio 2022\project\판타그래프 시험기 2024(인도네시아)\판토그래프 시험기 도요덴키\판타그래프 시험기\2022NEW\obj\Debug\_2022_Test.SelfTestForm.resources
+C:\Users\user\Documents\Visual Studio 2022\project\판타그래프 시험기 2024(인도네시아)\판토그래프 시험기 도요덴키\판타그래프 시험기\2022NEW\obj\Debug\_2022_Test.NSTEK.Kss_lib.KSS_BTN.resources
+C:\Users\user\Documents\Visual Studio 2022\project\판타그래프 시험기 2024(인도네시아)\판토그래프 시험기 도요덴키\판타그래프 시험기\2022NEW\obj\Debug\_2022_Test.NSTEK.Kss_lib.KSS_ListView.resources
+C:\Users\user\Documents\Visual Studio 2022\project\판타그래프 시험기 2024(인도네시아)\판토그래프 시험기 도요덴키\판타그래프 시험기\2022NEW\obj\Debug\_2022_Test.Properties.Resources.resources
+C:\Users\user\Documents\Visual Studio 2022\project\판타그래프 시험기 2024(인도네시아)\판토그래프 시험기 도요덴키\판타그래프 시험기\2022NEW\obj\Debug\_2022_Test.StartForm.resources
+C:\Users\user\Documents\Visual Studio 2022\project\판타그래프 시험기 2024(인도네시아)\판토그래프 시험기 도요덴키\판타그래프 시험기\2022NEW\obj\Debug\_2022_Test.init_Tester_info_Form.resources
+C:\Users\user\Documents\Visual Studio 2022\project\판타그래프 시험기 2024(인도네시아)\판토그래프 시험기 도요덴키\판타그래프 시험기\2022NEW\obj\Debug\_2022_Test.PLC_Test_Form.resources
+C:\Users\user\Documents\Visual Studio 2022\project\판타그래프 시험기 2024(인도네시아)\판토그래프 시험기 도요덴키\판타그래프 시험기\2022NEW\obj\Debug\2022NEW.csproj.GenerateResource.cache
+C:\Users\user\Documents\Visual Studio 2022\project\판타그래프 시험기 2024(인도네시아)\판토그래프 시험기 도요덴키\판타그래프 시험기\2022NEW\obj\Debug\2022NEW.csproj.CoreCompileInputs.cache
+C:\Users\user\Documents\Visual Studio 2022\project\판타그래프 시험기 2024(인도네시아)\판토그래프 시험기 도요덴키\판타그래프 시험기\2022NEW\obj\Debug\2022NEW.csproj.Fody.CopyLocal.cache
+C:\Users\user\Documents\Visual Studio 2022\project\판타그래프 시험기 2024(인도네시아)\판토그래프 시험기 도요덴키\판타그래프 시험기\2022NEW\obj\Debug\2022NEW.csproj.Fody.RuntimeCopyLocal.cache
+C:\Users\user\Documents\Visual Studio 2022\project\판타그래프 시험기 2024(인도네시아)\판토그래프 시험기 도요덴키\판타그래프 시험기\2022NEW\obj\Debug\2022NEW.csproj.CopyComplete
+C:\Users\user\Documents\Visual Studio 2022\project\판타그래프 시험기 2024(인도네시아)\판토그래프 시험기 도요덴키\판타그래프 시험기\2022NEW\obj\Debug\_2022_Test.exe
+C:\Users\user\Documents\Visual Studio 2022\project\판타그래프 시험기 2024(인도네시아)\판토그래프 시험기 도요덴키\판타그래프 시험기\2022NEW\obj\Debug\_2022_Test.pdb
+C:\Users\user\Documents\Visual Studio 2022\project\판타그래프 시험기 2024(인도네시아)_rev_2024_11_22\판토그래프 시험기 도요덴키\판타그래프 시험기\2022NEW\bin\Debug\_2022_Test.exe.config
+C:\Users\user\Documents\Visual Studio 2022\project\판타그래프 시험기 2024(인도네시아)_rev_2024_11_22\판토그래프 시험기 도요덴키\판타그래프 시험기\2022NEW\bin\Debug\_2022_Test.exe
+C:\Users\user\Documents\Visual Studio 2022\project\판타그래프 시험기 2024(인도네시아)_rev_2024_11_22\판토그래프 시험기 도요덴키\판타그래프 시험기\2022NEW\bin\Debug\_2022_Test.pdb
+C:\Users\user\Documents\Visual Studio 2022\project\판타그래프 시험기 2024(인도네시아)_rev_2024_11_22\판토그래프 시험기 도요덴키\판타그래프 시험기\2022NEW\bin\Debug\Cilador.Fody.dll
+C:\Users\user\Documents\Visual Studio 2022\project\판타그래프 시험기 2024(인도네시아)_rev_2024_11_22\판토그래프 시험기 도요덴키\판타그래프 시험기\2022NEW\bin\Debug\Costura.dll
+C:\Users\user\Documents\Visual Studio 2022\project\판타그래프 시험기 2024(인도네시아)_rev_2024_11_22\판토그래프 시험기 도요덴키\판타그래프 시험기\2022NEW\bin\Debug\dotNetLucidIo.dll
+C:\Users\user\Documents\Visual Studio 2022\project\판타그래프 시험기 2024(인도네시아)_rev_2024_11_22\판토그래프 시험기 도요덴키\판타그래프 시험기\2022NEW\bin\Debug\SunnyUI.Common.dll
+C:\Users\user\Documents\Visual Studio 2022\project\판타그래프 시험기 2024(인도네시아)_rev_2024_11_22\판토그래프 시험기 도요덴키\판타그래프 시험기\2022NEW\bin\Debug\SunnyUI.dll
+C:\Users\user\Documents\Visual Studio 2022\project\판타그래프 시험기 2024(인도네시아)_rev_2024_11_22\판토그래프 시험기 도요덴키\판타그래프 시험기\2022NEW\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\user\Documents\Visual Studio 2022\project\판타그래프 시험기 2024(인도네시아)_rev_2024_11_22\판토그래프 시험기 도요덴키\판타그래프 시험기\2022NEW\bin\Debug\Cilador.Fody.pdb
+C:\Users\user\Documents\Visual Studio 2022\project\판타그래프 시험기 2024(인도네시아)_rev_2024_11_22\판토그래프 시험기 도요덴키\판타그래프 시험기\2022NEW\bin\Debug\Costura.pdb
+C:\Users\user\Documents\Visual Studio 2022\project\판타그래프 시험기 2024(인도네시아)_rev_2024_11_22\판토그래프 시험기 도요덴키\판타그래프 시험기\2022NEW\bin\Debug\Costura.xml
+C:\Users\user\Documents\Visual Studio 2022\project\판타그래프 시험기 2024(인도네시아)_rev_2024_11_22\판토그래프 시험기 도요덴키\판타그래프 시험기\2022NEW\bin\Debug\dotNetLucidIo.xml
+C:\Users\user\Documents\Visual Studio 2022\project\판타그래프 시험기 2024(인도네시아)_rev_2024_11_22\판토그래프 시험기 도요덴키\판타그래프 시험기\2022NEW\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\user\Documents\Visual Studio 2022\project\판타그래프 시험기 2024(인도네시아)_rev_2024_11_22\판토그래프 시험기 도요덴키\판타그래프 시험기\2022NEW\obj\Debug\2022NEW.csproj.AssemblyReference.cache
+C:\Users\user\Documents\Visual Studio 2022\project\판타그래프 시험기 2024(인도네시아)_rev_2024_11_22\판토그래프 시험기 도요덴키\판타그래프 시험기\2022NEW\obj\Debug\2022NEW.csproj.SuggestedBindingRedirects.cache
+C:\Users\user\Documents\Visual Studio 2022\project\판타그래프 시험기 2024(인도네시아)_rev_2024_11_22\판토그래프 시험기 도요덴키\판타그래프 시험기\2022NEW\obj\Debug\2022NEW.csproj.ResolveComReference.cache
+C:\Users\user\Documents\Visual Studio 2022\project\판타그래프 시험기 2024(인도네시아)_rev_2024_11_22\판토그래프 시험기 도요덴키\판타그래프 시험기\2022NEW\obj\Debug\_2022_Test.EditForm.resources
+C:\Users\user\Documents\Visual Studio 2022\project\판타그래프 시험기 2024(인도네시아)_rev_2024_11_22\판토그래프 시험기 도요덴키\판타그래프 시험기\2022NEW\obj\Debug\_2022_Test.FTP_Form.resources
+C:\Users\user\Documents\Visual Studio 2022\project\판타그래프 시험기 2024(인도네시아)_rev_2024_11_22\판토그래프 시험기 도요덴키\판타그래프 시험기\2022NEW\obj\Debug\_2022_Test.Select_TEST_Form.resources
+C:\Users\user\Documents\Visual Studio 2022\project\판타그래프 시험기 2024(인도네시아)_rev_2024_11_22\판토그래프 시험기 도요덴키\판타그래프 시험기\2022NEW\obj\Debug\_2022_Test.PortSetting_Form.resources
+C:\Users\user\Documents\Visual Studio 2022\project\판타그래프 시험기 2024(인도네시아)_rev_2024_11_22\판토그래프 시험기 도요덴키\판타그래프 시험기\2022NEW\obj\Debug\_2022_Test.MainForm.resources
+C:\Users\user\Documents\Visual Studio 2022\project\판타그래프 시험기 2024(인도네시아)_rev_2024_11_22\판토그래프 시험기 도요덴키\판타그래프 시험기\2022NEW\obj\Debug\_2022_Test.ReportForm.resources
+C:\Users\user\Documents\Visual Studio 2022\project\판타그래프 시험기 2024(인도네시아)_rev_2024_11_22\판토그래프 시험기 도요덴키\판타그래프 시험기\2022NEW\obj\Debug\_2022_Test.SettingForm.resources
+C:\Users\user\Documents\Visual Studio 2022\project\판타그래프 시험기 2024(인도네시아)_rev_2024_11_22\판토그래프 시험기 도요덴키\판타그래프 시험기\2022NEW\obj\Debug\_2022_Test.SelfTestForm.resources
+C:\Users\user\Documents\Visual Studio 2022\project\판타그래프 시험기 2024(인도네시아)_rev_2024_11_22\판토그래프 시험기 도요덴키\판타그래프 시험기\2022NEW\obj\Debug\_2022_Test.NSTEK.Kss_lib.KSS_BTN.resources
+C:\Users\user\Documents\Visual Studio 2022\project\판타그래프 시험기 2024(인도네시아)_rev_2024_11_22\판토그래프 시험기 도요덴키\판타그래프 시험기\2022NEW\obj\Debug\_2022_Test.NSTEK.Kss_lib.KSS_ListView.resources
+C:\Users\user\Documents\Visual Studio 2022\project\판타그래프 시험기 2024(인도네시아)_rev_2024_11_22\판토그래프 시험기 도요덴키\판타그래프 시험기\2022NEW\obj\Debug\_2022_Test.Properties.Resources.resources
+C:\Users\user\Documents\Visual Studio 2022\project\판타그래프 시험기 2024(인도네시아)_rev_2024_11_22\판토그래프 시험기 도요덴키\판타그래프 시험기\2022NEW\obj\Debug\_2022_Test.StartForm.resources
+C:\Users\user\Documents\Visual Studio 2022\project\판타그래프 시험기 2024(인도네시아)_rev_2024_11_22\판토그래프 시험기 도요덴키\판타그래프 시험기\2022NEW\obj\Debug\_2022_Test.init_Tester_info_Form.resources
+C:\Users\user\Documents\Visual Studio 2022\project\판타그래프 시험기 2024(인도네시아)_rev_2024_11_22\판토그래프 시험기 도요덴키\판타그래프 시험기\2022NEW\obj\Debug\_2022_Test.PLC_Test_Form.resources
+C:\Users\user\Documents\Visual Studio 2022\project\판타그래프 시험기 2024(인도네시아)_rev_2024_11_22\판토그래프 시험기 도요덴키\판타그래프 시험기\2022NEW\obj\Debug\2022NEW.csproj.GenerateResource.cache
+C:\Users\user\Documents\Visual Studio 2022\project\판타그래프 시험기 2024(인도네시아)_rev_2024_11_22\판토그래프 시험기 도요덴키\판타그래프 시험기\2022NEW\obj\Debug\2022NEW.csproj.CoreCompileInputs.cache
+C:\Users\user\Documents\Visual Studio 2022\project\판타그래프 시험기 2024(인도네시아)_rev_2024_11_22\판토그래프 시험기 도요덴키\판타그래프 시험기\2022NEW\obj\Debug\2022NEW.csproj.Fody.CopyLocal.cache
+C:\Users\user\Documents\Visual Studio 2022\project\판타그래프 시험기 2024(인도네시아)_rev_2024_11_22\판토그래프 시험기 도요덴키\판타그래프 시험기\2022NEW\obj\Debug\2022NEW.csproj.Fody.RuntimeCopyLocal.cache
+C:\Users\user\Documents\Visual Studio 2022\project\판타그래프 시험기 2024(인도네시아)_rev_2024_11_22\판토그래프 시험기 도요덴키\판타그래프 시험기\2022NEW\obj\Debug\2022NEW.csproj.CopyComplete
+C:\Users\user\Documents\Visual Studio 2022\project\판타그래프 시험기 2024(인도네시아)_rev_2024_11_22\판토그래프 시험기 도요덴키\판타그래프 시험기\2022NEW\obj\Debug\_2022_Test.exe
+C:\Users\user\Documents\Visual Studio 2022\project\판타그래프 시험기 2024(인도네시아)_rev_2024_11_22\판토그래프 시험기 도요덴키\판타그래프 시험기\2022NEW\obj\Debug\_2022_Test.pdb
+E:\판타그래프 시험기 2024(인도네시아)\rev2\판타그래프 시험기\2022NEW\bin\Debug\_2022_Test.exe.config
+E:\판타그래프 시험기 2024(인도네시아)\rev2\판타그래프 시험기\2022NEW\bin\Debug\_2022_Test.exe
+E:\판타그래프 시험기 2024(인도네시아)\rev2\판타그래프 시험기\2022NEW\bin\Debug\_2022_Test.pdb
+E:\판타그래프 시험기 2024(인도네시아)\rev2\판타그래프 시험기\2022NEW\bin\Debug\Cilador.Fody.dll
+E:\판타그래프 시험기 2024(인도네시아)\rev2\판타그래프 시험기\2022NEW\bin\Debug\Costura.dll
+E:\판타그래프 시험기 2024(인도네시아)\rev2\판타그래프 시험기\2022NEW\bin\Debug\dotNetLucidIo.dll
+E:\판타그래프 시험기 2024(인도네시아)\rev2\판타그래프 시험기\2022NEW\bin\Debug\SunnyUI.Common.dll
+E:\판타그래프 시험기 2024(인도네시아)\rev2\판타그래프 시험기\2022NEW\bin\Debug\SunnyUI.dll
+E:\판타그래프 시험기 2024(인도네시아)\rev2\판타그래프 시험기\2022NEW\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+E:\판타그래프 시험기 2024(인도네시아)\rev2\판타그래프 시험기\2022NEW\bin\Debug\Cilador.Fody.pdb
+E:\판타그래프 시험기 2024(인도네시아)\rev2\판타그래프 시험기\2022NEW\bin\Debug\Costura.pdb
+E:\판타그래프 시험기 2024(인도네시아)\rev2\판타그래프 시험기\2022NEW\bin\Debug\Costura.xml
+E:\판타그래프 시험기 2024(인도네시아)\rev2\판타그래프 시험기\2022NEW\bin\Debug\dotNetLucidIo.xml
+E:\판타그래프 시험기 2024(인도네시아)\rev2\판타그래프 시험기\2022NEW\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+E:\판타그래프 시험기 2024(인도네시아)\rev2\판타그래프 시험기\2022NEW\obj\Debug\2022NEW.csproj.AssemblyReference.cache
+E:\판타그래프 시험기 2024(인도네시아)\rev2\판타그래프 시험기\2022NEW\obj\Debug\2022NEW.csproj.ResolveComReference.cache
+E:\판타그래프 시험기 2024(인도네시아)\rev2\판타그래프 시험기\2022NEW\obj\Debug\_2022_Test.EditForm.resources
+E:\판타그래프 시험기 2024(인도네시아)\rev2\판타그래프 시험기\2022NEW\obj\Debug\_2022_Test.FTP_Form.resources
+E:\판타그래프 시험기 2024(인도네시아)\rev2\판타그래프 시험기\2022NEW\obj\Debug\_2022_Test.Select_TEST_Form.resources
+E:\판타그래프 시험기 2024(인도네시아)\rev2\판타그래프 시험기\2022NEW\obj\Debug\_2022_Test.PortSetting_Form.resources
+E:\판타그래프 시험기 2024(인도네시아)\rev2\판타그래프 시험기\2022NEW\obj\Debug\_2022_Test.MainForm.resources
+E:\판타그래프 시험기 2024(인도네시아)\rev2\판타그래프 시험기\2022NEW\obj\Debug\_2022_Test.ReportForm.resources
+E:\판타그래프 시험기 2024(인도네시아)\rev2\판타그래프 시험기\2022NEW\obj\Debug\_2022_Test.SettingForm.resources
+E:\판타그래프 시험기 2024(인도네시아)\rev2\판타그래프 시험기\2022NEW\obj\Debug\_2022_Test.SelfTestForm.resources
+E:\판타그래프 시험기 2024(인도네시아)\rev2\판타그래프 시험기\2022NEW\obj\Debug\_2022_Test.NSTEK.Kss_lib.KSS_BTN.resources
+E:\판타그래프 시험기 2024(인도네시아)\rev2\판타그래프 시험기\2022NEW\obj\Debug\_2022_Test.NSTEK.Kss_lib.KSS_ListView.resources
+E:\판타그래프 시험기 2024(인도네시아)\rev2\판타그래프 시험기\2022NEW\obj\Debug\_2022_Test.Properties.Resources.resources
+E:\판타그래프 시험기 2024(인도네시아)\rev2\판타그래프 시험기\2022NEW\obj\Debug\_2022_Test.StartForm.resources
+E:\판타그래프 시험기 2024(인도네시아)\rev2\판타그래프 시험기\2022NEW\obj\Debug\_2022_Test.init_Tester_info_Form.resources
+E:\판타그래프 시험기 2024(인도네시아)\rev2\판타그래프 시험기\2022NEW\obj\Debug\_2022_Test.PLC_Test_Form.resources
+E:\판타그래프 시험기 2024(인도네시아)\rev2\판타그래프 시험기\2022NEW\obj\Debug\2022NEW.csproj.GenerateResource.cache
+E:\판타그래프 시험기 2024(인도네시아)\rev2\판타그래프 시험기\2022NEW\obj\Debug\2022NEW.csproj.CoreCompileInputs.cache
+E:\판타그래프 시험기 2024(인도네시아)\rev2\판타그래프 시험기\2022NEW\obj\Debug\2022NEW.csproj.Fody.CopyLocal.cache
+E:\판타그래프 시험기 2024(인도네시아)\rev2\판타그래프 시험기\2022NEW\obj\Debug\2022NEW.csproj.Fody.RuntimeCopyLocal.cache
+E:\판타그래프 시험기 2024(인도네시아)\rev2\판타그래프 시험기\2022NEW\obj\Debug\2022NEW.csproj.Up2Date
+E:\판타그래프 시험기 2024(인도네시아)\rev2\판타그래프 시험기\2022NEW\obj\Debug\_2022_Test.exe
+E:\판타그래프 시험기 2024(인도네시아)\rev2\판타그래프 시험기\2022NEW\obj\Debug\_2022_Test.pdb
+F:\판타그래프 시험기 2024(인도네시아)\rev2\판타그래프 시험기\2022NEW\bin\Debug\Cilador.Fody.dll
+F:\판타그래프 시험기 2024(인도네시아)\rev2\판타그래프 시험기\2022NEW\bin\Debug\Costura.dll
+F:\판타그래프 시험기 2024(인도네시아)\rev2\판타그래프 시험기\2022NEW\bin\Debug\dotNetLucidIo.dll
+F:\판타그래프 시험기 2024(인도네시아)\rev2\판타그래프 시험기\2022NEW\bin\Debug\SunnyUI.Common.dll
+F:\판타그래프 시험기 2024(인도네시아)\rev2\판타그래프 시험기\2022NEW\bin\Debug\SunnyUI.dll
+F:\판타그래프 시험기 2024(인도네시아)\rev2\판타그래프 시험기\2022NEW\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+F:\판타그래프 시험기 2024(인도네시아)\rev2\판타그래프 시험기\2022NEW\bin\Debug\Cilador.Fody.pdb
+F:\판타그래프 시험기 2024(인도네시아)\rev2\판타그래프 시험기\2022NEW\bin\Debug\Costura.pdb
+F:\판타그래프 시험기 2024(인도네시아)\rev2\판타그래프 시험기\2022NEW\bin\Debug\Costura.xml
+F:\판타그래프 시험기 2024(인도네시아)\rev2\판타그래프 시험기\2022NEW\bin\Debug\dotNetLucidIo.xml
+F:\판타그래프 시험기 2024(인도네시아)\rev2\판타그래프 시험기\2022NEW\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+F:\판타그래프 시험기 2024(인도네시아)\rev2\판타그래프 시험기\2022NEW\obj\Debug\2022NEW.csproj.AssemblyReference.cache
+F:\판타그래프 시험기 2024(인도네시아)\rev2\판타그래프 시험기\2022NEW\obj\Debug\2022NEW.csproj.ResolveComReference.cache
+F:\판타그래프 시험기 2024(인도네시아)\rev2\판타그래프 시험기\2022NEW\obj\Debug\_2022_Test.EditForm.resources
+F:\판타그래프 시험기 2024(인도네시아)\rev2\판타그래프 시험기\2022NEW\obj\Debug\_2022_Test.FTP_Form.resources
+F:\판타그래프 시험기 2024(인도네시아)\rev2\판타그래프 시험기\2022NEW\obj\Debug\_2022_Test.Select_TEST_Form.resources
+F:\판타그래프 시험기 2024(인도네시아)\rev2\판타그래프 시험기\2022NEW\obj\Debug\_2022_Test.PortSetting_Form.resources
+F:\판타그래프 시험기 2024(인도네시아)\rev2\판타그래프 시험기\2022NEW\obj\Debug\_2022_Test.MainForm.resources
+F:\판타그래프 시험기 2024(인도네시아)\rev2\판타그래프 시험기\2022NEW\obj\Debug\_2022_Test.ReportForm.resources
+F:\판타그래프 시험기 2024(인도네시아)\rev2\판타그래프 시험기\2022NEW\obj\Debug\_2022_Test.SettingForm.resources
+F:\판타그래프 시험기 2024(인도네시아)\rev2\판타그래프 시험기\2022NEW\obj\Debug\_2022_Test.SelfTestForm.resources
+F:\판타그래프 시험기 2024(인도네시아)\rev2\판타그래프 시험기\2022NEW\obj\Debug\_2022_Test.NSTEK.Kss_lib.KSS_BTN.resources
+F:\판타그래프 시험기 2024(인도네시아)\rev2\판타그래프 시험기\2022NEW\obj\Debug\_2022_Test.NSTEK.Kss_lib.KSS_ListView.resources
+F:\판타그래프 시험기 2024(인도네시아)\rev2\판타그래프 시험기\2022NEW\obj\Debug\_2022_Test.Properties.Resources.resources
+F:\판타그래프 시험기 2024(인도네시아)\rev2\판타그래프 시험기\2022NEW\obj\Debug\_2022_Test.StartForm.resources
+F:\판타그래프 시험기 2024(인도네시아)\rev2\판타그래프 시험기\2022NEW\obj\Debug\_2022_Test.init_Tester_info_Form.resources
+F:\판타그래프 시험기 2024(인도네시아)\rev2\판타그래프 시험기\2022NEW\obj\Debug\_2022_Test.PLC_Test_Form.resources
+F:\판타그래프 시험기 2024(인도네시아)\rev2\판타그래프 시험기\2022NEW\obj\Debug\2022NEW.csproj.GenerateResource.cache
+F:\판타그래프 시험기 2024(인도네시아)\rev2\판타그래프 시험기\2022NEW\obj\Debug\2022NEW.csproj.CoreCompileInputs.cache
+F:\판타그래프 시험기 2024(인도네시아)\rev2\판타그래프 시험기\2022NEW\obj\Debug\_2022_Test.exe
+F:\판타그래프 시험기 2024(인도네시아)\rev2\판타그래프 시험기\2022NEW\obj\Debug\_2022_Test.pdb
+E:\판타그래프 시험기 2024(인도네시아)\rev2\판타그래프 시험기\2022NEW\bin\Debug\System.Buffers.dll
+E:\판타그래프 시험기 2024(인도네시아)\rev2\판타그래프 시험기\2022NEW\bin\Debug\System.Memory.dll
+E:\판타그래프 시험기 2024(인도네시아)\rev2\판타그래프 시험기\2022NEW\bin\Debug\System.Numerics.Vectors.dll
+E:\판타그래프 시험기 2024(인도네시아)\rev2\판타그래프 시험기\2022NEW\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+E:\판타그래프 시험기 2024(인도네시아)\rev2\판타그래프 시험기\2022NEW\bin\Debug\System.Buffers.xml
+E:\판타그래프 시험기 2024(인도네시아)\rev2\판타그래프 시험기\2022NEW\bin\Debug\System.Memory.xml
+E:\판타그래프 시험기 2024(인도네시아)\rev2\판타그래프 시험기\2022NEW\bin\Debug\System.Numerics.Vectors.xml
+E:\판타그래프 시험기 2024(인도네시아)\rev2\판타그래프 시험기\2022NEW\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+F:\판타그래프 시험기 2024(인도네시아)\rev2\판타그래프 시험기\2022NEW\bin\Debug\_2022_Test.exe.config
+F:\판타그래프 시험기 2024(인도네시아)\rev2\판타그래프 시험기\2022NEW\bin\Debug\_2022_Test.exe
+F:\판타그래프 시험기 2024(인도네시아)\rev2\판타그래프 시험기\2022NEW\bin\Debug\_2022_Test.pdb
+F:\판타그래프 시험기 2024(인도네시아)\rev2\판타그래프 시험기\2022NEW\bin\Debug\System.Buffers.dll
+F:\판타그래프 시험기 2024(인도네시아)\rev2\판타그래프 시험기\2022NEW\bin\Debug\System.Memory.dll
+F:\판타그래프 시험기 2024(인도네시아)\rev2\판타그래프 시험기\2022NEW\bin\Debug\System.Numerics.Vectors.dll
+F:\판타그래프 시험기 2024(인도네시아)\rev2\판타그래프 시험기\2022NEW\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+F:\판타그래프 시험기 2024(인도네시아)\rev2\판타그래프 시험기\2022NEW\bin\Debug\System.Buffers.xml
+F:\판타그래프 시험기 2024(인도네시아)\rev2\판타그래프 시험기\2022NEW\bin\Debug\System.Memory.xml
+F:\판타그래프 시험기 2024(인도네시아)\rev2\판타그래프 시험기\2022NEW\bin\Debug\System.Numerics.Vectors.xml
+F:\판타그래프 시험기 2024(인도네시아)\rev2\판타그래프 시험기\2022NEW\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+F:\판타그래프 시험기 2024(인도네시아)\rev2\판타그래프 시험기\2022NEW\obj\Debug\2022NEW.csproj.Up2Date
+F:\판타그래프 시험기 2024(인도네시아)\rev2\판타그래프 시험기\2022NEW\obj\Debug\2022NEW.csproj.Fody.CopyLocal.cache
+F:\판타그래프 시험기 2024(인도네시아)\rev2\판타그래프 시험기\2022NEW\obj\Debug\2022NEW.csproj.Fody.RuntimeCopyLocal.cache

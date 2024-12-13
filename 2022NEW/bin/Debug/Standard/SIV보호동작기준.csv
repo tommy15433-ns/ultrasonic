@@ -1,0 +1,17 @@
+﻿시험항목,약호,기준
+입력 과전압,DCOV,DC2200V±5%
+FC 과전압,FCCOV,DC2200V±5%
+AC 출력 과전압,ACOV,475Vrms±5%
+AC 출력 저전압,ACUV,285Vrms±5%
+인버터 출력 과전류,INVOC,606Apeak±5
+Contactor 이상,CHKF_LKF_SIVKF,지령 2초경과후 보조 접점 미 입력시
+Gate Driver Fault,GDF,Gate Driver로부터 고장 신호 입력시
+AC 출력 과전류,ACOC,859Apeak±5%_450Arms 10초 유지
+AC 출력 과부하,ACOL,486Arms±5%_60초유지
+출력전압 이상,LOVD,380Vrms＋5%초과 1초이상/380Vrms-10%초과 1초 이상
+입력이상,STF,850Vdc±5%미만 3초이상
+DC 출력단 과전류,BCOC,450Adc±5%
+DC 출력단 과전압,BCOV,DC150±5%
+Thermal Falut,THF,110℃±5%
+제어전원 저전압,PSFT,DC68±5%
+지락고장,IGDF,가선전압 600V/전류 320A이상

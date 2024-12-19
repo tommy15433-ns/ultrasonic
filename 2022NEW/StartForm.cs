@@ -34,6 +34,7 @@ namespace _2022_Test
         private void Exit_BTN_MouseUp(object sender, MouseEventArgs e)
         {
             this.Close();
+            Environment.Exit(0);
         }
 
         private void StartForm_FormClosed(object sender, FormClosedEventArgs e)

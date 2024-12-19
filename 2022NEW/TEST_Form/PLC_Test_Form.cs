@@ -22,6 +22,8 @@ using Power_Modbus_RTU_SAMPLE;
 using System.Runtime.InteropServices.ComTypes;
 using _2022_Test.NSTEK.device;
 
+using System.Reflection.Emit;
+
 namespace _2022_Test
 {
     public partial class PLC_Test_Form : Form
@@ -134,6 +136,9 @@ namespace _2022_Test
 
         private void button3_Click(object sender, EventArgs e)
         {
+            loadcell.SendData("MZ");
+            
+            
             //afg2225.AFGSET(1, true, 1000, 10, 0);
             //Thread.Sleep(1000);
             //afg2225.phase_set(1, 90);
@@ -168,9 +173,9 @@ namespace _2022_Test
             
             }
 
-         
+            loadcell.Close();
 
-          
+
 
         }
 
@@ -319,6 +324,27 @@ namespace _2022_Test
             dc_power.OutPut("OFF");
         }
 
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            loadcell.Zero_point();
+        }
+
+        private void button4_Click_1(object sender, EventArgs e)
+        {
+            loadcell.SendData("MT");
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            loadcell.SendData("CT");
+        }
+
+        private void button8_Click_1(object sender, EventArgs e)
+        {
+            loadcell.SendData("MN");
+           string sres =  loadcell.ReadValue();
+        }
+
         public PLC_Test_Form()
         {
             InitializeComponent();
@@ -348,7 +374,11 @@ namespace _2022_Test
                     dc_power = new DSP_LAN(Setting.dsp_ip);
                     dc_power.Portopen();
                 }
-                                                         
+                if (Setting.Equipment[i] == "Loadcell")
+                {
+                    loadcell = new AND_AD310D(Port[i]);
+                    loadcell.Open();
+                }                                       
             }
 
 
@@ -378,13 +408,54 @@ namespace _2022_Test
 
             CheckForIllegalCrossThreadCalls = false;
 
-            string manual = plc.ReadBit("160");
-            string auto = plc.ReadBit("161");
-            string EMG = plc.ReadBit("162");
-            string servo_mc = plc.ReadBit("163");
+            //string manual = plc.ReadBit("160");
+            //string auto = plc.ReadBit("161");
+            //string EMG = plc.ReadBit("162");
+            //string servo_mc = plc.ReadBit("163");
 
+            try
+            {
+                while (true)
+                {
+                    string temp = loadcell.ReadValue();
 
+                    if (temp.IndexOf('+') > 0)
+                    {
+                        string[] tempAry = temp.Split('+');
+                        string[] tempAry2 = tempAry[1].Split('k');
+                        try
+                        {
+                            float a = float.Parse(tempAry2[0]);
+                            float N = a * 9.8f;
+                            listview_DI.Items[0].SubItems[2].Text = N.ToString();
+                        }
+                        catch
+                        {
 
+                        }
+                    }
+                    else
+                    {
+
+                        string[] tempAry = temp.Split('-');
+                        string[] tempAry2 = tempAry[1].Split('k');
+                        try
+                        {
+                            float b = float.Parse(tempAry2[0]);
+                            float M = b * 9.8f;
+                            listview_DI.Items[0].SubItems[2].Text = M.ToString();
+                        }
+                        catch
+                        {
+                        }
+                    }
+
+                }
+            }
+            catch
+            {
+                // MessageBox.Show("M");
+            }
 
         }
 

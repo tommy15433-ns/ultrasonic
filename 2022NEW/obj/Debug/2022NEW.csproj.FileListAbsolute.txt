@@ -757,3 +757,181 @@ C:\Users\jhpar\Desktop\엔에스텍\엔에스텍 시험기팀\프로그램\2024\
 C:\Users\jhpar\Desktop\엔에스텍\엔에스텍 시험기팀\프로그램\2024\Toyodenky\Pantograph_Tester_2024(Toyodenki)\rev2\Pantograph_Tester\2022NEW\obj\Debug\2022NEW.csproj.Up2Date
 C:\Users\jhpar\Desktop\엔에스텍\엔에스텍 시험기팀\프로그램\2024\Toyodenky\Pantograph_Tester_2024(Toyodenki)\rev2\Pantograph_Tester\2022NEW\obj\Debug\_2022_Test.exe
 C:\Users\jhpar\Desktop\엔에스텍\엔에스텍 시험기팀\프로그램\2024\Toyodenky\Pantograph_Tester_2024(Toyodenki)\rev2\Pantograph_Tester\2022NEW\obj\Debug\_2022_Test.pdb
+C:\Users\user\Documents\Visual Studio 2022\project\2024\Toyodenky\Pantograph_Tester_2024(Toyodenki)\rev2\Pantograph_Tester\2022NEW\bin\Debug\_2022_Test.exe.config
+C:\Users\user\Documents\Visual Studio 2022\project\2024\Toyodenky\Pantograph_Tester_2024(Toyodenki)\rev2\Pantograph_Tester\2022NEW\bin\Debug\_2022_Test.exe
+C:\Users\user\Documents\Visual Studio 2022\project\2024\Toyodenky\Pantograph_Tester_2024(Toyodenki)\rev2\Pantograph_Tester\2022NEW\bin\Debug\_2022_Test.pdb
+C:\Users\user\Documents\Visual Studio 2022\project\2024\Toyodenky\Pantograph_Tester_2024(Toyodenki)\rev2\Pantograph_Tester\2022NEW\bin\Debug\Cilador.Fody.dll
+C:\Users\user\Documents\Visual Studio 2022\project\2024\Toyodenky\Pantograph_Tester_2024(Toyodenki)\rev2\Pantograph_Tester\2022NEW\bin\Debug\Costura.dll
+C:\Users\user\Documents\Visual Studio 2022\project\2024\Toyodenky\Pantograph_Tester_2024(Toyodenki)\rev2\Pantograph_Tester\2022NEW\bin\Debug\dotNetLucidIo.dll
+C:\Users\user\Documents\Visual Studio 2022\project\2024\Toyodenky\Pantograph_Tester_2024(Toyodenki)\rev2\Pantograph_Tester\2022NEW\bin\Debug\SunnyUI.Common.dll
+C:\Users\user\Documents\Visual Studio 2022\project\2024\Toyodenky\Pantograph_Tester_2024(Toyodenki)\rev2\Pantograph_Tester\2022NEW\bin\Debug\SunnyUI.dll
+C:\Users\user\Documents\Visual Studio 2022\project\2024\Toyodenky\Pantograph_Tester_2024(Toyodenki)\rev2\Pantograph_Tester\2022NEW\bin\Debug\System.Buffers.dll
+C:\Users\user\Documents\Visual Studio 2022\project\2024\Toyodenky\Pantograph_Tester_2024(Toyodenki)\rev2\Pantograph_Tester\2022NEW\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\user\Documents\Visual Studio 2022\project\2024\Toyodenky\Pantograph_Tester_2024(Toyodenki)\rev2\Pantograph_Tester\2022NEW\bin\Debug\System.Memory.dll
+C:\Users\user\Documents\Visual Studio 2022\project\2024\Toyodenky\Pantograph_Tester_2024(Toyodenki)\rev2\Pantograph_Tester\2022NEW\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\user\Documents\Visual Studio 2022\project\2024\Toyodenky\Pantograph_Tester_2024(Toyodenki)\rev2\Pantograph_Tester\2022NEW\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\user\Documents\Visual Studio 2022\project\2024\Toyodenky\Pantograph_Tester_2024(Toyodenki)\rev2\Pantograph_Tester\2022NEW\bin\Debug\Cilador.Fody.pdb
+C:\Users\user\Documents\Visual Studio 2022\project\2024\Toyodenky\Pantograph_Tester_2024(Toyodenki)\rev2\Pantograph_Tester\2022NEW\bin\Debug\Costura.pdb
+C:\Users\user\Documents\Visual Studio 2022\project\2024\Toyodenky\Pantograph_Tester_2024(Toyodenki)\rev2\Pantograph_Tester\2022NEW\bin\Debug\Costura.xml
+C:\Users\user\Documents\Visual Studio 2022\project\2024\Toyodenky\Pantograph_Tester_2024(Toyodenki)\rev2\Pantograph_Tester\2022NEW\bin\Debug\dotNetLucidIo.xml
+C:\Users\user\Documents\Visual Studio 2022\project\2024\Toyodenky\Pantograph_Tester_2024(Toyodenki)\rev2\Pantograph_Tester\2022NEW\bin\Debug\System.Buffers.xml
+C:\Users\user\Documents\Visual Studio 2022\project\2024\Toyodenky\Pantograph_Tester_2024(Toyodenki)\rev2\Pantograph_Tester\2022NEW\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\user\Documents\Visual Studio 2022\project\2024\Toyodenky\Pantograph_Tester_2024(Toyodenki)\rev2\Pantograph_Tester\2022NEW\bin\Debug\System.Memory.xml
+C:\Users\user\Documents\Visual Studio 2022\project\2024\Toyodenky\Pantograph_Tester_2024(Toyodenki)\rev2\Pantograph_Tester\2022NEW\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\user\Documents\Visual Studio 2022\project\2024\Toyodenky\Pantograph_Tester_2024(Toyodenki)\rev2\Pantograph_Tester\2022NEW\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\user\Documents\Visual Studio 2022\project\2024\Toyodenky\Pantograph_Tester_2024(Toyodenki)\rev2\Pantograph_Tester\2022NEW\obj\Debug\2022NEW.csproj.AssemblyReference.cache
+C:\Users\user\Documents\Visual Studio 2022\project\2024\Toyodenky\Pantograph_Tester_2024(Toyodenki)\rev2\Pantograph_Tester\2022NEW\obj\Debug\2022NEW.csproj.ResolveComReference.cache
+C:\Users\user\Documents\Visual Studio 2022\project\2024\Toyodenky\Pantograph_Tester_2024(Toyodenki)\rev2\Pantograph_Tester\2022NEW\obj\Debug\_2022_Test.EditForm.resources
+C:\Users\user\Documents\Visual Studio 2022\project\2024\Toyodenky\Pantograph_Tester_2024(Toyodenki)\rev2\Pantograph_Tester\2022NEW\obj\Debug\_2022_Test.FTP_Form.resources
+C:\Users\user\Documents\Visual Studio 2022\project\2024\Toyodenky\Pantograph_Tester_2024(Toyodenki)\rev2\Pantograph_Tester\2022NEW\obj\Debug\_2022_Test.Select_TEST_Form.resources
+C:\Users\user\Documents\Visual Studio 2022\project\2024\Toyodenky\Pantograph_Tester_2024(Toyodenki)\rev2\Pantograph_Tester\2022NEW\obj\Debug\_2022_Test.PortSetting_Form.resources
+C:\Users\user\Documents\Visual Studio 2022\project\2024\Toyodenky\Pantograph_Tester_2024(Toyodenki)\rev2\Pantograph_Tester\2022NEW\obj\Debug\_2022_Test.MainForm.resources
+C:\Users\user\Documents\Visual Studio 2022\project\2024\Toyodenky\Pantograph_Tester_2024(Toyodenki)\rev2\Pantograph_Tester\2022NEW\obj\Debug\_2022_Test.ReportForm.resources
+C:\Users\user\Documents\Visual Studio 2022\project\2024\Toyodenky\Pantograph_Tester_2024(Toyodenki)\rev2\Pantograph_Tester\2022NEW\obj\Debug\_2022_Test.SettingForm.resources
+C:\Users\user\Documents\Visual Studio 2022\project\2024\Toyodenky\Pantograph_Tester_2024(Toyodenki)\rev2\Pantograph_Tester\2022NEW\obj\Debug\_2022_Test.SelfTestForm.resources
+C:\Users\user\Documents\Visual Studio 2022\project\2024\Toyodenky\Pantograph_Tester_2024(Toyodenki)\rev2\Pantograph_Tester\2022NEW\obj\Debug\_2022_Test.NSTEK.Kss_lib.KSS_BTN.resources
+C:\Users\user\Documents\Visual Studio 2022\project\2024\Toyodenky\Pantograph_Tester_2024(Toyodenki)\rev2\Pantograph_Tester\2022NEW\obj\Debug\_2022_Test.NSTEK.Kss_lib.KSS_ListView.resources
+C:\Users\user\Documents\Visual Studio 2022\project\2024\Toyodenky\Pantograph_Tester_2024(Toyodenki)\rev2\Pantograph_Tester\2022NEW\obj\Debug\_2022_Test.Properties.Resources.resources
+C:\Users\user\Documents\Visual Studio 2022\project\2024\Toyodenky\Pantograph_Tester_2024(Toyodenki)\rev2\Pantograph_Tester\2022NEW\obj\Debug\_2022_Test.StartForm.resources
+C:\Users\user\Documents\Visual Studio 2022\project\2024\Toyodenky\Pantograph_Tester_2024(Toyodenki)\rev2\Pantograph_Tester\2022NEW\obj\Debug\_2022_Test.init_Tester_info_Form.resources
+C:\Users\user\Documents\Visual Studio 2022\project\2024\Toyodenky\Pantograph_Tester_2024(Toyodenki)\rev2\Pantograph_Tester\2022NEW\obj\Debug\_2022_Test.PLC_Test_Form.resources
+C:\Users\user\Documents\Visual Studio 2022\project\2024\Toyodenky\Pantograph_Tester_2024(Toyodenki)\rev2\Pantograph_Tester\2022NEW\obj\Debug\2022NEW.csproj.GenerateResource.cache
+C:\Users\user\Documents\Visual Studio 2022\project\2024\Toyodenky\Pantograph_Tester_2024(Toyodenki)\rev2\Pantograph_Tester\2022NEW\obj\Debug\2022NEW.csproj.CoreCompileInputs.cache
+C:\Users\user\Documents\Visual Studio 2022\project\2024\Toyodenky\Pantograph_Tester_2024(Toyodenki)\rev2\Pantograph_Tester\2022NEW\obj\Debug\2022NEW.csproj.Up2Date
+C:\Users\user\Documents\Visual Studio 2022\project\2024\Toyodenky\Pantograph_Tester_2024(Toyodenki)\rev2\Pantograph_Tester\2022NEW\obj\Debug\_2022_Test.exe
+C:\Users\user\Documents\Visual Studio 2022\project\2024\Toyodenky\Pantograph_Tester_2024(Toyodenki)\rev2\Pantograph_Tester\2022NEW\obj\Debug\_2022_Test.pdb
+C:\Users\user\Documents\Visual Studio 2022\project\2024\Toyodenky\Pantograph_Tester_2024(Toyodenki)\rev2\Pantograph_Tester\2022NEW\obj\Debug\2022NEW.csproj.Fody.CopyLocal.cache
+C:\Users\user\Documents\Visual Studio 2022\project\2024\Toyodenky\Pantograph_Tester_2024(Toyodenki)\rev2\Pantograph_Tester\2022NEW\obj\Debug\2022NEW.csproj.Fody.RuntimeCopyLocal.cache
+E:\2024\Toyodenky\rev3\Pantograph_Tester\2022NEW\bin\Debug\_2022_Test.exe.config
+E:\2024\Toyodenky\rev3\Pantograph_Tester\2022NEW\bin\Debug\_2022_Test.exe
+E:\2024\Toyodenky\rev3\Pantograph_Tester\2022NEW\bin\Debug\_2022_Test.pdb
+E:\2024\Toyodenky\rev3\Pantograph_Tester\2022NEW\bin\Debug\Cilador.Fody.dll
+E:\2024\Toyodenky\rev3\Pantograph_Tester\2022NEW\bin\Debug\Costura.dll
+E:\2024\Toyodenky\rev3\Pantograph_Tester\2022NEW\bin\Debug\dotNetLucidIo.dll
+E:\2024\Toyodenky\rev3\Pantograph_Tester\2022NEW\bin\Debug\SunnyUI.Common.dll
+E:\2024\Toyodenky\rev3\Pantograph_Tester\2022NEW\bin\Debug\SunnyUI.dll
+E:\2024\Toyodenky\rev3\Pantograph_Tester\2022NEW\bin\Debug\System.Buffers.dll
+E:\2024\Toyodenky\rev3\Pantograph_Tester\2022NEW\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+E:\2024\Toyodenky\rev3\Pantograph_Tester\2022NEW\bin\Debug\System.Memory.dll
+E:\2024\Toyodenky\rev3\Pantograph_Tester\2022NEW\bin\Debug\System.Numerics.Vectors.dll
+E:\2024\Toyodenky\rev3\Pantograph_Tester\2022NEW\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+E:\2024\Toyodenky\rev3\Pantograph_Tester\2022NEW\bin\Debug\Cilador.Fody.pdb
+E:\2024\Toyodenky\rev3\Pantograph_Tester\2022NEW\bin\Debug\Costura.pdb
+E:\2024\Toyodenky\rev3\Pantograph_Tester\2022NEW\bin\Debug\Costura.xml
+E:\2024\Toyodenky\rev3\Pantograph_Tester\2022NEW\bin\Debug\dotNetLucidIo.xml
+E:\2024\Toyodenky\rev3\Pantograph_Tester\2022NEW\bin\Debug\System.Buffers.xml
+E:\2024\Toyodenky\rev3\Pantograph_Tester\2022NEW\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+E:\2024\Toyodenky\rev3\Pantograph_Tester\2022NEW\bin\Debug\System.Memory.xml
+E:\2024\Toyodenky\rev3\Pantograph_Tester\2022NEW\bin\Debug\System.Numerics.Vectors.xml
+E:\2024\Toyodenky\rev3\Pantograph_Tester\2022NEW\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+E:\2024\Toyodenky\rev3\Pantograph_Tester\2022NEW\obj\Debug\2022NEW.csproj.AssemblyReference.cache
+E:\2024\Toyodenky\rev3\Pantograph_Tester\2022NEW\obj\Debug\2022NEW.csproj.SuggestedBindingRedirects.cache
+E:\2024\Toyodenky\rev3\Pantograph_Tester\2022NEW\obj\Debug\2022NEW.csproj.ResolveComReference.cache
+E:\2024\Toyodenky\rev3\Pantograph_Tester\2022NEW\obj\Debug\_2022_Test.EditForm.resources
+E:\2024\Toyodenky\rev3\Pantograph_Tester\2022NEW\obj\Debug\_2022_Test.FTP_Form.resources
+E:\2024\Toyodenky\rev3\Pantograph_Tester\2022NEW\obj\Debug\_2022_Test.Select_TEST_Form.resources
+E:\2024\Toyodenky\rev3\Pantograph_Tester\2022NEW\obj\Debug\_2022_Test.PortSetting_Form.resources
+E:\2024\Toyodenky\rev3\Pantograph_Tester\2022NEW\obj\Debug\_2022_Test.MainForm.resources
+E:\2024\Toyodenky\rev3\Pantograph_Tester\2022NEW\obj\Debug\_2022_Test.ReportForm.resources
+E:\2024\Toyodenky\rev3\Pantograph_Tester\2022NEW\obj\Debug\_2022_Test.SettingForm.resources
+E:\2024\Toyodenky\rev3\Pantograph_Tester\2022NEW\obj\Debug\_2022_Test.SelfTestForm.resources
+E:\2024\Toyodenky\rev3\Pantograph_Tester\2022NEW\obj\Debug\_2022_Test.NSTEK.Kss_lib.KSS_BTN.resources
+E:\2024\Toyodenky\rev3\Pantograph_Tester\2022NEW\obj\Debug\_2022_Test.NSTEK.Kss_lib.KSS_ListView.resources
+E:\2024\Toyodenky\rev3\Pantograph_Tester\2022NEW\obj\Debug\_2022_Test.Properties.Resources.resources
+E:\2024\Toyodenky\rev3\Pantograph_Tester\2022NEW\obj\Debug\_2022_Test.StartForm.resources
+E:\2024\Toyodenky\rev3\Pantograph_Tester\2022NEW\obj\Debug\_2022_Test.init_Tester_info_Form.resources
+E:\2024\Toyodenky\rev3\Pantograph_Tester\2022NEW\obj\Debug\_2022_Test.PLC_Test_Form.resources
+E:\2024\Toyodenky\rev3\Pantograph_Tester\2022NEW\obj\Debug\2022NEW.csproj.GenerateResource.cache
+E:\2024\Toyodenky\rev3\Pantograph_Tester\2022NEW\obj\Debug\2022NEW.csproj.CoreCompileInputs.cache
+E:\2024\Toyodenky\rev3\Pantograph_Tester\2022NEW\obj\Debug\2022NEW.csproj.Fody.CopyLocal.cache
+E:\2024\Toyodenky\rev3\Pantograph_Tester\2022NEW\obj\Debug\2022NEW.csproj.Fody.RuntimeCopyLocal.cache
+E:\2024\Toyodenky\rev3\Pantograph_Tester\2022NEW\obj\Debug\2022NEW.csproj.CopyComplete
+E:\2024\Toyodenky\rev3\Pantograph_Tester\2022NEW\obj\Debug\_2022_Test.exe
+E:\2024\Toyodenky\rev3\Pantograph_Tester\2022NEW\obj\Debug\_2022_Test.pdb
+C:\Users\user\Documents\Visual Studio 2022\project\rev3\Pantograph_Tester\2022NEW\bin\Debug\_2022_Test.exe.config
+C:\Users\user\Documents\Visual Studio 2022\project\rev3\Pantograph_Tester\2022NEW\bin\Debug\_2022_Test.exe
+C:\Users\user\Documents\Visual Studio 2022\project\rev3\Pantograph_Tester\2022NEW\bin\Debug\_2022_Test.pdb
+C:\Users\user\Documents\Visual Studio 2022\project\rev3\Pantograph_Tester\2022NEW\bin\Debug\Cilador.Fody.dll
+C:\Users\user\Documents\Visual Studio 2022\project\rev3\Pantograph_Tester\2022NEW\bin\Debug\Costura.dll
+C:\Users\user\Documents\Visual Studio 2022\project\rev3\Pantograph_Tester\2022NEW\bin\Debug\dotNetLucidIo.dll
+C:\Users\user\Documents\Visual Studio 2022\project\rev3\Pantograph_Tester\2022NEW\bin\Debug\SunnyUI.Common.dll
+C:\Users\user\Documents\Visual Studio 2022\project\rev3\Pantograph_Tester\2022NEW\bin\Debug\SunnyUI.dll
+C:\Users\user\Documents\Visual Studio 2022\project\rev3\Pantograph_Tester\2022NEW\bin\Debug\System.Buffers.dll
+C:\Users\user\Documents\Visual Studio 2022\project\rev3\Pantograph_Tester\2022NEW\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\user\Documents\Visual Studio 2022\project\rev3\Pantograph_Tester\2022NEW\bin\Debug\System.Memory.dll
+C:\Users\user\Documents\Visual Studio 2022\project\rev3\Pantograph_Tester\2022NEW\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\user\Documents\Visual Studio 2022\project\rev3\Pantograph_Tester\2022NEW\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\user\Documents\Visual Studio 2022\project\rev3\Pantograph_Tester\2022NEW\bin\Debug\Cilador.Fody.pdb
+C:\Users\user\Documents\Visual Studio 2022\project\rev3\Pantograph_Tester\2022NEW\bin\Debug\Costura.pdb
+C:\Users\user\Documents\Visual Studio 2022\project\rev3\Pantograph_Tester\2022NEW\bin\Debug\Costura.xml
+C:\Users\user\Documents\Visual Studio 2022\project\rev3\Pantograph_Tester\2022NEW\bin\Debug\dotNetLucidIo.xml
+C:\Users\user\Documents\Visual Studio 2022\project\rev3\Pantograph_Tester\2022NEW\bin\Debug\System.Buffers.xml
+C:\Users\user\Documents\Visual Studio 2022\project\rev3\Pantograph_Tester\2022NEW\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\user\Documents\Visual Studio 2022\project\rev3\Pantograph_Tester\2022NEW\bin\Debug\System.Memory.xml
+C:\Users\user\Documents\Visual Studio 2022\project\rev3\Pantograph_Tester\2022NEW\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\user\Documents\Visual Studio 2022\project\rev3\Pantograph_Tester\2022NEW\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\user\Documents\Visual Studio 2022\project\rev3\Pantograph_Tester\2022NEW\obj\Debug\2022NEW.csproj.AssemblyReference.cache
+C:\Users\user\Documents\Visual Studio 2022\project\rev3\Pantograph_Tester\2022NEW\obj\Debug\2022NEW.csproj.ResolveComReference.cache
+C:\Users\user\Documents\Visual Studio 2022\project\rev3\Pantograph_Tester\2022NEW\obj\Debug\_2022_Test.EditForm.resources
+C:\Users\user\Documents\Visual Studio 2022\project\rev3\Pantograph_Tester\2022NEW\obj\Debug\_2022_Test.FTP_Form.resources
+C:\Users\user\Documents\Visual Studio 2022\project\rev3\Pantograph_Tester\2022NEW\obj\Debug\_2022_Test.Select_TEST_Form.resources
+C:\Users\user\Documents\Visual Studio 2022\project\rev3\Pantograph_Tester\2022NEW\obj\Debug\_2022_Test.PortSetting_Form.resources
+C:\Users\user\Documents\Visual Studio 2022\project\rev3\Pantograph_Tester\2022NEW\obj\Debug\_2022_Test.MainForm.resources
+C:\Users\user\Documents\Visual Studio 2022\project\rev3\Pantograph_Tester\2022NEW\obj\Debug\_2022_Test.ReportForm.resources
+C:\Users\user\Documents\Visual Studio 2022\project\rev3\Pantograph_Tester\2022NEW\obj\Debug\_2022_Test.SettingForm.resources
+C:\Users\user\Documents\Visual Studio 2022\project\rev3\Pantograph_Tester\2022NEW\obj\Debug\_2022_Test.SelfTestForm.resources
+C:\Users\user\Documents\Visual Studio 2022\project\rev3\Pantograph_Tester\2022NEW\obj\Debug\_2022_Test.NSTEK.Kss_lib.KSS_BTN.resources
+C:\Users\user\Documents\Visual Studio 2022\project\rev3\Pantograph_Tester\2022NEW\obj\Debug\_2022_Test.NSTEK.Kss_lib.KSS_ListView.resources
+C:\Users\user\Documents\Visual Studio 2022\project\rev3\Pantograph_Tester\2022NEW\obj\Debug\_2022_Test.Properties.Resources.resources
+C:\Users\user\Documents\Visual Studio 2022\project\rev3\Pantograph_Tester\2022NEW\obj\Debug\_2022_Test.StartForm.resources
+C:\Users\user\Documents\Visual Studio 2022\project\rev3\Pantograph_Tester\2022NEW\obj\Debug\_2022_Test.init_Tester_info_Form.resources
+C:\Users\user\Documents\Visual Studio 2022\project\rev3\Pantograph_Tester\2022NEW\obj\Debug\_2022_Test.PLC_Test_Form.resources
+C:\Users\user\Documents\Visual Studio 2022\project\rev3\Pantograph_Tester\2022NEW\obj\Debug\2022NEW.csproj.GenerateResource.cache
+C:\Users\user\Documents\Visual Studio 2022\project\rev3\Pantograph_Tester\2022NEW\obj\Debug\2022NEW.csproj.CoreCompileInputs.cache
+C:\Users\user\Documents\Visual Studio 2022\project\rev3\Pantograph_Tester\2022NEW\obj\Debug\2022NEW.csproj.Up2Date
+C:\Users\user\Documents\Visual Studio 2022\project\rev3\Pantograph_Tester\2022NEW\obj\Debug\_2022_Test.exe
+C:\Users\user\Documents\Visual Studio 2022\project\rev3\Pantograph_Tester\2022NEW\obj\Debug\_2022_Test.pdb
+E:\2024\Toyodenky\rev4\Pantograph_Tester\2022NEW\bin\Debug\_2022_Test.exe.config
+E:\2024\Toyodenky\rev4\Pantograph_Tester\2022NEW\bin\Debug\_2022_Test.exe
+E:\2024\Toyodenky\rev4\Pantograph_Tester\2022NEW\bin\Debug\_2022_Test.pdb
+E:\2024\Toyodenky\rev4\Pantograph_Tester\2022NEW\bin\Debug\Cilador.Fody.dll
+E:\2024\Toyodenky\rev4\Pantograph_Tester\2022NEW\bin\Debug\Costura.dll
+E:\2024\Toyodenky\rev4\Pantograph_Tester\2022NEW\bin\Debug\dotNetLucidIo.dll
+E:\2024\Toyodenky\rev4\Pantograph_Tester\2022NEW\bin\Debug\SunnyUI.Common.dll
+E:\2024\Toyodenky\rev4\Pantograph_Tester\2022NEW\bin\Debug\SunnyUI.dll
+E:\2024\Toyodenky\rev4\Pantograph_Tester\2022NEW\bin\Debug\System.Buffers.dll
+E:\2024\Toyodenky\rev4\Pantograph_Tester\2022NEW\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+E:\2024\Toyodenky\rev4\Pantograph_Tester\2022NEW\bin\Debug\System.Memory.dll
+E:\2024\Toyodenky\rev4\Pantograph_Tester\2022NEW\bin\Debug\System.Numerics.Vectors.dll
+E:\2024\Toyodenky\rev4\Pantograph_Tester\2022NEW\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+E:\2024\Toyodenky\rev4\Pantograph_Tester\2022NEW\bin\Debug\Cilador.Fody.pdb
+E:\2024\Toyodenky\rev4\Pantograph_Tester\2022NEW\bin\Debug\Costura.pdb
+E:\2024\Toyodenky\rev4\Pantograph_Tester\2022NEW\bin\Debug\Costura.xml
+E:\2024\Toyodenky\rev4\Pantograph_Tester\2022NEW\bin\Debug\dotNetLucidIo.xml
+E:\2024\Toyodenky\rev4\Pantograph_Tester\2022NEW\bin\Debug\System.Buffers.xml
+E:\2024\Toyodenky\rev4\Pantograph_Tester\2022NEW\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+E:\2024\Toyodenky\rev4\Pantograph_Tester\2022NEW\bin\Debug\System.Memory.xml
+E:\2024\Toyodenky\rev4\Pantograph_Tester\2022NEW\bin\Debug\System.Numerics.Vectors.xml
+E:\2024\Toyodenky\rev4\Pantograph_Tester\2022NEW\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+E:\2024\Toyodenky\rev4\Pantograph_Tester\2022NEW\obj\Debug\2022NEW.csproj.AssemblyReference.cache
+E:\2024\Toyodenky\rev4\Pantograph_Tester\2022NEW\obj\Debug\2022NEW.csproj.SuggestedBindingRedirects.cache
+E:\2024\Toyodenky\rev4\Pantograph_Tester\2022NEW\obj\Debug\2022NEW.csproj.ResolveComReference.cache
+E:\2024\Toyodenky\rev4\Pantograph_Tester\2022NEW\obj\Debug\_2022_Test.EditForm.resources
+E:\2024\Toyodenky\rev4\Pantograph_Tester\2022NEW\obj\Debug\_2022_Test.FTP_Form.resources
+E:\2024\Toyodenky\rev4\Pantograph_Tester\2022NEW\obj\Debug\_2022_Test.Select_TEST_Form.resources
+E:\2024\Toyodenky\rev4\Pantograph_Tester\2022NEW\obj\Debug\_2022_Test.PortSetting_Form.resources
+E:\2024\Toyodenky\rev4\Pantograph_Tester\2022NEW\obj\Debug\_2022_Test.MainForm.resources
+E:\2024\Toyodenky\rev4\Pantograph_Tester\2022NEW\obj\Debug\_2022_Test.ReportForm.resources
+E:\2024\Toyodenky\rev4\Pantograph_Tester\2022NEW\obj\Debug\_2022_Test.SettingForm.resources
+E:\2024\Toyodenky\rev4\Pantograph_Tester\2022NEW\obj\Debug\_2022_Test.SelfTestForm.resources
+E:\2024\Toyodenky\rev4\Pantograph_Tester\2022NEW\obj\Debug\_2022_Test.NSTEK.Kss_lib.KSS_BTN.resources
+E:\2024\Toyodenky\rev4\Pantograph_Tester\2022NEW\obj\Debug\_2022_Test.NSTEK.Kss_lib.KSS_ListView.resources
+E:\2024\Toyodenky\rev4\Pantograph_Tester\2022NEW\obj\Debug\_2022_Test.Properties.Resources.resources
+E:\2024\Toyodenky\rev4\Pantograph_Tester\2022NEW\obj\Debug\_2022_Test.StartForm.resources
+E:\2024\Toyodenky\rev4\Pantograph_Tester\2022NEW\obj\Debug\_2022_Test.init_Tester_info_Form.resources
+E:\2024\Toyodenky\rev4\Pantograph_Tester\2022NEW\obj\Debug\_2022_Test.PLC_Test_Form.resources
+E:\2024\Toyodenky\rev4\Pantograph_Tester\2022NEW\obj\Debug\2022NEW.csproj.GenerateResource.cache
+E:\2024\Toyodenky\rev4\Pantograph_Tester\2022NEW\obj\Debug\2022NEW.csproj.CoreCompileInputs.cache
+E:\2024\Toyodenky\rev4\Pantograph_Tester\2022NEW\obj\Debug\2022NEW.csproj.CopyComplete
+E:\2024\Toyodenky\rev4\Pantograph_Tester\2022NEW\obj\Debug\_2022_Test.exe
+E:\2024\Toyodenky\rev4\Pantograph_Tester\2022NEW\obj\Debug\_2022_Test.pdb

@@ -13,7 +13,6 @@ using System.IO;
 using System.Threading;
 using _2022_Test;
 using System.Diagnostics;
-using _2022_Test.NSTEK.device;
 
 namespace _2022_Test
 {
@@ -22,9 +21,9 @@ namespace _2022_Test
         Thread thRun;
 
         PLCEnet plc;
-        AND_AD310D loadcell;
+
         DeviceTools.P2PE p2p;
-        DSP_LAN dc_power;
+        DeviceTools.EX150_12_LAN ex150_lan;
         DeviceTools.DSOX1204G_LAN dsox1204g_lan;
 
         StartForm sf;
@@ -46,29 +45,6 @@ namespace _2022_Test
                 for (int i = 0; i < Setting.Equipment.Length; i++)
                 {
                     AutoSet_Button.Text = (i + 1).ToString() + " 번 설정 중....";
-
-                    if (Setting.Equipment[i] == "Loadcell")
-                    {
-                        for (int j = 0; j < Port.Length; j++)
-                        {
-
-                            loadcell = new AND_AD310D(Port[i]); Thread.Sleep(100);
-                            loadcell.Open(); Thread.Sleep(100);
-
-                            string sRes = loadcell.SelfTest();
-
-                            if (sRes.IndexOf("kg") >= 0)
-                            {
-                                PAN[i] = Port[j];
-                                break;
-                            }
-                           
-                            loadcell.Close();
-
-                        }
-                                     
-                    } // 직류전원장치
-
                     if (Setting.Equipment[i] == "plc")
                     {
                         try
@@ -89,30 +65,16 @@ namespace _2022_Test
                     {
                         try
                         {
-                            bool p_result;
-
-                            dc_power = new DSP_LAN(Setting.dsp_ip);
-
-                            p_result = dc_power.PING();
+                            ex150_lan = new DeviceTools.EX150_12_LAN(Setting.ex150_ip);
+                            ex150_lan.PortOpen();
                             Thread.Sleep(300);
-
-                            if (p_result)
+                            string sRes = ex150_lan.SelfTest();
+                            if (sRes.IndexOf("EX") >= 0)
                             {
-                                string pan = dc_power.SelfTest();
-
-                                Thread.Sleep(300);
-
-                                if (pan.IndexOf("DSP") >= 0)
-                                {
-                                    PAN[i] = "LAN";
-                                    dc_power.Portclose();
-                                }
-                                else
-                                {
-                                    PAN[i] = "";
-                                }
-
+                                PAN[i] = "LAN";
+                                ex150_lan.PortClose();
                             }
+                            ex150_lan.PortClose();
                         }
                         catch
                         {
@@ -122,7 +84,22 @@ namespace _2022_Test
 
                     if (Setting.Equipment[i] == "osc")
                     {
-                      
+                        try
+                        {
+                            dsox1204g_lan = new DeviceTools.DSOX1204G_LAN(Setting.dsox1204g_ip);
+                            dsox1204g_lan.Portopen();
+                            string sRes = dsox1204g_lan.SelfTest();
+                            if (sRes.IndexOf("DSOX") >= 0)
+                            {
+                                PAN[i] = "LAN";
+                                dsox1204g_lan.Portclose();
+                            }
+                            dsox1204g_lan.Portclose();
+                        }
+                        catch
+                        {
+                            PAN[i] = "";
+                        }
                     }
                     Thread.Sleep(100);
                 }

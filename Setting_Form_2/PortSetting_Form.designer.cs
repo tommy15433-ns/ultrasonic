@@ -145,6 +145,7 @@ namespace _2022_Test
             this.uiGroupBox4.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             this.uiGroupBox4.TitleInterval = 5;
             this.uiGroupBox4.TitleTop = 15;
+            this.uiGroupBox4.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
             // 
             // uiGroupBox2
             // 
@@ -177,6 +178,7 @@ namespace _2022_Test
             this.uiGroupBox2.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             this.uiGroupBox2.TitleInterval = 5;
             this.uiGroupBox2.TitleTop = 15;
+            this.uiGroupBox2.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
             // 
             // label14
             // 
@@ -274,9 +276,9 @@ namespace _2022_Test
             this.label18.ForeColor = System.Drawing.Color.White;
             this.label18.Location = new System.Drawing.Point(44, 7);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(82, 17);
+            this.label18.Size = new System.Drawing.Size(89, 17);
             this.label18.TabIndex = 0;
-            this.label18.Text = "Rising Time";
+            this.label18.Text = "Raising Time";
             // 
             // panel14
             // 
@@ -292,7 +294,7 @@ namespace _2022_Test
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label19.ForeColor = System.Drawing.Color.White;
-            this.label19.Location = new System.Drawing.Point(16, 8);
+            this.label19.Location = new System.Drawing.Point(19, 8);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(138, 17);
             this.label19.TabIndex = 0;
@@ -365,6 +367,7 @@ namespace _2022_Test
             this.uiGroupBox1.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             this.uiGroupBox1.TitleInterval = 5;
             this.uiGroupBox1.TitleTop = 15;
+            this.uiGroupBox1.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
             // 
             // label12
             // 
@@ -410,7 +413,7 @@ namespace _2022_Test
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(42, 7);
+            this.label1.Location = new System.Drawing.Point(38, 6);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(72, 17);
             this.label1.TabIndex = 0;
@@ -432,9 +435,9 @@ namespace _2022_Test
             this.label11.ForeColor = System.Drawing.Color.White;
             this.label11.Location = new System.Drawing.Point(20, 8);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(118, 17);
+            this.label11.Size = new System.Drawing.Size(125, 17);
             this.label11.TabIndex = 0;
-            this.label11.Text = "Low Limit(Rising)";
+            this.label11.Text = "Low Limit(Raising)";
             // 
             // textBox1
             // 

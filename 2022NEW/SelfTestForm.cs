@@ -84,7 +84,7 @@ namespace _2022_Test
                     string temp = sr.ReadToEnd();
                     sr.Close();
                     string[] Port = temp.Split('!');
-                    bool[] PAN = new bool[Setting.Equipment.Length];
+                     bool[] PAN = new bool[Setting.Equipment.Length];
 
 
                     for (int i = 0; i < Setting.Equipment.Length; i++)
@@ -94,34 +94,45 @@ namespace _2022_Test
                         {
                             if (Port[i] != "NONE")
                             {
-                                loadcell = new AND_AD310D(Port[i]); Thread.Sleep(100);
-                                loadcell.Open(); Thread.Sleep(100);
-
-                                string sRes = loadcell.SelfTest();
-
-                                if (sRes.IndexOf("kg") >= 0)
+                                try
                                 {
-                                    loadcell_btn.BackColor = Color.GreenYellow;
-                                }
-                                else
-                                {
-                                    sRes = loadcell.SelfTest();
+                                    loadcell = new AND_AD310D(Port[i]); Thread.Sleep(100);
+                                    loadcell.Open(); Thread.Sleep(100);
 
-                                    Thread.Sleep(100);
+                                    string sRes = loadcell.SelfTest();
+
                                     if (sRes.IndexOf("kg") >= 0)
                                     {
+                                        PAN[i] = true;
                                         loadcell_btn.BackColor = Color.GreenYellow;
                                     }
                                     else
                                     {
+                                        sRes = loadcell.SelfTest();
 
+                                        Thread.Sleep(100);
+                                        if (sRes.IndexOf("kg") >= 0)
+                                        {
+                                            PAN[i] = true;
+                                            loadcell_btn.BackColor = Color.GreenYellow;
+                                        }
+                                        else
+                                        {
 
-                                        loadcell_btn.BackColor = Color.LightCoral;
+                                            PAN[i] = false;
+                                            loadcell_btn.BackColor = Color.LightCoral;
+
+                                        }
 
                                     }
-
+                                    loadcell.Close();
                                 }
-                                loadcell.Close();
+                                catch
+                                {
+                                    PAN[i] = false;
+                                    loadcell.Close();
+                                    loadcell_btn.BackColor = Color.LightCoral;
+                                }
                             }
                             else
                                 loadcell_btn.BackColor = Color.LightCoral;
@@ -131,17 +142,26 @@ namespace _2022_Test
 
                         if (Setting.Equipment[i] == "plc" && plc_btn.BackColor == Color.LemonChiffon)
                         {
-                            plc = new PLCEnet();
-                            string pan = plc.ReadBit("0");
-                            if (pan == "00" || pan == "01")
+                            try
                             {
-                                PAN[i] = true;
-                                plc_btn.BackColor = Color.GreenYellow;
+                                plc = new PLCEnet();
+                                string pan = plc.ReadBit("0");
+                                if (pan == "00" || pan == "01")
+                                {
+                                    PAN[i] = true;
+                                    plc_btn.BackColor = Color.GreenYellow;
+                                }
+                                else
+                                {
+                                    PAN[i] = false;
+                                    plc_btn.BackColor = Color.LightCoral;
+                                }
                             }
-                            else
+                            catch
                             {
                                 PAN[i] = false;
                                 plc_btn.BackColor = Color.LightCoral;
+
                             }
                         }
                      
@@ -188,7 +208,7 @@ namespace _2022_Test
                             }
                         } // 직류전원장치
 
-
+/*
                         if (Setting.Equipment[i] == "timer" && Timer_btn.BackColor == Color.LemonChiffon)
                         {
                             try
@@ -226,7 +246,7 @@ namespace _2022_Test
                                 timercount.Close();
                             }
                         } // 직류전원장치
-
+*/
                     }
 
 
@@ -238,11 +258,11 @@ namespace _2022_Test
                             result = false;
                     }
 
-                    string mess = "진단이상 : ";
+                    string mess = "Self Test Error : ";
 
                     if (result)
                     {
-                        MessageBox.Show("자기진단 완료");
+                        MessageBox.Show("Self Test Complete");
 
                     }
                     else

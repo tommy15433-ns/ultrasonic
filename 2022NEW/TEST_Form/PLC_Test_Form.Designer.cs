@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series7 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series8 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PLC_Test_Form));
             this.serialPort1 = new System.IO.Ports.SerialPort(this.components);
             this.timer1 = new System.Windows.Forms.Timer(this.components);
@@ -107,6 +107,10 @@
             this.cb_121 = new System.Windows.Forms.CheckBox();
             this.cb_120 = new System.Windows.Forms.CheckBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.listview_DI = new KSS_Library.KSS_ListView();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.imageList2 = new System.Windows.Forms.ImageList(this.components);
             this.panel3 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
@@ -141,10 +145,11 @@
             this.plc_16 = new System.Windows.Forms.CheckBox();
             this.plc_0 = new System.Windows.Forms.CheckBox();
             this.plc_1 = new System.Windows.Forms.CheckBox();
-            this.listview_DI = new KSS_Library.KSS_ListView();
-            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.button1 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.chart_Powering)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -173,48 +178,48 @@
             // chart_Powering
             // 
             this.chart_Powering.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.DiagonalLeft;
-            chartArea1.AxisX.Enabled = System.Windows.Forms.DataVisualization.Charting.AxisEnabled.True;
-            chartArea1.AxisX.Interval = 1D;
-            chartArea1.AxisX.IsLabelAutoFit = false;
-            chartArea1.AxisX.LabelAutoFitMaxFontSize = 9;
-            chartArea1.AxisX.LabelAutoFitMinFontSize = 5;
-            chartArea1.AxisX.Minimum = 0D;
-            chartArea1.AxisX.Title = "시간(초)";
-            chartArea1.AxisX.TitleFont = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            chartArea1.AxisY.Enabled = System.Windows.Forms.DataVisualization.Charting.AxisEnabled.True;
-            chartArea1.AxisY.Interval = 2D;
-            chartArea1.AxisY.Maximum = 22D;
-            chartArea1.AxisY.Minimum = 0D;
-            chartArea1.AxisY.TitleFont = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            chartArea1.Name = "ChartArea1";
-            this.chart_Powering.ChartAreas.Add(chartArea1);
-            legend1.AutoFitMinFontSize = 5;
-            legend1.DockedToChartArea = "ChartArea1";
-            legend1.Docking = System.Windows.Forms.DataVisualization.Charting.Docking.Top;
-            legend1.Enabled = false;
-            legend1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            legend1.IsDockedInsideChartArea = false;
-            legend1.IsTextAutoFit = false;
-            legend1.Name = "Legend1";
-            this.chart_Powering.Legends.Add(legend1);
+            chartArea4.AxisX.Enabled = System.Windows.Forms.DataVisualization.Charting.AxisEnabled.True;
+            chartArea4.AxisX.Interval = 1D;
+            chartArea4.AxisX.IsLabelAutoFit = false;
+            chartArea4.AxisX.LabelAutoFitMaxFontSize = 9;
+            chartArea4.AxisX.LabelAutoFitMinFontSize = 5;
+            chartArea4.AxisX.Minimum = 0D;
+            chartArea4.AxisX.Title = "시간(초)";
+            chartArea4.AxisX.TitleFont = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            chartArea4.AxisY.Enabled = System.Windows.Forms.DataVisualization.Charting.AxisEnabled.True;
+            chartArea4.AxisY.Interval = 2D;
+            chartArea4.AxisY.Maximum = 22D;
+            chartArea4.AxisY.Minimum = 0D;
+            chartArea4.AxisY.TitleFont = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            chartArea4.Name = "ChartArea1";
+            this.chart_Powering.ChartAreas.Add(chartArea4);
+            legend4.AutoFitMinFontSize = 5;
+            legend4.DockedToChartArea = "ChartArea1";
+            legend4.Docking = System.Windows.Forms.DataVisualization.Charting.Docking.Top;
+            legend4.Enabled = false;
+            legend4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            legend4.IsDockedInsideChartArea = false;
+            legend4.IsTextAutoFit = false;
+            legend4.Name = "Legend1";
+            this.chart_Powering.Legends.Add(legend4);
             this.chart_Powering.Location = new System.Drawing.Point(227, 6);
             this.chart_Powering.Name = "chart_Powering";
-            series1.BorderWidth = 5;
-            series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.StepLine;
-            series1.LabelBorderWidth = 5;
-            series1.Legend = "Legend1";
-            series1.MarkerBorderWidth = 5;
-            series1.Name = "ACPT";
-            series2.BorderWidth = 5;
-            series2.ChartArea = "ChartArea1";
-            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.StepLine;
-            series2.LabelBorderWidth = 5;
-            series2.Legend = "Legend1";
-            series2.MarkerBorderWidth = 5;
-            series2.Name = "DCPT";
-            this.chart_Powering.Series.Add(series1);
-            this.chart_Powering.Series.Add(series2);
+            series7.BorderWidth = 5;
+            series7.ChartArea = "ChartArea1";
+            series7.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.StepLine;
+            series7.LabelBorderWidth = 5;
+            series7.Legend = "Legend1";
+            series7.MarkerBorderWidth = 5;
+            series7.Name = "ACPT";
+            series8.BorderWidth = 5;
+            series8.ChartArea = "ChartArea1";
+            series8.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.StepLine;
+            series8.LabelBorderWidth = 5;
+            series8.Legend = "Legend1";
+            series8.MarkerBorderWidth = 5;
+            series8.Name = "DCPT";
+            this.chart_Powering.Series.Add(series7);
+            this.chart_Powering.Series.Add(series8);
             this.chart_Powering.Size = new System.Drawing.Size(662, 455);
             this.chart_Powering.TabIndex = 116;
             this.chart_Powering.Text = "chart1";
@@ -1105,6 +1110,38 @@
             this.groupBox2.TabIndex = 61;
             this.groupBox2.TabStop = false;
             // 
+            // listview_DI
+            // 
+            this.listview_DI.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.listview_DI.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader1,
+            this.columnHeader2,
+            this.columnHeader3});
+            this.listview_DI.HideSelection = false;
+            this.listview_DI.Location = new System.Drawing.Point(7, 39);
+            this.listview_DI.Name = "listview_DI";
+            this.listview_DI.Size = new System.Drawing.Size(287, 351);
+            this.listview_DI.SmallImageList = this.imageList2;
+            this.listview_DI.TabIndex = 53;
+            this.listview_DI.Transparent = false;
+            this.listview_DI.UseCompatibleStateImageBehavior = false;
+            this.listview_DI.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "부품";
+            this.columnHeader1.Width = 125;
+            // 
+            // columnHeader2
+            // 
+            this.columnHeader2.Text = "NO";
+            this.columnHeader2.Width = 80;
+            // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "VALUE";
+            this.columnHeader3.Width = 78;
+            // 
             // imageList2
             // 
             this.imageList2.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
@@ -1502,43 +1539,71 @@
             this.plc_1.UseVisualStyleBackColor = true;
             this.plc_1.CheckedChanged += new System.EventHandler(this.plc_ry_Checkedchanged);
             // 
-            // listview_DI
+            // button1
             // 
-            this.listview_DI.BackColor = System.Drawing.SystemColors.InactiveBorder;
-            this.listview_DI.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader1,
-            this.columnHeader2,
-            this.columnHeader3});
-            this.listview_DI.HideSelection = false;
-            this.listview_DI.Location = new System.Drawing.Point(7, 39);
-            this.listview_DI.Name = "listview_DI";
-            this.listview_DI.Size = new System.Drawing.Size(287, 351);
-            this.listview_DI.SmallImageList = this.imageList2;
-            this.listview_DI.TabIndex = 53;
-            this.listview_DI.Transparent = false;
-            this.listview_DI.UseCompatibleStateImageBehavior = false;
-            this.listview_DI.View = System.Windows.Forms.View.Details;
+            this.button1.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.button1.Location = new System.Drawing.Point(707, 245);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(153, 35);
+            this.button1.TabIndex = 134;
+            this.button1.Text = "Loadcell_zero";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
-            // columnHeader1
+            // button3
             // 
-            this.columnHeader1.Text = "부품";
-            this.columnHeader1.Width = 125;
+            this.button3.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.button3.Location = new System.Drawing.Point(707, 285);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(153, 35);
+            this.button3.TabIndex = 135;
+            this.button3.Text = "용기지정";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // columnHeader2
+            // button4
             // 
-            this.columnHeader2.Text = "NO";
-            this.columnHeader2.Width = 80;
+            this.button4.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.button4.Location = new System.Drawing.Point(707, 325);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(153, 35);
+            this.button4.TabIndex = 136;
+            this.button4.Text = "용기 클리어";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click_1);
             // 
-            // columnHeader3
+            // button7
             // 
-            this.columnHeader3.Text = "VALUE";
-            this.columnHeader3.Width = 78;
+            this.button7.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.button7.Location = new System.Drawing.Point(786, 167);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(153, 35);
+            this.button7.TabIndex = 137;
+            this.button7.Text = "총중량표시";
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
+            // button8
+            // 
+            this.button8.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.button8.Location = new System.Drawing.Point(786, 204);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(153, 35);
+            this.button8.TabIndex = 138;
+            this.button8.Text = "순중량표시";
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click_1);
             // 
             // PLC_Test_Form
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(789, 434);
+            this.ClientSize = new System.Drawing.Size(951, 434);
+            this.Controls.Add(this.button8);
+            this.Controls.Add(this.button7);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.plc_1);
             this.Controls.Add(this.plc_0);
             this.Controls.Add(this.groupBox8);
@@ -1548,6 +1613,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "PLC_Test_Form";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "용기지정";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.PLC_Test_Form_FormClosing);
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseMove);
@@ -1685,5 +1751,10 @@
         private System.Windows.Forms.CheckBox plc_9;
         private System.Windows.Forms.CheckBox plc_0;
         private System.Windows.Forms.CheckBox plc_1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button button8;
     }
 }

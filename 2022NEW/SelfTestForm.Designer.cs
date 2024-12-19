@@ -74,7 +74,7 @@
             this.OK_BTN.Enabled = false;
             this.OK_BTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.OK_BTN.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.OK_BTN.Location = new System.Drawing.Point(24, 287);
+            this.OK_BTN.Location = new System.Drawing.Point(24, 247);
             this.OK_BTN.Name = "OK_BTN";
             this.OK_BTN.Size = new System.Drawing.Size(160, 35);
             this.OK_BTN.TabIndex = 2;
@@ -87,7 +87,7 @@
             this.NG_BTN.Enabled = false;
             this.NG_BTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.NG_BTN.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.NG_BTN.Location = new System.Drawing.Point(227, 287);
+            this.NG_BTN.Location = new System.Drawing.Point(227, 247);
             this.NG_BTN.Name = "NG_BTN";
             this.NG_BTN.Size = new System.Drawing.Size(160, 35);
             this.NG_BTN.TabIndex = 9;
@@ -100,7 +100,7 @@
             this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button5.Location = new System.Drawing.Point(24, 334);
+            this.button5.Location = new System.Drawing.Point(24, 294);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(160, 35);
             this.button5.TabIndex = 10;
@@ -114,7 +114,7 @@
             this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button6.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button6.Location = new System.Drawing.Point(227, 334);
+            this.button6.Location = new System.Drawing.Point(227, 294);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(160, 35);
             this.button6.TabIndex = 11;
@@ -129,7 +129,7 @@
             this.button9.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.button9.Image = global::_2022_Test.Properties.Resources.icons8_circled_play_44__1_;
             this.button9.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button9.Location = new System.Drawing.Point(153, 431);
+            this.button9.Location = new System.Drawing.Point(153, 379);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(80, 70);
             this.button9.TabIndex = 14;
@@ -145,7 +145,7 @@
             this.button8.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.button8.Image = global::_2022_Test.Properties.Resources.icons8_minus_44;
             this.button8.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button8.Location = new System.Drawing.Point(239, 431);
+            this.button8.Location = new System.Drawing.Point(239, 379);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(80, 70);
             this.button8.TabIndex = 13;
@@ -160,7 +160,7 @@
             this.Exit_BTN.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.Exit_BTN.Image = global::_2022_Test.Properties.Resources.icons8_logout_443;
             this.Exit_BTN.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.Exit_BTN.Location = new System.Drawing.Point(324, 431);
+            this.Exit_BTN.Location = new System.Drawing.Point(324, 379);
             this.Exit_BTN.Name = "Exit_BTN";
             this.Exit_BTN.Size = new System.Drawing.Size(80, 70);
             this.Exit_BTN.TabIndex = 12;
@@ -178,14 +178,14 @@
             this.Serial_GroupBox.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.Serial_GroupBox.Location = new System.Drawing.Point(12, 54);
             this.Serial_GroupBox.Name = "Serial_GroupBox";
-            this.Serial_GroupBox.Size = new System.Drawing.Size(389, 213);
+            this.Serial_GroupBox.Size = new System.Drawing.Size(389, 170);
             this.Serial_GroupBox.TabIndex = 15;
             this.Serial_GroupBox.TabStop = false;
             this.Serial_GroupBox.Text = "Equipment";
             // 
             // Timer_btn
             // 
-            this.Timer_btn.BackColor = System.Drawing.Color.LemonChiffon;
+            this.Timer_btn.BackColor = System.Drawing.Color.Gainsboro;
             this.Timer_btn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Timer_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Timer_btn.Font = new System.Drawing.Font("돋움", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
@@ -195,6 +195,7 @@
             this.Timer_btn.TabIndex = 3;
             this.Timer_btn.Text = "Timer";
             this.Timer_btn.UseVisualStyleBackColor = false;
+            this.Timer_btn.Visible = false;
             this.Timer_btn.MouseUp += new System.Windows.Forms.MouseEventHandler(this.plc_btn_MouseUp);
             // 
             // power_btn
@@ -243,7 +244,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(416, 515);
+            this.ClientSize = new System.Drawing.Size(416, 463);
             this.Controls.Add(this.Serial_GroupBox);
             this.Controls.Add(this.button9);
             this.Controls.Add(this.button8);

@@ -34,7 +34,7 @@ namespace _2022_Test
 
         MainForm run_form;
 
-        
+      
 
         bool half = false;
         bool full = false;
@@ -131,6 +131,7 @@ namespace _2022_Test
         }
 
        
+
         private void monthCalendar1_DateChanged(object sender, DateRangeEventArgs e)
         {
         
@@ -180,7 +181,7 @@ namespace _2022_Test
             {
                 foreach (string fn in fd.FileNames)
                 {
-                    tb_oldDataFile.Text = fn;
+                    //ztb_oldDataFile.Text = fn;
                    //run_form.LoadTestedData(fn);
                 }
             }

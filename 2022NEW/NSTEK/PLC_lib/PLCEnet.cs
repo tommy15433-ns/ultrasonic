@@ -727,14 +727,18 @@ namespace Library
 
                 client.Close();
                 receiveStr = Convert.ToString(receipve[35], 16) + Convert.ToString(receipve[34], 16) + Convert.ToString(receipve[33], 16) + Convert.ToString(receipve[32], 16);
-                if (receiveStr.Length < 8)
-                {
-                    do
-                    {
-                        receiveStr = "0" + receiveStr;
+                
+                
+                
+                
+                //if (receiveStr.Length < 8)
+                //{
+                //    do
+                //    {
+                //        receiveStr = "0" + receiveStr;
 
-                    } while (receiveStr.Length < 8);
-                }
+                //    } while (receiveStr.Length < 8);
+                //}
                 Thread.Sleep(8);
             }
 
@@ -743,5 +747,120 @@ namespace Library
 
             return receiveStr;
         }
+
+        public byte [] ReadDouble_byte(string sAddr)
+        {
+            string receiveStr = "";
+
+            byte[] data = new byte[4];
+
+            if (sAddr.Length < 3)
+            {
+                do
+                {
+                    sAddr = "0" + sAddr;
+
+                } while (sAddr.Length < 3);
+            }
+
+            Socket client = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
+            IPAddress ipAddr = IPAddress.Parse(Address);
+
+            IPEndPoint serverEndPoint = new IPEndPoint(ipAddr, 2004);
+            client.Connect(serverEndPoint);
+
+            if (client.Connected)
+            {
+                byte[] addr = Encoding.Default.GetBytes("%MD" + string.Format("{0:X4}", sAddr));
+
+                byte DataLength = Convert.ToByte((addr.Length + 4).ToString(), 16);
+                byte NameLength = Convert.ToByte((addr.Length).ToString(), 16);
+
+                byte[] bytesBuff = new byte[30 + addr.Length];
+                ////////////헤더///////////////
+                byte[] header = Encoding.Default.GetBytes("LGIS-GLOFA");
+                for (int k = 0; k < header.Length; k++)
+                {
+                    bytesBuff[k] = header[k];
+                }
+                bytesBuff[10] = 0x00;
+                bytesBuff[11] = 0x00;
+                bytesBuff[12] = 0x00;
+                bytesBuff[13] = 0x33;
+                bytesBuff[14] = 0x00;
+                bytesBuff[15] = 0x00;
+                bytesBuff[16] = DataLength;//데이터길이
+                bytesBuff[17] = 0x00;//데이터길이
+                bytesBuff[18] = 0x00;//예약
+                bytesBuff[19] = 0x0D;//BCC
+                /////////////////////////////////
+
+
+                bytesBuff[20] = 0x54; //읽기
+                bytesBuff[21] = 0x00; //쓰기
+
+                bytesBuff[22] = 0x03; //데이터타입
+                bytesBuff[23] = 0x00; //데이터타입
+
+                bytesBuff[24] = 0x00; //Dont care
+                bytesBuff[25] = 0x00; //Dont care
+
+                bytesBuff[26] = 0x01; //변수갯수
+                bytesBuff[27] = 0x00; //변수갯수
+
+                bytesBuff[28] = NameLength;
+                bytesBuff[29] = 0x00; //변수명길이
+                int i = 0;
+                for (i = 0; i < addr.Length; i++)
+                {
+
+                    bytesBuff[30 + i] = addr[i]; //변수명길이
+
+                }
+
+
+
+
+
+
+                client.Send(bytesBuff);
+                byte[] receipveBUffer = new byte[4096];
+
+                int byteBytesRecvd = client.Receive(receipveBUffer);
+
+
+                byte[] receipve = new byte[byteBytesRecvd];
+                Array.ConstrainedCopy(receipveBUffer, 0, receipve, 0, byteBytesRecvd);
+
+
+                client.Close();
+                receiveStr = Convert.ToString(receipve[35], 16) + Convert.ToString(receipve[34], 16) + Convert.ToString(receipve[33], 16) + Convert.ToString(receipve[32], 16);
+
+
+               
+
+                data[0] = receipve[35];
+                data[1] = receipve[34];
+                data[2] = receipve[33];
+                data[3] = receipve[32];
+
+
+                //if (receiveStr.Length < 8)
+                //{
+                //    do
+                //    {
+                //        receiveStr = "0" + receiveStr;
+
+                //    } while (receiveStr.Length < 8);
+                //}
+                Thread.Sleep(8);
+            }
+
+
+
+
+            return data;
+        }
+
     }
 }

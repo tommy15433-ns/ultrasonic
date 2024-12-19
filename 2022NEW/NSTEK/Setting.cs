@@ -20,9 +20,9 @@
         public static readonly string[] Equipment = new string[] // 통신
         {
 
-           // "Loadcell",
+            "Loadcell",
             "plc",
-            //"power",
+            "power",
           //"timer",
 
 
@@ -39,7 +39,7 @@
         {
               "Measuring Rising Speed",
                "Measuring Low Speed",
-               "Minimum operating air Pressure(Rasing)",
+               "Minimum operating Volt(Rasing)",
                "Minimum operating air Pressure(Lowering)",
                "Air Leakage Test",
         };
@@ -84,7 +84,7 @@
         {
          "Up 98N less",
          "Low 44N more",
-         "With in 20N"
+         "Within 20N"
         };
         public static string[] ListName4 = new string[]//전원측정확인
         {
@@ -105,31 +105,17 @@
          "",
          "",
          "",
-         "",
-         "",
-         "",
-         "",
-          "",
-         "",
-         "",
-         "",
+
 
 
        };
         public static string[] ListName7 = new string[] // 모의
      {
-         "DI1_0",
+         "loadcell",
          "DI1_1",
          "DI1_2",
          "DI1_3",
-         "DI2_0",
-         "DI2_1",
-         "DI2_2",
-         "DI2_3",
-         "DI2_4",
-         "DI2_5",
-         "DI2_6",
-         "DI2_7",
+
 
      };
         public static string[] ListName8 = new string[] // pau

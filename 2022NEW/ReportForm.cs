@@ -263,14 +263,21 @@ namespace _2022_Test
                 {
 
 
-                    datagridview1.Columns[0].Name = "검사일시";
-                    datagridview1.Columns[1].Name = "편성번호";
-                    datagridview1.Columns[2].Name = "차량번호";
-                    datagridview1.Columns[3].Name = "일련번호";
-                    datagridview1.Columns[4].Name = "검사종류";
-                    datagridview1.Columns[5].Name = "검사자";
-                    datagridview1.Columns[6].Name = "종류";
-                    datagridview1.Columns[7].Name = "시험대상";
+                    //datagridview1.Columns[0].Name = "검사일시";
+                    //datagridview1.Columns[1].Name = "편성번호";
+                    //datagridview1.Columns[2].Name = "차량번호";
+                    //datagridview1.Columns[3].Name = "일련번호";
+                    //datagridview1.Columns[4].Name = "검사종류";
+                    //datagridview1.Columns[5].Name = "검사자";
+                    //datagridview1.Columns[6].Name = "종류";
+                    //datagridview1.Columns[7].Name = "시험대상";
+
+                    datagridview1.Columns[0].Name = "DATE";
+                    datagridview1.Columns[1].Name = "Train Number";
+                    datagridview1.Columns[2].Name = "Car Number";
+                    datagridview1.Columns[3].Name = "Serial Number";
+                    datagridview1.Columns[4].Name = "Type of Test";
+                    datagridview1.Columns[5].Name = "Tester";
 
 
                     try
@@ -280,9 +287,9 @@ namespace _2022_Test
                                datagridview1.SelectedRows[i].Cells[2].Value.ToString() + "_" +//차량번호
                                datagridview1.SelectedRows[i].Cells[3].Value.ToString() + "_" +//일련번호
                                datagridview1.SelectedRows[i].Cells[4].Value.ToString() + "_" +//검사종류
-                               datagridview1.SelectedRows[i].Cells[5].Value.ToString() + "_" +//검사자1
-                               datagridview1.SelectedRows[i].Cells[6].Value.ToString() + "_" +// 종류
-                               datagridview1.SelectedRows[i].Cells[7].Value.ToString() + "_.dat";//시험대상
+                               datagridview1.SelectedRows[i].Cells[5].Value.ToString() + "_.dat";//검사자1
+                               //datagridview1.SelectedRows[i].Cells[6].Value.ToString() + "_" +// 종류
+                               //datagridview1.SelectedRows[i].Cells[7].Value.ToString() + "_.dat";//시험대상
                                                                                                  //datagridview1.SelectedRows[i].Cells[7].Value.ToString() + "_.dat";//판정
 
                         //string FileName = @"C:\odt\201911201615_박준호_21 - 5_1555_2213_KTX산천.dat";
@@ -325,80 +332,32 @@ namespace _2022_Test
         {
             try
             {
-
-                if (datagridview1.SelectedRows.Count == 1 && datagridview1.SelectedRows[0].Cells[0].Value != null)
+                try
                 {
-                    string[] value = new string[10];
-                    string FileName = "";
+                    if (datagridview1.SelectedRows.Count > 11)
+                        datagridview1.SelectedRows[0].Selected = false;
+                    StreamReader sr = new StreamReader(Application.StartupPath + "\\" + "reportpath.ini");
+                    string[] fd = sr.ReadToEnd().Split('!');
+                    sr.Close();
+                    string FileName = DateTime.Parse(datagridview1.SelectedRows[0].Cells[0].Value.ToString()).ToString("yyyyMMddHHmm") + "_" + //날짜
+                                                   datagridview1.SelectedRows[0].Cells[1].Value.ToString() + "_" + //편성번호
+                                                   datagridview1.SelectedRows[0].Cells[2].Value.ToString() + "_" +//차량번호
+                                                   datagridview1.SelectedRows[0].Cells[3].Value.ToString() + "_" +//일련번호
+                                                   datagridview1.SelectedRows[0].Cells[4].Value.ToString() + "_" +//검사종류
+                                                   datagridview1.SelectedRows[0].Cells[5].Value.ToString() + "_.dat";//검사자1
 
-                    //richbox1.AppendText("데이터 로딩 중\n");
-                    //richbox1.ScrollToCaret();
 
-                    FileName = DateTime.Parse(datagridview1.SelectedRows[0].Cells[0].Value.ToString()).ToString("yyyyMMddHHmmss") + "^";
+                    string name = fd[0] + @"\" + FileName;
+                    odt = new Odt(name);
+                    //odt = new Odt(FileName);
 
-                    for (int i = 1; i < datagridview1.ColumnCount; i++)
-                    {
-                        FileName = FileName + datagridview1.SelectedRows[0].Cells[i].Value.ToString() + "^";
-                    }
-                    FileName = FileName + ".xlsx";
-
-                    NowName = Report_Route + "\\" + FileName;
-
-                    //excelApp = new Excel.Application();
-                    //WorkBook = excelApp.Workbooks.Open(NowName);
-                    //WorkSheet = WorkBook.Worksheets.get_Item(1) as Excel.Worksheet;
-
-                    //excelApp.DisplayAlerts = false;
-                    //excelApp.Visible = false;
-                    //excelApp.ScreenUpdating = false;
-                    //excelApp.DisplayStatusBar = false;
-                    //excelApp.Calculation = Excel.XlCalculation.xlCalculationManual;
-                    //excelApp.EnableEvents = false;
-
-                    //Excel.Range range;
-
-                    //datagridview2.Rows.Clear();
-
-                    //for (int i = 0; i < Setting.TestList0.Length; i++)
-                    //{
-                    //    Excel.Range range1 = WorkSheet.Cells[8 + i, 1];
-                    //    Excel.Range range2 = WorkSheet.Cells[8 + i, 7];
-                    //    Excel.Range range3 = WorkSheet.Cells[8 + i, 8];
-
-                    //    if (range1.Value != null)
-                    //        value[0] = range1.Value.ToString();
-                    //    if (range2.Value != null)
-                    //        value[1] = range2.Value.ToString("F2");
-                    //    if (range3.Value != null)
-                    //    {
-                    //        if (range3.Value == "OK")
-                    //            value[2] = Constant.GOOD;
-                    //        else
-                    //            value[2] = Constant.NG;
-                    //    }
-
-                    //    datagridview2.Rows.Add(value);
-                    //}
-
-                    //if (WorkBook != null)
-                    //{
-                    //    WorkBook.Close();
-                    //    WorkBook = null;
-                    //}
-                    //if (excelApp != null)
-                    //{
-                    //    excelApp.Quit();
-                    //    excelApp = null;
-                    //}
-
-                    //ReleaseExcelObject(WorkSheet);
-                    //ReleaseExcelObject(WorkBook);
-                    //ReleaseExcelObject(excelApp);
-                    //KillProcessByName("Excel");
-
-                    //richbox1.AppendText("데이터 로딩 완료\n");
-                    //richbox1.ScrollToCaret();
                 }
+                catch
+                {
+
+                }
+
+
             }
             catch
             {

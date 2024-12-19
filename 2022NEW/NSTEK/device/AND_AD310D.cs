@@ -32,7 +32,7 @@ namespace _2022_Test.NSTEK.device
             PortName = sPort;
             spCom = new SerialPort();
             spCom.PortName = PortName;
-            spCom.BaudRate = 38400;
+            spCom.BaudRate = 19200;
             spCom.StopBits = StopBits.One;
             spCom.Parity = Parity.None;
             spCom.Handshake = Handshake.None;
@@ -56,14 +56,29 @@ namespace _2022_Test.NSTEK.device
         }
 
 
-        public string ReadValue()
+        public string Zero_point()
         {
-            SendData("RW");
+            if (!spCom.IsOpen)
+            {
+                spCom.Open();
+            }
+
+            SendData("MG");
+
+            Thread.Sleep(50);
             return ReturnValue();
         }
 
 
-        private void SendData(string sCMD)
+        public string ReadValue()
+        {
+            SendData("RW");
+            Thread.Sleep(20);
+            return ReturnValue();
+        }
+
+
+        public void SendData(string sCMD)
         {
             try
             {

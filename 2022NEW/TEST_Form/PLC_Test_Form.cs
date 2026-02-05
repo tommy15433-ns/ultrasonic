@@ -345,6 +345,252 @@ namespace _2022_Test
            string sres =  loadcell.ReadValue();
         }
 
+        private void button1_MouseDown(object sender, MouseEventArgs e)
+        {
+            plc.WriteBit("202", "1");
+            button1.BackColor = Color.Green;
+        }
+
+        private void button1_MouseUp(object sender, MouseEventArgs e)
+        {
+            plc.WriteBit("202", "0");
+            button1.BackColor = SystemColors.Control;
+        }
+
+        private void button3_MouseDown(object sender, MouseEventArgs e)
+        {
+            plc.WriteBit("203", "1");
+            button3.BackColor = Color.Green;
+        }
+
+        private void button3_MouseUp(object sender, MouseEventArgs e)
+        {
+            plc.WriteBit("203", "0");
+            button3.BackColor = SystemColors.Control;
+        }
+
+        private void button7_MouseDown(object sender, MouseEventArgs e)
+        {
+            plc.WriteBit("212", "1");
+            button7.BackColor = Color.Green;
+        }
+
+        private void button7_MouseUp(object sender, MouseEventArgs e)
+        {
+            plc.WriteBit("212", "0");
+            button7.BackColor = SystemColors.Control;
+        }
+
+        private void button4_MouseDown(object sender, MouseEventArgs e)
+        {
+            plc.WriteBit("213", "1");
+            button4.BackColor = Color.Green;
+        }
+
+        private void button4_MouseUp(object sender, MouseEventArgs e)
+        {
+            plc.WriteBit("213", "0");
+            button4.BackColor = SystemColors.Control;
+        }
+
+        private void button19_MouseDown(object sender, MouseEventArgs e)
+        {
+            plc.WriteBit("542", "1");
+            button19.BackColor = Color.Green;
+        }
+
+        private void button19_MouseUp(object sender, MouseEventArgs e)
+        {
+            plc.WriteBit("542", "0");
+            button19.BackColor = SystemColors.Control;
+        }
+
+        private void button18_MouseDown(object sender, MouseEventArgs e)
+        {
+            plc.WriteBit("543", "1");
+            button18.BackColor = Color.Green;
+        }
+
+        private void button18_MouseUp(object sender, MouseEventArgs e)
+        {
+            plc.WriteBit("543", "0");
+            button18.BackColor = SystemColors.Control;
+        }
+
+        private void button17_MouseDown(object sender, MouseEventArgs e)
+        {
+            plc.WriteBit("552", "1");
+            button17.BackColor = Color.Green;
+        }
+
+        private void button17_MouseUp(object sender, MouseEventArgs e)
+        {
+            plc.WriteBit("552", "0");
+            button17.BackColor = SystemColors.Control;
+        }
+
+        private void button16_MouseDown(object sender, MouseEventArgs e)
+        {
+            plc.WriteBit("553", "1");
+            button16.BackColor = Color.Green;
+        }
+
+        private void button16_MouseUp(object sender, MouseEventArgs e)
+        {
+            plc.WriteBit("553", "0");
+            button16.BackColor = SystemColors.Control;
+        }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButton1.Checked)
+            {
+                plc.WriteBit("107", "1");
+                plc.WriteBit("108", "0");
+            }
+            else
+            {
+                plc.WriteBit("108", "1");
+                plc.WriteBit("107", "0");
+
+            }
+        }
+
+        private void radioButton4_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButton4.Checked)
+            {
+                plc.WriteBit("123", "1");
+                plc.WriteBit("124", "0");
+            }
+            else
+            {
+                plc.WriteBit("124", "1");
+                plc.WriteBit("123", "0");
+
+            }
+        }
+
+        private void button11_MouseDown(object sender, MouseEventArgs e)
+        {
+            plc.WriteBit("1202", "1");
+            button11.BackColor = Color.Green;
+        }
+
+        private void button11_MouseUp(object sender, MouseEventArgs e)
+        {
+            plc.WriteBit("1202", "0");
+            button11.BackColor = SystemColors.Control;
+        }
+
+        private void button10_MouseDown(object sender, MouseEventArgs e)
+        {
+            plc.WriteBit("1203", "1");
+            button10.BackColor = Color.Green;
+        }
+
+        private void button10_MouseUp(object sender, MouseEventArgs e)
+        {
+            plc.WriteBit("1203", "0");
+            button10.BackColor = SystemColors.Control;
+        }
+
+        private void button9_MouseDown(object sender, MouseEventArgs e)
+        {
+            plc.WriteBit("1212", "1");
+            button9.BackColor = Color.Green;
+        }
+
+        private void button9_MouseUp(object sender, MouseEventArgs e)
+        {
+            plc.WriteBit("1212", "0");
+            button9.BackColor = SystemColors.Control;
+        }
+
+        private void button8_MouseDown(object sender, MouseEventArgs e)
+        {
+
+            plc.WriteBit("1213", "1");
+            button8.BackColor = Color.Green;
+        }
+
+        private void button8_MouseUp(object sender, MouseEventArgs e)
+        {
+            plc.WriteBit("1213", "0");
+            button8.BackColor = SystemColors.Control;
+        }
+
+        private void radioButton10_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButton10.Checked)
+            {
+                plc.WriteBit("109", "1");
+                plc.WriteBit("110", "0");
+            }
+            else
+            {
+                plc.WriteBit("110", "1");
+                plc.WriteBit("109", "0");
+
+            }
+        }
+
+        private void radioButton12_CheckedChanged(object sender, EventArgs e)
+        {
+
+            if (radioButton12.Checked)
+            {
+                plc.WriteBit("125", "1");
+                plc.WriteBit("126", "0");
+            }
+            else
+            {
+                plc.WriteBit("125", "0");
+                plc.WriteBit("126", "1");
+            
+            }
+        }
+
+        private void radioButton14_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButton14.Checked)
+            {
+                plc.WriteBit("42", "1");
+                plc.WriteBit("43", "0");
+            }
+            else
+            {
+                plc.WriteBit("42", "0");
+                plc.WriteBit("43", "1");
+
+            }
+        }
+
+        private void button15_MouseDown(object sender, MouseEventArgs e)
+        {
+
+            plc.WriteBit("1542", "1");
+            button15.BackColor = Color.Green;
+        }
+
+        private void button15_MouseUp(object sender, MouseEventArgs e)
+        {
+            plc.WriteBit("1542", "0");
+            button15.BackColor = SystemColors.Control;
+        }
+
+        private void button14_MouseDown(object sender, MouseEventArgs e)
+        {
+            plc.WriteBit("1543", "1");
+            button14.BackColor = Color.Green;
+        }
+
+        private void button14_MouseUp(object sender, MouseEventArgs e)
+        {
+            plc.WriteBit("1543", "0");
+            button14.BackColor = SystemColors.Control;
+        }
+
         public PLC_Test_Form()
         {
             InitializeComponent();
@@ -369,16 +615,16 @@ namespace _2022_Test
                     plc = new PLCEnet();
                 }
 
-                if (Setting.Equipment[i] == "power")
-                {
-                    dc_power = new DSP_LAN(Setting.dsp_ip);
-                    dc_power.Portopen();
-                }
-                if (Setting.Equipment[i] == "Loadcell")
-                {
-                    loadcell = new AND_AD310D(Port[i]);
-                    loadcell.Open();
-                }                                       
+                //if (Setting.Equipment[i] == "power")
+                //{
+                //    dc_power = new DSP_LAN(Setting.dsp_ip);
+                //    dc_power.Portopen();
+                //}
+                //if (Setting.Equipment[i] == "Loadcell")
+                //{
+                //    loadcell = new AND_AD310D(Port[i]);
+                //    loadcell.Open();
+                //}                                       
             }
 
 
@@ -388,18 +634,10 @@ namespace _2022_Test
 
 
 
-            for (int j = 0; j < Setting.ListName6.Length; j++)
-            {
-                listview_DI.Items.Add(Setting.ListName6[j]);
-                listview_DI.Items[j].SubItems.Add(Setting.ListName7[j]);
-                listview_DI.Items[j].SubItems.Add("");
-                listview_DI.Items[j].SubItems.Add("");
-
-            }
 
 
-            read_di = new Thread(plc_Read);
-            read_di.Start();
+            //read_di = new Thread(plc_Read);
+            //read_di.Start();
 
         }
 
@@ -427,7 +665,7 @@ namespace _2022_Test
                         {
                             float a = float.Parse(tempAry2[0]);
                             float N = a * 9.8f;
-                            listview_DI.Items[0].SubItems[2].Text = N.ToString();
+                           
                         }
                         catch
                         {
@@ -443,7 +681,7 @@ namespace _2022_Test
                         {
                             float b = float.Parse(tempAry2[0]);
                             float M = b * 9.8f;
-                            listview_DI.Items[0].SubItems[2].Text = M.ToString();
+                            
                         }
                         catch
                         {

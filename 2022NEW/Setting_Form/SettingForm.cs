@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using System.Drawing.Drawing2D;
-using KSS_Library;
+
 using Library;
 using System.IO;
 using System.Threading;
@@ -273,6 +273,12 @@ namespace _2022_Test
                     MessageBox.Show("성적서 저장경로 설정이 실패되었습니다.");
                 }
             }
+        }
+
+        private void save_button_Click(object sender, EventArgs e)
+        {
+            PortSetting_Form pf = new PortSetting_Form();
+            pf.ShowDialog();
         }
     }
 }

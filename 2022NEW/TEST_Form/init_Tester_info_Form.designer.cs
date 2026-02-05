@@ -92,6 +92,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
+            this.tb_leak_Air = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.uiGroupBox4.SuspendLayout();
             this.uiGroupBox2.SuspendLayout();
@@ -155,6 +156,7 @@
             // 
             // uiGroupBox2
             // 
+            this.uiGroupBox2.Controls.Add(this.tb_leak_Air);
             this.uiGroupBox2.Controls.Add(this.label24);
             this.uiGroupBox2.Controls.Add(this.label23);
             this.uiGroupBox2.Controls.Add(this.tb_Air);
@@ -454,7 +456,7 @@
             this.uiGroupBox1.Size = new System.Drawing.Size(317, 244);
             this.uiGroupBox1.Style = Sunny.UI.UIStyle.Custom;
             this.uiGroupBox1.TabIndex = 184;
-            this.uiGroupBox1.Text = "Up-fit Force Standard";
+            this.uiGroupBox1.Text = "UpLift Force Standard";
             this.uiGroupBox1.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             this.uiGroupBox1.TitleInterval = 5;
             this.uiGroupBox1.TitleTop = 15;
@@ -849,6 +851,16 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "TEST INFO";
             // 
+            // tb_leak_Air
+            // 
+            this.tb_leak_Air.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.tb_leak_Air.Location = new System.Drawing.Point(262, 41);
+            this.tb_leak_Air.Name = "tb_leak_Air";
+            this.tb_leak_Air.Size = new System.Drawing.Size(52, 25);
+            this.tb_leak_Air.TabIndex = 196;
+            this.tb_leak_Air.Text = "880";
+            this.tb_leak_Air.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
             // init_Tester_info_Form
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -970,5 +982,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label label23;
+        public System.Windows.Forms.TextBox tb_leak_Air;
     }
 }

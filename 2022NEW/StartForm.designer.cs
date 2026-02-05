@@ -31,13 +31,14 @@ namespace _2022_Test
         {
             this.BackColor = new System.Windows.Forms.Panel();
             this.Name_Label = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.SelfTest_BTN = new System.Windows.Forms.Button();
             this.Report_BTN = new System.Windows.Forms.Button();
             this.Test_BTN = new System.Windows.Forms.Button();
             this.Exit_BTN = new System.Windows.Forms.Button();
             this.Setting_BTN = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.BackColor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -63,6 +64,25 @@ namespace _2022_Test
             this.Name_Label.TabIndex = 6;
             this.Name_Label.Text = "시험기명";
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(89)))), ((int)(((byte)(162)))));
+            this.panel1.Location = new System.Drawing.Point(0, 366);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(380, 45);
+            this.panel1.TabIndex = 7;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::_2022_Test.Properties.Resources.엔에스텍_확정_문서용_;
+            this.pictureBox1.Location = new System.Drawing.Point(34, 259);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(150, 80);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 65;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
             // SelfTest_BTN
             // 
             this.SelfTest_BTN.BackColor = System.Drawing.Color.Gainsboro;
@@ -72,11 +92,11 @@ namespace _2022_Test
             this.SelfTest_BTN.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.SelfTest_BTN.Image = global::_2022_Test.Properties.Resources.icons8_circular_arrows_44;
             this.SelfTest_BTN.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.SelfTest_BTN.Location = new System.Drawing.Point(197, 159);
+            this.SelfTest_BTN.Location = new System.Drawing.Point(196, 165);
             this.SelfTest_BTN.Name = "SelfTest_BTN";
             this.SelfTest_BTN.Size = new System.Drawing.Size(150, 80);
-            this.SelfTest_BTN.TabIndex = 5;
-            this.SelfTest_BTN.Text = "Self Test";
+            this.SelfTest_BTN.TabIndex = 64;
+            this.SelfTest_BTN.Text = "자가진단";
             this.SelfTest_BTN.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.SelfTest_BTN.UseVisualStyleBackColor = true;
             this.SelfTest_BTN.MouseUp += new System.Windows.Forms.MouseEventHandler(this.SelfTest_BTN_MouseUp);
@@ -90,11 +110,11 @@ namespace _2022_Test
             this.Report_BTN.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.Report_BTN.Image = global::_2022_Test.Properties.Resources.icons8_search_441;
             this.Report_BTN.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.Report_BTN.Location = new System.Drawing.Point(197, 65);
+            this.Report_BTN.Location = new System.Drawing.Point(196, 71);
             this.Report_BTN.Name = "Report_BTN";
             this.Report_BTN.Size = new System.Drawing.Size(150, 80);
-            this.Report_BTN.TabIndex = 4;
-            this.Report_BTN.Text = "Report View";
+            this.Report_BTN.TabIndex = 63;
+            this.Report_BTN.Text = "결과조회";
             this.Report_BTN.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.Report_BTN.UseVisualStyleBackColor = true;
             this.Report_BTN.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Report_BTN_MouseUp);
@@ -108,11 +128,11 @@ namespace _2022_Test
             this.Test_BTN.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.Test_BTN.Image = global::_2022_Test.Properties.Resources.icons8_cashbook_441;
             this.Test_BTN.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.Test_BTN.Location = new System.Drawing.Point(35, 65);
+            this.Test_BTN.Location = new System.Drawing.Point(34, 71);
             this.Test_BTN.Name = "Test_BTN";
             this.Test_BTN.Size = new System.Drawing.Size(150, 80);
-            this.Test_BTN.TabIndex = 3;
-            this.Test_BTN.Text = "Test View";
+            this.Test_BTN.TabIndex = 62;
+            this.Test_BTN.Text = "시험 시작";
             this.Test_BTN.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.Test_BTN.UseVisualStyleBackColor = true;
             this.Test_BTN.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Test_BTN_MouseUp);
@@ -126,14 +146,14 @@ namespace _2022_Test
             this.Exit_BTN.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.Exit_BTN.Image = global::_2022_Test.Properties.Resources.icons8_logout_44;
             this.Exit_BTN.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.Exit_BTN.Location = new System.Drawing.Point(197, 253);
+            this.Exit_BTN.Location = new System.Drawing.Point(196, 259);
             this.Exit_BTN.Name = "Exit_BTN";
             this.Exit_BTN.Size = new System.Drawing.Size(150, 80);
-            this.Exit_BTN.TabIndex = 2;
-            this.Exit_BTN.Text = "EXIT";
+            this.Exit_BTN.TabIndex = 61;
+            this.Exit_BTN.Text = "종료";
             this.Exit_BTN.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.Exit_BTN.UseVisualStyleBackColor = true;
-            this.Exit_BTN.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Exit_BTN_MouseUp);
+            this.Exit_BTN.Click += new System.EventHandler(this.Exit_BTN_Click);
             // 
             // Setting_BTN
             // 
@@ -144,46 +164,46 @@ namespace _2022_Test
             this.Setting_BTN.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.Setting_BTN.Image = global::_2022_Test.Properties.Resources.icons8_settings_44_2;
             this.Setting_BTN.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.Setting_BTN.Location = new System.Drawing.Point(35, 159);
+            this.Setting_BTN.Location = new System.Drawing.Point(34, 165);
             this.Setting_BTN.Name = "Setting_BTN";
             this.Setting_BTN.Size = new System.Drawing.Size(150, 80);
-            this.Setting_BTN.TabIndex = 1;
-            this.Setting_BTN.Text = "Setting";
+            this.Setting_BTN.TabIndex = 60;
+            this.Setting_BTN.Text = "환경설정";
             this.Setting_BTN.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.Setting_BTN.UseVisualStyleBackColor = true;
             this.Setting_BTN.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Setting_BTN_MouseUp);
             // 
-            // panel1
+            // button1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(89)))), ((int)(((byte)(162)))));
-            this.panel1.Location = new System.Drawing.Point(0, 366);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(380, 45);
-            this.panel1.TabIndex = 7;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::_2022_Test.Properties.Resources.엔에스텍_확정_문서용_;
-            this.pictureBox1.Location = new System.Drawing.Point(35, 253);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(150, 80);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 51;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.button1.BackColor = System.Drawing.Color.Gainsboro;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.LightGray;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.button1.Image = global::_2022_Test.Properties.Resources.icons8_documents_44;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button1.Location = new System.Drawing.Point(196, 50);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(150, 15);
+            this.button1.TabIndex = 67;
+            this.button1.Text = "장비이력관리";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // StartForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(380, 410);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.SelfTest_BTN);
             this.Controls.Add(this.Report_BTN);
             this.Controls.Add(this.Test_BTN);
             this.Controls.Add(this.Exit_BTN);
             this.Controls.Add(this.Setting_BTN);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.BackColor);
             this.Font = new System.Drawing.Font("돋움", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -202,13 +222,14 @@ namespace _2022_Test
 
         #endregion
         private System.Windows.Forms.Panel BackColor;
-        private System.Windows.Forms.Button Setting_BTN;
-        private System.Windows.Forms.Button Exit_BTN;
-        private System.Windows.Forms.Button Test_BTN;
-        private System.Windows.Forms.Button Report_BTN;
-        private System.Windows.Forms.Button SelfTest_BTN;
         private System.Windows.Forms.Label Name_Label;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button SelfTest_BTN;
+        private System.Windows.Forms.Button Report_BTN;
+        private System.Windows.Forms.Button Test_BTN;
+        private System.Windows.Forms.Button Exit_BTN;
+        private System.Windows.Forms.Button Setting_BTN;
+        private System.Windows.Forms.Button button1;
     }
 }

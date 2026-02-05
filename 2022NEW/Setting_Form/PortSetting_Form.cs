@@ -2,6 +2,7 @@
 using System.Windows.Forms;
 using Library;
 using System.Runtime.InteropServices;
+using System.Drawing;
 namespace _2022_Test
 {
     public partial class PortSetting_Form : Form
@@ -28,10 +29,11 @@ namespace _2022_Test
 
         private void StartForm_Load(object sender, EventArgs e)
         {
-            Name_Label.Text = Setting.Name;
-        }
+            //name.Text = Setting.Name;
+            chart1.Series[0].Points.AddXY(0, 0);
+        } 
 
-        private void Exit_BTN_MouseUp(object sender, MouseEventArgs e)
+            private void Exit_BTN_MouseUp(object sender, MouseEventArgs e)
         {
             this.Close();
         }
@@ -90,6 +92,25 @@ namespace _2022_Test
 
         private void label1_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+           PictureBox pb = (PictureBox)sender;
+
+            string[] pb_name = pb.Name.Split('_');
+
+            byte[] stream = new byte[7];
+
+            if (pb.BackColor == Color.Green)
+            {
+                pb.BackColor = Color.WhiteSmoke;
+            }
+            else
+            {
+                pb.BackColor = Color.Green;
+            }
 
         }
     }

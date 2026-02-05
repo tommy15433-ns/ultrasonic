@@ -7,7 +7,7 @@ namespace _2022_Test
     public partial class StartForm : Form
     {
         Select_TEST_Form st_form;
-
+        MainForm Main_form;
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
         private static extern IntPtr CreateRoundRectRgn(int nLeftRect
                                                     , int nTopRect
@@ -56,8 +56,8 @@ namespace _2022_Test
 
         private void Test_BTN_MouseUp(object sender, MouseEventArgs e)
         {
-            st_form = new Select_TEST_Form();
-            st_form.ShowDialog();
+            Main_form = new MainForm();
+            Main_form.ShowDialog();
 
             //init_Tester_info_Form iF = new init_Tester_info_Form();
             //iF.ShowDialog();
@@ -110,6 +110,24 @@ namespace _2022_Test
             MainForm MF = new MainForm();
             MF.ShowDialog();
             MF.Dispose();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            st_form = new Select_TEST_Form();
+            st_form.ShowDialog();
+        }
+
+        private void Exit_BTN_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Environment.Exit(0);
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            Form1 f1 = new Form1();
+            f1.Show();
         }
     }
 }

@@ -90,52 +90,34 @@ namespace _2022_Test
                     for (int i = 0; i < Setting.Equipment.Length; i++)
                     {
 
-                        if (Setting.Equipment[i] == "Loadcell" && loadcell_btn.BackColor == Color.LemonChiffon)
+                        if (Setting.Equipment[i] == "focusPX"&& focuspx_btn.BackColor == Color.LemonChiffon)
                         {
                             if (Port[i] != "NONE")
                             {
                                 try
                                 {
-                                    loadcell = new AND_AD310D(Port[i]); Thread.Sleep(100);
-                                    loadcell.Open(); Thread.Sleep(100);
-
-                                    string sRes = loadcell.SelfTest();
-
-                                    if (sRes.IndexOf("kg") >= 0)
+                                    plc = new PLCEnet();
+                                    string pan = plc.ReadBit("0");
+                                    if (pan == "00" || pan == "01")
                                     {
                                         PAN[i] = true;
-                                        loadcell_btn.BackColor = Color.GreenYellow;
+                                        plc_btn.BackColor = Color.GreenYellow;
                                     }
                                     else
                                     {
-                                        sRes = loadcell.SelfTest();
-
-                                        Thread.Sleep(100);
-                                        if (sRes.IndexOf("kg") >= 0)
-                                        {
-                                            PAN[i] = true;
-                                            loadcell_btn.BackColor = Color.GreenYellow;
-                                        }
-                                        else
-                                        {
-
-                                            PAN[i] = false;
-                                            loadcell_btn.BackColor = Color.LightCoral;
-
-                                        }
-
+                                        PAN[i] = false;
+                                        plc_btn.BackColor = Color.LightCoral;
                                     }
-                                    loadcell.Close();
                                 }
                                 catch
                                 {
                                     PAN[i] = false;
-                                    loadcell.Close();
-                                    loadcell_btn.BackColor = Color.LightCoral;
+                                    plc_btn.BackColor = Color.LightCoral;
+
                                 }
                             }
                             else
-                                loadcell_btn.BackColor = Color.LightCoral;
+                                focuspx_btn.BackColor = Color.LightCoral;
 
                         } // 직류전원장치
 

@@ -1,4 +1,15 @@
 packages
-소사-원시 Test
-/2022new/obj
-/2022new/bin
+doc
+./jpg
+
+.vs
+*.png
+*.htm
+*.dat
+*.state
+*.xgwx
+*.bak
+*.bak0
+*.osts
+*.xpd
+

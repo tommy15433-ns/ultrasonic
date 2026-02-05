@@ -635,9 +635,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Button EXIT_BTN;
-        private KSS_Library.KSS_BTN ksS_BTN1;
-        private KSS_Library.KSS_BTN ksS_BTN24;
-        private KSS_Library.KSS_BTN Print_BTN;
+      
         private System.Windows.Forms.DataVisualization.Charting.Chart chart_Powering;
         private System.Windows.Forms.Panel panel35;
         private System.Windows.Forms.PictureBox Progress_PIC;

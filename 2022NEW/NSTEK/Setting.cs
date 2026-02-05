@@ -4,7 +4,7 @@
 
     public class Setting
     {
-        public static readonly string Name = "Pantagraph Tester";
+        public static readonly string Name = "초음파탐상기";
         public static readonly string Report_Route = @"Report";
         public static readonly string Report_File = @"시험성적서Form.xlsx";
         public static readonly string Report_Intergration_File = @"시험성적서Form_통합.xlsx";
@@ -19,10 +19,8 @@
 
         public static readonly string[] Equipment = new string[] // 통신
         {
-
-            "Loadcell",
-            "plc",
-            "power",
+            "focusPX",
+          "plc",
           //"timer",
 
 
@@ -37,31 +35,15 @@
         };
         public static string[] ListName = new string[] // pau
         {
-              "Measuring Rising Speed",
-               "Measuring Low Speed",
-               "Minimum operating Volt(Rasing)",
-               "Minimum operating air Pressure(Lowering)",
-               "Air Leakage Test",
+              "10 ~ 14초",
+               "4 ~ 6초",
+              
         };
 
         public static string[] ListName0 = new string[] // pau
        {
-           "입력 과전압",
-           "FC 과전압",
-           "AC 출력 과전압",
-           "AC 출력 저전압",
-           "인버터 출력 과전류",
-           "Contactor 이상",
-           "Gate Driver Fault",
-           "AC 출력 과전류",
-           "AC 출력 과부하",
-           "출력전압 이상",
-           "입력이상",
-           "DC 출력단 과전류",
-           "DC 출력단 과전압",
-           "Thermal Falut",
-           "제어전원 저전압",
-           "지락고장",
+            "1750 ~ 1780",
+            "265 ~ 270",
        };
         public static string[] ListName1 = new string[] // cob
        {

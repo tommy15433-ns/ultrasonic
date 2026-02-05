@@ -13,6 +13,7 @@ using System.Globalization;
 using System.Net;
 using System.Net.Sockets;
 using static System.Console;
+using Library;
 
 
 namespace _2022_Test
@@ -33,8 +34,13 @@ namespace _2022_Test
         static int iLen = 0;
 
         MainForm run_form;
+        string path = Setting.Standard_folder;
 
-      
+
+        string[] pan_test_name = new string[50];
+        string[] pan_min_standard = new string[50];
+        string[] pan_max_standard = new string[50];
+
 
         bool half = false;
         bool full = false;
@@ -152,6 +158,62 @@ namespace _2022_Test
 
             tb_Date.Value = DateTime.Now;
             monthCalendar1.TodayDate = tb_Date.Value;
+
+
+            try
+            {
+                string Filename = "";
+                Filename = path + "\\" + "panto_standard" + ".csv";
+
+                if (File.Exists(Filename))
+                {
+                    int line = 0;
+                    try
+                    {
+                        StreamReader sd = new StreamReader(Filename, Encoding.Default);
+                        while (!sd.EndOfStream)
+                        {
+                            string data = sd.ReadLine();
+                            string[] data2 = data.Split(',');
+                            pan_test_name[line] = data2[0];
+                            pan_min_standard[line] = data2[1];
+                            pan_max_standard[line] = data2[2];
+                            line++;
+                        }
+                        sd.Dispose();
+                        sd.Close();
+
+
+                        tb_lowlimit.Text = pan_min_standard[1];
+                        tb_uplimit.Text = pan_min_standard[2];
+
+                        tb_diff.Text = pan_min_standard[3];
+                        tb_leak.Text = pan_min_standard[4];
+                        tb_leak_Air.Text = pan_max_standard[4];
+
+                        tb_lowmin.Text = pan_min_standard[5];
+                        tb_lowmax.Text = pan_max_standard[5];
+
+                        tb_raimin.Text = pan_min_standard[6];
+                        tb_raimax.Text = pan_max_standard[6];
+
+                        tb_Volt.Text = pan_min_standard[7];
+                        tb_Air.Text = pan_min_standard[8];
+                      
+
+
+                    }
+                    catch
+                    {
+
+                    }
+                }
+            }
+            catch
+            {
+
+
+            }
 
 
         }

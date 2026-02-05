@@ -39,9 +39,9 @@
             this.Exit_BTN = new System.Windows.Forms.Button();
             this.Serial_GroupBox = new System.Windows.Forms.GroupBox();
             this.Timer_btn = new System.Windows.Forms.Button();
-            this.power_btn = new System.Windows.Forms.Button();
             this.plc_btn = new System.Windows.Forms.Button();
-            this.loadcell_btn = new System.Windows.Forms.Button();
+            this.focuspx_btn = new System.Windows.Forms.Button();
+            this.power_btn = new System.Windows.Forms.Button();
             this.BackColor.SuspendLayout();
             this.Serial_GroupBox.SuspendLayout();
             this.SuspendLayout();
@@ -174,7 +174,7 @@
             this.Serial_GroupBox.Controls.Add(this.Timer_btn);
             this.Serial_GroupBox.Controls.Add(this.power_btn);
             this.Serial_GroupBox.Controls.Add(this.plc_btn);
-            this.Serial_GroupBox.Controls.Add(this.loadcell_btn);
+            this.Serial_GroupBox.Controls.Add(this.focuspx_btn);
             this.Serial_GroupBox.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.Serial_GroupBox.Location = new System.Drawing.Point(12, 54);
             this.Serial_GroupBox.Name = "Serial_GroupBox";
@@ -198,20 +198,6 @@
             this.Timer_btn.Visible = false;
             this.Timer_btn.MouseUp += new System.Windows.Forms.MouseEventHandler(this.plc_btn_MouseUp);
             // 
-            // power_btn
-            // 
-            this.power_btn.BackColor = System.Drawing.Color.LemonChiffon;
-            this.power_btn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.power_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.power_btn.Font = new System.Drawing.Font("돋움", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.power_btn.Location = new System.Drawing.Point(13, 119);
-            this.power_btn.Name = "power_btn";
-            this.power_btn.Size = new System.Drawing.Size(363, 35);
-            this.power_btn.TabIndex = 2;
-            this.power_btn.Text = "DC POWER";
-            this.power_btn.UseVisualStyleBackColor = false;
-            this.power_btn.MouseUp += new System.Windows.Forms.MouseEventHandler(this.plc_btn_MouseUp);
-            // 
             // plc_btn
             // 
             this.plc_btn.BackColor = System.Drawing.Color.LemonChiffon;
@@ -226,19 +212,33 @@
             this.plc_btn.UseVisualStyleBackColor = false;
             this.plc_btn.MouseUp += new System.Windows.Forms.MouseEventHandler(this.plc_btn_MouseUp);
             // 
-            // loadcell_btn
+            // focuspx_btn
             // 
-            this.loadcell_btn.BackColor = System.Drawing.Color.LemonChiffon;
-            this.loadcell_btn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.loadcell_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.loadcell_btn.Font = new System.Drawing.Font("돋움", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.loadcell_btn.Location = new System.Drawing.Point(13, 35);
-            this.loadcell_btn.Name = "loadcell_btn";
-            this.loadcell_btn.Size = new System.Drawing.Size(363, 35);
-            this.loadcell_btn.TabIndex = 0;
-            this.loadcell_btn.Text = "LOADCELL";
-            this.loadcell_btn.UseVisualStyleBackColor = false;
-            this.loadcell_btn.MouseUp += new System.Windows.Forms.MouseEventHandler(this.plc_btn_MouseUp);
+            this.focuspx_btn.BackColor = System.Drawing.Color.LemonChiffon;
+            this.focuspx_btn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.focuspx_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.focuspx_btn.Font = new System.Drawing.Font("돋움", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.focuspx_btn.Location = new System.Drawing.Point(13, 35);
+            this.focuspx_btn.Name = "focuspx_btn";
+            this.focuspx_btn.Size = new System.Drawing.Size(363, 35);
+            this.focuspx_btn.TabIndex = 0;
+            this.focuspx_btn.Text = "Focus PX";
+            this.focuspx_btn.UseVisualStyleBackColor = false;
+            this.focuspx_btn.MouseUp += new System.Windows.Forms.MouseEventHandler(this.plc_btn_MouseUp);
+            // 
+            // power_btn
+            // 
+            this.power_btn.BackColor = System.Drawing.Color.LemonChiffon;
+            this.power_btn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.power_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.power_btn.Font = new System.Drawing.Font("돋움", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.power_btn.Location = new System.Drawing.Point(13, 119);
+            this.power_btn.Name = "power_btn";
+            this.power_btn.Size = new System.Drawing.Size(363, 35);
+            this.power_btn.TabIndex = 2;
+            this.power_btn.Text = "DC POWER";
+            this.power_btn.UseVisualStyleBackColor = false;
+            this.power_btn.MouseUp += new System.Windows.Forms.MouseEventHandler(this.plc_btn_MouseUp);
             // 
             // SelfTestForm
             // 
@@ -280,9 +280,9 @@
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.GroupBox Serial_GroupBox;
-        private System.Windows.Forms.Button power_btn;
         private System.Windows.Forms.Button plc_btn;
-        private System.Windows.Forms.Button loadcell_btn;
+        private System.Windows.Forms.Button focuspx_btn;
         private System.Windows.Forms.Button Timer_btn;
+        private System.Windows.Forms.Button power_btn;
     }
 }

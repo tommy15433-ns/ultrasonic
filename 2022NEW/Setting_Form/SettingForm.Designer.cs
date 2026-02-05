@@ -105,7 +105,6 @@
             this.Save_Path_btn.TabIndex = 139;
             this.Save_Path_btn.TabStop = false;
             this.Save_Path_btn.Text = null;
-            this.Save_Path_btn.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
             this.Save_Path_btn.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Save_Path_btn_MouseUp);
             // 
             // Exit_Button
@@ -142,6 +141,7 @@
             this.save_button.Text = "Standard Setting";
             this.save_button.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.save_button.UseVisualStyleBackColor = true;
+            this.save_button.Click += new System.EventHandler(this.save_button_Click);
             this.save_button.MouseUp += new System.Windows.Forms.MouseEventHandler(this.save_button_MouseUp);
             // 
             // AutoSet_Button

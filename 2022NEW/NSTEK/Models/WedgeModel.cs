@@ -13,7 +13,17 @@ namespace _2022_Test.NSTEK.Models
         private double firstElementHeight = 0.011;
         private double firstElementOffset = 0;
         private double velocity = 2330;
+        private bool enable = false;
 
+        public bool Enable
+        {
+            get => enable;
+            set
+            {
+                enable = value;
+                ValueChanged?.Invoke(this, EventArgs.Empty);
+            }
+        }
         public double Angle
         {
             get => angle;

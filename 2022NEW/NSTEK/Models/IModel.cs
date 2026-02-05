@@ -46,6 +46,14 @@ namespace _2022_Test.NSTEK.Models
             return list.ToArray();
         }
 
+        public Type GetTypeOf(string propName)
+        {
+            Type type = this.GetType();
+            PropertyInfo[] properties = type.GetProperties(BindingFlags.Public | BindingFlags.Instance | BindingFlags.GetProperty);
+            PropertyInfo p = properties.Where(x => x.Name == propName).First();
+
+            return p.PropertyType;
+        }
         public void SetValue(string name, string value)
         {
             if (string.IsNullOrEmpty(value))
@@ -61,12 +69,21 @@ namespace _2022_Test.NSTEK.Models
             Type pt = p.PropertyType;
             try
             {
-                object v = Convert.ChangeType(value, pt);
-                p.SetValue(this, v);
-
-                if (ValueChanged != null)
+                if (pt.IsEnum)
                 {
-                    ValueChanged.Invoke(this, new EventArgs());
+                    object v = Enum.Parse(pt, value, true);
+
+                    p.SetValue(this, v);
+                }
+                else
+                {
+                    object v = Convert.ChangeType(value, pt);
+                    p.SetValue(this, v);
+
+                    if (ValueChanged != null)
+                    {
+                        ValueChanged.Invoke(this, new EventArgs());
+                    }
                 }
             }
             catch
@@ -105,6 +122,31 @@ namespace _2022_Test.NSTEK.Models
             PropertyInfo[] properties = type.GetProperties(BindingFlags.Public | BindingFlags.Instance | BindingFlags.GetProperty);
 
             return properties.Where(x => x.Name == name).First().GetType();
+        }
+        public string GetUnit(string name)
+        {
+            Type type = this.GetType();
+            PropertyInfo[] properties = type.GetProperties(BindingFlags.Public | BindingFlags.Instance | BindingFlags.GetProperty);
+
+            var attr = properties.Where(x => x.Name == name).First().GetCustomAttribute<MeasuredUnitAttribute>();
+            
+            return attr != null ? attr.Unit : "";
+        }
+        public override string ToString()
+        {
+            string ret = $"[{GetModelName()} Properties]\r\n";
+            List<string> list = new List<string>();
+            // Get the Type object for the instance
+            Type type = this.GetType();
+
+            // Get all public instance properties
+            PropertyInfo[] properties = type.GetProperties(BindingFlags.Public | BindingFlags.Instance | BindingFlags.GetProperty);
+            foreach (PropertyInfo property in properties)
+            {
+                ret += $"{property.Name}: {property.GetValue(this).ToString()}\r\n";
+            }
+
+            return ret;
         }
     }
 }

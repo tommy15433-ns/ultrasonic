@@ -15,11 +15,9 @@ using OxyPlot.Annotations;
 using OxyPlot.Axes;
 using OxyPlot.Series;
 using OxyPlot.WindowsForms;
-using _2022_Test.NSTEK. CustomHeatmap;
-using _2022_Test.NSTEK.Models;
-using static OlympusNDT.Instrumentation.NET.IDeviceInfo;
+using _2022_Test.NSTEK.CustomHeatmap;
 
-namespace _2022_Test
+namespace _2022_Test.NSTEK.Plot
 {
     public class CScanPlot
     {
@@ -170,10 +168,12 @@ namespace _2022_Test
         OxyPlot.Annotations.ImageAnnotation imageAnnotation;
         public void RenderCScan(byte[] img)
         {
+            Debug.WriteLine($"CScan ImgSize {img.Length}");
             using (MemoryStream ms = new MemoryStream(img))
             {
                 // 2. OxyImage 객체 생성 (OxyPlot 전용 이미지 타입)
                 var oxyImage = new OxyImage(ms.ToArray());
+
 
 
                 if (imageAnnotation == null)
@@ -212,32 +212,60 @@ namespace _2022_Test
             {
                 Title = "Cscan Plotting",
             };
-            var axis = new LinearAxis()
-            {
-                //Palette = OxyPalettes.Jet(200)
-                //Palette = OxyPalettes.BlueWhiteRed(255),
-                Maximum = 100,
-                Minimum = 0,
-                //Position = AxisPosition.Right
+            //var axis = new LinearAxis()
+            //{
+            //    //Palette = OxyPalettes.Jet(200)
+            //    //Palette = OxyPalettes.BlueWhiteRed(255),
+            //    Maximum = 100,
+            //    Minimum = 0,
+            //    //Position = AxisPosition.Right
 
-            };
+            //};
             //Palette = axis.Palette;
             //plotModel.Axes.Add(axis);
+            
 
-            plotModel.Axes.Add(new LinearAxis
-            {
-                Position = AxisPosition.Bottom,
-                Minimum = 0,
-                Maximum = 100
-            });
-            plotModel.Axes.Add(new LinearAxis
-            {
-                Position = AxisPosition.Left,
-                Minimum = 0,
-                Maximum = 100
-            });
+
+            //plotModel.Axes.Add(new LinearAxis
+            //{
+            //    Position = AxisPosition.Bottom,
+            //    Minimum = 0,
+            //    Maximum = 100
+            //});
+            //plotModel.Axes.Add(new LinearAxis
+            //{
+            //    Position = AxisPosition.Left,
+            //    Minimum = 0,
+            //    Maximum = 100
+            //});
 
             PlotView.Model = plotModel;
+        }
+        public void UpdateDataSize(int col, int row, double resolution_x = 1.0, double resolution_y = 1.0)
+        {
+            plotData = new double[col, row];
+            var heataxis = new HeatMapSeries()
+            {
+                X0 = 0,
+                Y0 = 0,
+                X1 = col * resolution_x,
+                Y1 = row * resolution_y,
+                Data = plotData,
+                RenderMethod = HeatMapRenderMethod.Bitmap
+            };
+            var axis = new LinearColorAxis
+            {
+                Position = AxisPosition.Right,
+                Palette = BScanPlot_legacy.BScanPallete(500),
+                Minimum = 0,
+                Maximum = 100, // e.g., 0% to 100% Amplitude
+            };
+
+            PlotView.Model.Axes.Clear();
+            PlotView.Model.Axes.Add(axis);
+            PlotView.Model.Series.Clear();
+            PlotView.Model.Series.Add(heataxis);
+            PlotView.Model.InvalidatePlot(true);
         }
     }
 }

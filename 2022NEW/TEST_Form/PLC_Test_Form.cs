@@ -608,6 +608,9 @@ namespace _2022_Test
             string temp = sr.ReadToEnd();
             sr.Close();
             string[] Port = temp.Split('!');
+
+
+
             for (int i = 0; i < Setting.Equipment.Length; i++)
             {
                 if (Setting.Equipment[i] == "plc")

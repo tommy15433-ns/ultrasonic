@@ -10,6 +10,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using _2022_Test.NSTEK;
 using _2022_Test.NSTEK.Database;
+using _2022_Test.NSTEK.UI;
+
 using DB = _2022_Test.NSTEK.Database.Database;
 
 namespace _2022_Test
@@ -55,9 +57,9 @@ namespace _2022_Test
                 };
 
 
-                NSTEK.UI.ModelUI ui_p = new NSTEK.UI.ModelUI(conf.Probe);
-                NSTEK.UI.ModelUI ui_f = new NSTEK.UI.ModelUI(conf.FocalLaw);
-                NSTEK.UI.ModelUI ui_w = new NSTEK.UI.ModelUI(conf.Wedge);
+                NSTEK.UI.ModelUI ui_p = new ModelUI(conf.Probe);
+                NSTEK.UI.ModelUI ui_f = new ModelUI(conf.FocalLaw);
+                NSTEK.UI.ModelUI ui_w = new ModelUI(conf.Wedge);
 
                 addUiLine(ui_p);
                 addUiLine(ui_f);
@@ -66,7 +68,13 @@ namespace _2022_Test
             }
 
             createNewColumn("Material");
-            addUiLine(new NSTEK.UI.ModelUI(DB.Material));
+            addUiLine(new ModelUI(DB.Material));
+            createNewColumn("Digitizer");
+            addUiLine(new ModelUI(DB.Digitizer));
+            addUiLine(new ModelUI(DB.Voltage));
+            addUiLine(new ModelUI(DB.Filter));
+            addUiLine(new ModelUI(DB.ScanRange));
+            addUiLine(new ModelUI(DB.Gate));
         }
         private void addUiLine(Control ui)
         {

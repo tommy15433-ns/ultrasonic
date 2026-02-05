@@ -1,4 +1,5 @@
 ﻿using System;
+using _2022_Test.NSTEK.Models;
 
 
 namespace _2022_Test
@@ -64,18 +65,28 @@ namespace _2022_Test
         }
 
         public static BeamPoints LastFoundBeamPoints = null;
-        public static double[] SearchFocalLaw(NSTEK.Models.ProbeModel probe, NSTEK.Models.MaterialModel material, NSTEK.Models.WedgeModel wedge, double angle, double focal_distance)
+        public static double[] SearchFocalLaw(ProbeModel probe, MaterialModel material, WedgeModel wedge, double angle, double focal_distance)
         {
             double focal_angle = angle;
             double focus_distance = focal_distance;
 
             Prob.element_pitch = probe.Pitch;
-            Prob.element_count = probe.UsedElementsPerBeam;
+            Prob.element_count = probe.ElementPerBeam;
 
-            mywedge.angle = wedge.Angle;
-            mywedge.height = wedge.FirstElementHeight;
-            mywedge.offset = wedge.FirstElementOffset;
-            mywedge.velocity = wedge.Velocity;
+            if (wedge.Enable)
+            {
+                mywedge.angle = wedge.Angle;
+                mywedge.height = wedge.FirstElementHeight;
+                mywedge.offset = wedge.FirstElementOffset;
+                mywedge.velocity = wedge.Velocity;
+            }
+            else
+            {
+                mywedge.angle = 0;
+                mywedge.height = 0;
+                mywedge.offset = 0;
+                mywedge.velocity = material.Velocity;
+            }
 
             Metal.velocity = material.Velocity;
 

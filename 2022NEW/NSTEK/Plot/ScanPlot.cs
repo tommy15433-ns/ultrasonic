@@ -1,13 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.Drawing;
 using System.Drawing.Imaging;
 using System.IO;
 using System.Linq;
-using System.Runtime.CompilerServices;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Media.Imaging;
 using OxyPlot;
@@ -16,10 +12,8 @@ using OxyPlot.Axes;
 using OxyPlot.Series;
 using OxyPlot.WindowsForms;
 using _2022_Test.NSTEK.CustomHeatmap;
-using _2022_Test.NSTEK.Models;
-using static OlympusNDT.Instrumentation.NET.IDeviceInfo;
 
-namespace _2022_Test
+namespace _2022_Test.NSTEK.Plot
 {
     public class ScanPlot
     {
@@ -310,7 +304,14 @@ namespace _2022_Test
             plotModel.Series.Add(hms);
         }
         int a = 0;
-   
+        public void RenderCScan(Graphics g, Size s)
+        {
+            var rc = new GraphicsRenderContext(g);
+
+            ((IPlotModel)plotModel).Render(rc, new OxyRect(0, 0, s.Width, s.Height));
+            PlotView.Invalidate(true);
+            
+        }
         public void RenderCScan(Bitmap bm)
         {
             int width = bm.Width;

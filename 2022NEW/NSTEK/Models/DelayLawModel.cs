@@ -16,7 +16,7 @@ namespace _2022_Test.NSTEK.Models
         {
             List<PointD> positions = new List<PointD>();
 
-            uint elemNum = probe.UsedElementsPerBeam;
+            uint elemNum = probe.ElementPerBeam;
             double pitch = probe.Pitch;
             double range = pitch * (elemNum - 1);
             double midRange = range / 2;

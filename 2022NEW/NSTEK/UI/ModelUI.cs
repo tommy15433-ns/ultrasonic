@@ -14,7 +14,7 @@ namespace _2022_Test.NSTEK.UI
     {
         private const int marginx = 10, marginy = 10;
 
-        private Dictionary<string, TextBox> uis = new Dictionary<string, TextBox>();
+        private Dictionary<string, Control> uis = new Dictionary<string, Control>();
         private Model m_model;
         
         public ModelUI(Model model)
@@ -53,37 +53,90 @@ namespace _2022_Test.NSTEK.UI
             foreach (string name in m_model.GetNames())
             {
                 Label l = new Label();
-                l.Text = name;
-                TextBox textBox = new TextBox();
-                textBox.Name = name;
-                textBox.Text = m_model.GetValue(name).ToString();
+                l.Text = $"{name} [{m_model.GetUnit(name)}]";
+
+                Control instance = null;
+                Type propType = m_model.GetTypeOf(name);
+                if (propType.IsEnum)
+                {
+                    ComboBox control = new ComboBox();
+                    control.Items.AddRange(propType.GetEnumNames());
+                    //control.SelectedIndex = 0;
+                    // preserve previous value
+                    control.Text = m_model.GetValue(name).ToString();
+                    control.DropDownStyle = ComboBoxStyle.DropDownList;
+                    control.SelectedIndexChanged += (s, e) =>
+                    {
+                        m_model.ValueChanged = null;
+                        m_model.SetValue(name, control.Text);
+                        m_model.ValueChanged += (a, b) =>
+                        {
+                            update();
+                        };
+                    };
+                    control.Size = new System.Drawing.Size(100, 20);
+                    instance = control;
+                    
+                }
+                else if (propType == typeof(Boolean))
+                {
+                    CheckBox cbox = new CheckBox();
+                    cbox.Name = name;
+                    cbox.Checked = (Boolean)m_model.GetValue(name);
+                    cbox.CheckedChanged += (s, e) =>
+                    {
+                        m_model.ValueChanged = null;
+                        m_model.SetValue(name, cbox.Checked);
+                        m_model.ValueChanged += (a, b) =>
+                        {
+                            update();
+                        };
+                    };
+                    cbox.Size = new System.Drawing.Size(50, 20);
+
+                    instance = cbox;
+                }
+                else
+                {
+                    //using (var textbox = new System.Windows.Forms.TextBox())
+                    //{
+                    TextBox textbox = new TextBox();
+                    //TextBox textBox = new TextBox();
+                    textbox.Name = name;
+                    textbox.Text = m_model.GetValue(name).ToString();
+                    textbox.TextChanged += (s, e) =>
+                    {
+                        m_model.ValueChanged = null;
+                        m_model.SetValue(name, textbox.Text);
+                        m_model.ValueChanged += (a, b) =>
+                        {
+                            update();
+                        };
+                    };
+                    textbox.Size = new System.Drawing.Size(100, 20);
+
+                    instance = textbox;
+                    //}
+                }
 
                 l.Size = new System.Drawing.Size(150, 20);
-                textBox.Size = new System.Drawing.Size(50, 20);
+                //instance.Size = new System.Drawing.Size(50, 20);
 
                 l.Location = p;
                 p.X = l.Width+ padx;
-                textBox.Location = p;
+                instance.Location = p;
                 
-                p.Y += Math.Max(l.Height, textBox.Height) + pady;
+                p.Y += Math.Max(l.Height, instance.Height) + pady;
 
-                textBox.TextChanged += (s, e) =>
-                {
-                    m_model.ValueChanged = null;
-                    m_model.SetValue(name, textBox.Text);
-                    m_model.ValueChanged += (a, b) =>
-                    {
-                        update();
-                    };
-                };
 
-                uis[name] = textBox;
+
+                uis[name] = instance;
 
                 this.Controls.Add(l);
-                this.Controls.Add(textBox);
+                this.Controls.Add(instance);
 
                 this.Height = p.Y + pady;
-                this.Width = Math.Max(this.Width, p.X + textBox.Width + padx);
+                this.Width = Math.Max(this.Width, p.X + instance.Width + padx);
 
                 p.X = padx;
             }

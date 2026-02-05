@@ -24,13 +24,13 @@ namespace _2022_Test.NSTEK.Models
         /// <summary>
         /// 
         /// </summary>
-        private uint usedElementsPerBeam = 16;
-        public uint UsedElementsPerBeam 
+        private uint elementPerBeam = 16;
+        public uint ElementPerBeam
         {
-            get => usedElementsPerBeam;
+            get => elementPerBeam;
             set
             {
-                usedElementsPerBeam = value;
+                elementPerBeam = value;
                 ValueChanged?.Invoke(this, EventArgs.Empty);
             }
         }

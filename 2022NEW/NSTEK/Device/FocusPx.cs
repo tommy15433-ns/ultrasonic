@@ -22,12 +22,23 @@ using _2022_Test.NSTEK.Models;
 
 namespace _2022_Test.NSTEK.Device
 {
-    public class FocusPx : INotifyPropertyChanged
+    public class FocusPx
     {
-        public EventHandler StatusChanged;
+        public class FocusPxEventHandler
+        {
+            public EventHandler ResetRequested;
+            public EventHandler DeviceConnected;
+            public EventHandler DeviceDisconnected;
 
-        public event PropertyChangedEventHandler PropertyChanged;
+            public FocusPxEventHandler(EventHandler resetRequested, EventHandler deviceConnected, EventHandler deviceDisconnected)
+            {
+                ResetRequested = resetRequested;
+                DeviceConnected = deviceConnected;
+                DeviceDisconnected = deviceDisconnected;
+            }
+        }
 
+        private FocusPxEventHandler events;
         public string Status { 
             get
             {
@@ -40,16 +51,7 @@ namespace _2022_Test.NSTEK.Device
                     return "Unknown";
                 }
             }
-            set
-            {
-
-            }
         }
-        const string BEAMSET_PREFIX = "Beamset";
-        private int _uid = 0;
-        private int create_uid() => _uid++;
-
-        public Dictionary<int, IBeamSet> Beamsets = new Dictionary<int, IBeamSet>();
         public Dictionary<int, int> ScanCount = new Dictionary<int, int>();
 
         public IDevice device { get; set; }
@@ -61,25 +63,97 @@ namespace _2022_Test.NSTEK.Device
         public IAcquisition acquisition { get; set; }
         public IDeviceConfiguration deviceConfiguration { get; set; }
 
-        public FocusPx(int time_out = 5000)
+        public FocusPx(FocusPxEventHandler handler)
         {
-            Utilities.ResolveDependenciesPath();
-            int timeout = time_out;
-            IDeviceDiscovery deviceDiscovery = IDeviceDiscovery.Create("192.168.0.1");
-            DiscoverResult discoverResult = deviceDiscovery.DiscoverFor(timeout);
-            if (discoverResult.status == DiscoverResult.Status.DeviceFound)
-            {
-                device = discoverResult.device;
-                DownloadFirmwarePackage();
-                initialize();
+            events = handler;
 
-            }
-            else
+            if (events == null)
             {
-                throw new Exception($"{discoverResult.status.ToString()}");
+                throw new Exception("Need to subscribe FocusPxEventHandler events");
+            }
+        }
+        public void Connect(string ip, int timeout)
+        {
+            try
+            {
+                Utilities.ResolveDependenciesPath();
+                IDeviceDiscovery deviceDiscovery = IDeviceDiscovery.Create(ip);
+                DiscoverResult discoverResult = deviceDiscovery.DiscoverFor(timeout);
+                if (discoverResult.status == DiscoverResult.Status.DeviceFound)
+                {
+                    device = discoverResult.device;
+                    DownloadFirmwarePackage();
+                    initialize();
+
+                    if (events.DeviceConnected != null)
+                    {
+                        events.DeviceConnected.Invoke(this, EventArgs.Empty);
+                    }
+                }
+                else
+                {
+                    throw new Exception($"{discoverResult.status.ToString()}");
+                }
+
+                if (device.GetState() == IDevice.State.Unreachable)
+                {
+                    throw new Exception($"Connection failed - {device.GetState().ToString()}");
+                }
+            }
+            finally
+            {
             }
         }
 
+        //public async Task Connect(string ip, int timeout)
+        //{
+        //    if (await _semaphore.WaitAsync(0)) // Wait(0) tries to enter immediately without blocking a thread
+        //    {
+        //        try
+        //        {
+        //            Utilities.ResolveDependenciesPath();
+        //            IDeviceDiscovery deviceDiscovery = IDeviceDiscovery.Create(ip);
+        //            DiscoverResult discoverResult = deviceDiscovery.DiscoverFor(timeout);
+        //            if (discoverResult.status == DiscoverResult.Status.DeviceFound)
+        //            {
+        //                device = discoverResult.device;
+        //                DownloadFirmwarePackage();
+        //                initialize();
+
+        //                if (events.DeviceConnected != null)
+        //                {
+        //                    events.DeviceConnected.Invoke(this, EventArgs.Empty);
+        //                }
+        //            }
+        //            else
+        //            {
+        //                throw new Exception($"{discoverResult.status.ToString()}");
+        //            }
+
+        //            if (device.GetState() == IDevice.State.Unreachable)
+        //            {
+        //                throw new Exception($"Connection failed - {device.GetState().ToString()}");
+        //            }
+        //        }
+        //        finally
+        //        {
+        //            _semaphore.Release();
+        //        }
+        //    }
+        //}
+        public void Disconnect()
+        {
+            deinitialize();
+            device.Stop();
+            if (events.DeviceDisconnected != null)
+            {
+                events.DeviceDisconnected.Invoke(this, EventArgs.Empty);
+            }
+        }
+        public uint GetBeamSetCount()
+        {
+            return ultrasoundConfiguration.GetFiringBeamSetCollection().GetCount();
+        }
         private void DownloadFirmwarePackage()
         {
             string packageName = "FocusPxPackage";
@@ -101,10 +175,44 @@ namespace _2022_Test.NSTEK.Device
             ultrasoundConfiguration = deviceConfiguration.GetUltrasoundConfiguration();
             digitizerTechnologyPA = ultrasoundConfiguration.GetDigitizerTechnology(UltrasoundTechnology.PhasedArray);
             digitizerTechnologyConventional = ultrasoundConfiguration.GetDigitizerTechnology(UltrasoundTechnology.Conventional);
+            acquisition = IAcquisition.CreateEx(device);
+        }
+        private void deinitialize()
+        {
+            device.ResetConfiguration();
+            digitizerTechnologyConventional.Dispose();
+            digitizerTechnologyPA.Dispose();
+            ultrasoundConfiguration.Dispose();
+            deviceConfiguration.Dispose();
+            acquisition.Dispose();
         }
         public void Reset()
         {
             device.ResetConfiguration();
+        }
+        public string GetAcqState()
+        {
+            return acquisition.GetStateEx().ToString();
+        }
+        public bool AcquisitionStart()
+        {
+
+            try
+            {
+                if (device.GetState() != IDevice.State.Ready)
+                {
+                    throw new Exception($"Device status failed - {device.GetState().ToString()}");
+                }
+                acquisition.ApplyConfiguration();
+                acquisition.Start();
+
+                return true;
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                return false;
+            }
         }
         public void AcquisitionStop()
         {
@@ -112,11 +220,16 @@ namespace _2022_Test.NSTEK.Device
             acquisition.Stop();
             //acquisition.Dispose();
         }
+        public void AcquisitionDispose()
+        {
+            acquisition.Dispose();
+            acquisition = null;
+        }
         public void ConsumeOneCycle()
         {
             var dataResult = acquisition.WaitForDataEx();
 
-            if (acquisition.GetState() == IAcquisition.State.WaitingForData)
+            if (acquisition.GetStateEx() == IAcquisition.StateEx.Started)
             {
                 using (var cycleData = dataResult.cycleData)
                 {
@@ -125,43 +238,55 @@ namespace _2022_Test.NSTEK.Device
                 }
             }
         }
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="elementcount"></param>
-        /// <param name="beamcount"></param>
-        /// <param name="delay_per"></param>
-        /// <param name="prob_no"></param>
-        /// <returns>created id of the beamset. Parse that beamset by Beamsets[{id}]</returns>
         public int CreatePABeamSetLinear(int elementcount, int beamcount, double delay_per, int prob_no = 0)
         {
-            IBeamSetFactory beamSetFactory = digitizerTechnologyPA.GetBeamSetFactory();
+            throw new NotSupportedException();
+            //IBeamSetFactory beamSetFactory = digitizerTechnologyPA.GetBeamSetFactory();
 
-            IBeamFormationCollection beamFormations = GenerateLinearBeamFormations(beamSetFactory, elementcount, beamcount, delay_per);
+            //IBeamFormationCollection beamFormations = GenerateLinearBeamFormations(beamSetFactory, elementcount, beamcount, delay_per);
 
-            int id = create_uid();
+            //int id = create_uid();
 
-            var beamSet = beamSetFactory.CreateBeamSetPhasedArray($"{BEAMSET_PREFIX}{id.ToString()}", beamFormations);
-            Beamsets[id] = beamSet;
-            ScanCount[id] = 0;
+            //var beamSet = beamSetFactory.CreateBeamSetPhasedArray($"{BEAMSET_PREFIX}{id.ToString()}", beamFormations);
+            //Beamsets[id] = beamSet;
+            //ScanCount[id] = 0;
 
-            var connector = digitizerTechnologyPA.GetConnectorCollection().GetConnector(0);
-            ultrasoundConfiguration.GetFiringBeamSetCollection().Add(Beamsets[id], connector, (uint)(prob_no * 32) + 1, (uint)(prob_no * 32) + 1);
-            //ultrasoundConfiguration.GetFiringBeamSetCollection().Add(Beamsets[id], connector);
+            //var connector = digitizerTechnologyPA.GetConnectorCollection().GetConnector(0);
+            //ultrasoundConfiguration.GetFiringBeamSetCollection().Add(Beamsets[id], connector, (uint)(prob_no * 32) + 1, (uint)(prob_no * 32) + 1);
+            ////ultrasoundConfiguration.GetFiringBeamSetCollection().Add(Beamsets[id], connector);
 
-            return id;
+            //return id;
         }
         
         private void bindPABeamset(IBeamSet beamset, int prob_no)
         {
-            int id = create_uid();
-            Beamsets[id] = beamset;
-
             var connector = digitizerTechnologyPA.GetConnectorCollection().GetConnector(0);
-            ultrasoundConfiguration.GetFiringBeamSetCollection().Add(Beamsets[id], connector, (uint)(prob_no * 32) + 1, (uint)(prob_no * 32) + 1);
+            ultrasoundConfiguration.GetFiringBeamSetCollection().Add(beamset, connector, (uint)(prob_no * 32) + 1, (uint)(prob_no * 32) + 1);
         }
-        public void CreatPABeamSetFromLawFile(string path, int prob_idx = 0)
+
+        public IBeamSet CreateBeamset(string name, string lawFilePath, ConnectorsPA con = ConnectorsPA.one)
         {
+            IBeamSetFactory beamSetFactory = digitizerTechnologyPA.GetBeamSetFactory();
+            var fileBeamFormations = beamSetFactory.CreateBeamFormationCollectionFromLawFile(lawFilePath);
+            var beamset = beamSetFactory.CreateBeamSetPhasedArray(name, fileBeamFormations);
+
+            bindPABeamset(beamset, (int)con);
+            return beamset;
+        }
+        public IBeamSet CreateBeamset(string name, ProbeModel probe, double[][] elementDelays, ConnectorsPA con = ConnectorsPA.one)
+        {
+            //throw new NotImplementedException();
+            IBeamSetFactory beamSetFactory = digitizerTechnologyPA.GetBeamSetFactory();
+            var beamFormations = GetSscanBeamFormationCollection(beamSetFactory, probe, elementDelays);
+            var beamset = beamSetFactory.CreateBeamSetPhasedArray(name, beamFormations);
+            bindPABeamset(beamset, (int)con);
+            
+            return beamset;
+        }
+        public void CreatPABeamSetFromLawFile(string path, ConnectorsPA con = ConnectorsPA.one)
+        {
+            throw new NotSupportedException("CreatPABeamSetFromLawFile");
+
             string[] tmp = path.Split('\\');
             string beamsetname = tmp[tmp.Length - 1];
 
@@ -169,23 +294,27 @@ namespace _2022_Test.NSTEK.Device
             var fileBeamFormations = beamSetFactory.CreateBeamFormationCollectionFromLawFile(path);
             var beamset = beamSetFactory.CreateBeamSetPhasedArray(beamsetname, fileBeamFormations);
 
-            bindPABeamset(beamset, prob_idx);
-            //ultrasoundConfig->GetFiringBeamSetCollection()->Add(beamSetFour, connectorPA);
+            bindPABeamset(beamset, (int)con);
         }
         public void CreatPABeamSet(ProbeModel probe, string name = "Phased Array")
         {
+            throw new NotSupportedException("CreatPABeamSet");
+
             IBeamSetFactory beamSetFactory = digitizerTechnologyPA.GetBeamSetFactory();
             var beamFormations = GetBeamFormationCollection(beamSetFactory, probe);
             beamSetPA = beamSetFactory.CreateBeamSetPhasedArray(name, beamFormations);
         }
         public void CreatPAFocusedBeamSet(ProbeModel probe, double[] elementDelays)
         {
+            throw new NotSupportedException("CreatPAFocusedBeamSet");
+
             IBeamSetFactory beamSetFactory = digitizerTechnologyPA.GetBeamSetFactory();
             var beamFormations = GetFocusedBeamFormationCollection(beamSetFactory, probe, elementDelays);
             beamSetPA = beamSetFactory.CreateBeamSetPhasedArray("Phased Array", beamFormations);
         }
         public void CreatePASscanBeamSet(ProbeModel probe, double[][] elementDelays, int prob_idx = 0)
         {
+            throw new NotSupportedException("CreatePASscanBeamSet");
             IBeamSetFactory beamSetFactory = digitizerTechnologyPA.GetBeamSetFactory();
             var beamFormations = GetSscanBeamFormationCollection(beamSetFactory, probe, elementDelays);
             var beamset = beamSetFactory.CreateBeamSetPhasedArray("Phased Array", beamFormations);
@@ -193,6 +322,7 @@ namespace _2022_Test.NSTEK.Device
         }
         private IBeamFormationCollection GenerateLinearBeamFormations(IBeamSetFactory factory, int elementcount, int beamcount, double delay_per, int prob_no = 0)
         {
+            throw new NotSupportedException("GenerateLinearBeamFormations");
             int beamcnt = beamcount;
             int elementcnt = elementcount;
             int initpulserdly = 0;
@@ -232,7 +362,7 @@ namespace _2022_Test.NSTEK.Device
         public IBeamFormationCollection GetBeamFormationCollection(IBeamSetFactory beamSetFactory, ProbeModel probe)
         {
             var beamFormations = beamSetFactory.CreateBeamFormationCollection();
-            uint usedElementPerBeam = probe.UsedElementsPerBeam;
+            uint usedElementPerBeam = probe.ElementPerBeam;
             uint totalElements = probe.TotalElements;
 
             for (uint beamIndex = 0; beamIndex < totalElements - usedElementPerBeam + 1; beamIndex++)
@@ -266,7 +396,7 @@ namespace _2022_Test.NSTEK.Device
             double[] elementDelays)
         {
             var beamFormations = beamSetFactory.CreateBeamFormationCollection();
-            uint usedElementPerBeam = probe.UsedElementsPerBeam;
+            uint usedElementPerBeam = probe.ElementPerBeam;
             uint totalElements = probe.TotalElements;
 
             // Add Focused beam formations
@@ -320,7 +450,7 @@ namespace _2022_Test.NSTEK.Device
             double[][] elementDelays) // sscan delay 2-d array
         {
             var beamFormations = beamSetFactory.CreateBeamFormationCollection();
-            uint usedElementPerBeam = probe.UsedElementsPerBeam;
+            uint usedElementPerBeam = probe.ElementPerBeam;
             //uint totalElements = probe.TotalElements;
 
             // Add Focused beam formations
@@ -373,6 +503,14 @@ namespace _2022_Test.NSTEK.Device
             if (device == null)
             {
                 return;
+            }
+            if (device.GetState() != IDevice.State.Ready)
+            {
+                if (events.ResetRequested != null)
+                {
+                    events.ResetRequested.Invoke(this, null);
+                    return;
+                }
             }
             if (acquisition == null)
             {
@@ -501,25 +639,37 @@ namespace _2022_Test.NSTEK.Device
             return location;
         }
 
-
-        public void ConsumeData()
+        private bool pause_mode = false;
+        private bool check_acquisition_validity()
         {
-            while (true)
+            bool ret = false;
+
+            if (acquisition != null)
             {
-                try
-                {
-                    var dataResult = acquisition.WaitForDataEx();
-                    if (dataResult.status == IAcquisition.WaitForDataResultEx.Status.DataAvailable)
-                    {
-                        using (var cycleData = dataResult.cycleData)
-                        {
-                            dataResult = acquisition.WaitForDataEx();
-                            dataResult.Dispose();
-                        }
-                    }
-                }
-                catch
-                { }
+                ret = pause_mode;
+            }
+
+            return ret;
+        }
+        public void Pause()
+        {
+            acquisition.Stop();
+            pause_mode = true;
+        }
+        public void Resume()
+        {
+            pause_mode = false;
+            acquisition.Start();
+        }
+        public void RemoveBeamset(IBeamSet beamset)
+        {
+            try
+            {
+                ultrasoundConfiguration.GetFiringBeamSetCollection().Remove(beamset);
+            }
+            catch
+            {
+                
             }
         }
     }

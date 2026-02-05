@@ -17,6 +17,11 @@ namespace _2022_Test.NSTEK.Database
 
         public static List<ProbConfig> ProbConfigs = new List<ProbConfig>();
         public static Models.MaterialModel Material = new Models.MaterialModel();
+        public static Models.DigitizerModel Digitizer = new Models.DigitizerModel();
+        public static Models.VoltageModel Voltage = new VoltageModel();
+        public static FilterModel Filter = new FilterModel();
+        public static ScanRangeModel ScanRange = new ScanRangeModel();
+        public static GateModel Gate = new GateModel();
 
         public static string ParseProbeName(int rayIndex)
         {
@@ -25,7 +30,7 @@ namespace _2022_Test.NSTEK.Database
             {
                 // each probe has ray size of (elements per beam * ( |angle start - angle end| + 1))
 
-                int size_of_probe_beam = (int)cf.Probe.UsedElementsPerBeam * (int)Math.Abs(cf.FocalLaw.AngleStart - cf.FocalLaw.AngleStop) + 1;
+                int size_of_probe_beam = (int)cf.Probe.ElementPerBeam * (int)Math.Abs(cf.FocalLaw.AngleStart - cf.FocalLaw.AngleStop) + 1;
                 pos += size_of_probe_beam;
 
                 if (rayIndex < pos)
@@ -44,6 +49,20 @@ namespace _2022_Test.NSTEK.Database
         {
             return ProbConfigs.Select(x => x.Name).ToArray();
         }
+
+        public static int ActualAscanDataSize
+        {
+            get
+            {
+                return (int)Digitizer.AscanLength / 10 / Digitizer.Compression / (int)Digitizer.SamplingFactor;
+            }
+        }
+
+        public static double Index2Mm(int index)
+        {
+            return 0.0;
+        }
+
     }
 
 

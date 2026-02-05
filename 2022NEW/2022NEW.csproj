@@ -291,6 +291,9 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormLoading.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="NSTEK\CustomHeatmap\CustomHeatmap.cs" />
     <Compile Include="NSTEK\device2\AND_AD310D.cs" />
     <Compile Include="NSTEK\device2\DSP_LAN.cs" />
@@ -655,6 +658,7 @@
     <None Include="Resources\pngwing.com11.png" />
     <None Include="Resources\1.jpg" />
     <None Include="Resources\차축1.jpg" />
+    <None Include="Resources\loading_256.gif" />
     <Content Include="shell32_35.ico" />
     <None Include="Resources\save_all.png" />
     <None Include="Resources\trash.png" />

@@ -1,6 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="..\packages\Costura.Fody.5.7.0\build\Costura.Fody.props" Condition="Exists('..\packages\Costura.Fody.5.7.0\build\Costura.Fody.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -41,6 +40,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <Prefer32Bit>false</Prefer32Bit>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -61,7 +61,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <DebugType>full</DebugType>
     <PlatformTarget>AnyCPU</PlatformTarget>
-    <LangVersion>7.3</LangVersion>
+    <LangVersion>10.0</LangVersion>
     <ErrorReport>prompt</ErrorReport>
     <Prefer32Bit>false</Prefer32Bit>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
@@ -88,11 +88,8 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\Debug\Caliburn.Micro.Platform.Core.dll</HintPath>
     </Reference>
-    <Reference Include="Cilador.Fody, Version=0.2.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Cilador.Fody.0.2.0.0\lib\net45\Cilador.Fody.dll</HintPath>
-    </Reference>
-    <Reference Include="Costura, Version=5.7.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Costura.Fody.5.7.0\lib\netstandard1.0\Costura.dll</HintPath>
+    <Reference Include="CommunityToolkit.Mvvm, Version=8.4.0.0, Culture=neutral, PublicKeyToken=4aff67a105548ee2, processorArchitecture=MSIL">
+      <HintPath>..\packages\CommunityToolkit.Mvvm.8.4.0\lib\netstandard2.0\CommunityToolkit.Mvvm.dll</HintPath>
     </Reference>
     <Reference Include="dotNetLucidIo, Version=1.7.0.0, Culture=neutral, PublicKeyToken=e84031da7c258d74, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -102,11 +99,14 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\Debug\Heatmap.dll</HintPath>
     </Reference>
-    <Reference Include="ICSharpCode.SharpZipLib">
-      <HintPath>bin\Debug\ICSharpCode.SharpZipLib.dll</HintPath>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=1.4.2.13, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpZipLib.1.4.2\lib\netstandard2.0\ICSharpCode.SharpZipLib.dll</HintPath>
     </Reference>
     <Reference Include="MfgControl.AdvancedHMI.Controls">
       <HintPath>..\..\ADVAN\ADVAN\bin\Debug\MfgControl.AdvancedHMI.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.8.0.0\lib\net462\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Office.Interop.Excel.15.0.4795.1001\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
@@ -124,16 +124,20 @@
     </Reference>
     <Reference Include="OxyPlot, Version=2.2.0.0, Culture=neutral, PublicKeyToken=638079a8f0bd61e9, processorArchitecture=MSIL">
       <HintPath>..\packages\OxyPlot.Core.2.2.0\lib\net462\OxyPlot.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="OxyPlot.WindowsForms, Version=2.2.0.0, Culture=neutral, PublicKeyToken=245eacd6b5d2d338, processorArchitecture=MSIL">
       <HintPath>..\packages\OxyPlot.WindowsForms.2.2.0\lib\net462\OxyPlot.WindowsForms.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="SunnyUI, Version=3.8.0.1, Culture=neutral, PublicKeyToken=27d7d2e821d97aeb, processorArchitecture=MSIL">
       <HintPath>..\packages\SunnyUI.3.8.0.1\lib\net472\SunnyUI.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="SunnyUI.Common, Version=3.8.0.0, Culture=neutral, PublicKeyToken=5a271fb7ba597231, processorArchitecture=MSIL">
       <HintPath>..\packages\SunnyUI.Common.3.8.0\lib\net472\SunnyUI.Common.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.AppContext, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
@@ -144,7 +148,11 @@
     <Reference Include="System.Buffers, Version=4.0.4.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Buffers.4.6.0\lib\net462\System.Buffers.dll</HintPath>
     </Reference>
+    <Reference Include="System.ComponentModel.Annotations, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ComponentModel.Annotations.5.0.0\lib\net461\System.ComponentModel.Annotations.dll</HintPath>
+    </Reference>
     <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Console, Version=4.0.1.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Console.4.3.1\lib\net46\System.Console.dll</HintPath>
       <Private>True</Private>
@@ -273,6 +281,9 @@
       <Private>True</Private>
       <Private>True</Private>
     </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Windows" />
     <Reference Include="System.Windows.Controls.Ribbon" />
@@ -294,6 +305,7 @@
     <Compile Include="FormLoading.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="GlobalConfig\ProbeConfig.cs" />
     <Compile Include="NSTEK\CustomHeatmap\CustomHeatmap.cs" />
     <Compile Include="NSTEK\device2\AND_AD310D.cs" />
     <Compile Include="NSTEK\device2\DSP_LAN.cs" />
@@ -327,7 +339,14 @@
     <Compile Include="NSTEK\UI\ModelUI.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="ProbeSettingForm\ProbeSetting.cs" />
     <Compile Include="PointD.cs" />
+    <Compile Include="ProbeSettingForm\ProbeSettingView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ProbeSettingForm\ProbeSettingView.Designer.cs">
+      <DependentUpon>ProbeSettingView.cs</DependentUpon>
+    </Compile>
     <Compile Include="Setting_Form\EditForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -342,10 +361,10 @@
     <Compile Include="Select_TEST_Form.designer.cs">
       <DependentUpon>Select_TEST_Form.cs</DependentUpon>
     </Compile>
-    <Compile Include="Setting_Form\PortSetting_Form.cs">
+    <Compile Include="ProbeSettingForm\PortSetting_Form.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Setting_Form\PortSetting_Form.designer.cs">
+    <Compile Include="ProbeSettingForm\PortSetting_Form.designer.cs">
       <DependentUpon>PortSetting_Form.cs</DependentUpon>
     </Compile>
     <Compile Include="TEST_Form\Form1.cs">
@@ -389,10 +408,10 @@
     <Compile Include="Setting_Form\SettingForm.Designer.cs">
       <DependentUpon>SettingForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="SelfTestForm.cs">
+    <Compile Include="SelfTestForm\SelfTestForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SelfTestForm.Designer.cs">
+    <Compile Include="SelfTestForm\SelfTestForm.Designer.cs">
       <DependentUpon>SelfTestForm.cs</DependentUpon>
     </Compile>
     <Compile Include="NSTEK\Serial.cs" />
@@ -430,6 +449,21 @@
     <Compile Include="TEST_Form\PLC_Test_Form.Designer.cs">
       <DependentUpon>PLC_Test_Form.cs</DependentUpon>
     </Compile>
+    <Compile Include="uis\ButtonImage.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="uis\Button1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="uis\CustomButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="uis\CustomLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <EmbeddedResource Include="ProbeSettingForm\ProbeSettingView.resx">
+      <DependentUpon>ProbeSettingView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Setting_Form\EditForm.resx">
       <DependentUpon>EditForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -439,7 +473,7 @@
     <EmbeddedResource Include="Select_TEST_Form.resx">
       <DependentUpon>Select_TEST_Form.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Setting_Form\PortSetting_Form.resx">
+    <EmbeddedResource Include="ProbeSettingForm\PortSetting_Form.resx">
       <DependentUpon>PortSetting_Form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TEST_Form\Form1.resx">
@@ -457,7 +491,7 @@
     <EmbeddedResource Include="Setting_Form\SettingForm.resx">
       <DependentUpon>SettingForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SelfTestForm.resx">
+    <EmbeddedResource Include="SelfTestForm\SelfTestForm.resx">
       <DependentUpon>SelfTestForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -659,6 +693,8 @@
     <None Include="Resources\1.jpg" />
     <None Include="Resources\차축1.jpg" />
     <None Include="Resources\loading_256.gif" />
+    <None Include="Resources\left.png" />
+    <None Include="Resources\right.png" />
     <Content Include="shell32_35.ico" />
     <None Include="Resources\save_all.png" />
     <None Include="Resources\trash.png" />
@@ -711,14 +747,11 @@
     <PropertyGroup>
       <ErrorText>이 프로젝트는 이 컴퓨터에 없는 NuGet 패키지를 참조합니다. 해당 패키지를 다운로드하려면 NuGet 패키지 복원을 사용하십시오. 자세한 내용은 http://go.microsoft.com/fwlink/?LinkID=322105를 참조하십시오. 누락된 파일은 {0}입니다.</ErrorText>
     </PropertyGroup>
-    <Error Condition="!Exists('..\packages\Costura.Fody.5.7.0\build\Costura.Fody.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Costura.Fody.5.7.0\build\Costura.Fody.props'))" />
-    <Error Condition="!Exists('..\packages\Costura.Fody.5.7.0\build\Costura.Fody.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Costura.Fody.5.7.0\build\Costura.Fody.targets'))" />
-    <Error Condition="!Exists('..\packages\Fody.6.9.1\build\Fody.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Fody.6.9.1\build\Fody.targets'))" />
     <Error Condition="!Exists('..\packages\NETStandard.Library.2.0.3\build\netstandard2.0\NETStandard.Library.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\NETStandard.Library.2.0.3\build\netstandard2.0\NETStandard.Library.targets'))" />
     <Error Condition="!Exists('..\packages\Microsoft.NETFramework.ReferenceAssemblies.net48.1.0.2\build\Microsoft.NETFramework.ReferenceAssemblies.net48.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.NETFramework.ReferenceAssemblies.net48.1.0.2\build\Microsoft.NETFramework.ReferenceAssemblies.net48.targets'))" />
+    <Error Condition="!Exists('..\packages\CommunityToolkit.Mvvm.8.4.0\build\CommunityToolkit.Mvvm.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\CommunityToolkit.Mvvm.8.4.0\build\CommunityToolkit.Mvvm.targets'))" />
   </Target>
-  <Import Project="..\packages\Costura.Fody.5.7.0\build\Costura.Fody.targets" Condition="Exists('..\packages\Costura.Fody.5.7.0\build\Costura.Fody.targets')" />
-  <Import Project="..\packages\Fody.6.9.1\build\Fody.targets" Condition="Exists('..\packages\Fody.6.9.1\build\Fody.targets')" />
   <Import Project="..\packages\NETStandard.Library.2.0.3\build\netstandard2.0\NETStandard.Library.targets" Condition="Exists('..\packages\NETStandard.Library.2.0.3\build\netstandard2.0\NETStandard.Library.targets')" />
   <Import Project="..\packages\Microsoft.NETFramework.ReferenceAssemblies.net48.1.0.2\build\Microsoft.NETFramework.ReferenceAssemblies.net48.targets" Condition="Exists('..\packages\Microsoft.NETFramework.ReferenceAssemblies.net48.1.0.2\build\Microsoft.NETFramework.ReferenceAssemblies.net48.targets')" />
+  <Import Project="..\packages\CommunityToolkit.Mvvm.8.4.0\build\CommunityToolkit.Mvvm.targets" Condition="Exists('..\packages\CommunityToolkit.Mvvm.8.4.0\build\CommunityToolkit.Mvvm.targets')" />
 </Project>

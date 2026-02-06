@@ -53,10 +53,10 @@ namespace _2022_Test
             this.panel10 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.uiGroupBox2 = new Sunny.UI.UIGroupBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
             this.panel8 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.panel9 = new System.Windows.Forms.Panel();
@@ -70,10 +70,10 @@ namespace _2022_Test
             this.panel13 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
             this.panel14 = new System.Windows.Forms.Panel();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel15 = new System.Windows.Forms.Panel();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.uiGroupBox3 = new Sunny.UI.UIGroupBox();
+            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.textBox10 = new System.Windows.Forms.TextBox();
             this.panel16 = new System.Windows.Forms.Panel();
             this.label11 = new System.Windows.Forms.Label();
             this.panel17 = new System.Windows.Forms.Panel();
@@ -87,12 +87,12 @@ namespace _2022_Test
             this.panel20 = new System.Windows.Forms.Panel();
             this.label15 = new System.Windows.Forms.Label();
             this.panel21 = new System.Windows.Forms.Panel();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.panel22 = new System.Windows.Forms.Panel();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.uiGroupBox5 = new Sunny.UI.UIGroupBox();
+            this.textBox13 = new System.Windows.Forms.TextBox();
             this.panel23 = new System.Windows.Forms.Panel();
             this.label16 = new System.Windows.Forms.Label();
+            this.textBox14 = new System.Windows.Forms.TextBox();
             this.panel24 = new System.Windows.Forms.Panel();
             this.label17 = new System.Windows.Forms.Label();
             this.textBox15 = new System.Windows.Forms.TextBox();
@@ -104,34 +104,34 @@ namespace _2022_Test
             this.panel27 = new System.Windows.Forms.Panel();
             this.label20 = new System.Windows.Forms.Label();
             this.panel28 = new System.Windows.Forms.Panel();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.panel29 = new System.Windows.Forms.Panel();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.uiGroupBox6 = new Sunny.UI.UIGroupBox();
-            this.Exit_BTN = new System.Windows.Forms.Button();
-            this.save_button = new System.Windows.Forms.Button();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.panel30 = new System.Windows.Forms.Panel();
-            this.label21 = new System.Windows.Forms.Label();
-            this.textBox17 = new System.Windows.Forms.TextBox();
-            this.textBox18 = new System.Windows.Forms.TextBox();
-            this.panel31 = new System.Windows.Forms.Panel();
-            this.label22 = new System.Windows.Forms.Label();
             this.textBox19 = new System.Windows.Forms.TextBox();
             this.panel32 = new System.Windows.Forms.Panel();
             this.label23 = new System.Windows.Forms.Label();
+            this.textBox18 = new System.Windows.Forms.TextBox();
+            this.panel31 = new System.Windows.Forms.Panel();
+            this.label22 = new System.Windows.Forms.Label();
+            this.textBox17 = new System.Windows.Forms.TextBox();
+            this.panel30 = new System.Windows.Forms.Panel();
+            this.label21 = new System.Windows.Forms.Label();
+            this.checkBox4 = new System.Windows.Forms.CheckBox();
+            this.checkBox3 = new System.Windows.Forms.CheckBox();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.Exit_BTN = new System.Windows.Forms.Button();
+            this.save_button = new System.Windows.Forms.Button();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.BackColor.SuspendLayout();
             this.uiGroupBox4.SuspendLayout();
             this.uiGroupBox1.SuspendLayout();
@@ -141,9 +141,7 @@ namespace _2022_Test
             this.panel4.SuspendLayout();
             this.panel10.SuspendLayout();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.uiGroupBox2.SuspendLayout();
             this.panel8.SuspendLayout();
             this.panel9.SuspendLayout();
@@ -151,9 +149,7 @@ namespace _2022_Test
             this.panel12.SuspendLayout();
             this.panel13.SuspendLayout();
             this.panel14.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel15.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.uiGroupBox3.SuspendLayout();
             this.panel16.SuspendLayout();
             this.panel17.SuspendLayout();
@@ -161,9 +157,7 @@ namespace _2022_Test
             this.panel19.SuspendLayout();
             this.panel20.SuspendLayout();
             this.panel21.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.panel22.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.uiGroupBox5.SuspendLayout();
             this.panel23.SuspendLayout();
             this.panel24.SuspendLayout();
@@ -171,15 +165,21 @@ namespace _2022_Test
             this.panel26.SuspendLayout();
             this.panel27.SuspendLayout();
             this.panel28.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.panel29.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.uiGroupBox6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            this.panel30.SuspendLayout();
-            this.panel31.SuspendLayout();
             this.panel32.SuspendLayout();
+            this.panel31.SuspendLayout();
+            this.panel30.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // BackColor
@@ -195,7 +195,7 @@ namespace _2022_Test
             // name
             // 
             this.name.AutoSize = true;
-            this.name.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.name.Font = new System.Drawing.Font("Malgun Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.name.ForeColor = System.Drawing.Color.White;
             this.name.Location = new System.Drawing.Point(9, 10);
             this.name.Name = "name";
@@ -298,7 +298,7 @@ namespace _2022_Test
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(89)))), ((int)(((byte)(162)))));
-            this.label5.Font = new System.Drawing.Font("맑은 고딕", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label5.Font = new System.Drawing.Font("Malgun Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(18, 4);
             this.label5.Name = "label5";
@@ -328,7 +328,7 @@ namespace _2022_Test
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(89)))), ((int)(((byte)(162)))));
-            this.label4.Font = new System.Drawing.Font("맑은 고딕", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label4.Font = new System.Drawing.Font("Malgun Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(18, 4);
             this.label4.Name = "label4";
@@ -367,7 +367,7 @@ namespace _2022_Test
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(89)))), ((int)(((byte)(162)))));
-            this.label3.Font = new System.Drawing.Font("맑은 고딕", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label3.Font = new System.Drawing.Font("Malgun Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(10, 5);
             this.label3.Name = "label3";
@@ -388,7 +388,7 @@ namespace _2022_Test
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(89)))), ((int)(((byte)(162)))));
-            this.label1.Font = new System.Drawing.Font("맑은 고딕", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label1.Font = new System.Drawing.Font("Malgun Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(10, 5);
             this.label1.Name = "label1";
@@ -409,7 +409,7 @@ namespace _2022_Test
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(89)))), ((int)(((byte)(162)))));
-            this.label2.Font = new System.Drawing.Font("맑은 고딕", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label2.Font = new System.Drawing.Font("Malgun Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(10, 5);
             this.label2.Name = "label2";
@@ -426,18 +426,6 @@ namespace _2022_Test
             this.panel3.Size = new System.Drawing.Size(50, 39);
             this.panel3.TabIndex = 5;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.pictureBox1.Image = global::_2022_Test.Properties.Resources.pngwing_com;
-            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(44, 33);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox2_Click);
-            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.AppWorkspace;
@@ -446,18 +434,6 @@ namespace _2022_Test
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(50, 39);
             this.panel2.TabIndex = 4;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.pictureBox2.Image = global::_2022_Test.Properties.Resources.pngwing1;
-            this.pictureBox2.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(44, 33);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 3;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // uiGroupBox2
             // 
@@ -490,6 +466,24 @@ namespace _2022_Test
             this.uiGroupBox2.TitleInterval = 5;
             this.uiGroupBox2.TitleTop = 15;
             // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(107, 240);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(103, 29);
+            this.textBox5.TabIndex = 183;
+            this.textBox5.Text = "0";
+            this.textBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // textBox6
+            // 
+            this.textBox6.Location = new System.Drawing.Point(107, 195);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(103, 29);
+            this.textBox6.TabIndex = 182;
+            this.textBox6.Text = "0";
+            this.textBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // panel8
             // 
             this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(89)))), ((int)(((byte)(162)))));
@@ -503,7 +497,7 @@ namespace _2022_Test
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(89)))), ((int)(((byte)(162)))));
-            this.label6.Font = new System.Drawing.Font("맑은 고딕", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label6.Font = new System.Drawing.Font("Malgun Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label6.ForeColor = System.Drawing.Color.White;
             this.label6.Location = new System.Drawing.Point(18, 4);
             this.label6.Name = "label6";
@@ -524,7 +518,7 @@ namespace _2022_Test
             // 
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(89)))), ((int)(((byte)(162)))));
-            this.label7.Font = new System.Drawing.Font("맑은 고딕", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label7.Font = new System.Drawing.Font("Malgun Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label7.ForeColor = System.Drawing.Color.White;
             this.label7.Location = new System.Drawing.Point(18, 4);
             this.label7.Name = "label7";
@@ -564,7 +558,7 @@ namespace _2022_Test
             // 
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(89)))), ((int)(((byte)(162)))));
-            this.label8.Font = new System.Drawing.Font("맑은 고딕", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label8.Font = new System.Drawing.Font("Malgun Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label8.ForeColor = System.Drawing.Color.White;
             this.label8.Location = new System.Drawing.Point(10, 5);
             this.label8.Name = "label8";
@@ -585,7 +579,7 @@ namespace _2022_Test
             // 
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(89)))), ((int)(((byte)(162)))));
-            this.label9.Font = new System.Drawing.Font("맑은 고딕", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label9.Font = new System.Drawing.Font("Malgun Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label9.ForeColor = System.Drawing.Color.White;
             this.label9.Location = new System.Drawing.Point(10, 5);
             this.label9.Name = "label9";
@@ -606,7 +600,7 @@ namespace _2022_Test
             // 
             this.label10.AutoSize = true;
             this.label10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(89)))), ((int)(((byte)(162)))));
-            this.label10.Font = new System.Drawing.Font("맑은 고딕", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label10.Font = new System.Drawing.Font("Malgun Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label10.ForeColor = System.Drawing.Color.White;
             this.label10.Location = new System.Drawing.Point(10, 5);
             this.label10.Name = "label10";
@@ -623,18 +617,6 @@ namespace _2022_Test
             this.panel14.Size = new System.Drawing.Size(50, 39);
             this.panel14.TabIndex = 5;
             // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.pictureBox3.Image = global::_2022_Test.Properties.Resources.pngwing_com;
-            this.pictureBox3.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(44, 33);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 2;
-            this.pictureBox3.TabStop = false;
-            this.pictureBox3.Click += new System.EventHandler(this.pictureBox2_Click);
-            // 
             // panel15
             // 
             this.panel15.BackColor = System.Drawing.SystemColors.AppWorkspace;
@@ -643,18 +625,6 @@ namespace _2022_Test
             this.panel15.Name = "panel15";
             this.panel15.Size = new System.Drawing.Size(50, 39);
             this.panel15.TabIndex = 4;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.pictureBox4.Image = global::_2022_Test.Properties.Resources.pngwing1;
-            this.pictureBox4.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(44, 33);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 3;
-            this.pictureBox4.TabStop = false;
-            this.pictureBox4.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // uiGroupBox3
             // 
@@ -687,6 +657,24 @@ namespace _2022_Test
             this.uiGroupBox3.TitleInterval = 5;
             this.uiGroupBox3.TitleTop = 15;
             // 
+            // textBox9
+            // 
+            this.textBox9.Location = new System.Drawing.Point(107, 240);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(103, 29);
+            this.textBox9.TabIndex = 183;
+            this.textBox9.Text = "0";
+            this.textBox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // textBox10
+            // 
+            this.textBox10.Location = new System.Drawing.Point(107, 195);
+            this.textBox10.Name = "textBox10";
+            this.textBox10.Size = new System.Drawing.Size(103, 29);
+            this.textBox10.TabIndex = 182;
+            this.textBox10.Text = "0";
+            this.textBox10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // panel16
             // 
             this.panel16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(89)))), ((int)(((byte)(162)))));
@@ -700,7 +688,7 @@ namespace _2022_Test
             // 
             this.label11.AutoSize = true;
             this.label11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(89)))), ((int)(((byte)(162)))));
-            this.label11.Font = new System.Drawing.Font("맑은 고딕", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label11.Font = new System.Drawing.Font("Malgun Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label11.ForeColor = System.Drawing.Color.White;
             this.label11.Location = new System.Drawing.Point(18, 4);
             this.label11.Name = "label11";
@@ -721,7 +709,7 @@ namespace _2022_Test
             // 
             this.label12.AutoSize = true;
             this.label12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(89)))), ((int)(((byte)(162)))));
-            this.label12.Font = new System.Drawing.Font("맑은 고딕", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label12.Font = new System.Drawing.Font("Malgun Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label12.ForeColor = System.Drawing.Color.White;
             this.label12.Location = new System.Drawing.Point(18, 4);
             this.label12.Name = "label12";
@@ -760,7 +748,7 @@ namespace _2022_Test
             // 
             this.label13.AutoSize = true;
             this.label13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(89)))), ((int)(((byte)(162)))));
-            this.label13.Font = new System.Drawing.Font("맑은 고딕", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label13.Font = new System.Drawing.Font("Malgun Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label13.ForeColor = System.Drawing.Color.White;
             this.label13.Location = new System.Drawing.Point(10, 5);
             this.label13.Name = "label13";
@@ -781,7 +769,7 @@ namespace _2022_Test
             // 
             this.label14.AutoSize = true;
             this.label14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(89)))), ((int)(((byte)(162)))));
-            this.label14.Font = new System.Drawing.Font("맑은 고딕", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label14.Font = new System.Drawing.Font("Malgun Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label14.ForeColor = System.Drawing.Color.White;
             this.label14.Location = new System.Drawing.Point(10, 5);
             this.label14.Name = "label14";
@@ -802,7 +790,7 @@ namespace _2022_Test
             // 
             this.label15.AutoSize = true;
             this.label15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(89)))), ((int)(((byte)(162)))));
-            this.label15.Font = new System.Drawing.Font("맑은 고딕", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label15.Font = new System.Drawing.Font("Malgun Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label15.ForeColor = System.Drawing.Color.White;
             this.label15.Location = new System.Drawing.Point(10, 5);
             this.label15.Name = "label15";
@@ -819,18 +807,6 @@ namespace _2022_Test
             this.panel21.Size = new System.Drawing.Size(50, 39);
             this.panel21.TabIndex = 5;
             // 
-            // pictureBox5
-            // 
-            this.pictureBox5.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.pictureBox5.Image = global::_2022_Test.Properties.Resources.pngwing_com;
-            this.pictureBox5.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(44, 33);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 2;
-            this.pictureBox5.TabStop = false;
-            this.pictureBox5.Click += new System.EventHandler(this.pictureBox2_Click);
-            // 
             // panel22
             // 
             this.panel22.BackColor = System.Drawing.SystemColors.AppWorkspace;
@@ -839,18 +815,6 @@ namespace _2022_Test
             this.panel22.Name = "panel22";
             this.panel22.Size = new System.Drawing.Size(50, 39);
             this.panel22.TabIndex = 4;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.pictureBox6.Image = global::_2022_Test.Properties.Resources.pngwing1;
-            this.pictureBox6.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(44, 33);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox6.TabIndex = 3;
-            this.pictureBox6.TabStop = false;
-            this.pictureBox6.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // uiGroupBox5
             // 
@@ -883,6 +847,15 @@ namespace _2022_Test
             this.uiGroupBox5.TitleInterval = 5;
             this.uiGroupBox5.TitleTop = 15;
             // 
+            // textBox13
+            // 
+            this.textBox13.Location = new System.Drawing.Point(107, 240);
+            this.textBox13.Name = "textBox13";
+            this.textBox13.Size = new System.Drawing.Size(103, 29);
+            this.textBox13.TabIndex = 183;
+            this.textBox13.Text = "0";
+            this.textBox13.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // panel23
             // 
             this.panel23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(89)))), ((int)(((byte)(162)))));
@@ -896,13 +869,22 @@ namespace _2022_Test
             // 
             this.label16.AutoSize = true;
             this.label16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(89)))), ((int)(((byte)(162)))));
-            this.label16.Font = new System.Drawing.Font("맑은 고딕", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label16.Font = new System.Drawing.Font("Malgun Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label16.ForeColor = System.Drawing.Color.White;
             this.label16.Location = new System.Drawing.Point(18, 4);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(54, 20);
             this.label16.TabIndex = 0;
             this.label16.Text = "Offset";
+            // 
+            // textBox14
+            // 
+            this.textBox14.Location = new System.Drawing.Point(107, 195);
+            this.textBox14.Name = "textBox14";
+            this.textBox14.Size = new System.Drawing.Size(103, 29);
+            this.textBox14.TabIndex = 182;
+            this.textBox14.Text = "0";
+            this.textBox14.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // panel24
             // 
@@ -917,7 +899,7 @@ namespace _2022_Test
             // 
             this.label17.AutoSize = true;
             this.label17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(89)))), ((int)(((byte)(162)))));
-            this.label17.Font = new System.Drawing.Font("맑은 고딕", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label17.Font = new System.Drawing.Font("Malgun Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label17.ForeColor = System.Drawing.Color.White;
             this.label17.Location = new System.Drawing.Point(18, 4);
             this.label17.Name = "label17";
@@ -956,7 +938,7 @@ namespace _2022_Test
             // 
             this.label18.AutoSize = true;
             this.label18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(89)))), ((int)(((byte)(162)))));
-            this.label18.Font = new System.Drawing.Font("맑은 고딕", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label18.Font = new System.Drawing.Font("Malgun Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label18.ForeColor = System.Drawing.Color.White;
             this.label18.Location = new System.Drawing.Point(10, 5);
             this.label18.Name = "label18";
@@ -977,7 +959,7 @@ namespace _2022_Test
             // 
             this.label19.AutoSize = true;
             this.label19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(89)))), ((int)(((byte)(162)))));
-            this.label19.Font = new System.Drawing.Font("맑은 고딕", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label19.Font = new System.Drawing.Font("Malgun Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label19.ForeColor = System.Drawing.Color.White;
             this.label19.Location = new System.Drawing.Point(10, 5);
             this.label19.Name = "label19";
@@ -998,7 +980,7 @@ namespace _2022_Test
             // 
             this.label20.AutoSize = true;
             this.label20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(89)))), ((int)(((byte)(162)))));
-            this.label20.Font = new System.Drawing.Font("맑은 고딕", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label20.Font = new System.Drawing.Font("Malgun Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label20.ForeColor = System.Drawing.Color.White;
             this.label20.Location = new System.Drawing.Point(10, 5);
             this.label20.Name = "label20";
@@ -1015,18 +997,6 @@ namespace _2022_Test
             this.panel28.Size = new System.Drawing.Size(50, 39);
             this.panel28.TabIndex = 5;
             // 
-            // pictureBox7
-            // 
-            this.pictureBox7.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.pictureBox7.Image = global::_2022_Test.Properties.Resources.pngwing_com;
-            this.pictureBox7.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(44, 33);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox7.TabIndex = 2;
-            this.pictureBox7.TabStop = false;
-            this.pictureBox7.Click += new System.EventHandler(this.pictureBox2_Click);
-            // 
             // panel29
             // 
             this.panel29.BackColor = System.Drawing.SystemColors.AppWorkspace;
@@ -1036,29 +1006,17 @@ namespace _2022_Test
             this.panel29.Size = new System.Drawing.Size(50, 39);
             this.panel29.TabIndex = 4;
             // 
-            // pictureBox8
-            // 
-            this.pictureBox8.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.pictureBox8.Image = global::_2022_Test.Properties.Resources.pngwing1;
-            this.pictureBox8.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(44, 33);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox8.TabIndex = 3;
-            this.pictureBox8.TabStop = false;
-            this.pictureBox8.Click += new System.EventHandler(this.pictureBox2_Click);
-            // 
             // chart1
             // 
             chartArea1.AxisX.Interval = 100D;
             chartArea1.AxisX.Maximum = 2300D;
             chartArea1.AxisX.Minimum = 0D;
-            chartArea1.AxisX.TitleFont = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            chartArea1.AxisX.TitleFont = new System.Drawing.Font("Malgun Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             chartArea1.AxisY.Enabled = System.Windows.Forms.DataVisualization.Charting.AxisEnabled.False;
             chartArea1.AxisY.Interval = 100D;
             chartArea1.AxisY.Maximum = 400D;
             chartArea1.AxisY.Minimum = 0D;
-            chartArea1.AxisY.TitleFont = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            chartArea1.AxisY.TitleFont = new System.Drawing.Font("Malgun Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             chartArea1.CursorX.Interval = 2D;
             chartArea1.Name = "ChartArea1";
             this.chart1.ChartAreas.Add(chartArea1);
@@ -1107,226 +1065,10 @@ namespace _2022_Test
             this.uiGroupBox6.Size = new System.Drawing.Size(860, 139);
             this.uiGroupBox6.Style = Sunny.UI.UIStyle.Custom;
             this.uiGroupBox6.TabIndex = 186;
+            this.uiGroupBox6.Text = null;
             this.uiGroupBox6.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             this.uiGroupBox6.TitleInterval = 5;
             this.uiGroupBox6.TitleTop = 15;
-            // 
-            // Exit_BTN
-            // 
-            this.Exit_BTN.BackColor = System.Drawing.Color.Gainsboro;
-            this.Exit_BTN.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Exit_BTN.FlatAppearance.BorderColor = System.Drawing.Color.LightGray;
-            this.Exit_BTN.FlatAppearance.BorderSize = 0;
-            this.Exit_BTN.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.Exit_BTN.Image = global::_2022_Test.Properties.Resources.icons8_logout_44;
-            this.Exit_BTN.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.Exit_BTN.Location = new System.Drawing.Point(727, 35);
-            this.Exit_BTN.Name = "Exit_BTN";
-            this.Exit_BTN.Size = new System.Drawing.Size(104, 78);
-            this.Exit_BTN.TabIndex = 2;
-            this.Exit_BTN.Text = "EXIT";
-            this.Exit_BTN.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.Exit_BTN.UseVisualStyleBackColor = true;
-            this.Exit_BTN.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Exit_BTN_MouseUp);
-            // 
-            // save_button
-            // 
-            this.save_button.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.save_button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.save_button.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.save_button.Image = global::_2022_Test.Properties.Resources.edit;
-            this.save_button.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.save_button.Location = new System.Drawing.Point(603, 35);
-            this.save_button.Margin = new System.Windows.Forms.Padding(9, 8, 9, 8);
-            this.save_button.Name = "save_button";
-            this.save_button.Size = new System.Drawing.Size(109, 78);
-            this.save_button.TabIndex = 186;
-            this.save_button.TabStop = false;
-            this.save_button.Text = "적용";
-            this.save_button.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.save_button.UseVisualStyleBackColor = true;
-            // 
-            // pictureBox9
-            // 
-            this.pictureBox9.BackColor = System.Drawing.Color.White;
-            this.pictureBox9.Image = global::_2022_Test.Properties.Resources.차축1;
-            this.pictureBox9.Location = new System.Drawing.Point(55, 568);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(1056, 264);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox9.TabIndex = 207;
-            this.pictureBox9.TabStop = false;
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(107, 240);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(103, 29);
-            this.textBox5.TabIndex = 183;
-            this.textBox5.Text = "0";
-            this.textBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(107, 195);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(103, 29);
-            this.textBox6.TabIndex = 182;
-            this.textBox6.Text = "0";
-            this.textBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox9
-            // 
-            this.textBox9.Location = new System.Drawing.Point(107, 240);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(103, 29);
-            this.textBox9.TabIndex = 183;
-            this.textBox9.Text = "0";
-            this.textBox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox10
-            // 
-            this.textBox10.Location = new System.Drawing.Point(107, 195);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(103, 29);
-            this.textBox10.TabIndex = 182;
-            this.textBox10.Text = "0";
-            this.textBox10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox13
-            // 
-            this.textBox13.Location = new System.Drawing.Point(107, 240);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(103, 29);
-            this.textBox13.TabIndex = 183;
-            this.textBox13.Text = "0";
-            this.textBox13.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox14
-            // 
-            this.textBox14.Location = new System.Drawing.Point(107, 195);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(103, 29);
-            this.textBox14.TabIndex = 182;
-            this.textBox14.Text = "0";
-            this.textBox14.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button1.Image = global::_2022_Test.Properties.Resources.icons8_folder_441;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button1.Location = new System.Drawing.Point(479, 35);
-            this.button1.Margin = new System.Windows.Forms.Padding(9, 8, 9, 8);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(109, 78);
-            this.button1.TabIndex = 187;
-            this.button1.TabStop = false;
-            this.button1.Text = "설정 불러오기";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(47, 20);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(88, 25);
-            this.checkBox1.TabIndex = 188;
-            this.checkBox1.Text = "Probe 1";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            // 
-            // checkBox2
-            // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(47, 51);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(88, 25);
-            this.checkBox2.TabIndex = 189;
-            this.checkBox2.Text = "Probe 2";
-            this.checkBox2.UseVisualStyleBackColor = true;
-            // 
-            // checkBox3
-            // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(47, 79);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(88, 25);
-            this.checkBox3.TabIndex = 190;
-            this.checkBox3.Text = "Probe 3";
-            this.checkBox3.UseVisualStyleBackColor = true;
-            // 
-            // checkBox4
-            // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(47, 107);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(88, 25);
-            this.checkBox4.TabIndex = 191;
-            this.checkBox4.Text = "Probe 4";
-            this.checkBox4.UseVisualStyleBackColor = true;
-            // 
-            // panel30
-            // 
-            this.panel30.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(89)))), ((int)(((byte)(162)))));
-            this.panel30.Controls.Add(this.label21);
-            this.panel30.Location = new System.Drawing.Point(209, 29);
-            this.panel30.Name = "panel30";
-            this.panel30.Size = new System.Drawing.Size(90, 29);
-            this.panel30.TabIndex = 192;
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(89)))), ((int)(((byte)(162)))));
-            this.label21.Font = new System.Drawing.Font("맑은 고딕", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label21.ForeColor = System.Drawing.Color.White;
-            this.label21.Location = new System.Drawing.Point(10, 5);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(70, 20);
-            this.label21.TabIndex = 0;
-            this.label21.Text = "Gain(dB)";
-            // 
-            // textBox17
-            // 
-            this.textBox17.Location = new System.Drawing.Point(316, 29);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(103, 29);
-            this.textBox17.TabIndex = 193;
-            this.textBox17.Text = "60";
-            this.textBox17.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox18
-            // 
-            this.textBox18.Location = new System.Drawing.Point(316, 64);
-            this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(103, 29);
-            this.textBox18.TabIndex = 195;
-            this.textBox18.Text = "5";
-            this.textBox18.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // panel31
-            // 
-            this.panel31.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(89)))), ((int)(((byte)(162)))));
-            this.panel31.Controls.Add(this.label22);
-            this.panel31.Location = new System.Drawing.Point(209, 64);
-            this.panel31.Name = "panel31";
-            this.panel31.Size = new System.Drawing.Size(90, 29);
-            this.panel31.TabIndex = 194;
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(89)))), ((int)(((byte)(162)))));
-            this.label22.Font = new System.Drawing.Font("맑은 고딕", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label22.ForeColor = System.Drawing.Color.White;
-            this.label22.Location = new System.Drawing.Point(5, 5);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(83, 20);
-            this.label22.TabIndex = 0;
-            this.label22.Text = "Freq(MHz)";
             // 
             // textBox19
             // 
@@ -1350,13 +1092,272 @@ namespace _2022_Test
             // 
             this.label23.AutoSize = true;
             this.label23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(89)))), ((int)(((byte)(162)))));
-            this.label23.Font = new System.Drawing.Font("맑은 고딕", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label23.Font = new System.Drawing.Font("Malgun Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label23.ForeColor = System.Drawing.Color.White;
             this.label23.Location = new System.Drawing.Point(1, 5);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(91, 20);
             this.label23.TabIndex = 0;
             this.label23.Text = "Range(mm)";
+            // 
+            // textBox18
+            // 
+            this.textBox18.Location = new System.Drawing.Point(316, 64);
+            this.textBox18.Name = "textBox18";
+            this.textBox18.Size = new System.Drawing.Size(103, 29);
+            this.textBox18.TabIndex = 195;
+            this.textBox18.Text = "5";
+            this.textBox18.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // panel31
+            // 
+            this.panel31.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(89)))), ((int)(((byte)(162)))));
+            this.panel31.Controls.Add(this.label22);
+            this.panel31.Location = new System.Drawing.Point(209, 64);
+            this.panel31.Name = "panel31";
+            this.panel31.Size = new System.Drawing.Size(90, 29);
+            this.panel31.TabIndex = 194;
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(89)))), ((int)(((byte)(162)))));
+            this.label22.Font = new System.Drawing.Font("Malgun Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label22.ForeColor = System.Drawing.Color.White;
+            this.label22.Location = new System.Drawing.Point(5, 5);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(83, 20);
+            this.label22.TabIndex = 0;
+            this.label22.Text = "Freq(MHz)";
+            // 
+            // textBox17
+            // 
+            this.textBox17.Location = new System.Drawing.Point(316, 29);
+            this.textBox17.Name = "textBox17";
+            this.textBox17.Size = new System.Drawing.Size(103, 29);
+            this.textBox17.TabIndex = 193;
+            this.textBox17.Text = "60";
+            this.textBox17.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // panel30
+            // 
+            this.panel30.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(89)))), ((int)(((byte)(162)))));
+            this.panel30.Controls.Add(this.label21);
+            this.panel30.Location = new System.Drawing.Point(209, 29);
+            this.panel30.Name = "panel30";
+            this.panel30.Size = new System.Drawing.Size(90, 29);
+            this.panel30.TabIndex = 192;
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(89)))), ((int)(((byte)(162)))));
+            this.label21.Font = new System.Drawing.Font("Malgun Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label21.ForeColor = System.Drawing.Color.White;
+            this.label21.Location = new System.Drawing.Point(10, 5);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(70, 20);
+            this.label21.TabIndex = 0;
+            this.label21.Text = "Gain(dB)";
+            // 
+            // checkBox4
+            // 
+            this.checkBox4.AutoSize = true;
+            this.checkBox4.Location = new System.Drawing.Point(47, 107);
+            this.checkBox4.Name = "checkBox4";
+            this.checkBox4.Size = new System.Drawing.Size(88, 25);
+            this.checkBox4.TabIndex = 191;
+            this.checkBox4.Text = "Probe 4";
+            this.checkBox4.UseVisualStyleBackColor = true;
+            // 
+            // checkBox3
+            // 
+            this.checkBox3.AutoSize = true;
+            this.checkBox3.Location = new System.Drawing.Point(47, 79);
+            this.checkBox3.Name = "checkBox3";
+            this.checkBox3.Size = new System.Drawing.Size(88, 25);
+            this.checkBox3.TabIndex = 190;
+            this.checkBox3.Text = "Probe 3";
+            this.checkBox3.UseVisualStyleBackColor = true;
+            // 
+            // checkBox2
+            // 
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.Location = new System.Drawing.Point(47, 51);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(88, 25);
+            this.checkBox2.TabIndex = 189;
+            this.checkBox2.Text = "Probe 2";
+            this.checkBox2.UseVisualStyleBackColor = true;
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(47, 20);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(88, 25);
+            this.checkBox1.TabIndex = 188;
+            this.checkBox1.Text = "Probe 1";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.Font = new System.Drawing.Font("Malgun Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.button1.Image = global::_2022_Test.Properties.Resources.icons8_folder_441;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button1.Location = new System.Drawing.Point(479, 35);
+            this.button1.Margin = new System.Windows.Forms.Padding(9, 8, 9, 8);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(109, 78);
+            this.button1.TabIndex = 187;
+            this.button1.TabStop = false;
+            this.button1.Text = "설정 불러오기";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // Exit_BTN
+            // 
+            this.Exit_BTN.BackColor = System.Drawing.Color.Gainsboro;
+            this.Exit_BTN.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Exit_BTN.FlatAppearance.BorderColor = System.Drawing.Color.LightGray;
+            this.Exit_BTN.FlatAppearance.BorderSize = 0;
+            this.Exit_BTN.Font = new System.Drawing.Font("Malgun Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.Exit_BTN.Image = global::_2022_Test.Properties.Resources.icons8_logout_44;
+            this.Exit_BTN.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.Exit_BTN.Location = new System.Drawing.Point(727, 35);
+            this.Exit_BTN.Name = "Exit_BTN";
+            this.Exit_BTN.Size = new System.Drawing.Size(104, 78);
+            this.Exit_BTN.TabIndex = 2;
+            this.Exit_BTN.Text = "EXIT";
+            this.Exit_BTN.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.Exit_BTN.UseVisualStyleBackColor = true;
+            this.Exit_BTN.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Exit_BTN_MouseUp);
+            // 
+            // save_button
+            // 
+            this.save_button.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.save_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.save_button.Font = new System.Drawing.Font("Malgun Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.save_button.Image = global::_2022_Test.Properties.Resources.edit;
+            this.save_button.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.save_button.Location = new System.Drawing.Point(603, 35);
+            this.save_button.Margin = new System.Windows.Forms.Padding(9, 8, 9, 8);
+            this.save_button.Name = "save_button";
+            this.save_button.Size = new System.Drawing.Size(109, 78);
+            this.save_button.TabIndex = 186;
+            this.save_button.TabStop = false;
+            this.save_button.Text = "적용";
+            this.save_button.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.save_button.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.BackColor = System.Drawing.Color.White;
+            this.pictureBox9.Image = global::_2022_Test.Properties.Resources.차축1;
+            this.pictureBox9.Location = new System.Drawing.Point(55, 568);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(1056, 264);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox9.TabIndex = 207;
+            this.pictureBox9.TabStop = false;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.pictureBox7.Image = global::_2022_Test.Properties.Resources.pngwing_com;
+            this.pictureBox7.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(44, 33);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox7.TabIndex = 2;
+            this.pictureBox7.TabStop = false;
+            this.pictureBox7.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.pictureBox8.Image = global::_2022_Test.Properties.Resources.pngwing1;
+            this.pictureBox8.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(44, 33);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox8.TabIndex = 3;
+            this.pictureBox8.TabStop = false;
+            this.pictureBox8.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.pictureBox5.Image = global::_2022_Test.Properties.Resources.pngwing_com;
+            this.pictureBox5.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(44, 33);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 2;
+            this.pictureBox5.TabStop = false;
+            this.pictureBox5.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.pictureBox6.Image = global::_2022_Test.Properties.Resources.pngwing1;
+            this.pictureBox6.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(44, 33);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox6.TabIndex = 3;
+            this.pictureBox6.TabStop = false;
+            this.pictureBox6.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.pictureBox3.Image = global::_2022_Test.Properties.Resources.pngwing_com;
+            this.pictureBox3.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(44, 33);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 2;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.pictureBox4.Image = global::_2022_Test.Properties.Resources.pngwing1;
+            this.pictureBox4.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(44, 33);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 3;
+            this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.pictureBox1.Image = global::_2022_Test.Properties.Resources.pngwing_com;
+            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(44, 33);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.pictureBox2.Image = global::_2022_Test.Properties.Resources.pngwing1;
+            this.pictureBox2.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(44, 33);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 3;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // PortSetting_Form
             // 
@@ -1373,7 +1374,7 @@ namespace _2022_Test
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.BackColor);
             this.Controls.Add(this.chart1);
-            this.Font = new System.Drawing.Font("돋움", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.Font = new System.Drawing.Font("Dotum", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "PortSetting_Form";
@@ -1397,9 +1398,7 @@ namespace _2022_Test
             this.panel10.ResumeLayout(false);
             this.panel10.PerformLayout();
             this.panel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.uiGroupBox2.ResumeLayout(false);
             this.uiGroupBox2.PerformLayout();
             this.panel8.ResumeLayout(false);
@@ -1413,9 +1412,7 @@ namespace _2022_Test
             this.panel13.ResumeLayout(false);
             this.panel13.PerformLayout();
             this.panel14.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel15.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.uiGroupBox3.ResumeLayout(false);
             this.uiGroupBox3.PerformLayout();
             this.panel16.ResumeLayout(false);
@@ -1429,9 +1426,7 @@ namespace _2022_Test
             this.panel20.ResumeLayout(false);
             this.panel20.PerformLayout();
             this.panel21.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.panel22.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.uiGroupBox5.ResumeLayout(false);
             this.uiGroupBox5.PerformLayout();
             this.panel23.ResumeLayout(false);
@@ -1445,19 +1440,25 @@ namespace _2022_Test
             this.panel27.ResumeLayout(false);
             this.panel27.PerformLayout();
             this.panel28.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.panel29.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             this.uiGroupBox6.ResumeLayout(false);
             this.uiGroupBox6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            this.panel30.ResumeLayout(false);
-            this.panel30.PerformLayout();
-            this.panel31.ResumeLayout(false);
-            this.panel31.PerformLayout();
             this.panel32.ResumeLayout(false);
             this.panel32.PerformLayout();
+            this.panel31.ResumeLayout(false);
+            this.panel31.PerformLayout();
+            this.panel30.ResumeLayout(false);
+            this.panel30.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }

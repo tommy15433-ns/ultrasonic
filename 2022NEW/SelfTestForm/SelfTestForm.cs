@@ -12,7 +12,6 @@ using System.Threading;
 using _2022_Test.NSTEK.device;
 using Power_Modbus_RTU_SAMPLE;
 using static Library.DeviceTools;
-using lucidio;
 
 namespace _2022_Test
 {
@@ -263,10 +262,16 @@ namespace _2022_Test
 
             }
         }
-        private void button9_MouseUp(object sender, MouseEventArgs e)
+
+        private void button9_Click(object sender, EventArgs e)
         {
             thRun = new Thread(testexecute);
             thRun.Start();
+        }
+
+        private void plc_btn_MouseUp(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -17,7 +17,6 @@ using static Library.DeviceTools;
 
 //using PJH;
 using Library;
-using lucidio;
 using Power_Modbus_RTU_SAMPLE;
 using System.Runtime.InteropServices.ComTypes;
 using _2022_Test.NSTEK.device;
@@ -52,10 +51,6 @@ namespace _2022_Test
         DSP_LAN dc_power;
         AND_AD310D loadcell;
         byte[] SerBuf = new byte[70];
-       
-
-        
-        ValueDI1 v;
 
         Thread read_di;
 
@@ -601,10 +596,30 @@ namespace _2022_Test
         }
 
 
+        public void EnsureFileExists(string filePath)
+        {
+            // 1. 파일 경로에서 디렉토리 부분만 추출
+            string directoryPath = Path.GetDirectoryName(filePath);
 
+            // 2. 디렉토리가 없으면 생성 (이미 있으면 무시됨)
+            if (!string.IsNullOrEmpty(directoryPath) && !Directory.Exists(directoryPath))
+            {
+                Directory.CreateDirectory(directoryPath);
+            }
+
+            // 3. 파일이 존재하지 않으면 생성
+            if (!File.Exists(filePath))
+            {
+                // 빈 파일을 생성하고 스트림을 즉시 닫음
+                using (File.Create(filePath)) { }
+            }
+        }
         private void MainForm_Load(object sender, EventArgs e)
         {
-            StreamReader sr = new StreamReader(Application.StartupPath + "\\" + "data" + "\\" + "setup.ini");
+            string setuppath = Application.StartupPath + "\\" + "data" + "\\" + "setup.ini";
+            EnsureFileExists(setuppath);
+
+            StreamReader sr = new StreamReader(setuppath);
             string temp = sr.ReadToEnd();
             sr.Close();
             string[] Port = temp.Split('!');

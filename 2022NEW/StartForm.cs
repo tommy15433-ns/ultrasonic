@@ -2,6 +2,7 @@
 using System.Windows.Forms;
 using Library;
 using System.Runtime.InteropServices;
+using _2022_Test.ProbeSettingForm;
 namespace _2022_Test
 {
     public partial class StartForm : Form
@@ -16,9 +17,13 @@ namespace _2022_Test
                                                     , int nWidthEllipse
                                                     , int nHeightEllipse);
 
+
+        private ProbeSetting psvm = new ProbeSetting();
         public StartForm()
         {
             InitializeComponent();
+
+            probeSettingView1.BindProbeSetting(psvm);
         }
 
         private void Exit_Button_MouseUp(object sender, MouseEventArgs e)
@@ -56,55 +61,24 @@ namespace _2022_Test
 
         private void Test_BTN_MouseUp(object sender, MouseEventArgs e)
         {
-            Main_form = new MainForm();
-            Main_form.ShowDialog();
+
 
             //init_Tester_info_Form iF = new init_Tester_info_Form();
             //iF.ShowDialog();
             //iF.Dispose();
         }
-
-        private void Report_BTN_MouseUp(object sender, MouseEventArgs e)
-        {
-            ReportForm RF = new ReportForm(this);
-            RF.ShowDialog();
-            RF.Dispose();
-        }
-
-        private void SelfTest_BTN_MouseUp(object sender, MouseEventArgs e)
-        {
-            this.Opacity = 0.8;
-
-            SelfTestForm STF = new SelfTestForm(this);
-            STF.ShowDialog();
-            STF.Dispose();         
-        }
-
-        private void Setting_BTN_MouseUp(object sender, MouseEventArgs e)
-        {
-            this.Opacity = 0.8;
-
-            SettingForm sf = new SettingForm(this);
-            sf.ShowDialog();
-            sf.Dispose();
-        }
-
         private void FTP_BTN_MouseUp(object sender, MouseEventArgs e)
         {
             FTP_Form FF = new FTP_Form();
             FF.ShowDialog();
             FF.Dispose();
         }
-
-       
-
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             PLC_Test_Form PTF = new PLC_Test_Form();
             PTF.ShowDialog();
             PTF.Dispose();
         }
-
         private void Test_BTN_Click(object sender, EventArgs e)
         {
             MainForm MF = new MainForm();
@@ -126,8 +100,42 @@ namespace _2022_Test
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            Form1 f1 = new Form1();
-            f1.Show();
+            //Form1 f1 = new Form1();
+            //f1.Show();
+            MessageBox.Show(psvm.UserName.ToString());
+        }
+
+        private void Test_BTN_Click_1(object sender, EventArgs e)
+        {
+            //Main_form = new MainForm();
+            //Main_form.ShowDialog();
+
+            new FormLoading(null, null, null).ShowDialog();
+        }
+
+        private void SelfTest_BTN_Click(object sender, EventArgs e)
+        {
+            this.Opacity = 0.8;
+
+            SelfTestForm STF = new SelfTestForm(this);
+            STF.ShowDialog();
+            STF.Dispose();
+        }
+
+        private void Report_BTN_Click(object sender, EventArgs e)
+        {
+            ReportForm RF = new ReportForm(this);
+            RF.ShowDialog();
+            RF.Dispose();
+        }
+
+        private void Setting_BTN_Click(object sender, EventArgs e)
+        {
+            this.Opacity = 0.8;
+
+            SettingForm sf = new SettingForm(this);
+            sf.ShowDialog();
+            sf.Dispose();
         }
     }
 }

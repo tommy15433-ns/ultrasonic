@@ -7,16 +7,6 @@ namespace _2022_Test
 {
     public partial class PortSetting_Form : Form
     {
-        Select_TEST_Form st_form;
-
-        [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
-        private static extern IntPtr CreateRoundRectRgn(int nLeftRect
-                                                    , int nTopRect
-                                                    , int nRightRect
-                                                    , int nBottomRect
-                                                    , int nWidthEllipse
-                                                    , int nHeightEllipse);
-
         public PortSetting_Form()
         {
             InitializeComponent();
@@ -33,7 +23,7 @@ namespace _2022_Test
             chart1.Series[0].Points.AddXY(0, 0);
         } 
 
-            private void Exit_BTN_MouseUp(object sender, MouseEventArgs e)
+        private void Exit_BTN_MouseUp(object sender, MouseEventArgs e)
         {
             this.Close();
         }

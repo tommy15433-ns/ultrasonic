@@ -32,13 +32,14 @@ namespace _2022_Test
             this.BackColor = new System.Windows.Forms.Panel();
             this.Name_Label = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.SelfTest_BTN = new System.Windows.Forms.Button();
             this.Report_BTN = new System.Windows.Forms.Button();
             this.Test_BTN = new System.Windows.Forms.Button();
             this.Exit_BTN = new System.Windows.Forms.Button();
             this.Setting_BTN = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.probeSettingView1 = new _2022_Test.ProbeSettingForm.ProbeSettingView();
             this.BackColor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -50,13 +51,13 @@ namespace _2022_Test
             this.BackColor.Dock = System.Windows.Forms.DockStyle.Top;
             this.BackColor.Location = new System.Drawing.Point(0, 0);
             this.BackColor.Name = "BackColor";
-            this.BackColor.Size = new System.Drawing.Size(380, 45);
+            this.BackColor.Size = new System.Drawing.Size(744, 45);
             this.BackColor.TabIndex = 0;
             // 
             // Name_Label
             // 
             this.Name_Label.AutoSize = true;
-            this.Name_Label.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.Name_Label.Font = new System.Drawing.Font("Malgun Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.Name_Label.ForeColor = System.Drawing.Color.White;
             this.Name_Label.Location = new System.Drawing.Point(3, 10);
             this.Name_Label.Name = "Name_Label";
@@ -71,6 +72,24 @@ namespace _2022_Test
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(380, 45);
             this.panel1.TabIndex = 7;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Gainsboro;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.LightGray;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.Font = new System.Drawing.Font("Malgun Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.button1.Image = global::_2022_Test.Properties.Resources.icons8_documents_44;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button1.Location = new System.Drawing.Point(196, 50);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(150, 15);
+            this.button1.TabIndex = 67;
+            this.button1.Text = "장비이력관리";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // pictureBox1
             // 
@@ -89,7 +108,7 @@ namespace _2022_Test
             this.SelfTest_BTN.Cursor = System.Windows.Forms.Cursors.Hand;
             this.SelfTest_BTN.FlatAppearance.BorderColor = System.Drawing.Color.LightGray;
             this.SelfTest_BTN.FlatAppearance.BorderSize = 0;
-            this.SelfTest_BTN.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.SelfTest_BTN.Font = new System.Drawing.Font("Malgun Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.SelfTest_BTN.Image = global::_2022_Test.Properties.Resources.icons8_circular_arrows_44;
             this.SelfTest_BTN.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.SelfTest_BTN.Location = new System.Drawing.Point(196, 165);
@@ -99,7 +118,7 @@ namespace _2022_Test
             this.SelfTest_BTN.Text = "자가진단";
             this.SelfTest_BTN.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.SelfTest_BTN.UseVisualStyleBackColor = true;
-            this.SelfTest_BTN.MouseUp += new System.Windows.Forms.MouseEventHandler(this.SelfTest_BTN_MouseUp);
+            this.SelfTest_BTN.Click += new System.EventHandler(this.SelfTest_BTN_Click);
             // 
             // Report_BTN
             // 
@@ -107,7 +126,7 @@ namespace _2022_Test
             this.Report_BTN.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Report_BTN.FlatAppearance.BorderColor = System.Drawing.Color.LightGray;
             this.Report_BTN.FlatAppearance.BorderSize = 0;
-            this.Report_BTN.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.Report_BTN.Font = new System.Drawing.Font("Malgun Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.Report_BTN.Image = global::_2022_Test.Properties.Resources.icons8_search_441;
             this.Report_BTN.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.Report_BTN.Location = new System.Drawing.Point(196, 71);
@@ -117,7 +136,7 @@ namespace _2022_Test
             this.Report_BTN.Text = "결과조회";
             this.Report_BTN.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.Report_BTN.UseVisualStyleBackColor = true;
-            this.Report_BTN.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Report_BTN_MouseUp);
+            this.Report_BTN.Click += new System.EventHandler(this.Report_BTN_Click);
             // 
             // Test_BTN
             // 
@@ -125,7 +144,7 @@ namespace _2022_Test
             this.Test_BTN.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Test_BTN.FlatAppearance.BorderColor = System.Drawing.Color.LightGray;
             this.Test_BTN.FlatAppearance.BorderSize = 0;
-            this.Test_BTN.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.Test_BTN.Font = new System.Drawing.Font("Malgun Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.Test_BTN.Image = global::_2022_Test.Properties.Resources.icons8_cashbook_441;
             this.Test_BTN.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.Test_BTN.Location = new System.Drawing.Point(34, 71);
@@ -135,7 +154,7 @@ namespace _2022_Test
             this.Test_BTN.Text = "시험 시작";
             this.Test_BTN.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.Test_BTN.UseVisualStyleBackColor = true;
-            this.Test_BTN.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Test_BTN_MouseUp);
+            this.Test_BTN.Click += new System.EventHandler(this.Test_BTN_Click_1);
             // 
             // Exit_BTN
             // 
@@ -143,7 +162,7 @@ namespace _2022_Test
             this.Exit_BTN.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Exit_BTN.FlatAppearance.BorderColor = System.Drawing.Color.LightGray;
             this.Exit_BTN.FlatAppearance.BorderSize = 0;
-            this.Exit_BTN.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.Exit_BTN.Font = new System.Drawing.Font("Malgun Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.Exit_BTN.Image = global::_2022_Test.Properties.Resources.icons8_logout_44;
             this.Exit_BTN.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.Exit_BTN.Location = new System.Drawing.Point(196, 259);
@@ -161,7 +180,7 @@ namespace _2022_Test
             this.Setting_BTN.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Setting_BTN.FlatAppearance.BorderColor = System.Drawing.Color.LightGray;
             this.Setting_BTN.FlatAppearance.BorderSize = 0;
-            this.Setting_BTN.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.Setting_BTN.Font = new System.Drawing.Font("Malgun Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.Setting_BTN.Image = global::_2022_Test.Properties.Resources.icons8_settings_44_2;
             this.Setting_BTN.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.Setting_BTN.Location = new System.Drawing.Point(34, 165);
@@ -171,31 +190,22 @@ namespace _2022_Test
             this.Setting_BTN.Text = "환경설정";
             this.Setting_BTN.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.Setting_BTN.UseVisualStyleBackColor = true;
-            this.Setting_BTN.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Setting_BTN_MouseUp);
+            this.Setting_BTN.Click += new System.EventHandler(this.Setting_BTN_Click);
             // 
-            // button1
+            // probeSettingView1
             // 
-            this.button1.BackColor = System.Drawing.Color.Gainsboro;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.LightGray;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button1.Image = global::_2022_Test.Properties.Resources.icons8_documents_44;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button1.Location = new System.Drawing.Point(196, 50);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(150, 15);
-            this.button1.TabIndex = 67;
-            this.button1.Text = "장비이력관리";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            this.probeSettingView1.Location = new System.Drawing.Point(413, 29);
+            this.probeSettingView1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.probeSettingView1.Name = "probeSettingView1";
+            this.probeSettingView1.Size = new System.Drawing.Size(287, 367);
+            this.probeSettingView1.TabIndex = 68;
             // 
             // StartForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(380, 410);
+            this.ClientSize = new System.Drawing.Size(744, 410);
+            this.Controls.Add(this.probeSettingView1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.SelfTest_BTN);
@@ -205,7 +215,7 @@ namespace _2022_Test
             this.Controls.Add(this.Setting_BTN);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.BackColor);
-            this.Font = new System.Drawing.Font("돋움", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.Font = new System.Drawing.Font("Dotum", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "StartForm";
@@ -231,5 +241,6 @@ namespace _2022_Test
         private System.Windows.Forms.Button Exit_BTN;
         private System.Windows.Forms.Button Setting_BTN;
         private System.Windows.Forms.Button button1;
+        private ProbeSettingForm.ProbeSettingView probeSettingView1;
     }
 }

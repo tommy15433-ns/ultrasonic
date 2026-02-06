@@ -21,8 +21,6 @@ namespace _2022_Test.NSTEK.Models
             List<string> list = new List<string>();
             // Get the Type object for the instance
             Type type = this.GetType();
-            Console.WriteLine($"Inspecting object of type: {type.Name}");
-            Console.WriteLine("----------------------------------");
 
             // Get all public instance properties
             PropertyInfo[] properties = type.GetProperties(BindingFlags.Public | BindingFlags.Instance | BindingFlags.GetProperty);

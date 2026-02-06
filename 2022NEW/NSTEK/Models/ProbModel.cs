@@ -24,7 +24,7 @@ namespace _2022_Test.NSTEK.Models
         /// <summary>
         /// 
         /// </summary>
-        private uint elementPerBeam = 16;
+        private uint elementPerBeam = 32;
         public uint ElementPerBeam
         {
             get => elementPerBeam;

@@ -12,4 +12,11 @@ namespace _2022_Test.NSTEK.Models
         public string Unit { get; }
         public MeasuredUnitAttribute(string unit) => Unit = unit;
     }
+
+    [AttributeUsage(AttributeTargets.Property)]
+    public class ControlThemeAttribute : Attribute
+    {
+        public string Unit { get; }
+        public ControlThemeAttribute(string unit) => Unit = unit;
+    }
 }

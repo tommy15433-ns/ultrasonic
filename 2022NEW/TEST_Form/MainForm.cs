@@ -14,7 +14,6 @@ using static Library.DeviceTools;
 using System.IO.Ports;
 
 using _2022_Test.NSTEK.device;
-using lucidio;
 using System.Reflection.Emit;
 using System.Deployment.Application;
 

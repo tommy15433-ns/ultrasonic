@@ -14,8 +14,11 @@ using static Library.DeviceTools;
 using System.IO.Ports;
 
 using _2022_Test.NSTEK.device;
+using _2022_Test.NSTEK.Plot;
 using System.Reflection.Emit;
 using System.Deployment.Application;
+
+
 
 
 
@@ -23,6 +26,8 @@ namespace _2022_Test
 {
     public partial class MainForm : Form
     {
+        CScanPlot plot_cscan;
+
         Stopwatch sw = new Stopwatch();
 
         init_Tester_info_Form init_info;
@@ -131,6 +136,8 @@ namespace _2022_Test
         public MainForm()
         {
             InitializeComponent();
+
+            plot_cscan = new CScanPlot(panel_plotCScan);
         }
 
         public MainForm(init_Tester_info_Form _form)
@@ -1239,27 +1246,19 @@ namespace _2022_Test
          
         }
 
-        public void list_set_zero()
+        private void EXIT_BTN_Click(object sender, EventArgs e)
         {
+            this.Close();
+        }
 
-
-
-    
-
-
-
-          
-
-
-
+        private void START_BTN_Click(object sender, EventArgs e)
+        {
 
         }
 
+        public void list_set_zero()
+        {
 
-
+        }
     }
-
-
-
-
 }

@@ -32,7 +32,6 @@
             this.imageList_nusul = new System.Windows.Forms.ImageList(this.components);
             this.imageList2 = new System.Windows.Forms.ImageList(this.components);
             this.serialPort1 = new System.IO.Ports.SerialPort(this.components);
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
             this.imageList3 = new System.Windows.Forms.ImageList(this.components);
             this.button1 = new System.Windows.Forms.Button();
             this.EXIT_BTN = new System.Windows.Forms.Button();
@@ -43,6 +42,7 @@
             this.Test_Name_Label = new System.Windows.Forms.Label();
             this.BackColor = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.panel_plotCScan = new System.Windows.Forms.Panel();
             this.BackColor.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -63,17 +63,6 @@
             this.serialPort1.Parity = System.IO.Ports.Parity.Even;
             this.serialPort1.PortName = "COM3";
             // 
-            // checkBox4
-            // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Checked = true;
-            this.checkBox4.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox4.Location = new System.Drawing.Point(31, 601);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(15, 14);
-            this.checkBox4.TabIndex = 39;
-            this.checkBox4.UseVisualStyleBackColor = true;
-            // 
             // imageList3
             // 
             this.imageList3.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
@@ -86,7 +75,7 @@
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.FlatAppearance.BorderColor = System.Drawing.Color.LightGray;
             this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.button1.Font = new System.Drawing.Font("Malgun Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.button1.Image = global::_2022_Test.Properties.Resources.icons8_search_441;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button1.Location = new System.Drawing.Point(390, 912);
@@ -104,7 +93,7 @@
             this.EXIT_BTN.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.EXIT_BTN.Image = global::_2022_Test.Properties.Resources.icons8_logout_444;
             this.EXIT_BTN.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.EXIT_BTN.Location = new System.Drawing.Point(1522, 912);
+            this.EXIT_BTN.Location = new System.Drawing.Point(1523, 914);
             this.EXIT_BTN.Name = "EXIT_BTN";
             this.EXIT_BTN.Size = new System.Drawing.Size(125, 75);
             this.EXIT_BTN.TabIndex = 195;
@@ -112,6 +101,7 @@
             this.EXIT_BTN.Text = "복귀";
             this.EXIT_BTN.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.EXIT_BTN.UseVisualStyleBackColor = true;
+            this.EXIT_BTN.Click += new System.EventHandler(this.EXIT_BTN_Click);
             // 
             // RESET_BTN
             // 
@@ -174,12 +164,13 @@
             this.START_BTN.Text = "시험 시작";
             this.START_BTN.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.START_BTN.UseVisualStyleBackColor = true;
+            this.START_BTN.Click += new System.EventHandler(this.START_BTN_Click);
             // 
             // Test_Name_Label
             // 
             this.Test_Name_Label.AutoSize = true;
             this.Test_Name_Label.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(89)))), ((int)(((byte)(162)))));
-            this.Test_Name_Label.Font = new System.Drawing.Font("맑은 고딕", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.Test_Name_Label.Font = new System.Drawing.Font("Malgun Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.Test_Name_Label.ForeColor = System.Drawing.Color.White;
             this.Test_Name_Label.Location = new System.Drawing.Point(9, 6);
             this.Test_Name_Label.Name = "Test_Name_Label";
@@ -206,11 +197,19 @@
             this.panel5.Size = new System.Drawing.Size(1660, 35);
             this.panel5.TabIndex = 202;
             // 
+            // panel_plotCScan
+            // 
+            this.panel_plotCScan.Location = new System.Drawing.Point(12, 519);
+            this.panel_plotCScan.Name = "panel_plotCScan";
+            this.panel_plotCScan.Size = new System.Drawing.Size(1636, 387);
+            this.panel_plotCScan.TabIndex = 203;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1660, 1030);
+            this.Controls.Add(this.panel_plotCScan);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.EXIT_BTN);
@@ -218,9 +217,8 @@
             this.Controls.Add(this.SAVE_BTN);
             this.Controls.Add(this.STOP_BTN);
             this.Controls.Add(this.START_BTN);
-            this.Controls.Add(this.checkBox4);
             this.Controls.Add(this.BackColor);
-            this.Font = new System.Drawing.Font("돋움", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.Font = new System.Drawing.Font("Dotum", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "MainForm";
@@ -231,7 +229,6 @@
             this.BackColor.ResumeLayout(false);
             this.BackColor.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -239,7 +236,6 @@
         private System.Windows.Forms.ImageList imageList_nusul;
         private System.IO.Ports.SerialPort serialPort1;
         private System.Windows.Forms.ImageList imageList2;
-        private System.Windows.Forms.CheckBox checkBox4;
         private System.Windows.Forms.ImageList imageList3;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button EXIT_BTN;
@@ -250,5 +246,6 @@
         private System.Windows.Forms.Label Test_Name_Label;
         private System.Windows.Forms.Panel BackColor;
         private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Panel panel_plotCScan;
     }
 }

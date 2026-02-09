@@ -6,7 +6,9 @@ using System.Text;
 using System.Threading.Tasks;
 using OlympusNDT.Instrumentation.NET;
 
-namespace _2022_Test.NSTEK.Models
+using _2022_Test.ProbeSettingForm;
+
+namespace _2022_Test.TEST_Form
 {
     public static class BeamSetExCollection
     {
@@ -73,6 +75,15 @@ namespace _2022_Test.NSTEK.Models
         public BeamSetEx(string _name)
         {
             name = _name;
+        }
+        public BeamSetEx(ProbeSetting ps)
+        {
+            AngleResolution = ps._beamAngleResolution;
+            AngleStart = ps._beamAngleResolution;
+            name = nameof(ps); 
+            //BeamCount = (Math.Abs(ps._beamEndAngle - ps._beamEndAngle) + ps._beamAngleResolution) / ps._beamAngleResolution;
+            
+
         }
         public void UpdateRange(double rangeStart, double rangeEnd, double sampleFreq, double velocity, int compression)
         {

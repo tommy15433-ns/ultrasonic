@@ -1,29 +1,25 @@
 ﻿using System;
 using System;
 using System.Collections.Generic;
-using System.Collections.Generic;
 using System.ComponentModel;
 using System.Diagnostics;
 using System.Linq;
-using System.Linq;
-using System.Runtime.InteropServices;
 using System.Runtime.InteropServices;
 using System.Text;
-using System.Text;
-using System.Threading.Tasks;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Forms;
 using System.Windows.Forms.VisualStyles;
-using OlympusNDT.Instrumentation.NET;
-
 using _2022_Test.NSTEK.Models;
+using OlympusNDT.Instrumentation.NET;
 
 
 namespace _2022_Test.NSTEK.Device
 {
     public class FocusPx
     {
+        public const int DEFAULT_SAMPLE_RATE = 100000000;
         public class FocusPxEventHandler
         {
             public EventHandler ResetRequested;
@@ -37,8 +33,24 @@ namespace _2022_Test.NSTEK.Device
                 DeviceDisconnected = deviceDisconnected;
             }
         }
+        public class DiscoveryEvents
+        {
+            public EventHandler OnTimeout;
+            public EventHandler OnConnected;
+            public EventHandler OnFail;
 
-        private FocusPxEventHandler events;
+            public DiscoveryEvents(
+                EventHandler _OnTimeout,
+                EventHandler _OnConnected,
+                EventHandler _OnFail)
+            {
+                OnTimeout = _OnTimeout;
+                OnConnected = _OnConnected;
+                OnFail = _OnFail;
+            }
+        }
+
+        private FocusPxEventHandler events = new FocusPxEventHandler(null, null, null);
         public string Status { 
             get
             {
@@ -62,8 +74,9 @@ namespace _2022_Test.NSTEK.Device
         public IDigitizerTechnology digitizerTechnologyConventional { get; set; }
         public IAcquisition acquisition { get; set; }
         public IDeviceConfiguration deviceConfiguration { get; set; }
+        public IDeviceDiscovery deviceDiscovery { get; set; }
 
-        public FocusPx(FocusPxEventHandler handler)
+        public FocusPx(FocusPxEventHandler handler): this()
         {
             events = handler;
 
@@ -72,12 +85,106 @@ namespace _2022_Test.NSTEK.Device
                 throw new Exception("Need to subscribe FocusPxEventHandler events");
             }
         }
+
+        private BackgroundWorker bgw_discovery = new BackgroundWorker();
+        private DiscoveryEvents discovery_events = new DiscoveryEvents(null, null, null);
+        private string discovery_ip;
+        private int discovery_timeout;
+        public FocusPx()
+        {
+            bgw_discovery = new BackgroundWorker();
+            bgw_discovery.WorkerSupportsCancellation = true;
+            bgw_discovery.DoWork += Bgw_discovery_DoWork;
+            bgw_discovery.RunWorkerCompleted += Bgw_discovery_RunWorkerCompleted;
+        }
+
+        private void Bgw_discovery_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
+        {
+            if (e.Error != null)
+            {
+                if (discovery_events.OnFail != null)
+                {
+                    discovery_events.OnFail.Invoke(this, EventArgs.Empty);
+                }
+
+                MessageBox.Show(e.Error.Message);
+            }
+
+            if ((bool)e.Result == true)
+            {
+                if (discovery_events.OnConnected != null)
+                {
+                    discovery_events.OnConnected.Invoke(this, null);
+                }
+            }
+            else
+            {
+                if (discovery_events.OnFail != null)
+                {
+                    discovery_events.OnFail.Invoke(this, EventArgs.Empty);
+                }
+            }
+        }
+
+        private void Bgw_discovery_DoWork(object sender, DoWorkEventArgs e)
+        {
+            Utilities.ResolveDependenciesPath();
+            deviceDiscovery = IDeviceDiscovery.Create(discovery_ip);
+            //DiscoverResult discoverResult = deviceDiscovery.DiscoverFor(discovery_timeout);
+
+            e.Result = false;
+            while (bgw_discovery.CancellationPending == false)
+            {
+                using (var result = deviceDiscovery.DiscoverFor(discovery_timeout))
+                { 
+                    switch (result.status)
+                    {
+                        
+                        case DiscoverResult.Status.DeviceFound:
+                            device = result.device;
+                            DownloadFirmwarePackage();
+                            initialize();
+
+                            e.Result = true;
+                            return;
+                        
+                        case DiscoverResult.Status.Timeout:
+                            if (discovery_events.OnTimeout != null)
+                            {
+                                discovery_events.OnTimeout.Invoke(this, null);
+                            }
+                            break;
+
+
+                        default:
+                        case DiscoverResult.Status.Spurious:
+                        case DiscoverResult.Status.Interrupted:
+                        case DiscoverResult.Status.Failed:
+                            throw new Exception("FocusPX discovery failed: " + result.status.ToString());
+                    }
+                }
+            }
+        }
+        public void DiscoveryStart(string ip, int timeout, DiscoveryEvents eventhandler)
+        {
+            
+            discovery_ip = ip;
+            discovery_timeout = timeout;
+            discovery_events = eventhandler;
+
+            bgw_discovery.RunWorkerAsync();
+        }
+        public void DiscoveryStop()
+        {
+            deviceDiscovery.Interrupt();
+            bgw_discovery.CancelAsync();
+        }
         public void Connect(string ip, int timeout)
         {
             try
             {
                 Utilities.ResolveDependenciesPath();
-                IDeviceDiscovery deviceDiscovery = IDeviceDiscovery.Create(ip);
+                deviceDiscovery = IDeviceDiscovery.Create(ip);
                 DiscoverResult discoverResult = deviceDiscovery.DiscoverFor(timeout);
                 if (discoverResult.status == DiscoverResult.Status.DeviceFound)
                 {

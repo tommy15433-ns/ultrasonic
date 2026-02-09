@@ -3,6 +3,8 @@ using System.Windows.Forms;
 using Library;
 using System.Runtime.InteropServices;
 using _2022_Test.ProbeSettingForm;
+using System.Diagnostics;
+using _2022_Test.NSTEK.Device;
 namespace _2022_Test
 {
     public partial class StartForm : Form
@@ -22,8 +24,6 @@ namespace _2022_Test
         public StartForm()
         {
             InitializeComponent();
-
-            probeSettingView1.BindProbeSetting(psvm);
         }
 
         private void Exit_Button_MouseUp(object sender, MouseEventArgs e)
@@ -102,15 +102,62 @@ namespace _2022_Test
         {
             //Form1 f1 = new Form1();
             //f1.Show();
-            MessageBox.Show(psvm.UserName.ToString());
+            //MessageBox.Show(psvm.UserName.ToString());
+        }
+        private NSTEK.Device.FocusPx focusPx;
+
+        private void OnConnected(object sender, EventArgs e)
+        {
+            Debug.WriteLine("FocusPx connected");
+            loadingform.Hide();
+            Main_form = new MainForm();
+            Main_form.ShowDialog();
+        }
+        private void OnDiscoveryFail(object sender, EventArgs e)
+        {
+            loadingform.Hide();
+            Debug.WriteLine("Timedout");
+        }
+        private void OnDiscoveryTimeout(object sender, EventArgs e)
+        {
+            Debug.WriteLine("timedout");
+        }
+        private void ConnectFocusPx()
+        {
+            FocusPx.DiscoveryEvents discoveryEvents = new FocusPx.DiscoveryEvents(OnDiscoveryTimeout, OnConnected, OnDiscoveryFail);
+            focusPx = new NSTEK.Device.FocusPx();
+            try
+            {
+                focusPx.DiscoveryStart("192.168.0.1", 60000, discoveryEvents);
+
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex.Message);
+            }
+        }
+        private void StopDiscover()
+        {
+            focusPx.DiscoveryStop();
+            //focusPx.deviceDiscovery.Interrupt();
         }
 
+        private LoadingForm loadingform = new LoadingForm();
         private void Test_BTN_Click_1(object sender, EventArgs e)
         {
-            //Main_form = new MainForm();
-            //Main_form.ShowDialog();
-
-            new FormLoading(null, null, null).ShowDialog();
+            CadView.CadView cv = new CadView.CadView(panel_dxf);
+            cv.Display(@"D:\Tester\ultrasonic_dnetfw\초음파탐상기\img\defect.dxf");
+            //if (loadingform.Visible == false)
+            //{
+            //    loadingform.Show();
+            //    ConnectFocusPx();
+            //}
+            //else
+            //{
+            //    StopDiscover();
+                
+            //}
+                
         }
 
         private void SelfTest_BTN_Click(object sender, EventArgs e)

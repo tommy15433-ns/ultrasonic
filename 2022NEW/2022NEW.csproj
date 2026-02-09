@@ -88,9 +88,6 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\Debug\Caliburn.Micro.Platform.Core.dll</HintPath>
     </Reference>
-    <Reference Include="CommunityToolkit.Mvvm, Version=8.4.0.0, Culture=neutral, PublicKeyToken=4aff67a105548ee2, processorArchitecture=MSIL">
-      <HintPath>..\packages\CommunityToolkit.Mvvm.8.4.0\lib\netstandard2.0\CommunityToolkit.Mvvm.dll</HintPath>
-    </Reference>
     <Reference Include="dotNetLucidIo, Version=1.7.0.0, Culture=neutral, PublicKeyToken=e84031da7c258d74, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\Debug\dotNetLucidIoApi_1_7_0\dotNetLucidIo.dll</HintPath>
@@ -117,6 +114,9 @@
       <HintPath>..\packages\Microsoft.Win32.Primitives.4.3.0\lib\net46\Microsoft.Win32.Primitives.dll</HintPath>
       <Private>True</Private>
       <Private>True</Private>
+    </Reference>
+    <Reference Include="netDxf.netstandard, Version=3.0.1.0, Culture=neutral, PublicKeyToken=618c63290969e781, processorArchitecture=MSIL">
+      <HintPath>packages\netDxf.netstandard.3.0.1\lib\net48\netDxf.netstandard.dll</HintPath>
     </Reference>
     <Reference Include="OlympusNDT.Instrumentation.NET, Version=1.1.65.84, Culture=neutral, PublicKeyToken=ab3ae2c044727df7, processorArchitecture=AMD64">
       <SpecificVersion>False</SpecificVersion>
@@ -302,6 +302,7 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CadView\CadView.cs" />
     <Compile Include="FormLoading.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -311,18 +312,14 @@
     <Compile Include="NSTEK\device2\DSP_LAN.cs" />
     <Compile Include="NSTEK\Device\Connectors.cs" />
     <Compile Include="NSTEK\Models\Attributes.cs" />
-    <Compile Include="NSTEK\Models\Configuration.cs" />
-    <Compile Include="NSTEK\Models\DelayLawModel.cs" />
     <Compile Include="NSTEK\Models\DigitizerModel.cs" />
     <Compile Include="NSTEK\Models\FilterModel.cs" />
     <Compile Include="NSTEK\Models\FocalModel.cs" />
     <Compile Include="NSTEK\Models\GateModel.cs" />
-    <Compile Include="NSTEK\Models\IBeamSetEx.cs" />
     <Compile Include="NSTEK\Models\IModel.cs" />
     <Compile Include="NSTEK\Models\MaterialModel.cs" />
     <Compile Include="NSTEK\Models\ProbModel.cs" />
     <Compile Include="NSTEK\Models\ScanRangeModel.cs" />
-    <Compile Include="NSTEK\Models\SscanModel.cs" />
     <Compile Include="NSTEK\Database\Database.cs" />
     <Compile Include="NSTEK\Device\FocusPx.cs" />
     <Compile Include="NSTEK\FocalCalculator\BeamCalc.cs" />
@@ -339,6 +336,7 @@
     <Compile Include="NSTEK\UI\ModelUI.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Probe1.cs" />
     <Compile Include="ProbeSettingForm\ProbeSetting.cs" />
     <Compile Include="PointD.cs" />
     <Compile Include="ProbeSettingForm\ProbeSettingView.cs">
@@ -383,11 +381,16 @@
     <Compile Include="TEST_Form\FormFocalLaw.Designer.cs">
       <DependentUpon>FormFocalLaw.cs</DependentUpon>
     </Compile>
+    <Compile Include="TEST_Form\IBeamSetEx.cs" />
     <Compile Include="TEST_Form\MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="TEST_Form\MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TEST_Form\MainForm.FocusPX.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+      <SubType>Form</SubType>
     </Compile>
     <Compile Include="FTP_Form.cs">
       <SubType>Form</SubType>
@@ -749,9 +752,7 @@
     </PropertyGroup>
     <Error Condition="!Exists('..\packages\NETStandard.Library.2.0.3\build\netstandard2.0\NETStandard.Library.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\NETStandard.Library.2.0.3\build\netstandard2.0\NETStandard.Library.targets'))" />
     <Error Condition="!Exists('..\packages\Microsoft.NETFramework.ReferenceAssemblies.net48.1.0.2\build\Microsoft.NETFramework.ReferenceAssemblies.net48.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.NETFramework.ReferenceAssemblies.net48.1.0.2\build\Microsoft.NETFramework.ReferenceAssemblies.net48.targets'))" />
-    <Error Condition="!Exists('..\packages\CommunityToolkit.Mvvm.8.4.0\build\CommunityToolkit.Mvvm.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\CommunityToolkit.Mvvm.8.4.0\build\CommunityToolkit.Mvvm.targets'))" />
   </Target>
   <Import Project="..\packages\NETStandard.Library.2.0.3\build\netstandard2.0\NETStandard.Library.targets" Condition="Exists('..\packages\NETStandard.Library.2.0.3\build\netstandard2.0\NETStandard.Library.targets')" />
   <Import Project="..\packages\Microsoft.NETFramework.ReferenceAssemblies.net48.1.0.2\build\Microsoft.NETFramework.ReferenceAssemblies.net48.targets" Condition="Exists('..\packages\Microsoft.NETFramework.ReferenceAssemblies.net48.1.0.2\build\Microsoft.NETFramework.ReferenceAssemblies.net48.targets')" />
-  <Import Project="..\packages\CommunityToolkit.Mvvm.8.4.0\build\CommunityToolkit.Mvvm.targets" Condition="Exists('..\packages\CommunityToolkit.Mvvm.8.4.0\build\CommunityToolkit.Mvvm.targets')" />
 </Project>

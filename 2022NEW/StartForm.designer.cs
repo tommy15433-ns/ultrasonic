@@ -39,7 +39,7 @@ namespace _2022_Test
             this.Test_BTN = new System.Windows.Forms.Button();
             this.Exit_BTN = new System.Windows.Forms.Button();
             this.Setting_BTN = new System.Windows.Forms.Button();
-            this.probeSettingView1 = new _2022_Test.ProbeSettingForm.ProbeSettingView();
+            this.panel_dxf = new System.Windows.Forms.Panel();
             this.BackColor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -51,7 +51,7 @@ namespace _2022_Test
             this.BackColor.Dock = System.Windows.Forms.DockStyle.Top;
             this.BackColor.Location = new System.Drawing.Point(0, 0);
             this.BackColor.Name = "BackColor";
-            this.BackColor.Size = new System.Drawing.Size(744, 45);
+            this.BackColor.Size = new System.Drawing.Size(1392, 45);
             this.BackColor.TabIndex = 0;
             // 
             // Name_Label
@@ -192,20 +192,19 @@ namespace _2022_Test
             this.Setting_BTN.UseVisualStyleBackColor = true;
             this.Setting_BTN.Click += new System.EventHandler(this.Setting_BTN_Click);
             // 
-            // probeSettingView1
+            // panel_dxf
             // 
-            this.probeSettingView1.Location = new System.Drawing.Point(413, 29);
-            this.probeSettingView1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.probeSettingView1.Name = "probeSettingView1";
-            this.probeSettingView1.Size = new System.Drawing.Size(287, 367);
-            this.probeSettingView1.TabIndex = 68;
+            this.panel_dxf.Location = new System.Drawing.Point(21, 439);
+            this.panel_dxf.Name = "panel_dxf";
+            this.panel_dxf.Size = new System.Drawing.Size(1140, 387);
+            this.panel_dxf.TabIndex = 68;
             // 
             // StartForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(744, 410);
-            this.Controls.Add(this.probeSettingView1);
+            this.ClientSize = new System.Drawing.Size(1392, 908);
+            this.Controls.Add(this.panel_dxf);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.SelfTest_BTN);
@@ -241,6 +240,6 @@ namespace _2022_Test
         private System.Windows.Forms.Button Exit_BTN;
         private System.Windows.Forms.Button Setting_BTN;
         private System.Windows.Forms.Button button1;
-        private ProbeSettingForm.ProbeSettingView probeSettingView1;
+        private System.Windows.Forms.Panel panel_dxf;
     }
 }

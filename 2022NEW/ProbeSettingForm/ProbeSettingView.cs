@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using CommunityToolkit.Mvvm.ComponentModel;
 
 namespace _2022_Test.ProbeSettingForm
 {
@@ -21,7 +20,7 @@ namespace _2022_Test.ProbeSettingForm
         public void BindProbeSetting(ProbeSetting probeSetting)
         {
             bindingSource.DataSource = typeof(ProbeSetting);
-            this.tb_angle_end.DataBindings.Add("Text", probeSetting, "UserName", false, DataSourceUpdateMode.OnPropertyChanged);
+            //this.tb_angle_end.DataBindings.Add("Text", probeSetting, "UserName", false, DataSourceUpdateMode.OnPropertyChanged);
 
         }
     }

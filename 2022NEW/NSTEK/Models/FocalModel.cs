@@ -8,6 +8,16 @@ namespace  _2022_Test.NSTEK.Models
 {
     public class FocalModel : Model
     {
+        private bool isAngleRight = true;
+        public bool IsAngleRight
+        {
+            get => isAngleRight;
+            set
+            {
+                isAngleRight = value;
+                ValueChanged?.Invoke(this, new EventArgs());
+            }
+        }
         private double focusLength = 0.03;
         public double FocusLength
         {

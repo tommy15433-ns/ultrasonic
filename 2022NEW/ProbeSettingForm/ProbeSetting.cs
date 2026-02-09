@@ -6,13 +6,14 @@ using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using CommunityToolkit.Mvvm.ComponentModel;
-
+using _2022_Test.NSTEK.Models;
 
 namespace _2022_Test.ProbeSettingForm
 {
-    public partial class ProbeSetting : ObservableObject
+    public class ProbeSetting
     {
+        public const int ELEMENTS_PER_BEAM = 32;
+        
         public enum Directions
         {
             left, right
@@ -21,25 +22,28 @@ namespace _2022_Test.ProbeSettingForm
         /// <summary>
         /// true if beam angle is heading right, false on heading left
         /// </summary>
-        [ObservableProperty]
-        private bool _beamDirectionRight = true;
+        public bool _beamDirectionRight = true;
 
         /// <summary>
         /// X-axis position of the probe
         /// </summary>
-        [ObservableProperty]
-        private double _probePosition;
+        public double _probePosition;
 
-        [ObservableProperty]
-        private double _beamStartAngle;
-        [ObservableProperty]
-        private double _beamEndAngle;
-        [ObservableProperty]
-        private double _beamAngleResolution;
-        [ObservableProperty]
-        private int _gain;
+        public double _beamStartAngle;
+        public double _beamEndAngle;
+        public double _beamAngleResolution;
+        public int _gain;
+        public double _targetLength;
+    }
 
-        [ObservableProperty]
-        private string _userName; // 컴파일러가 'public string UserName'을 생성함
+    public class ProbeConfig_
+    {
+        public ProbeModel probe = new ProbeModel();
+        public DigitizerModel digitizer = new DigitizerModel();
+        public FocalModel focal = new FocalModel();
+        public MaterialModel material = new MaterialModel();
+        public VoltageModel voltage = new VoltageModel();
+        public WedgeModel wedge = new WedgeModel();
+        public FilterModel filter = new FilterModel();
     }
 }
